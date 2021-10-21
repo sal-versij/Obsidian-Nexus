@@ -1,6 +1,6 @@
 # Spazio della propabilità
 Dati:
-$\Omega$ Spazio degli esiti
+$\Omega$ Campo campionario
 
 $\mathscr{F}$ [[Insieme degli eventi]]
 

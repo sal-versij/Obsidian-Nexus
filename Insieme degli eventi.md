@@ -6,11 +6,11 @@
 3. $E,F\in\mathscr{F} \implies E\cup F\in\mathscr{F}$
 ## Osservazioni
 - > $E,F\in\mathscr{F} \implies E\cap F\in\mathscr{F}$
-  $$
+  $$\begin{align}
   E,F\in\mathscr{F} \implies \\
   \bar{E},\bar{F}\in\mathscr{F} \implies \\
   \bar{E}\cup\bar{F}\in\mathscr{F} \implies \\
   \bar{\bar{E}\cup\bar{F}\in\mathscr{F}} \implies \\
   E\cap F\in\mathscr{F}
-  $$
+  \end{align}$$
 - > $\mathscr{F}\subseteq P(\Omega)$

@@ -1,1 +1,0 @@
-Funzione di propabilità
