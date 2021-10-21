@@ -1,6 +1,6 @@
 {
   "readableLineLength": false,
-  "strictLineBreaks": true,
+  "strictLineBreaks": false,
   "foldHeading": true,
   "foldIndent": true,
   "alwaysUpdateLinks": false,
