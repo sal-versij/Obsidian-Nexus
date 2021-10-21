@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "b076bfb2938e0449",
+        "id": "39614264efb58aca",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "c692c71beeacbcb7",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -73,6 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +126,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Untitled.md"
+              }
             }
           },
           {
@@ -128,9 +146,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b076bfb2938e0449",
+  "active": "39614264efb58aca",
   "lastOpenFiles": [
     "Untitled.md",
+    "handouts/metodi statistici 2021-10-07.pdf",
+    "metodi statistici 2021-10-07.md",
+    "Highlights for metodi statistici 2021-10-07.md",
+    "handouts/metodi statistici 2021-10-12.pdf",
     "20/10/2021.md",
     "Excalidraw/Drawing 2021-10-20 23.04.58.excalidraw.md",
     "Recording 20211020230431.webm"
