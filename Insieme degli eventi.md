@@ -1,0 +1,1 @@
+# Insieme degli eventi $\mathscr{F}$
