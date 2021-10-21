@@ -1,10 +1,10 @@
 # Spazio della propabilità
 Dati:
+
 $\Omega$ Campo campionario
 
 $\mathscr{F}$ [[Insieme degli eventi]]
 
 $P$ [[Funzione di propabilità]]
 
-Si definisce **Spazio della propabilità**
-$(\Omega, \mathscr{F}, P)$
+$(\Omega, \mathscr{F}, P)$ si definisce **Spazio delle propabilità**

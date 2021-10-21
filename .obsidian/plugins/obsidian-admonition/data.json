@@ -1,9 +1,20 @@
 {
-  "userAdmonitions": {},
-  "syntaxHighlight": false,
-  "copyButton": false,
+  "userAdmonitions": {
+    "def": {
+      "type": "def",
+      "color": "167, 51, 1",
+      "icon": {
+        "name": "quill-ink",
+        "type": "rpg"
+      },
+      "command": true,
+      "title": "Definition"
+    }
+  },
+  "syntaxHighlight": true,
+  "copyButton": true,
   "version": "6.3.5",
-  "autoCollapse": false,
+  "autoCollapse": true,
   "defaultCollapseType": "open",
   "syncLinks": true,
   "enableMarkdownProcessor": false
