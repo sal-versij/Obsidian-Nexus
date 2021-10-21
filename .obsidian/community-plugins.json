@@ -20,5 +20,11 @@
   "obsidian-plugin-toc",
   "tag-wrangler",
   "obsidian-tracker",
-  "vantage-obsidian"
+  "vantage-obsidian",
+  "obsidian-admonition",
+  "obsidian-checklist-plugin",
+  "convert-url-to-iframe",
+  "dataview",
+  "cm-editor-syntax-highlight-obsidian",
+  "quick-latex"
 ]

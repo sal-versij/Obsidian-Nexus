@@ -2,7 +2,7 @@
   "bullet": "-",
   "emphasis": "*",
   "rule": "-",
-  "createHeaderIfNotPresent": true,
+  "createHeaderIfNotPresent": false,
   "newHeaderTemplate": "\ndate created: \"{{date:YYYY-MM-DD HH:mm}}\" \n",
   "updateHeader": false,
   "updateHeaderTemplate": "\ndate updated: \"{{date:YYYY-MM-DD HH:mm}}\" \n",

@@ -31,7 +31,7 @@
           "type": "markdown",
           "state": {
             "file": "Insieme degli eventi.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -148,6 +148,14 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "b283b459f3209d5a",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
           }
         ]
       },
@@ -170,8 +178,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "ccdc528e0a7a105c",
   "lastOpenFiles": [
