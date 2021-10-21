@@ -5,17 +5,23 @@
 
 ```ad-solution
 title: Esercizio 1
-collapse:true
+collapse:none
 
 Casi possibili: $52!$
 
-Solution 1:
+Solution 1: (Dal prof)
 Per ogni giocatore $13!$
 $p = \frac{(13!)^4}{52!}$
 
-Solution 2:
+Solution 2: (Dal prof)
 $({52\over13}) ({39\over13}) ({26\over13})= \frac{52!}{13!13!13!13!}$
 $p = \frac{(13!)^4}{52!}$
+
+Solution 3: (Mia)
+Casi possibili: $(52!)^2$
+Possibili distribuzioni $({52\over13}) ({39\over13}) ({26\over13})= \frac{52!}{13!13!13!13!}$
+Probabilità di una data combinazione: $\frac{13!13!13!13!}{52!}$
+Probabilità di due date combinazioni consecutive: $(\frac{13!13!13!13!}{52!})^2$
 ```
 ```ad-solution
 title: Esercizio 2
