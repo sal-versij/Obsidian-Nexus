@@ -4,45 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "ff779f27a71fd2dd",
+        "id": "df0076a2f13e3f37",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "[[CUDA]] vs [[OpenCL]].md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "5b39a976ecd0511a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "GPGPU Program Flow.md",
+            "file": "General Purpose GPU.md",
             "mode": "preview"
           }
         }
       },
       {
-        "id": "70c0b179c082d014",
+        "id": "8e5d059cacf14995",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "GPU Hardware.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "752e43b07aede516",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "GPGPU Programming.md",
+            "file": "CUDA vs OpenCL.md",
             "mode": "preview"
           }
         }
@@ -110,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "[[CUDA]] vs [[OpenCL]].md",
+                "file": "CUDA vs OpenCL.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "[[CUDA]] vs [[OpenCL]].md",
+                "file": "CUDA vs OpenCL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "[[CUDA]] vs [[OpenCL]].md"
+                "file": "CUDA vs OpenCL.md"
               }
             }
           },
@@ -176,12 +154,12 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "ff779f27a71fd2dd",
+  "active": "8e5d059cacf14995",
   "lastOpenFiles": [
-    "[[CUDA]] vs [[OpenCL]].md",
+    "CUDA vs OpenCL.md",
     "General Purpose GPU.md",
-    "GPGPU Programming.md",
     "GPU Hardware.md",
+    "GPGPU Programming.md",
     "GPGPU Program Flow.md",
     "Stream processing.md",
     "Parallelism.md",

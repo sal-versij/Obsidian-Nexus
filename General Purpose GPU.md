@@ -6,7 +6,7 @@
 [[GPU Hardware]]
 [[Stream processing]]
 [[GPGPU Program Flow]]
-[[[[CUDA]] vs OpenCL]]
+[[CUDA vs OpenCL]]
 ## Secondary Arguments
 [[Concurrency]]
 [[Bandwidth]]
@@ -32,8 +32,3 @@
 
 - ***accelerators***
   takes off from the success of GPUs, rely on the same principles, but lack graphics specialization (e.g. Xeon Phi).
-
-!!!TODO!!!
-
-
-
