@@ -4,12 +4,64 @@
     "type": "split",
     "children": [
       {
-        "id": "c085cdccdd6fc3da",
+        "id": "9757a7e35c4585b2",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Esercizio Probabilità.md",
+            "file": "GPU Programming.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "e41e90dd0574ca35",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Parallelism.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "cb2644ac52a64e8f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Gustavson’s law.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "079af3818302cf4c",
+        "type": "leaf",
+        "state": {
+          "type": "Search on Internet",
+          "state": {}
+        }
+      },
+      {
+        "id": "933542779c7a6fc1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Amdahl’s law.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "c09d291e50cd5188",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Parallel programming.md",
             "mode": "source"
           }
         }
@@ -76,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Esercizio Probabilità.md",
+                "file": "Gustavson’s law.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Esercizio Probabilità.md",
+                "file": "Gustavson’s law.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Esercizio Probabilità.md"
+                "file": "Gustavson’s law.md"
               }
             }
           },
@@ -160,17 +212,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c085cdccdd6fc3da",
+  "active": "cb2644ac52a64e8f",
   "lastOpenFiles": [
+    "Gustavson’s law.md",
+    "Parallelism.md",
+    "Amdahl’s law.md",
+    "GPU Programming.md",
+    "Parallel programming.md",
     "Esercizio Probabilità.md",
     "Probabilità condizionata.md",
     "Funzione di propabilità.md",
     "Insieme degli eventi.md",
-    "spazio della propabilità.md",
-    "handouts/metodi statistici 2021-10-07.pdf",
-    "metodi statistici 2021-10-07.md",
-    "Highlights for metodi statistici 2021-10-07.md",
-    "handouts/metodi statistici 2021-10-12.pdf",
-    "20/10/2021.md"
+    "spazio della propabilità.md"
   ]
 }
