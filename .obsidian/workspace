@@ -13,6 +13,33 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "82242d2af5a6e578",
+        "type": "leaf",
+        "state": {
+          "type": "Search on Internet",
+          "state": {}
+        }
+      },
+      {
+        "id": "13cdf7f3683e7f4b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Concurrency.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "6367268b6f2b2d03",
+        "type": "leaf",
+        "state": {
+          "type": "Search on Internet",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -39,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"Bandwidth and latency\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -163,14 +190,14 @@
   "active": "ce3fe23a3881f824",
   "lastOpenFiles": [
     "GPU Programming.md",
+    "Bandwidth and latency.md",
+    "Concurrency.md",
+    "GPU Hardware.md",
+    "Parallelism.md",
     "Gustafson's law.md",
     "Parallel programming.md",
     "Amdahl's law.md",
-    "Parallelism.md",
     "Esercizio Probabilità.md",
-    "Probabilità condizionata.md",
-    "Funzione di propabilità.md",
-    "Insieme degli eventi.md",
-    "spazio della propabilità.md"
+    "Probabilità condizionata.md"
   ]
 }
