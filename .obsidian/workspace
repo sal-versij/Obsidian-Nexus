@@ -15,13 +15,24 @@
         }
       },
       {
-        "id": "8e5d059cacf14995",
+        "id": "1decd0b39833fb08",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CUDA vs OpenCL.md",
+            "file": "OpenCL.md",
             "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "ee74249854079f8a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "OpenCL C.md",
+            "mode": "source"
           }
         }
       }
@@ -88,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CUDA vs OpenCL.md",
+                "file": "OpenCL C.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -105,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CUDA vs OpenCL.md",
+                "file": "OpenCL C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CUDA vs OpenCL.md"
+                "file": "OpenCL C.md"
               }
             }
           },
@@ -154,8 +165,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8e5d059cacf14995",
+  "active": "ee74249854079f8a",
   "lastOpenFiles": [
+    "OpenCL C.md",
+    "OpenCL.md",
     "CUDA vs OpenCL.md",
     "General Purpose GPU.md",
     "GPU Hardware.md",
@@ -163,8 +176,6 @@
     "GPGPU Program Flow.md",
     "Stream processing.md",
     "Parallelism.md",
-    "Host/GPGPU Device Communication.md",
-    "Parallel programming.md",
-    "Untitled.md"
+    "Host/GPGPU Device Communication.md"
   ]
 }
