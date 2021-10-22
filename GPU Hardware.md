@@ -31,7 +31,6 @@ Parallel hardware can be classified as
   - higher latency.
 - hybrid
   > *example*: multiprocessor nodes in a cluster
-
 ## Memory
 A *device* has different kinds of memory:
 
@@ -69,6 +68,32 @@ title:private memory
 collapse:true
 
 private to each work-item; volatile; held in the registers of the compute unit, unless too much is being used, in which case it spills into global memory (register spills are what CUDA calls local memory) and performance suffers
+```
+## Wide cores
+A GPU multiprocessor (MP) has multiple [[processing elements]] (PE), but they do not act independently from each other. Hardware and semantic details depend on architecture.
+
+```ad-attention
+collapse:true
+title:Limited flow control
+optimized for predication, lane masking, no irreducible control flow (spaghetti code), no or limited recursion.
+```
+
+```ad-note
+title:Group size
+GPUs run *groups of work-item* in lock-step. The group (*warp* in NVIDIA-speak, *wavefront* in AMD-speak) has a fixed size which is the SIMT width of the hardware. Even if you launch a single work-item, *a full warp/wavefront* will run!
+```
+
+```ad-note
+title:High-bandwidth, high-latency
+GPU memory controllers: high bandwidth, high latency.
+
+High latency: a transaction might take 100s of cycles to complete.
+High bandwidth: a single transaction can serve a whole subgroup (warp/wavefront) under optimal conditions.
+
+Optimal conditions: a "pixel"- or "vertex"-worth of data per work-item, for *contiguous* groups of "pixels".
+
+How does this translate for compute?
+[[GPGPU Programming]]
 ```
 ## References
 [[3D Hardware APIs]]
