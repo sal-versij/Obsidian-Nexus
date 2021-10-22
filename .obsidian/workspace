@@ -4,36 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "df0076a2f13e3f37",
+        "id": "a110d4d72ae29644",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "General Purpose GPU.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "1decd0b39833fb08",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "OpenCL.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "ee74249854079f8a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "OpenCL C.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -82,8 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -99,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OpenCL C.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OpenCL C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "OpenCL C.md"
-              }
+              "state": {}
             }
           },
           {
@@ -165,17 +135,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "ee74249854079f8a",
+  "active": "a110d4d72ae29644",
   "lastOpenFiles": [
-    "OpenCL C.md",
-    "OpenCL.md",
-    "CUDA vs OpenCL.md",
     "General Purpose GPU.md",
-    "GPU Hardware.md",
-    "GPGPU Programming.md",
-    "GPGPU Program Flow.md",
+    "OpenCL.md",
+    "Esercizio Probabilità.md",
     "Stream processing.md",
-    "Parallelism.md",
-    "Host/GPGPU Device Communication.md"
+    "spazio della propabilità.md",
+    "Probabilità condizionata.md",
+    "OpenCL C.md",
+    "CUDA vs OpenCL.md",
+    "GPU Hardware.md",
+    "GPGPU Programming.md"
   ]
 }
