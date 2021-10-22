@@ -5,7 +5,7 @@
 [[Parallelism]]
 [[GPU Hardware]]
 [[Stream processing]]
-[[GPGPU Program Flow]]
+[[GPGPU Programming]]
 [[CUDA vs OpenCL]]
 ## Secondary Arguments
 [[Concurrency]]

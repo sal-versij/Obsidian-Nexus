@@ -35,3 +35,5 @@ prefer structure of arrays (SoA) over arrays of structures (AoS);
 sometimes, bypassing the cache and using a good layout is better than exploiting the cache!
 *Do* use the cache(s) as much as possible, but lay out your data optimally regardless.
 ```
+## Rferences
+[[GPGPU Program Flow]]

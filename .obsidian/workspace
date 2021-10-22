@@ -1,14 +1,17 @@
 {
   "main": {
-    "id": "245c66881a3cb4d9",
+    "id": "f85d178474946e5f",
     "type": "split",
     "children": [
       {
-        "id": "a110d4d72ae29644",
+        "id": "8db2e2051fdd2472",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "OpenCL C.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -73,6 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "OpenCL C.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -89,6 +93,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "OpenCL C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +115,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "OpenCL C.md"
+              }
             }
           },
           {
@@ -135,17 +142,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "a110d4d72ae29644",
+  "active": "8db2e2051fdd2472",
   "lastOpenFiles": [
-    "General Purpose GPU.md",
-    "OpenCL.md",
-    "Esercizio Probabilità.md",
-    "Stream processing.md",
-    "spazio della propabilità.md",
-    "Probabilità condizionata.md",
     "OpenCL C.md",
+    "OpenCL.md",
     "CUDA vs OpenCL.md",
+    "GPGPU Programming.md",
     "GPU Hardware.md",
-    "GPGPU Programming.md"
+    "General Purpose GPU.md",
+    "Host/GPGPU Device Communication.md",
+    "Parallelism.md",
+    "GPGPU Program Flow.md",
+    "Esercizio Probabilità.md"
   ]
 }
