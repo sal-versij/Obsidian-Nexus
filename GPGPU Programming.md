@@ -4,19 +4,24 @@ title:Optimal data types
 Preferred data types: 32-bit, 64-bit or 128-bit data types, i.e. `int`, `float`, or vector types.
 ```
 
-```ad-attention
-Try to keep it *aligned* and *contiguous*.
-```
 ```ad-def
 title:Optimal data layout
 Supported data types have alingment constraints, *typically* the type size.
+```
 
-Data alignment
+```ad-attention
+Try to keep it *aligned* and *contiguous*.
+```
+
+```ad-def
+title:Data alignment
 
 - a `float` (size: 4 bytes) is read with a single transaction if its first byte is at an address which is a multiple of 4 (“4-byte boundary”)
 - a `float2` is 2×`float`, but single transaction only if at 8-byte boundary.
 - a `float4` is 4×`float`, but single transaction only if at 16-byte boundary.
 - what about a `float3`? (hint: ‘it depends’)
+
+```
 ### Optimal data layout (bis)
 Subgroup alignment
 
