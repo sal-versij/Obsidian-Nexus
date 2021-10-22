@@ -26,5 +26,7 @@
   "obsidian-filename-heading-sync",
   "obsidian-copy-block-link",
   "obsidian-text-expander",
-  "key-promoter"
+  "key-promoter",
+  "obsidian-plotly",
+  "obsidian-plantuml"
 ]

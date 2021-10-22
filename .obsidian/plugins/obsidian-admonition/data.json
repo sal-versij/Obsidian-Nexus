@@ -29,6 +29,16 @@
       },
       "command": true,
       "title": "Solution"
+    },
+    "attention": {
+      "type": "attention",
+      "color": "128, 62, 0",
+      "icon": {
+        "name": "exclamation",
+        "type": "font-awesome"
+      },
+      "command": true,
+      "title": "Attention"
     }
   },
   "syntaxHighlight": true,
