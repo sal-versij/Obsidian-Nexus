@@ -6,6 +6,7 @@
 [[Parallelism]]
 [[GPU Hardware]]
 [[3D Hardware APIs]]
+[[Stream processing]]
 ## Secondary Arguments
 [[Concurrency]]
 [[Bandwidth]] and [[latency]]

@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ce3fe23a3881f824",
+        "id": "ff779f27a71fd2dd",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Parallelism.md",
-            "mode": "preview"
-          }
+          "type": "Search on Internet",
+          "state": {}
         }
       }
     ],
@@ -60,7 +57,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -76,7 +74,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Parallelism.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -93,7 +90,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Parallelism.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,9 +111,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Parallelism.md"
-              }
+              "state": {}
             }
           },
           {
@@ -140,19 +134,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "ce3fe23a3881f824",
+  "active": "ff779f27a71fd2dd",
   "lastOpenFiles": [
-    "Parallelism.md",
+    "Untitled.md",
+    "Stream processing.md",
     "General Purpose GPU.md",
+    "Parallelism.md",
     "Parallel programming.md",
     "3D Hardware APIs.md",
     "GPU Hardware.md",
     "Insieme degli eventi.md",
     "Concurrency.md",
-    "Bandwidth and latency.md",
-    "Gustafson's law.md",
-    "Amdahl's law.md"
+    "Bandwidth and latency.md"
   ]
 }
