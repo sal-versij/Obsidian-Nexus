@@ -43,7 +43,7 @@
           "type": "markdown",
           "state": {
             "file": "GPGPU Programming.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GPGPU Programming.md",
+                "file": "General Purpose GPU.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GPGPU Programming.md",
+                "file": "General Purpose GPU.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPGPU Programming.md"
+                "file": "General Purpose GPU.md"
               }
             }
           },
@@ -176,12 +176,12 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "752e43b07aede516",
+  "active": "ff779f27a71fd2dd",
   "lastOpenFiles": [
+    "General Purpose GPU.md",
     "GPGPU Programming.md",
     "GPU Hardware.md",
     "GPGPU Program Flow.md",
-    "General Purpose GPU.md",
     "Stream processing.md",
     "Parallelism.md",
     "Host/GPGPU Device Communication.md",
