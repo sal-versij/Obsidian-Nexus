@@ -31,6 +31,7 @@ Parallel hardware can be classified as
   - higher latency.
 - hybrid
   > *example*: multiprocessor nodes in a cluster
+
 ## Memory
 A *device* has different kinds of memory:
 
@@ -69,3 +70,5 @@ collapse:true
 
 private to each work-item; volatile; held in the registers of the compute unit, unless too much is being used, in which case it spills into global memory (register spills are what CUDA calls local memory) and performance suffers
 ```
+## References
+[[3D Hardware APIs]]

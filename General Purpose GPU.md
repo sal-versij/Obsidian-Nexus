@@ -4,9 +4,8 @@
 [[Gustafson's law]]
 [[Parallelism]]
 [[GPU Hardware]]
-[[3D Hardware APIs]]
 [[Stream processing]]
-[[Program Flow]]
+[[GPGPU Program Flow]]
 ## Secondary Arguments
 [[Concurrency]]
 [[Bandwidth]]
@@ -36,98 +35,6 @@
 
 
 
-## Program structure (bis)
-A GPGPU program has two parts:
-
-host code
-
-runs on the CPU (starting from `main()`), manages the resources, handles I/O, tells the device(s) to run kernels;
-
-device code
-
-collection of kernels that are uploaded to the device(s), issued by the host code.
-## Single vs separate sources
-single source
-
-the same source code holds both the host and the device code; requires a specific compiler to produce an executable that includes both the host and device part of the program;
-
-separate source
-
-host code sources are separate from device code sources; host code is produced by (any) host compiler (`gcc`, `clang`, `msvc`, `icc`, etc), device code is produced by a distinct library, offline (before program execution) or at run-time.
-### Classic host program
-![Classic host program compilation](https://www.dmi.unict.it/bilotta/gpgpu/newnotes/host-compile.svg)
-
-Classic host program compilation[(zoom)](https://www.dmi.unict.it/bilotta/gpgpu/newnotes/host-compile.svg)
-### Single-source GPGPU program
-![Single-source GPGPU program compilation (e.g. CUDA)](https://www.dmi.unict.it/bilotta/gpgpu/newnotes/cuda-compile.svg)
-
-Single-source GPGPU program compilation (e.g. CUDA)[(zoom)](https://www.dmi.unict.it/bilotta/gpgpu/newnotes/cuda-compile.svg)
-### Separate-source GPGPU program
-![Separate-source GPGPU program compilation (e.g. OpenCL)](https://www.dmi.unict.it/bilotta/gpgpu/newnotes/opencl-compile.svg)
-
-Separate-source GPGPU program compilation (e.g. OpenCL)[(zoom)](https://www.dmi.unict.it/bilotta/gpgpu/newnotes/opencl-compile.svg)
-## Single source pros and cons
-**Single source**
-
-Pro
-
-- less code to write;
-- consistency between host and device data types;
-
-Con
-
-- needs specific compiler (harder toolchain integration, e.g. for MPI);
-- specific compiler may not support all host compilers;
-- compiles only for specific device(s);
-- ‘selective compile’ of device code impossible.
-## Separate source pros and cons
-**Separate source**
-
-Pro
-
-- can use any host compiler (easy to integrate in existing toolchains);
-- compiles for any device (and only the one used);
-- possibility to select kernels to compile at runtime;
-
-Con
-
-- more code to write (to compile and run kernels);
-- care must be taken to preserve consistency between host and device for complex data types.
-# Stream computing and GPUs
-## Hardware design
-GPUs are designed for stream computing
-
-- **SPMD**/**SIMT** hardware: *wide* compute cores with limited flow control capabilities;
-
-- *high bandwidth*, *high latency* global memory: can serve data at high speed with the right access patterns;
-
-- *asynchronous* host/device communication (concurrent execution on device and host, dedicated copy engines, etc).
-## SIMD vs SPMD/SIMT: SIMD
-on CPU
-
-you use the SIMD units by writing the equivalent of
-
-```
-float4 a, b, c;
-a = /* compute or load vector */;
-b = /* compute or load vector */;
-c = a + b;
-```
-
-Limitations: must be customized for specific hardware to exploit the full SIMD width (e.g. to add 32 pairs of floats, need to use 8 `float4` adds with SSE, 4 `float8` adds with AVX, 2 `float16` with AVX2).
-## SIMD vs SPMD/SIMT: SPMD/SIMT
-on GPU
-
-you write what a *single* lane does:
-
-```
-float a, b, c;
-a = /* compute or load scalar */;
-b = /* compute or load scalar */;
-c = a + b;
-```
-
-and ask the GPU to run this as many times as needed. The hardware takes care of distributing the load over its compute units as needed.
 ## Wide cores
 A GPU multiprocessor (MP) has multiple *processing elements* (PE), but they do not act independently from each other (similar to SIMD lanes, but with hardware-managed scheduling). Hardware and semantic details depend on architecture.
 
