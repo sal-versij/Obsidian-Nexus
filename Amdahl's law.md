@@ -1,20 +1,5 @@
 ### Amdahl’s law
 
-> Upper limit to the speed-up: $S_A(\infty) = \frac{1}{(1-p)}$.
->
-> If $p$ is small, there is not much to gain from parallelization. Even for large $p$, there’s such a thing as too many units:
-
-| p   | 2    | 4    | 100  | 200  | 400  | \infty |
-| --- | ---- | ---- | ---- | ---- | ---- | ------ |
-| 10% | 1.05 | 1.08 | 1.11 | 1.11 | 1.11 | 1.11   |
-| 25% | 1.14 | 1.23 | 1.33 | 1.33 | 1.33 | 1.33   |
-| 50% | 1.33 | 1.60 | 1.98 | 1.99 | 1.99 | 2.00   |
-| 75% | 1.60 | 2.29 | 3.88 | 3.94 | 3.97 | 4.00   |
-| 99% | 1.98 | 3.88 | 50.2 | 66.9 | 80.2 | 100.   |
-> (Diminishing returns: doubling the number of units brings progressively less additional speed-up.)
->
-> Assume total work can be decomposed into multiple parts p_1, p_2, ... p_r and each can be sped-up by s_1, s_2, ..., s_r. Total speed-up:
-
 $$S = \frac{1}{\frac{p_1}{s_1} + \frac{p_2}{s_2} + ... + \frac{p_r}{s_r}}$$
 
 > Should you focus where s_i is larger or where p_i is larger?

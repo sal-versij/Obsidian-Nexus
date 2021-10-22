@@ -1,5 +1,5 @@
 # GPU Programming
 [[Parallel programming]]
-[[Amdahl’s law]]
-[[Gustavson’s law]]
+[[Amdahl's law]]
+[[Gustafson’s law]]
 [[Parallelism]]

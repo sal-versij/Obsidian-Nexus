@@ -15,6 +15,17 @@
         }
       },
       {
+        "id": "283b97b81400b820",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Gustafson’s law.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
         "id": "e41e90dd0574ca35",
         "type": "leaf",
         "state": {
@@ -26,33 +37,22 @@
         }
       },
       {
-        "id": "cb2644ac52a64e8f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Gustavson’s law.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "079af3818302cf4c",
-        "type": "leaf",
-        "state": {
-          "type": "Search on Internet",
-          "state": {}
-        }
-      },
-      {
         "id": "933542779c7a6fc1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Amdahl’s law.md",
+            "file": "Amdahl's law.md",
             "mode": "source"
           }
+        }
+      },
+      {
+        "id": "1df721b7a1eea855",
+        "type": "leaf",
+        "state": {
+          "type": "Search on Internet",
+          "state": {}
         }
       },
       {
@@ -62,7 +62,7 @@
           "type": "markdown",
           "state": {
             "file": "Parallel programming.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gustavson’s law.md",
+                "file": "Amdahl's law.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gustavson’s law.md",
+                "file": "Amdahl's law.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gustavson’s law.md"
+                "file": "Amdahl's law.md"
               }
             }
           },
@@ -212,13 +212,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cb2644ac52a64e8f",
+  "active": "933542779c7a6fc1",
   "lastOpenFiles": [
-    "Gustavson’s law.md",
-    "Parallelism.md",
-    "Amdahl’s law.md",
-    "GPU Programming.md",
+    "Amdahl's law.md",
     "Parallel programming.md",
+    "Gustafson’s law.md",
+    "Parallelism.md",
+    "GPU Programming.md",
     "Esercizio Probabilità.md",
     "Probabilità condizionata.md",
     "Funzione di propabilità.md",

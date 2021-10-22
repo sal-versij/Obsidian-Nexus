@@ -3,17 +3,11 @@
   "cycle-through-panes",
   "obsidian-excalidraw-plugin",
   "folder-note-plugin",
-  "obsidian-fullscreen-plugin",
-  "obsidian-journey-plugin",
-  "obsidian-kanban",
   "markdown-prettifier",
   "obsidian-git",
   "obsidian-outliner",
   "url-into-selection",
-  "obsidian-extract-pdf-highlights",
-  "pdf-to-markdown-plugin",
   "darlal-switcher-plus",
-  "obsidian-reading-time",
   "search-on-internet",
   "cm-show-whitespace-obsidian",
   "sliding-panes-obsidian",
@@ -26,5 +20,6 @@
   "convert-url-to-iframe",
   "dataview",
   "cm-editor-syntax-highlight-obsidian",
-  "quick-latex"
+  "quick-latex",
+  "obsidian-rich-links"
 ]

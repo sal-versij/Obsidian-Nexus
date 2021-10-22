@@ -3,7 +3,7 @@
   "strictLineBreaks": false,
   "foldHeading": true,
   "foldIndent": true,
-  "alwaysUpdateLinks": false,
+  "alwaysUpdateLinks": true,
   "showFrontmatter": true,
   "promptDelete": false
 }
