@@ -21,5 +21,8 @@
   "dataview",
   "cm-editor-syntax-highlight-obsidian",
   "quick-latex",
-  "obsidian-rich-links"
+  "obsidian-rich-links",
+  "obsidian-zoom",
+  "obsidian-filename-heading-sync",
+  "obsidian-copy-block-link"
 ]
