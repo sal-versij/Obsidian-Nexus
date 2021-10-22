@@ -4,65 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "9757a7e35c4585b2",
+        "id": "ce3fe23a3881f824",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "GPU Programming.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "283b97b81400b820",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Gustafson’s law.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "e41e90dd0574ca35",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Parallelism.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "933542779c7a6fc1",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Amdahl's law.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "1df721b7a1eea855",
-        "type": "leaf",
-        "state": {
-          "type": "Search on Internet",
-          "state": {}
-        }
-      },
-      {
-        "id": "c09d291e50cd5188",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Parallel programming.md",
-            "mode": "preview"
           }
         }
       }
@@ -128,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Amdahl's law.md",
+                "file": "GPU Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +93,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Amdahl's law.md",
+                "file": "GPU Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Amdahl's law.md"
+                "file": "GPU Programming.md"
               }
             }
           },
@@ -212,13 +160,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "933542779c7a6fc1",
+  "active": "ce3fe23a3881f824",
   "lastOpenFiles": [
-    "Amdahl's law.md",
-    "Parallel programming.md",
-    "Gustafson’s law.md",
-    "Parallelism.md",
     "GPU Programming.md",
+    "Gustafson's law.md",
+    "Parallel programming.md",
+    "Amdahl's law.md",
+    "Parallelism.md",
     "Esercizio Probabilità.md",
     "Probabilità condizionata.md",
     "Funzione di propabilità.md",
