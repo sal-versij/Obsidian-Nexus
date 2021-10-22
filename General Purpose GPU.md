@@ -1,15 +1,16 @@
 # General Purpose GPU
 ## Principal Arguments
-[[Parallel programming]]
 [[Amdahl's law]]
 [[Gustafson's law]]
 [[Parallelism]]
 [[GPU Hardware]]
 [[3D Hardware APIs]]
 [[Stream processing]]
+Program Fl
 ## Secondary Arguments
 [[Concurrency]]
-[[Bandwidth]] and [[latency]]
+[[Bandwidth]]
+[[latency]]
 ## Misc knowledge
 ### Demand & Supply
 #### Demand

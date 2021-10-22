@@ -7,8 +7,11 @@
         "id": "ff779f27a71fd2dd",
         "type": "leaf",
         "state": {
-          "type": "Search on Internet",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "General Purpose GPU.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -74,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "General Purpose GPU.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -90,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "General Purpose GPU.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "General Purpose GPU.md"
+              }
             }
           },
           {
@@ -139,13 +146,13 @@
   },
   "active": "ff779f27a71fd2dd",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Stream processing.md",
     "General Purpose GPU.md",
     "Parallelism.md",
     "Parallel programming.md",
-    "3D Hardware APIs.md",
     "GPU Hardware.md",
+    "Stream processing.md",
+    "Untitled.md",
+    "3D Hardware APIs.md",
     "Insieme degli eventi.md",
     "Concurrency.md",
     "Bandwidth and latency.md"
