@@ -4,18 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "8d69655837dfa353",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Geometria Euclidea.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "8c83c65aa6c5055c",
+        "id": "04141d684e665dba",
         "type": "leaf",
         "state": {
           "type": "Search on Internet",
@@ -29,6 +18,20 @@
     "id": "c635f3ee91e7a78e",
     "type": "split",
     "children": [
+      {
+        "id": "80917102951c7547",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d69655837dfa353",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      },
       {
         "id": "84199faa875733b6",
         "type": "tabs",
@@ -68,8 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -85,7 +87,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Geometria Euclidea.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Geometria Euclidea.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +124,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Geometria Euclidea.md"
-              }
+              "state": {}
             }
           },
           {
@@ -151,17 +149,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8d69655837dfa353",
+  "active": "04141d684e665dba",
   "lastOpenFiles": [
-    "Geometria Euclidea.md",
+    "Vectors.md",
+    "Euclidean Geometry.md",
+    "Untitled.md",
     "Grandezza Vettoriale.md",
     "Grandezza Fisica.md",
     "Fisica.md",
     "Spazio vettoriale.md",
-    "Vettori.md",
     "Grandezza Scalare.md",
     "Sistemi Internazionali.md",
-    "OpenCL C.md",
-    "OpenCL.md"
+    "OpenCL C.md"
   ]
 }

@@ -29,5 +29,7 @@
   "key-promoter",
   "obsidian-plotly",
   "obsidian-plantuml",
-  "obsidian-icons-plugin"
+  "obsidian-icons-plugin",
+  "table-extended",
+  "obsidian-regex-pipeline"
 ]

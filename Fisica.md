@@ -4,4 +4,4 @@ Nata con lo scopo di studiare i [[fenomeni]] naturali al fine di stabilire [[pri
 ```
 
 ## References
-[[Vettori]]
+[[Vectors]]
