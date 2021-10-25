@@ -9,9 +9,28 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Sistemi Internazionali.md",
+            "file": "Grandezza Fisica.md",
             "mode": "source"
           }
+        }
+      },
+      {
+        "id": "0bc5183684b0f434",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Vettori.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "d31958348ccd7091",
+        "type": "leaf",
+        "state": {
+          "type": "Search on Internet",
+          "state": {}
         }
       }
     ],
@@ -77,9 +96,9 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi Internazionali.md",
+                "file": "Vettori.md",
                 "collapseAll": false,
-                "extraContext": true,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -94,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi Internazionali.md",
+                "file": "Vettori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi Internazionali.md"
+                "file": "Vettori.md"
               }
             }
           },
@@ -141,20 +160,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "1c0ac85b52a8c459",
+  "active": "0bc5183684b0f434",
   "lastOpenFiles": [
-    "Sistemi Internazionali.md",
+    "Vettori.md",
+    "Fisica.md",
     "Grandezza Fisica.md",
+    "Sistemi Internazionali.md",
     "OpenCL C.md",
     "OpenCL.md",
     "CUDA vs OpenCL.md",
     "General Purpose GPU.md",
     "GPGPU Programming.md",
-    "GPU Hardware.md",
-    "Host/GPGPU Device Communication.md",
-    "Parallelism.md"
+    "GPU Hardware.md"
   ]
 }

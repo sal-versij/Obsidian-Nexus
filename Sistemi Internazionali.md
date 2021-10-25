@@ -1,8 +1,13 @@
 # Sistemi Internazionali
-Lunghezza|
-Massa
-Tempo
-Intensità di corrente
-Temperatura
-Intensità luminosa
-Quantità di materia
+## Sistema MKSA
+|              Grandezz | Misura      | Sim. |
+| --------------------: | ----------- | :--: |
+|             Lunghezza | metro       |   m  |
+|                 Massa | chilogrammo |  kg  |
+|                 Tempo | secondo     |   s  |
+| Intensità di corrente | ampere      |   A  |
+|           Temperatura | kelvin      |   k  |
+|    Intensità luminosa | candela     |  cd  |
+|   Quantità di materia | mole        |  mol |
+
+---
