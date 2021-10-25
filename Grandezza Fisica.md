@@ -5,3 +5,5 @@ In [[fisica]], una **grandezza** è la proprietà di un [[fenomeno]], [[corpo]] 
 
 ## References
 [[Sistemi Internazionali]]
+[[Grandezza Vettoriale]]
+[[Grandezza Scalare]]
