@@ -8,7 +8,11 @@ In [[mathematics]], a **vector** is an element of a [[vector space]]
 collapse:true
 title:Product Per Scalar
 > With $k$ a scalar and $\vec{v}$ a vector
-> $$k\vec{v}$$
+> $$k\vec{v} = \vec{w}$$
+> Where 
+> - $\vec{w} \parallel \vec{v}$
+> - $|\vec{w}| = |k||\vec{v}|$
+> - $\frac{\vec{w}}{|\vec{w}|}=sign(k) \frac{\vec{v}}{|\vec{v}|}$
 
 Properties
 - Commutativa
@@ -21,7 +25,7 @@ Properties
 collapse:true
 title:Scalar Product
 > With $\vec{u}, \vec{v}$ vectors
-> $\vec{u} \cdot \vec{v}$
+> $$\vec{u} \cdot \vec{v}$$
 
 Properties
 - Commutativa
@@ -47,7 +51,10 @@ Properties
 title:prodotti tripli
 $\vec{a} \cdot (\vec{b} \wedge \vec{c}) = (\vec{a} \wedge \vec{b}) \cdot \vec{c}$
 
-$\vec{a} \cdot (\vec{b} \wedge \vec{c}) = (\vec{a} \wedge \vec{b}) \cdot \vec{c}$
+$\vec{a} \wedge (\vec{b} \wedge \vec{c}) = (\vec{a} \cdot \vec{c})\vec{b} +  (\vec{a} \cdot \vec{b})\vec{c}$
 ```
+### References
+[[Cosin Theorem]]
+[[Sin Theorem]]
 ## Vectors in [[Euclidean Geometry]]
 [[Euclidean Vector]]
