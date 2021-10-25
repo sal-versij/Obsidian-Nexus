@@ -9,13 +9,13 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Frequent Itemsets.md",
+            "file": "Association rule learning.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "228495d4a88f853b",
+        "id": "149e424ae1b396b7",
         "type": "leaf",
         "state": {
           "type": "Search on Internet",
@@ -68,7 +68,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -100,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frequent Itemsets.md",
+                "file": "Association rule learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Frequent Itemsets.md",
+                "file": "Association rule learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Frequent Itemsets.md"
+                "file": "Association rule learning.md"
               }
             }
           },
@@ -168,6 +169,7 @@
   },
   "active": "8a721e23af610214",
   "lastOpenFiles": [
+    "Association rule learning.md",
     "Frequent Itemsets.md",
     "Market-basket.md",
     "Vector.md",
@@ -176,7 +178,6 @@
     "Cosin Theorem Example.excalidraw.md",
     "Vector Space.md",
     "Drawing 2021-10-25 15.56.45.excalidraw.md",
-    "Excalidraw/Cosin Theorem Example.excalidraw.md",
-    "Physics.md"
+    "Excalidraw/Cosin Theorem Example.excalidraw.md"
   ]
 }
