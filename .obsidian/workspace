@@ -32,17 +32,6 @@
           "type": "Search on Internet",
           "state": {}
         }
-      },
-      {
-        "id": "7e1a465724355401",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Vector Space.md",
-            "mode": "source"
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -123,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vector Space.md",
+                "file": "Vector.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vector Space.md",
+                "file": "Vector.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vector Space.md"
+                "file": "Vector.md"
               }
             }
           },
@@ -189,10 +178,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "0dade5209cb3b098",
+  "active": "b7b2d68f410a378e",
   "lastOpenFiles": [
-    "Vector Space.md",
     "Vector.md",
+    "Vector Space.md",
     "Physics.md",
     "Grandezza fisica.md",
     "Euclidean space.md",
