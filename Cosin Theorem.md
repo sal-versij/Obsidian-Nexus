@@ -9,5 +9,3 @@ a^{2} +b^{2} -2ab \, \cos(\gamma)
 \end{gather}
 $$
 ```
-
-[Cosin Theorem Example.excalidraw](Excalidraw/Cosin Theorem Example.excalidraw)

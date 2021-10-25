@@ -2,8 +2,7 @@
 ```ad-def
 In [[mathematics]], a **vector** is an element of a [[vector space]]
 ```
-## Properties
-## Operations
+## Operations & Properties
 ```ad-def
 collapse:true
 title:Product Per Scalar
@@ -48,13 +47,14 @@ Properties
 ```
 
 ```ad-note
-title:prodotti tripli
+title:Prodotti Tripli
 $\vec{a} \cdot (\vec{b} \wedge \vec{c}) = (\vec{a} \wedge \vec{b}) \cdot \vec{c}$
 
 $\vec{a} \wedge (\vec{b} \wedge \vec{c}) = (\vec{a} \cdot \vec{c})\vec{b} +  (\vec{a} \cdot \vec{b})\vec{c}$
 ```
-### References
+
+---
+## References
 [[Cosin Theorem]]
 [[Sin Theorem]]
-## Vectors in [[Euclidean Geometry]]
-[[Euclidean Vector]]
+Vectors in [[Euclidean Geometry]]: [[Euclidean Vector]]
