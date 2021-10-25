@@ -1,0 +1,3 @@
+```ad-def
+In [[mathematics]], [[physics]] and [[engineering]], an **Euclidean vector** or simply a **vector** (sometimes called a **geometric vector** or **spatial vector**) is a geometric object that has *magnitude* and *direction*. Vectors can be added to other vectors according to [[vector algebra]]. A Euclidean vector is frequently represented by a *ray*, or graphically as an arrow connecting an *initial point* $A$ with a *terminal point* $B$, and denoted by $\overrightarrow {AB}$.
+```
