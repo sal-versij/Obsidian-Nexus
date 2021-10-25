@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "8db2e2051fdd2472",
+        "id": "1c0ac85b52a8c459",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OpenCL C.md",
+            "file": "General Purpose GPU.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OpenCL C.md",
+                "file": "General Purpose GPU.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OpenCL C.md",
+                "file": "General Purpose GPU.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OpenCL C.md"
+                "file": "General Purpose GPU.md"
               }
             }
           },
@@ -142,14 +142,14 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8db2e2051fdd2472",
+  "active": "1c0ac85b52a8c459",
   "lastOpenFiles": [
+    "General Purpose GPU.md",
     "OpenCL C.md",
     "OpenCL.md",
     "CUDA vs OpenCL.md",
     "GPGPU Programming.md",
     "GPU Hardware.md",
-    "General Purpose GPU.md",
     "Host/GPGPU Device Communication.md",
     "Parallelism.md",
     "GPGPU Program Flow.md",
