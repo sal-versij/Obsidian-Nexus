@@ -1,8 +1,7 @@
-# Grandezza Fisica
+# Grandezza fisica
 ```ad-def
-In [[fisica]], una **grandezza** è la proprietà di un [[fenomeno]], [[corpo]] o [[sostanza]], che può essere misurata quantitativamente).
+In [[physics]], la **grandezza** è la proprietà di un [[fenomeno]], [[corpo]] o [[sostanza]], che può essere misurata quantitativamente).
 ```
-
 ## References
 [[Sistemi Internazionali]]
 [[Grandezza Vettoriale]]
