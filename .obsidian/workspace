@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OpenCL C.md",
+            "file": "Sistemi Internazionali.md",
             "mode": "source"
           }
         }
@@ -60,7 +60,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -76,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OpenCL C.md",
+                "file": "Sistemi Internazionali.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -93,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OpenCL C.md",
+                "file": "Sistemi Internazionali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OpenCL C.md"
+                "file": "Sistemi Internazionali.md"
               }
             }
           },
@@ -140,10 +141,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "active": "1c0ac85b52a8c459",
   "lastOpenFiles": [
+    "Sistemi Internazionali.md",
+    "Grandezza Fisica.md",
     "OpenCL C.md",
     "OpenCL.md",
     "CUDA vs OpenCL.md",
@@ -151,8 +155,6 @@
     "GPGPU Programming.md",
     "GPU Hardware.md",
     "Host/GPGPU Device Communication.md",
-    "Parallelism.md",
-    "GPGPU Program Flow.md",
-    "Esercizio Probabilità.md"
+    "Parallelism.md"
   ]
 }
