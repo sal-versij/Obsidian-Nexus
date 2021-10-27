@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "c37a8fb3301b5a4e",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Maximal and Closed Frequent Items.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
         "id": "90ce4ea0e627d674",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Association rule learning.md",
-            "mode": "preview"
+            "file": "Apriori.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "f2899f39f567e17b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Anti-monotonicità del supporto.md",
+            "mode": "source"
           }
         }
       }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Association rule learning.md",
+                "file": "Anti-monotonicità del supporto.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Association rule learning.md",
+                "file": "Anti-monotonicità del supporto.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Association rule learning.md"
+                "file": "Anti-monotonicità del supporto.md"
               }
             }
           },
@@ -170,17 +170,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "90ce4ea0e627d674",
+  "active": "f2899f39f567e17b",
   "lastOpenFiles": [
-    "Association rule learning.md",
+    "Anti-monotonicità del supporto.md",
+    "Apriori.md",
     "Maximal and Closed Frequent Items.md",
+    "Association rule learning.md",
+    "Images/Frequent Itemset's Supports.png",
+    "Images/Clsoed & Maximal Frequent Itemset.png",
     "Frequent Itemsets.md",
     "Market-basket.md",
     "Vector.md",
-    "Sin Theorem.md",
-    "Cosin Theorem.md",
-    "Cosin Theorem Example.excalidraw.md",
-    "Vector Space.md",
-    "Drawing 2021-10-25 15.56.45.excalidraw.md"
+    "Sin Theorem.md"
   ]
 }
