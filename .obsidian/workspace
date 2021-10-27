@@ -9,7 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Apriori.md",
+            "file": "A-Priori.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "3eb75bfe58a88af1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Principio A-Priori.md",
             "mode": "source"
           }
         }
@@ -104,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Anti-monotonicità del supporto.md",
+                "file": "A-Priori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Anti-monotonicità del supporto.md",
+                "file": "A-Priori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Anti-monotonicità del supporto.md"
+                "file": "A-Priori.md"
               }
             }
           },
@@ -170,17 +181,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "f2899f39f567e17b",
+  "active": "90ce4ea0e627d674",
   "lastOpenFiles": [
+    "A-Priori.md",
+    "Principio A-Priori.md",
     "Anti-monotonicità del supporto.md",
-    "Apriori.md",
     "Maximal and Closed Frequent Items.md",
     "Association rule learning.md",
     "Images/Frequent Itemset's Supports.png",
     "Images/Clsoed & Maximal Frequent Itemset.png",
     "Frequent Itemsets.md",
     "Market-basket.md",
-    "Vector.md",
-    "Sin Theorem.md"
+    "Vector.md"
   ]
 }
