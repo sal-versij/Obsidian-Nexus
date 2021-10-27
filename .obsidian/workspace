@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "90ce4ea0e627d674",
+        "id": "a8c6323272b55766",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Algoritmi Randomizati.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "8cffdca932125e17",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Algoritmo Multihash.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -79,12 +65,12 @@
     "type": "split",
     "children": [
       {
-        "id": "3997bf450a97d15f",
+        "id": "965b38227c15ed22",
         "type": "tabs",
-        "dimension": 34.08551068883611,
+        "dimension": 32.48106060606061,
         "children": [
           {
-            "id": "8d69655837dfa353",
+            "id": "7b4af79e8756a31a",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -96,7 +82,7 @@
       {
         "id": "731c00c69f250ca4",
         "type": "tabs",
-        "dimension": 65.91448931116389,
+        "dimension": 67.51893939393939,
         "children": [
           {
             "id": "702d074c5e5549f3",
@@ -104,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algoritmi Randomizati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algoritmi Randomizati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Algoritmi Randomizati.md"
-              }
+              "state": {}
             }
           },
           {
@@ -170,17 +152,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "90ce4ea0e627d674",
+  "active": "a8c6323272b55766",
   "lastOpenFiles": [
     "Algoritmi Randomizati.md",
-    "Algoritmo Multihash.md",
-    "A-Priori.md",
-    "Algoritmo Multistage.md",
+    "Algoritmo Toivonen.md",
     "Algoritmo PCY.md",
-    "Metodo della matrice triangolare.md",
-    "Anti-monotonicità del supporto.md",
+    "A-Priori.md",
+    "Frontiera negativa.md",
     "Principio A-Priori.md",
-    "Maximal and Closed Frequent Items.md",
-    "Association rule learning.md"
+    "Algoritmo Multistage.md",
+    "Spazio vettoriale.md",
+    "Algoritmo SON.md",
+    "Algoritmo Multihash.md"
   ]
 }

@@ -1,5 +1,5 @@
 # Algoritmo PCY
-#todo #study #not-understood
+#study #not-understood
 
 > Algoritmo di Park, Chen, Yu
 

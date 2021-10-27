@@ -41,5 +41,5 @@ L'algoritmo termina quando  non ci sono più candidati da esaminare
 ### Algoritmi derivati ottimizzati
 [[Algoritmo PCY]]
 [[Algoritmo Multistage]]
-[[Algoritmo Multihash]]]
+[[Algoritmo Multihash]]
 [[Algoritmi Randomizati]]
