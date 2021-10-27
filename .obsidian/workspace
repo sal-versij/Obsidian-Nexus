@@ -35,14 +35,6 @@
             "mode": "source"
           }
         }
-      },
-      {
-        "id": "149e424ae1b396b7",
-        "type": "leaf",
-        "state": {
-          "type": "Search on Internet",
-          "state": {}
-        }
       }
     ],
     "direction": "vertical"
