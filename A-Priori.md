@@ -39,4 +39,7 @@ L'algoritmo termina quando  non ci sono più candidati da esaminare
 - Supporto di itemset con più di due item
 
 ### Algoritmi derivati ottimizzati
-[[Algoritmo di Park, Chen, Yu (PCY)]]
+[[Algoritmo PCY]]
+[[Algoritmo Multistage]]
+[[Algoritmo Multihash]]]
+[[Algoritmi Randomizati]]

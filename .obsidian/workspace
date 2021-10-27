@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "A-Priori.md",
+            "file": "Algoritmi Randomizati.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Algoritmo di Park, Chen, Yu (PCY).md",
+            "file": "Algoritmo Multihash.md",
             "mode": "source"
           }
         }
@@ -71,7 +71,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algoritmo di Park, Chen, Yu (PCY).md",
+                "file": "Algoritmi Randomizati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algoritmo di Park, Chen, Yu (PCY).md",
+                "file": "Algoritmi Randomizati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algoritmo di Park, Chen, Yu (PCY).md"
+                "file": "Algoritmi Randomizati.md"
               }
             }
           },
@@ -169,17 +170,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8cffdca932125e17",
+  "active": "90ce4ea0e627d674",
   "lastOpenFiles": [
-    "Algoritmo di Park, Chen, Yu (PCY).md",
+    "Algoritmi Randomizati.md",
+    "Algoritmo Multihash.md",
     "A-Priori.md",
+    "Algoritmo Multistage.md",
+    "Algoritmo PCY.md",
     "Metodo della matrice triangolare.md",
     "Anti-monotonicità del supporto.md",
     "Principio A-Priori.md",
     "Maximal and Closed Frequent Items.md",
-    "Association rule learning.md",
-    "Images/Frequent Itemset's Supports.png",
-    "Images/Clsoed & Maximal Frequent Itemset.png",
-    "Frequent Itemsets.md"
+    "Association rule learning.md"
   ]
 }
