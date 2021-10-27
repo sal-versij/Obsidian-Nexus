@@ -39,6 +39,16 @@
       },
       "command": true,
       "title": "Attention"
+    },
+    "code": {
+      "type": "code",
+      "color": "0, 102, 58",
+      "icon": {
+        "name": "code",
+        "type": "font-awesome"
+      },
+      "command": true,
+      "title": "Code"
     }
   },
   "syntaxHighlight": true,
