@@ -5,3 +5,4 @@ Nata con lo scopo di studiare i [[fenomeni]] naturali al fine di stabilire [[pri
 ## Arguments
 - [[Grandezza fisica]]
 - [[Cinematica]]
+- [[Dinamica]]

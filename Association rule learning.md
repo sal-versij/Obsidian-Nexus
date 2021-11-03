@@ -33,7 +33,7 @@ Confidence is an indication of how often the rule has been found to be true.
 
 Confidence is defined as:
 
-$$\mathrm {Conf} (X\Rightarrow Y)=\mathrm {Supp} (X\cup Y)/\mathrm {Supp} (X)$$
+$$\mathrm {Conf} (X\Rightarrow Y)=\frac{\mathrm{Supp}X\cup Y}{\mathrm{Supp}(X)}$$
 ```
 
 ```ad-def

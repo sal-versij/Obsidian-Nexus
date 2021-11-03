@@ -4,34 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "8a721e23af610214",
+        "id": "bded7aacad6b9f06",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Association rule learning.md",
+            "file": "Newton's Laws.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "2ca7cae09365bd94",
+        "id": "47da74ddf75405a4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Maximal and Closed Frequent Items.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "d43bf00e23544893",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Frequent Itemsets.md",
+            "file": "conflict-files-obsidian-git.md",
             "mode": "source"
           }
         }
@@ -61,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "begin",
+                "query": "accel",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -115,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Maximal and Closed Frequent Items.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Maximal and Closed Frequent Items.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Maximal and Closed Frequent Items.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -181,17 +170,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "2ca7cae09365bd94",
+  "active": "47da74ddf75405a4",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Newton's Laws.md",
+    "Dinamica.md",
+    "Leggi del moto.md",
+    "Meccanica Classica.md",
+    "Glossario.dinamica.md",
+    "Cinematica.md",
     "Maximal and Closed Frequent Items.md",
-    "Association rule learning.md",
-    "Frequent Itemsets.md",
-    "Market-basket.md",
-    "Vector.md",
-    "Sin Theorem.md",
-    "Cosin Theorem.md",
-    "Cosin Theorem Example.excalidraw.md",
-    "Vector Space.md",
-    "Drawing 2021-10-25 15.56.45.excalidraw.md"
+    "Physics.md",
+    "Moto Rettilineo.md"
   ]
 }
