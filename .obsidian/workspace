@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Newton's Laws.md",
+            "file": "Force's Laws.md",
             "mode": "source"
           }
         }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Newton's Laws.md",
+                "file": "Force's Laws.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Newton's Laws.md",
+                "file": "Force's Laws.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Newton's Laws.md"
+                "file": "Force's Laws.md"
               }
             }
           },
@@ -162,6 +162,7 @@
   },
   "active": "bded7aacad6b9f06",
   "lastOpenFiles": [
+    "Force's Laws.md",
     "Newton's Laws.md",
     "conflict-files-obsidian-git.md",
     "Dinamica.md",
@@ -170,7 +171,6 @@
     "Glossario.dinamica.md",
     "Cinematica.md",
     "Maximal and Closed Frequent Items.md",
-    "Physics.md",
-    "Moto Rettilineo.md"
+    "Physics.md"
   ]
 }

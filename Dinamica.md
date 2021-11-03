@@ -7,4 +7,4 @@
 [[Meccanica Classica]]
 ### Movement's Laws
 - [[Newton's Laws]]
-- [[Forces's Laws]]
+- [[Force's Laws]]
