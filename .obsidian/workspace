@@ -13,7 +13,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "handouts/metodi statistici 2021-10-12.pdf"
+                "file": "handouts/metodi statistici 2021-10-14.pdf"
               }
             }
           },
@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Legge delle alternative.md",
+                "file": "Combinatorics.md",
                 "mode": "source"
               }
             }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Legge delle alternative.md",
+                "file": "Combinatorics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Legge delle alternative.md",
+                "file": "Combinatorics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Legge delle alternative.md"
+                "file": "Combinatorics.md"
               }
             }
           },
@@ -177,15 +178,15 @@
   },
   "active": "bded7aacad6b9f06",
   "lastOpenFiles": [
+    "Combinatorics.md",
+    "Formula di Bayes.md",
+    "handouts/metodi statistici 2021-10-14.pdf",
+    "handouts/metodi statistici 2021-10-12.pdf",
     "Legge delle alternative.md",
     "Partizione dell'Insieme degli Eventi.md",
     "Insieme degli eventi.md",
-    "handouts/metodi statistici 2021-10-12.pdf",
     "Funzione di propabilità.md",
     "Probabilità condizionata.md",
-    "Teorema della catena.md",
-    "spazio della propabilità.md",
-    "handouts/metodi statistici 2021-10-07.pdf",
-    "handouts/metodi statistici 2021-10-14.pdf"
+    "Teorema della catena.md"
   ]
 }
