@@ -4,14 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "8d69655837dfa353",
-        "type": "leaf",
-        "state": {
-          "type": "graph",
-          "state": {}
-        }
-      },
-      {
         "id": "001d1670e7b0f335",
         "type": "leaf",
         "state": {
@@ -23,7 +15,7 @@
         }
       },
       {
-        "id": "dc8b92b59bd3826d",
+        "id": "c04531cbe9dcaa95",
         "type": "leaf",
         "state": {
           "type": "Search on Internet",
@@ -84,9 +76,24 @@
     "type": "split",
     "children": [
       {
+        "id": "332aa71a1fdc2a3e",
+        "type": "tabs",
+        "dimension": 29.964328180737215,
+        "children": [
+          {
+            "id": "8d69655837dfa353",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
         "id": "3997bf450a97d15f",
         "type": "tabs",
-        "dimension": 34.08551068883611,
+        "dimension": 23.781212841854934,
         "children": [
           {
             "id": "bded7aacad6b9f06",
@@ -104,7 +111,7 @@
       {
         "id": "731c00c69f250ca4",
         "type": "tabs",
-        "dimension": 65.91448931116389,
+        "dimension": 46.25445897740785,
         "children": [
           {
             "id": "702d074c5e5549f3",
@@ -112,6 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Forza di attrito radente.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,6 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Forza di attrito radente.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +158,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Forza di attrito radente.md"
+              }
             }
           },
           {
@@ -174,10 +185,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8d69655837dfa353",
+  "active": "001d1670e7b0f335",
   "lastOpenFiles": [
-    "Index.md",
     "Forza di attrito radente.md",
+    "Index.md",
     "Moto lungo un piano inclinato.md",
     "Force's Laws.md",
     "Dinamica.md",
