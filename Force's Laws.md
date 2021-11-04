@@ -13,20 +13,20 @@ $$
 $$
 \begin{gather}
 F=mg \newline
-F=G \frac{M_{T}m}{(R_{T}+h)^{2}}
+F=G \frac{M_{T}m}{(R_{T}+h)^{2}} = G \frac{M_{T}}{R_{T}^{2}}m = mg
 \end{gather}
 $$
 ## Forza della molla
+Da [[L. Hooke]]
 $$
 \begin{gather}
+F=kx
+\vec{F}=-k\vec{x}=-kx(\hat{x})
 \end{gather}
 $$
 ## Applicazioni
 ### Caso Statico
-$$
-\begin{gather}
-\end{gather}
-$$
+#### 
 ### Caso Dinamico
 $$
 \begin{gather}
