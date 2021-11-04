@@ -9,17 +9,20 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Forza di attrito radente.md",
+            "file": "Moto lungo un piano inclinato.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "c04531cbe9dcaa95",
+        "id": "5a622bf0f1b6ef77",
         "type": "leaf",
         "state": {
-          "type": "Search on Internet",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Forza di attrito radente.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -185,17 +188,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "001d1670e7b0f335",
+  "active": "5a622bf0f1b6ef77",
   "lastOpenFiles": [
     "Forza di attrito radente.md",
-    "Index.md",
+    "Reazione Vincolante.md",
     "Moto lungo un piano inclinato.md",
     "Force's Laws.md",
+    "Reazione Normale.md",
+    "Index.md",
     "Dinamica.md",
     "Physics.md",
     "Grandezza fisica.md",
-    "Grandezza Vettoriale.md",
-    "Euclidean Vector.md",
-    "Grandezza Scalare.md"
+    "Grandezza Vettoriale.md"
   ]
 }

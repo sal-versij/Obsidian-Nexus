@@ -9,13 +9,16 @@ $F_s$
 $F_k$
 
 !note Risultati sperimentali sull'attrito
+
 - Proporzionalità al modulo della forza normale
 - Indipendenza dall'area di contatto
 - Dipendenza dalle superfici a contatto
 - $\vec{F_s}$ è opposta alla forza applicata e può assumere valori
-  $$F_s\leq \mu_sN$$
+  $F_s\leq \mu_sN$
 - $\vec{F_k}$ è opposta alla direzione del moto:
-  $$F_k = \mu_kN$$
+  $F_k = \mu_kN$
 
 !theorem
 $\vec{F_{attr}}$
+## Coeficiente di attrito
+$\mu: [0.05,1.5]$
