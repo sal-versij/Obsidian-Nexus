@@ -48,3 +48,14 @@ $$
 $$
 ### Caso Dinamico
 - Corpo tirato mediante una fune
+  - Massa trascurabile
+  - Inesgtensibile/Indeformabile
+  - Carico di rottura
+  - Fune non rettilinea
+    - carrucola
+  - Moto in trazione e compressione tramite una baccheta solida 
+- Corpo in movimento accellerato
+
+### Corpo libero
+- [[Moto lungo un piano inclinato]]
+- Blocco sospeso ad una puleggia

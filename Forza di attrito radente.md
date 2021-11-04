@@ -1,0 +1,1 @@
+# Forza di attrito radente
