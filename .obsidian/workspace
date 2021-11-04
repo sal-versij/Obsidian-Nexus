@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Combinatorics.md",
+                "file": "Combinazioni.md",
                 "mode": "source"
               }
             }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Combinatorics.md",
+                "file": "Combinazioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Combinatorics.md",
+                "file": "Combinazioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Combinatorics.md"
+                "file": "Combinazioni.md"
               }
             }
           },
@@ -178,15 +178,15 @@
   },
   "active": "bded7aacad6b9f06",
   "lastOpenFiles": [
+    "Combinazioni.md",
     "Combinatorics.md",
+    "Disposizioni.md",
+    "Permutazioni.md",
     "Formula di Bayes.md",
     "handouts/metodi statistici 2021-10-14.pdf",
     "handouts/metodi statistici 2021-10-12.pdf",
     "Legge delle alternative.md",
     "Partizione dell'Insieme degli Eventi.md",
-    "Insieme degli eventi.md",
-    "Funzione di propabilità.md",
-    "Probabilità condizionata.md",
-    "Teorema della catena.md"
+    "Insieme degli eventi.md"
   ]
 }
