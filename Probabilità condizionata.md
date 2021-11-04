@@ -7,7 +7,7 @@ dove $P[F]\gt0$
 ```
 
 ```ad-note
-$$P[E|F] = \frac{P[e\cap F]}{P[F]} \implies P[e\cap F] = P[E|F] P[F] = P[F|E] P[E]$$
+$$P[E|F] = \frac{P[e\cap F]}{P[F]} \implies P[e\cap F] = P[E|F] \cdot P[F] = P[F|E] \cdot P[E]$$
 ```
 
 ## References

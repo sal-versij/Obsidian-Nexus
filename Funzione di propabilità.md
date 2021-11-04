@@ -13,7 +13,8 @@ Che soddisfi i seguenti assiomi
 1. $P[\bar{E}] = -P[E]$
 2. $F\subseteq E \implies P[F]\leq P[E]$
 3. $P[E\cup F] = P[E]+P[F]-P[E\cap F]$
-4. $P[\bigcup\limits_{i=1}^{n}E_i] = \sum\limits_{i}^{n}P[E_i] - \sum\limits_{i<j}^{n}P[E_i\cap E_j] + \dots +(-1)^{n+1}(P[E_1\cap E_2 \cap \dots \cap E_n])$
+4. $P[\bigcup\limits_{i=1}^{n}E_i] = \sum\limits_{i}^{n}P[E_i] - \sum\limits_{i<j}^{n}P[E_i\cap E_j] + \dots +(-1)^{n+1}(P[E_1\cap E_2 \cap \ldots \cap E_n])$
+
 
 ## References
 [[Probabilità condizionata]]
