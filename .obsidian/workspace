@@ -9,13 +9,24 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "spazio della propabilità.md",
+            "file": "Funzione di propabilità.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "aaf39d12e012691c",
+        "id": "2e37a74649c658b0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Teorema della catena.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "76d6f7510874c7b2",
         "type": "leaf",
         "state": {
           "type": "pdf",
@@ -70,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -102,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "handouts/metodi statistici 2021-10-12.pdf",
+                "file": "Teorema della catena.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "handouts/metodi statistici 2021-10-12.pdf",
+                "file": "Teorema della catena.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "handouts/metodi statistici 2021-10-12.pdf"
+                "file": "Teorema della catena.md"
               }
             }
           },
@@ -168,17 +180,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "aaf39d12e012691c",
+  "active": "2e37a74649c658b0",
   "lastOpenFiles": [
-    "handouts/metodi statistici 2021-10-12.pdf",
-    "handouts/metodi statistici 2021-10-07.pdf",
-    "spazio della propabilità.md",
+    "Teorema della catena.md",
     "Funzione di propabilità.md",
+    "Probabilità condizionata.md",
+    "handouts/metodi statistici 2021-10-12.pdf",
+    "spazio della propabilità.md",
+    "handouts/metodi statistici 2021-10-07.pdf",
+    "handouts/metodi statistici 2021-10-14.pdf",
     "handouts/metodi statistici 2021-10-19.pdf",
-    "handouts/metodi statistici 2021-11-02.pdf",
-    "handouts/metodi statistici 2021-10-28.pdf",
-    "handouts/metodi statistici 2021-10-26.pdf",
-    "handouts/metodi statistici 2021-10-21.pdf",
-    "Force's Laws.md"
+    "Insieme degli eventi.md",
+    "handouts/metodi statistici 2021-11-02.pdf"
   ]
 }
