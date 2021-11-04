@@ -18,6 +18,7 @@ F=G \frac{M_{T}m}{(R_{T}+h)^{2}} = G \frac{M_{T}}{R_{T}^{2}}m = mg
 $$
 ## Forza della molla
 Da [[L. Hooke]]
+
 $$
 \begin{gather}
 F=kx
@@ -26,9 +27,24 @@ F=kx
 $$
 ## Applicazioni
 ### Caso Statico
-#### 
-### Caso Dinamico
+#### Corpo in quiete su un tavolo
+Reazione Normale $\vec{N}$
+
 $$
 \begin{gather}
+\text{Corpo in quiete}\implies \vec{a}=0 \implies \newline
+\vec{P} + \vec{N} = m\vec{a} = 0 \newline
+\vec{P} = -\vec{N} \newline
+N = |\vec{N}| = |\vec{P}| = mg
 \end{gather}
 $$
+#### Massa sospesa ad una molla
+Tensione della molla $\vec{T}$
+(Molla di massa trascurabile)
+$$
+\begin{gather}
+\text{Corpo in quiete}\implies \vec{a}=0 \implies \vec{P} + \vec{T} = 0
+\end{gather}
+$$
+### Caso Dinamico
+- Corpo tirato mediante una fune
