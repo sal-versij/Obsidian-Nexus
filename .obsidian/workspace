@@ -4,32 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e0a9a9f8076132e0",
-        "type": "split",
-        "children": [
-          {
-            "id": "db0cdb89ecd718b0",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "handouts/metodi statistici 2021-10-14.pdf"
-              }
-            }
-          },
-          {
-            "id": "bded7aacad6b9f06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Densità di variabile aleatoria.md",
-                "mode": "source"
-              }
-            }
+        "id": "bded7aacad6b9f06",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Force's Laws.md",
+            "mode": "source"
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -110,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Densità di variabile aleatoria.md",
+                "file": "Force's Laws.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Densità di variabile aleatoria.md",
+                "file": "Force's Laws.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Densità di variabile aleatoria.md"
+                "file": "Force's Laws.md"
               }
             }
           },
@@ -178,15 +161,15 @@
   },
   "active": "bded7aacad6b9f06",
   "lastOpenFiles": [
+    "Force's Laws.md",
+    "Dinamica.md",
+    "Physics.md",
+    "Grandezza fisica.md",
+    "Grandezza Vettoriale.md",
+    "Euclidean Vector.md",
+    "Grandezza Scalare.md",
+    "Sistemi Internazionali.md",
     "Densità di variabile aleatoria.md",
-    "Variabile Aleatoria.md",
-    "Funzione di ripartizione.md",
-    "Proprietà.md",
-    "Funzione di propabilità.md",
-    "Combinazioni.md",
-    "Disposizioni.md",
-    "Combinatorics.md",
-    "Permutazioni.md",
-    "Formula di Bayes.md"
+    "handouts/metodi statistici 2021-10-14.pdf"
   ]
 }
