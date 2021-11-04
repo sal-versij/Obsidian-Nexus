@@ -5,3 +5,4 @@ Dato uno spazio di probabilità $(\Omega,\mathscr{F},P)$ si dice variabile aleat
 $A_t = \{\omega|X(\omega)\leq t\} \in \mathscr{F} \; \forall t\in\mathbb{R}$
 ## References
 [[Funzione di ripartizione]]
+[[Densità di variabile aleatoria]]

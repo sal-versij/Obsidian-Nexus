@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Funzione di ripartizione.md",
+                "file": "Densità di variabile aleatoria.md",
                 "mode": "source"
               }
             }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Funzione di ripartizione.md",
+                "file": "Densità di variabile aleatoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Funzione di ripartizione.md",
+                "file": "Densità di variabile aleatoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Funzione di ripartizione.md"
+                "file": "Densità di variabile aleatoria.md"
               }
             }
           },
@@ -178,15 +178,15 @@
   },
   "active": "bded7aacad6b9f06",
   "lastOpenFiles": [
-    "Funzione di ripartizione.md",
+    "Densità di variabile aleatoria.md",
     "Variabile Aleatoria.md",
+    "Funzione di ripartizione.md",
     "Proprietà.md",
     "Funzione di propabilità.md",
     "Combinazioni.md",
     "Disposizioni.md",
     "Combinatorics.md",
     "Permutazioni.md",
-    "Formula di Bayes.md",
-    "handouts/metodi statistici 2021-10-14.pdf"
+    "Formula di Bayes.md"
   ]
 }
