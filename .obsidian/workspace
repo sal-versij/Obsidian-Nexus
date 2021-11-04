@@ -21,7 +21,7 @@
           "type": "markdown",
           "state": {
             "file": "Forza di attrito radente.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -71,8 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -191,6 +190,7 @@
   "active": "5a622bf0f1b6ef77",
   "lastOpenFiles": [
     "Forza di attrito radente.md",
+    "Images/determinare-mu-statico.jpg",
     "Reazione Vincolante.md",
     "Moto lungo un piano inclinato.md",
     "Force's Laws.md",
@@ -198,7 +198,6 @@
     "Index.md",
     "Dinamica.md",
     "Physics.md",
-    "Grandezza fisica.md",
-    "Grandezza Vettoriale.md"
+    "Grandezza fisica.md"
   ]
 }

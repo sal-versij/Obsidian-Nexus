@@ -22,3 +22,22 @@ $F_k$
 $\vec{F_{attr}}$
 ## Coeficiente di attrito
 $\mu: [0.05,1.5]$
+$\mu_k\lt\mu_s$
+### Determinazione Sperimentale
+#### Caso Statico
+![[determinare-mu-statico.jpg]]
+
+$$
+\begin{gather}
+\vec{F_s} + \vec{N} + \vec{P} = 0 \newline
+\begin{cases}
+F_s\leq\mu_sN \\
+N &= mg\cos\theta \\
+-F_s + mg\sin\theta &=0
+\end{cases}
+F_s \text{ massima per } \thetha = \thetha_s \newline
+\mu_smg\cos\theta_s=mg\sin\theta_s\newline
+\implies \mu_s=\tan\theta_s
+\end{gather}
+$$
+#### Caso Dinamico
