@@ -9,8 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Force's Laws.md",
+            "file": "spazio della propabilità.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "aaf39d12e012691c",
+        "type": "leaf",
+        "state": {
+          "type": "pdf",
+          "state": {
+            "file": "handouts/metodi statistici 2021-10-12.pdf"
           }
         }
       }
@@ -39,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "accel",
+                "query": "kolmo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -60,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -93,14 +102,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Force's Laws.md",
+                "file": "handouts/metodi statistici 2021-10-12.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -110,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Force's Laws.md",
+                "file": "handouts/metodi statistici 2021-10-12.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Force's Laws.md"
+                "file": "handouts/metodi statistici 2021-10-12.pdf"
               }
             }
           },
@@ -157,20 +166,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "bded7aacad6b9f06",
+  "active": "aaf39d12e012691c",
   "lastOpenFiles": [
-    "Force's Laws.md",
-    "Newton's Laws.md",
-    "conflict-files-obsidian-git.md",
-    "Dinamica.md",
-    "Leggi del moto.md",
-    "Meccanica Classica.md",
-    "Glossario.dinamica.md",
-    "Cinematica.md",
-    "Maximal and Closed Frequent Items.md",
-    "Physics.md"
+    "handouts/metodi statistici 2021-10-12.pdf",
+    "handouts/metodi statistici 2021-10-07.pdf",
+    "spazio della propabilità.md",
+    "Funzione di propabilità.md",
+    "handouts/metodi statistici 2021-10-19.pdf",
+    "handouts/metodi statistici 2021-11-02.pdf",
+    "handouts/metodi statistici 2021-10-28.pdf",
+    "handouts/metodi statistici 2021-10-26.pdf",
+    "handouts/metodi statistici 2021-10-21.pdf",
+    "Force's Laws.md"
   ]
 }
