@@ -1,12 +1,7 @@
 [
-  "calendar",
   "cycle-through-panes",
-  "obsidian-excalidraw-plugin",
-  "folder-note-plugin",
   "markdown-prettifier",
   "obsidian-git",
-  "obsidian-outliner",
-  "url-into-selection",
   "darlal-switcher-plus",
   "search-on-internet",
   "cm-show-whitespace-obsidian",
@@ -16,9 +11,6 @@
   "obsidian-tracker",
   "vantage-obsidian",
   "obsidian-admonition",
-  "obsidian-checklist-plugin",
-  "convert-url-to-iframe",
-  "dataview",
   "cm-editor-syntax-highlight-obsidian",
   "quick-latex",
   "obsidian-rich-links",
@@ -26,10 +18,7 @@
   "obsidian-filename-heading-sync",
   "obsidian-copy-block-link",
   "obsidian-text-expander",
-  "key-promoter",
   "obsidian-plotly",
   "obsidian-plantuml",
-  "obsidian-icons-plugin",
-  "table-extended",
-  "obsidian-regex-pipeline"
+  "table-extended"
 ]
