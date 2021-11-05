@@ -30,12 +30,14 @@ $\mu_k\lt\mu_s$
 $$
 \begin{gather}
 \vec{F_s} + \vec{N} + \vec{P} = 0 \newline
+\newline
 \begin{cases}
 F_s\leq\mu_sN \\
 N &= mg\cos\theta \\
 -F_s + mg\sin\theta &=0
-\end{cases}
-F_s \text{ massima per } \thetha = \thetha_s \newline
+\end{cases}\newline
+\newline
+F_s \text{ massima per } \theta = \theta_s \newline
 \mu_smg\cos\theta_s=mg\sin\theta_s\newline
 \implies \mu_s=\tan\theta_s
 \end{gather}
