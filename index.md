@@ -1,3 +1,6 @@
-# Nexus
+# Index
 ## Hubs
-- [[GPGPU Device Communication]]
+- [[General Purpose GPU]]
+- [[Physics]]
+- [[Mathematics]]
+- [[Market-basket]]

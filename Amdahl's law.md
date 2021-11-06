@@ -1,4 +1,4 @@
-### Amdahl’s law
+# Amdahl's law
 $$
 S = \frac{1}{\frac{p_1}{s_1} + \frac{p_2}{s_2} + ... + \frac{p_r}{s_r}}
 $$

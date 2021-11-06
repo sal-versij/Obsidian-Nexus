@@ -4,7 +4,7 @@
 [[Gustafson's law]]
 [[Parallelism]]
 [[GPU Hardware]]
-[[Stream processing]]
+[[Stream Processing]]
 [[GPGPU Programming]]
 [[CUDA vs OpenCL]]
 ## Secondary Arguments

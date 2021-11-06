@@ -1,4 +1,4 @@
-# Insieme degli eventi $\mathscr{F}$
+# Insieme degli eventi
 ```ad-def
 > Una $\sigma$-algebra che rispetti i seguenti assiomi
 1. $\Omega\in\mathscr{F}$

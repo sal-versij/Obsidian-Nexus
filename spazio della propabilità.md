@@ -1,4 +1,4 @@
-# spazio della propabilità
+# Spazio della Propabilità
 ```ad-def
 Dati:
 $\Omega$ Campo campionario

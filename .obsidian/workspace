@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "a8c6323272b55766",
+        "id": "dc424b0e51ed3dfb",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Algoritmo A-Priori.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -36,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "begin",
+                "query": "tag:#not-understood",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,12 +56,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -90,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Algoritmo A-Priori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Algoritmo A-Priori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Algoritmo A-Priori.md"
+              }
             }
           },
           {
@@ -152,17 +159,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "a8c6323272b55766",
+  "active": "dc424b0e51ed3dfb",
   "lastOpenFiles": [
-    "Algoritmi Randomizati.md",
-    "Algoritmo Toivonen.md",
-    "Algoritmo PCY.md",
-    "A-Priori.md",
-    "Frontiera negativa.md",
+    "Algoritmo A-Priori.md",
     "Principio A-Priori.md",
-    "Algoritmo Multistage.md",
-    "Spazio vettoriale.md",
+    "Anti-monotonicità del supporto.md",
+    "Frequent Itemset.md",
+    "Frontiera negativa.md",
+    "General Purpose GPU.md",
+    "Algoritmo Toivonen.md",
+    "Algoritmi Randomizati.md",
     "Algoritmo SON.md",
-    "Algoritmo Multihash.md"
+    "Vector Space.md"
   ]
 }

@@ -1,3 +1,4 @@
+# Gustafson's law
 ### Gustafson's law
 ```ad-def
 Gustafson's law addresses the shortcomings of [[Amdahl's law]], which is based on the assumption of a fixed problem size, that is of an execution workload that does not change with respect to the improvement of the resources

@@ -6,7 +6,7 @@
 
 ```ad-solution
 title: Esercizio 1
-collapse:none
+collapse:true
 
 Casi possibili: $52!$
 

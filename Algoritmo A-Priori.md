@@ -1,4 +1,6 @@
-# A-Priori
+# Algoritmo A-Priori
+> Apriori is an algorithm for [[frequent itemset]] mining and [[association rule learning]] over relational [[database]]s
+
 ````ad-def
 collapse:true
 title: Approccio Naive
@@ -11,8 +13,8 @@ Il metodo naive è intrattabile poichè esamina troppi candidati.
 ```
 ````
 
-## Algoritmo [[A-Priori]]
 Il [[Principio A-Priori]] suggerisce un approccio [[bottom-up]] in cui:
+
 - Gli itemset vengono ricercati per cardinalità crescente
 - Se un itemset di cardinalità $k$ non è frequente, allora non occorre estenderlo e costruire un itemset con $k+1$ item
 
@@ -30,15 +32,13 @@ Il [[Principio A-Priori]] suggerisce un approccio [[bottom-up]] in cui:
    4. Costruisci l'insieme $L_{k+1}$ formato da tutti gli itemset di $C_{k+1}$ frequenti
 L'algoritmo termina quando  non ci sono più candidati da esaminare
 ```
-
-### Ottimizzazioni Memoria
+## Ottimizzazioni Memoria
 - Supporti dei singoli item
 - Supporti delle coppie di item
   - Metodo della matrice triangolare
   - metodo delle triple
 - Supporto di itemset con più di due item
-
-### Algoritmi derivati ottimizzati
+## Algoritmi derivati ottimizzati
 [[Algoritmo PCY]]
 [[Algoritmo Multistage]]
 [[Algoritmo Multihash]]
