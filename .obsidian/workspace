@@ -13,6 +13,28 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "1ea58c54887a8a07",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Amdahl's law.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "2e272dd260114695",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "conflict-files-obsidian-git.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -93,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algoritmo A-Priori.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algoritmo A-Priori.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algoritmo A-Priori.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -159,8 +181,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "dc424b0e51ed3dfb",
+  "active": "2e272dd260114695",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Amdahl's law.md",
     "Algoritmo A-Priori.md",
     "Principio A-Priori.md",
     "Anti-monotonicità del supporto.md",
@@ -168,8 +192,6 @@
     "Frontiera negativa.md",
     "General Purpose GPU.md",
     "Algoritmo Toivonen.md",
-    "Algoritmi Randomizati.md",
-    "Algoritmo SON.md",
-    "Vector Space.md"
+    "Algoritmi Randomizati.md"
   ]
 }

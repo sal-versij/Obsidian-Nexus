@@ -1,14 +1,14 @@
 # Maximal and Closed Frequent Items
-A variant of [[Association rule learning]] consiste nella ricerca di **Maximal [[Frequent Itemset]]** or **Closed [[Frequent Itemset]]**.
+A variant of [[Association rule learning]] consists in searching **Maximal [[Frequent Itemsets]]** or **Closed [[Frequent Itemsets]]**.
 
 ```ad-def
-title:Insieme frequente chiuso
-se non esiste un suo super-insieme che ha lo stesso supporto.
+title:Closed [[Frequent Itemsets]]
+Non esiste un suo super-insieme che ha lo stesso supporto.
 ```
 
 ```ad-def
-title:Insieme frequente massimale
-se non esiste un suo super-insieme frequente.
+title:Maximal [[Frequent Itemsets]]
+Non esiste un suo super-insieme frequente.
 ```
 
 ```ad-note
