@@ -1,10 +1,10 @@
 {
   "main": {
-    "id": "f85d178474946e5f",
+    "id": "f9e1c6186b1fae57",
     "type": "split",
     "children": [
       {
-        "id": "dc75f0e955ec44e2",
+        "id": "e130f76fab42d765",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -66,7 +66,7 @@
       {
         "id": "332aa71a1fdc2a3e",
         "type": "tabs",
-        "dimension": 29.964328180737215,
+        "dimension": 39.31357254290172,
         "children": [
           {
             "id": "8d69655837dfa353",
@@ -79,27 +79,9 @@
         ]
       },
       {
-        "id": "3997bf450a97d15f",
-        "type": "tabs",
-        "dimension": 23.781212841854934,
-        "children": [
-          {
-            "id": "bded7aacad6b9f06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Moto lungo un piano inclinato.md",
-                "mode": "source"
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "731c00c69f250ca4",
         "type": "tabs",
-        "dimension": 46.25445897740785,
+        "dimension": 60.68642745709829,
         "children": [
           {
             "id": "702d074c5e5549f3",
@@ -153,7 +135,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "dc75f0e955ec44e2",
+  "active": "e130f76fab42d765",
   "lastOpenFiles": [
     "Moto lungo un piano inclinato.md",
     "Forza di attrito radente.md",
