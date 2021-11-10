@@ -4,23 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "22c04a41095b1555",
+        "id": "cc7bcea64d60c50d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Conflict files.md",
+            "file": "Cinematica.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "08077308577efedb",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Moto Rettilineo Uniformemente Accelerato.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "22916069f2341ead",
+        "id": "8aeaec8cc5025070",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "conflict-files-obsidian-git.md",
+            "file": "Moto Rettilineo.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "a803d14dc6cb1df0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Moto Rettilineo Uniforme.md",
             "mode": "source"
           }
         }
@@ -71,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -103,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Moto Rettilineo Uniformemente Accelerato.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Moto Rettilineo Uniformemente Accelerato.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "Moto Rettilineo Uniformemente Accelerato.md"
               }
             }
           }
@@ -151,19 +174,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "22916069f2341ead",
+  "active": "08077308577efedb",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Moto Rettilineo Uniformemente Accelerato.md",
+    "Cinematica.md",
+    "Moto Rettilineo Uniforme.md",
+    "Moto Rettilineo.md",
     "Conflict files.md",
+    "conflict-files-obsidian-git.md",
     "Moto lungo un piano inclinato.md",
     "Forza di attrito radente.md",
     "Images/determinare-mu-statico.jpg",
-    "Reazione Vincolante.md",
-    "Force's Laws.md",
-    "Reazione Normale.md",
-    "Index.md",
-    "Dinamica.md"
+    "Reazione Vincolante.md"
   ]
 }
