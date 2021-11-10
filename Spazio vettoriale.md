@@ -1,4 +1,4 @@
-# Spazio vettoriale
+# Spazio Vettoriale
 ```ad-def
 In [[matematica]], uno **spazio vettoriale**, anche detto **spazio lineare**, è una [[struttura algebrica]] composta da:
 

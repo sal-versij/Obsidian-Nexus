@@ -1,4 +1,4 @@
-# Frequent Itemsets
+# Frequent Itemset
 In the [[Market-basket]] analysis a curious problem is finding the **frequent itemsets**
 
 ```ad-def

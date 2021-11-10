@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "e130f76fab42d765",
+        "id": "22c04a41095b1555",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Conflict files.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "22916069f2341ead",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "conflict-files-obsidian-git.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -89,6 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +142,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "conflict-files-obsidian-git.md"
+              }
             }
           }
         ]
@@ -135,8 +153,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "e130f76fab42d765",
+  "active": "22916069f2341ead",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Conflict files.md",
     "Moto lungo un piano inclinato.md",
     "Forza di attrito radente.md",
     "Images/determinare-mu-statico.jpg",
@@ -144,8 +164,6 @@
     "Force's Laws.md",
     "Reazione Normale.md",
     "Index.md",
-    "Dinamica.md",
-    "Physics.md",
-    "Grandezza fisica.md"
+    "Dinamica.md"
   ]
 }
