@@ -1,4 +1,5 @@
 # Moto Rettilineo Uniforme
+#todo #study  #physics
 !def
 $a_x=0$
 $v_x(t)=\text{costante}$

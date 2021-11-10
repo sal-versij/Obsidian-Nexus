@@ -10,50 +10,28 @@
           "type": "markdown",
           "state": {
             "file": "Cinematica.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "e28bfd2ffafb563f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Moto Parabolico.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "08077308577efedb",
+        "id": "05fcdc0edb0b395e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Moto Rettilineo Uniformemente Accelerato.md",
+            "file": "Moto Circolare Uniforme.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "8aeaec8cc5025070",
+        "id": "9582210ddcd25dd9",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Moto Rettilineo.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "a803d14dc6cb1df0",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Moto Rettilineo Uniforme.md",
+            "file": "Cinematica Rotazionale.md",
             "mode": "source"
           }
         }
@@ -137,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Moto Parabolico.md",
+                "file": "Cinematica Rotazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Moto Parabolico.md",
+                "file": "Cinematica Rotazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Moto Parabolico.md"
+                "file": "Cinematica Rotazionale.md"
               }
             }
           }
@@ -188,17 +166,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e28bfd2ffafb563f",
+  "active": "9582210ddcd25dd9",
   "lastOpenFiles": [
-    "Moto Parabolico.md",
+    "Cinematica Rotazionale.md",
+    "Moto Circolare Uniforme.md",
+    "Untitled.md",
+    "Cinematica.md",
+    "Accellerazione nel moto piano.md",
     "Moto Rettilineo Uniformemente Accelerato.md",
     "Moto Rettilineo.md",
-    "Cinematica.md",
     "Moto Rettilineo Uniforme.md",
-    "Conflict files.md",
-    "conflict-files-obsidian-git.md",
-    "Moto lungo un piano inclinato.md",
-    "Forza di attrito radente.md",
-    "Images/determinare-mu-statico.jpg"
+    "Moto Parabolico.md",
+    "Conflict files.md"
   ]
 }

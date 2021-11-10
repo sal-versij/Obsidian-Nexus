@@ -1,4 +1,5 @@
 # Moto Rettilineo Uniformemente Accelerato
+#todo #study  #physics 
 !def
 $a_x(t) = \text{costante} = a_x$
 !
