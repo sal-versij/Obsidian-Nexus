@@ -1,11 +1,12 @@
-# Moto Circolare Uniforme
+# Moto Circolare Uniformemente Accelerato
 #todo #study #physics
 !def
 ![[moto-circolare-oxy-system.jpg]]
 **Traiettoria:** $\text{circonferenza}$
-**Velocità:** $v=|\vec{v}| = \text{costante}$
+**Accelerazione:** $\alpha=\text{costante}$
 **Descrizione:**
 arco $s(t)$
+angolo $\theta(t)$
 angolo $\theta(t)$
 !
 
