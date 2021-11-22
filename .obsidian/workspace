@@ -4,45 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "0207f18ac224b920",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Cinematica.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
         "id": "26c51fd6fd004ea3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Cinematica Rotazionale.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "0384879da73b4d7c",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Moto Circolare Uniformemente Accelerato.md",
+            "file": "La dinamica dei moti circolari.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "05deb9e42c41531c",
+        "id": "47a53db157128bc6",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Moto Circolare Uniforme.md",
+            "file": "Newton's Laws.md",
             "mode": "preview"
           }
         }
@@ -72,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kolmo",
+                "query": "tag:#physics",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +67,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -126,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Moto Circolare Uniforme.md",
+                "file": "La dinamica dei moti circolari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Moto Circolare Uniforme.md",
+                "file": "La dinamica dei moti circolari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Moto Circolare Uniforme.md"
+                "file": "La dinamica dei moti circolari.md"
               }
             }
           }
@@ -177,17 +156,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "05deb9e42c41531c",
+  "active": "26c51fd6fd004ea3",
   "lastOpenFiles": [
-    "Moto Circolare Uniforme.md",
+    "La dinamica dei moti circolari.md",
+    "Dinamica.md",
+    "Force's Laws.md",
+    "Forza di attrito radente.md",
+    "Newton's Laws.md",
+    "Cinematica Lineare ⇄ Cinematica Rotazionle.md",
     "Moto Circolare Uniformemente Accelerato.md",
     "Cinematica Rotazionale.md",
-    "Cinematica.md",
-    "Untitled.md",
-    "Accellerazione nel moto piano.md",
-    "Moto Rettilineo Uniformemente Accelerato.md",
-    "Moto Rettilineo.md",
-    "Moto Rettilineo Uniforme.md",
-    "Moto Parabolico.md"
+    "Moto Circolare Uniforme.md",
+    "Cinematica.md"
   ]
 }

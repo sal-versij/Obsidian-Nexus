@@ -26,4 +26,4 @@ In questa nota si dispone il tutto in un piano.
 ## References
 - [[Moto Circolare Uniforme]]
 - [[Moto Circolare Uniformemente Accelerato]]
-- [[Cinematica Lineare <-> Cinematica Rotazionle]]
+- [[Cinematica Lineare ⇄ Cinematica Rotazionle]]

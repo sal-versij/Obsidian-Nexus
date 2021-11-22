@@ -43,3 +43,4 @@ F_s \text{ massima per } \theta = \theta_s \newline
 \end{gather}
 $$
 #### Caso Dinamico
+#todo 
