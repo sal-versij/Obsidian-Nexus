@@ -1,14 +1,17 @@
 {
   "main": {
-    "id": "f9e1c6186b1fae57",
+    "id": "38b5980509e19ee6",
     "type": "split",
     "children": [
       {
-        "id": "77e4afaec19f0007",
+        "id": "0207f18ac224b920",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Cinematica.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -90,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Cinematica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Cinematica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Cinematica.md"
+              }
             }
           }
         ]
@@ -137,7 +144,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "77e4afaec19f0007",
+  "active": "0207f18ac224b920",
   "lastOpenFiles": [
     "Cinematica.md",
     "Moto Circolare Uniforme.md",
