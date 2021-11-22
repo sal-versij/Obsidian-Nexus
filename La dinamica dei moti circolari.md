@@ -1,2 +1,4 @@
 # La dinamica dei moti circolari
-## Uniforme
+#todo #physics 
+## References
+[[Dinamica Rotazionale]]
