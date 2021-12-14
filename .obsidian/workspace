@@ -4,24 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "26c51fd6fd004ea3",
+        "id": "35791c6473d984d5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "La dinamica dei moti circolari.md",
+            "file": "Performance Capture for Real-World Visual Perception Tasks.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "47a53db157128bc6",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Newton's Laws.md",
-            "mode": "preview"
           }
         }
       }
@@ -105,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "La dinamica dei moti circolari.md",
+                "file": "Performance Capture for Real-World Visual Perception Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "La dinamica dei moti circolari.md",
+                "file": "Performance Capture for Real-World Visual Perception Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "La dinamica dei moti circolari.md"
+                "file": "Performance Capture for Real-World Visual Perception Tasks.md"
               }
             }
           }
@@ -156,17 +145,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "26c51fd6fd004ea3",
+  "active": "35791c6473d984d5",
   "lastOpenFiles": [
+    "Performance Capture for Real-World Visual Perception Tasks.md",
+    "Newton's Laws.md",
     "La dinamica dei moti circolari.md",
     "Dinamica Rotazionale.md",
     "Dinamica.md",
     "Force's Laws.md",
     "Forza di attrito radente.md",
-    "Newton's Laws.md",
     "Cinematica Lineare ⇄ Cinematica Rotazionle.md",
     "Moto Circolare Uniformemente Accelerato.md",
-    "Cinematica Rotazionale.md",
-    "Moto Circolare Uniforme.md"
+    "Cinematica Rotazionale.md"
   ]
 }
