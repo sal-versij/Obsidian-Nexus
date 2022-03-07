@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Internet Security.md",
-            "mode": "source"
+            "file": "Cinematica.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -78,6 +79,22 @@
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "42871c6adf429e8b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "4708e182ee975cc3",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
           }
         ]
       },
@@ -92,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Internet Security.md",
+                "file": "Cinematica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Internet Security.md",
+                "file": "Cinematica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Internet Security.md"
+                "file": "Cinematica.md"
               }
             }
           }
@@ -145,6 +162,7 @@
   },
   "active": "ed545e1a845a41ee",
   "lastOpenFiles": [
+    "Cinematica.md",
     "Internet Security.md",
     "2022-03-07.md",
     "Algoritmo A-Priori.md",
@@ -153,7 +171,6 @@
     "3D Hardware APIs.md",
     "handouts/Sicurezza delle reti - Applicazioni e standard.pdf",
     "OpenCL C.md",
-    "OpenCL.md",
-    "Untitled.md"
+    "OpenCL.md"
   ]
 }

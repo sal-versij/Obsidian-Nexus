@@ -20,5 +20,12 @@
   "obsidian-text-expander",
   "obsidian-plotly",
   "obsidian-plantuml",
-  "table-extended"
+  "table-extended",
+  "calendar",
+  "obsidian-checklist-plugin",
+  "convert-url-to-iframe",
+  "dataview",
+  "find-unlinked-files",
+  "obsidian-icons-plugin",
+  "key-promoter"
 ]
