@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-03-07.md",
+            "file": "Internet Security.md",
             "mode": "source"
           }
         }
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-03-07.md",
+                "file": "Internet Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-03-07.md",
+                "file": "Internet Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-03-07.md"
+                "file": "Internet Security.md"
               }
             }
           }
@@ -145,6 +145,7 @@
   },
   "active": "ed545e1a845a41ee",
   "lastOpenFiles": [
+    "Internet Security.md",
     "2022-03-07.md",
     "Algoritmo A-Priori.md",
     "Accellerazione nel moto piano.md",
@@ -153,7 +154,6 @@
     "handouts/Sicurezza delle reti - Applicazioni e standard.pdf",
     "OpenCL C.md",
     "OpenCL.md",
-    "Untitled.md",
-    "Teorema della catena.md"
+    "Untitled.md"
   ]
 }
