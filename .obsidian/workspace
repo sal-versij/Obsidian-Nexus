@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "4e0a2a614be7cb03",
+        "id": "ed545e1a845a41ee",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -143,17 +143,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4e0a2a614be7cb03",
+  "active": "ed545e1a845a41ee",
   "lastOpenFiles": [
     "2022-03-07.md",
+    "OpenCL C.md",
+    "OpenCL.md",
+    "Untitled.md",
+    "Teorema della catena.md",
     "2021-03-07.md",
     "Performance Capture for Real-World Visual Perception Tasks.md",
     "Newton's Laws.md",
     "La dinamica dei moti circolari.md",
-    "Dinamica Rotazionale.md",
-    "Dinamica.md",
-    "Force's Laws.md",
-    "Forza di attrito radente.md",
-    "Cinematica Lineare ⇄ Cinematica Rotazionle.md"
+    "Dinamica Rotazionale.md"
   ]
 }
