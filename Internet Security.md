@@ -42,4 +42,27 @@ con i big data si possono osservare fenomeni che con i piccoli non si può
 big non identifica eccessivo, ma sufficiente a sbloccare nuove opportunità quindi è uno strumento in se e per se
 Tutte le tecnologie che studiamo sono pensate per essere scalabili sulle varie metriche dei big data
 Le aziende che trattano dati acquisiscono diversi tool per guadagnare grandi quantità solo dagli stessi dati
-Impatto sociale dei big data: i dati permettono di comprendere i modi di fare delle masse e qusto ci porta alla necessità di parlare di etica
+
+!Impatto sociale dei big data
+i dati permettono di comprendere i modi di fare delle masse e qusto ci porta alla necessità di parlare di etica
+I dati sono quello: dati; è come vengono usati che conta, possono anche essere usati in modo sbagliato
+
+!Literate Programming
+il concetto dei notebook(jupyter)
+
+!stream processing
+opposto a quello batch
+
+!machine learning
+semplicemente come applicarli non come funzionano
+
+!cloud computing
+
+!Tecnologie
+!!container
+standard unit of software that packages up code and all its dependencies
+
+!!Workload management
+è un mediator&organizer, si assicura che tutti i processi siano avviati e funzionanti nel giusto stato e nel guisto numero per distribuire il workload e rendere l'applicativo facilmente scalabile
+
+!! data
