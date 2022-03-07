@@ -65,4 +65,20 @@ standard unit of software that packages up code and all its dependencies
 !!Workload management
 è un mediator&organizer, si assicura che tutti i processi siano avviati e funzionanti nel giusto stato e nel guisto numero per distribuire il workload e rendere l'applicativo facilmente scalabile
 
-!! data
+!!Data Ingestion
+normalizer for data from disparate sorurces
+
+!!Data Streaming
+Distribuisce i dati in modo scalabile ed efficiente, non chè fornire garanzie varie
+
+!!Data Processing
+Elaborazioni analitiche su grande scala
+
+!! Data indexing
+Database dedicato all'indexing per creare motori di ricerca efficienti
+
+!! Data Visualization
+Visualization!
+
+!!Notebooks
+Jupyter, it's all
