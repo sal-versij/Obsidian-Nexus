@@ -7,5 +7,6 @@
   "showFrontmatter": true,
   "promptDelete": false,
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "showUnsupportedFiles": true
 }
