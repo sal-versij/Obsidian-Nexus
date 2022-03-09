@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-03-08.md",
+            "file": "2022-03-09.md",
             "mode": "source",
             "source": false
           }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-03-08.md",
+                "file": "2022-03-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-03-08.md",
+                "file": "2022-03-09.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-03-08.md"
+                "file": "2022-03-09.md"
               }
             }
           }
@@ -162,6 +162,7 @@
   },
   "active": "b784c107a9cd948d",
   "lastOpenFiles": [
+    "2022-03-09.md",
     "2022-03-08.md",
     "Internet Security.md",
     "2022-03-07.md",
@@ -170,7 +171,6 @@
     "Algoritmi Randomizati.md",
     "3D Hardware APIs.md",
     "handouts/Sicurezza delle reti - Applicazioni e standard.pdf",
-    "OpenCL C.md",
-    "OpenCL.md"
+    "OpenCL C.md"
   ]
 }
