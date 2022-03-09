@@ -10,7 +10,8 @@
           "type": "markdown",
           "state": {
             "file": "2022-03-08.md",
-            "mode": "source"
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -76,6 +77,22 @@
             "type": "leaf",
             "state": {
               "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "7e1f377a12330c8b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "b4c85d9404504578",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
               "state": {}
             }
           }
