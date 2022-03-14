@@ -8,5 +8,6 @@
   "promptDelete": false,
   "legacyEditor": false,
   "livePreview": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "defaultViewMode": "preview"
 }
