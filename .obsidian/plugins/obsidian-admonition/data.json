@@ -10,16 +10,6 @@
       "command": true,
       "title": "Definition"
     },
-    "exercise": {
-      "type": "exercise",
-      "color": "5, 0, 71",
-      "icon": {
-        "name": "book",
-        "type": "rpg"
-      },
-      "command": true,
-      "title": "Exercise"
-    },
     "solution": {
       "type": "solution",
       "color": "8, 101, 1",
