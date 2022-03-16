@@ -52,6 +52,7 @@ title:Algebra
 title:$E\cap F\in\mathscr{F}$
 $E,F\in\mathscr{F}\implies\bar{E},\bar{F}\in\mathscr{F}\implies\bar{F}\cup\bar{F}\in\mathscr{F}\implies\overline{\bar{E}\cup\bar{F}}\in\mathscr{F}\implies E\cap F\in\mathscr{F}$
 ```
+
 !def $T_n$
 all'$n$-esimo lancio è uscito testa
 def!
@@ -61,17 +62,19 @@ all'$n$-esimo lancio è uscito croce
 def!
 
 !def $E_n$
-&Egrave; uscita testa per la prima volta all'$n$-esimo lancio
+È uscita testa per la prima volta all'$n$-esimo lancio
 $E_n = C_1\cap C_2\cap C_3\cap\ldots\cap T_n$
 def!
 
 Requisiti per $\mathscr{F}$
+
 ```ad-def
 title:$\sigma$-Algebra
 1. $\Omega \in \mathscr{F}$
 2. $E \in \mathscr{F} \implies \bar{E} \in \mathscr{F}$
 3. $E_n\in\mathscr{F}\forall n\implies \cup_{n=1}^{\infty}E_n\in\mathscr{F}$
 ```
+
 $\mathscr{F}\subseteq\mathscr{P}(\Omega)$
 !eg
 Dato $\Omega$ la più piccola $\sigma$-algebra è $\mathscr{F} = \{\emptyset,\Omega\}$, la più estesa è $\mathscr{P}(\Omega)$
@@ -93,23 +96,40 @@ def!
 Sia $\Omega$ uno spazio campionario e $\mathscr{F}$ una $\sigma$-algebra
 
 Assiomi:
+
 1. Per ogni evento $E\in\mathscr{F}$
-	$P[E]\in\mathscr{R}$; $0\leq P[E]\leq1$
+   $P[E]\in\mathscr{R}$; $0\leq P[E]\leq1$
 2. Per l'intero spazio campionario
-	$P[\Omega]=1$
-3. Presa una qualsiasi successione di eventi tali che $E_i\cap E_j=\emptyset\;i\neq j, P[\cup_{i}E_i]=\sum_{i}P(E_i)$
+   $P[\Omega]=1$
+3. Presa una qualsiasi successione di eventi tali che $E_i\cap E_j=\emptyset$ se $i\neq j$
+   $P[\cup_{i}E_i]=\sum_{i}P(E_i)$
 
 la propabilità è una corrispondenza é$P:\mathscr{F}\to[0,1]$ che soddisfa gli assiomi precedenti
 
 $(\Omega,\mathscr{F},P)$ è detto spazio delle probabilità
 def!
 
-!def Preposizione 1
-!demonstration $P[\bar{E}] = 1-P[E]$
+Preposizione 1
+```ad-demonstration
+title:$P[\bar{E}] = 1-P[E]$
 - $P[\Omega] = 1$
 - $\Omega = E\cup\bar{E}\;;\;E\cap\bar{E}=\emptyset$
 - $P[E\cup\bar{E}] = 1$
 - $P[E\cup\bar{E}] = P[E] + P[\bar{E}]$
-- $P[E] + P[\bar{E}] = 1$
+- $P[E] + P[\bar{E}] = 1\implies P[\bar{E}] = 1-P[E]$
+```
+
+Preposizione 2
+```ad-demonstration
+title:$F\subseteq E\implies P[F]\leq P[E]$
+$F\subseteq E\implies E=F\cup(E-F)$
+$P[E]=P[F\cup(E-F)]=P[E]=P[F]+P[E-F]\geq P[F]$
+$F\subseteq E\implies P[F]\leq P[E]$
+```
+Proposizione 3
+!demonstration $P[E\cup F]=P[E]+P[F]+P[E\cap F]$
+$P[E]=P[E-F]+P[E\cap F]\implies P[E-F]=P[E]-P[E\cap F]$
+$(E\cup F)=(E-F)\cup(E\cap F)\cup(F-E)$
+$P[E\cup F]=P[E-F]+P[E\cap F]+P[F-E] =$
+$P[E]-P[E\cap F]+P[E\cap F]+P[F-E] =$
 demonstration!
-def!
