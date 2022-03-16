@@ -39,6 +39,16 @@
       },
       "command": true,
       "title": "Code"
+    },
+    "demonstration": {
+      "type": "demonstration",
+      "color": "4, 1, 183",
+      "icon": {
+        "name": "file-alt",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Demonstration"
     }
   },
   "syntaxHighlight": true,
