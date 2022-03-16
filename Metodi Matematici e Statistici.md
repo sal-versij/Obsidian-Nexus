@@ -127,9 +127,25 @@ $P[E]=P[F\cup(E-F)]=P[E]=P[F]+P[E-F]\geq P[F]$
 $F\subseteq E\implies P[F]\leq P[E]$
 ```
 Proposizione 3
-!demonstration $P[E\cup F]=P[E]+P[F]+P[E\cap F]$
+!demonstration $P[E\cup F]=P[E]+P[F]-P[E\cap F]$
 $P[E]=P[E-F]+P[E\cap F]\implies P[E-F]=P[E]-P[E\cap F]$
 $(E\cup F)=(E-F)\cup(E\cap F)\cup(F-E)$
 $P[E\cup F]=P[E-F]+P[E\cap F]+P[F-E] =$
-$P[E]-P[E\cap F]+P[E\cap F]+P[F-E] =$
+$P[E]-P[E\cap F]+P[E\cap F]+P[F]-P[E\cap F] =$
+$P[E]+P[F]-P[E\cap F]$
 demonstration!
+
+Proposizione 4
+$P[\cup_{i=1}^{n}E_i] = \sum\limits_{i}{P[E_i]}-\sum\limits_{i<j}{P[E_i\cap E_j]}+\ldots+(-1)^{n+1}P[E_1\cap E_2\cap\ldots\cap E_n]$
+
+!def Probabilità condizionata
+Siano $E$ ed $F$ due eventi, si chiama probabilità di $E$ dato $F$, e scriveremo $P[E|F]$, la probabilità che si verifichi l'evento $E$ supponendo che si sia verificato l'evento $F$
+$P[E|F]=\frac{P[E\cap F]}{P[F]}\;\;P[F]>0$
+$\implies\begin{cases}P[E\cap F] = P[F]\cdot P[E|F]\\P[E\cap F] = P[E]\cdot P[F|E]\\\end{cases}$
+def!
+
+!th Regole della catena
+Dati $n$ eventi $E_1,E_2,\ldots,E_n$ la cui intersewzione ha probabilità positiva ($P[E_1\cap E_2\cap\ldots\cap E_n]>0$), si ha: 
+$P[E_1\cap E_2\cap\ldots\cap E_n]>0=$
+$P[E_1]\cdot P[E_2|E_1]\cdot P[E_3|E_1\cap E_2]\cdot P[E_4|E_1\cap E_2\cap E_3]\cdot\ldots\cdot P[E_n|E_1\cap E_2\cap\ldots\cap E_{n-1}]$
+th!
