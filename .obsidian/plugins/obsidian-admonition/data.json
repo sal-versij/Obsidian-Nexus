@@ -49,6 +49,16 @@
       },
       "command": false,
       "title": "Demonstration"
+    },
+    "eg": {
+      "type": "eg",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "question-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Example"
     }
   },
   "syntaxHighlight": true,

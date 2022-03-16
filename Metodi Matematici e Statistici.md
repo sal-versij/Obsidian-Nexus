@@ -73,10 +73,43 @@ title:$\sigma$-Algebra
 3. $E_n\in\mathscr{F}\forall n\implies \cup_{n=1}^{\infty}E_n\in\mathscr{F}$
 ```
 $\mathscr{F}\subseteq\mathscr{P}(\Omega)$
-!example
+!eg
 Dato $\Omega$ la più piccola $\sigma$-algebra è $\mathscr{F} = \{\emptyset,\Omega\}$, la più estesa è $\mathscr{P}(\Omega)$
-example!
+eg!
 
 !def
+Dato un insieme \Omega, e dati alcuni suoi sottoinsiemi: E_1,E_2,\ldots,E_n si dice $\sigma$-algebra degli E_i la più piccola $\sigma$-algebra di cui hanno parte tutti gli $E_i$
+def!
 
+!def Definizione classica di probabilità
+$P=\frac{\text{\# casi favorevoli}}{\text{\# casi possibili}}$
+def!
+
+!def Definizione frequentista di probabilità
+$P=\frac{\text{\# di successi}}{\text{\# di prove}}$
+def!
+
+!def Definizione di probabilità secondo Kolmogorov
+Sia $\Omega$ uno spazio campionario e $\mathscr{F}$ una $\sigma$-algebra
+
+Assiomi:
+1. Per ogni evento $E\in\mathscr{F}$
+	$P[E]\in\mathscr{R}$; $0\leq P[E]\leq1$
+2. Per l'intero spazio campionario
+	$P[\Omega]=1$
+3. Presa una qualsiasi successione di eventi tali che $E_i\cap E_j=\emptyset\;i\neq j, P[\cup_{i}E_i]=\sum_{i}P(E_i)$
+
+la propabilità è una corrispondenza é$P:\mathscr{F}\to[0,1]$ che soddisfa gli assiomi precedenti
+
+$(\Omega,\mathscr{F},P)$ è detto spazio delle probabilità
+def!
+
+!def Preposizione 1
+!demonstration $P[\bar{E}] = 1-P[E]$
+- $P[\Omega] = 1$
+- $\Omega = E\cup\bar{E}\;;\;E\cap\bar{E}=\emptyset$
+- $P[E\cup\bar{E}] = 1$
+- $P[E\cup\bar{E}] = P[E] + P[\bar{E}]$
+- $P[E] + P[\bar{E}] = 1$
+demonstration!
 def!
