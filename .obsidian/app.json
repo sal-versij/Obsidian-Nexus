@@ -9,5 +9,11 @@
   "legacyEditor": false,
   "livePreview": true,
   "showUnsupportedFiles": true,
-  "defaultViewMode": "preview"
+  "defaultViewMode": "preview",
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 100
+  }
 }
