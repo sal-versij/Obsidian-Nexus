@@ -1,9 +1,11 @@
 # Metodi Matematici e Statistici
 ## Spazi campionati ed eventi
-!def esperimento
+```ad-def
+title:esperimento
 Chiameremo esperimenti i fenomeni aleatori di cui ci occupiamo e chiameremo esiti i risultati di tali esperimenti
-def!
-!def spazio campionario
+```
+```ad-def 
+title:spazio campionario
 Dato un esperimento, è detto spazio campionario l'insieme di tutti gli esiti possibili
 
 $\Omega$: generico spazio campionario
@@ -11,17 +13,19 @@ $\omega$: generici esiti
 
 Risultati dell'esperimento: insieme
 Esiti dell'esperimento: elementi dell'insieme
-def!
-!def
-eventi sono sottoinsiemi di $\Omega$
+```
+```
+title: Eventi
+Sottoinsiemi di $\Omega$
 
 $\Omega$: Evento certo
 $\emptyset$: Evento impossibile
-def!
-!def
-Due eventi di dicono mutuamente esclusivi se
-E cap F = emptyset dove E subseteq Omega, F subseteq Omega
-def!
+```
+
+```
+Due eventi si dicono mutuamente esclusivi se
+$E\cap F=\emptyset$ dove $E\subseteq\Omega, F\subseteq\Omega$
+```
 Corrispondenze
 
 | Simbolo                | definizione                                                                                    |
