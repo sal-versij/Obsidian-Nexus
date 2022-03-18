@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-03-16.md",
+            "file": "2022-03-18.md",
             "mode": "source",
             "source": false
           }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-03-16.md",
+                "file": "2022-03-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-03-16.md",
+                "file": "2022-03-18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-03-16.md"
+                "file": "2022-03-18.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "d473cdb2e80dc119",
   "lastOpenFiles": [
+    "2022-03-18.md",
     "2022-03-16.md",
     "Metodi Matematici e Statistici.md",
     "Images/Esercizio20210316.png",
@@ -169,7 +170,6 @@
     "Insieme degli eventi.md",
     "spazio della propabilità.md",
     "Funzione di propabilità.md",
-    "handouts/metodi statistici 2021-10-28.pdf",
-    "handouts/metodi statistici 2021-10-26.pdf"
+    "handouts/metodi statistici 2021-10-28.pdf"
   ]
 }
