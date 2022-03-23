@@ -9,9 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-03-23.md",
+            "file": "2022-03-21.md",
             "mode": "source",
             "source": false
+          }
+        }
+      },
+      {
+        "id": "cc029241746efd4a",
+        "type": "leaf",
+        "state": {
+          "type": "pdf",
+          "state": {
+            "file": "handouts/internet-security (1).pdf"
           }
         }
       }
@@ -109,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-03-23.md",
+                "file": "2022-03-21.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-03-23.md",
+                "file": "2022-03-21.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-03-23.md"
+                "file": "2022-03-21.md"
               }
             }
           }
@@ -162,15 +172,15 @@
   },
   "active": "fae45163ea8d31d3",
   "lastOpenFiles": [
-    "2022-03-23.md",
-    "2022-03-16.md",
     "2022-03-21.md",
-    "Images/data-ingestion.png",
-    "Images/Esercizio20210316.png",
-    "Images/dimostrazione.1 20210316.png",
-    "Images/Clsoed & Maximal Frequent Itemset.png",
-    "2022-03-18.md",
-    "Metodi Matematici e Statistici.md",
-    "handouts/metodi statistici 2021-10-12.pdf"
+    "2022-03-16.md",
+    "2022-03-14.md",
+    "2022-03-11.md",
+    "2022-03-09.md",
+    "2022-03-08.md",
+    "2022-03-07.md",
+    "2022-03-23.md",
+    "handouts/internet-security (1).pdf",
+    "Images/data-ingestion.png"
   ]
 }
