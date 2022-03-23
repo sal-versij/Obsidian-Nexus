@@ -4,26 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "fae45163ea8d31d3",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "2022-03-23.md",
-            "mode": "source",
-            "source": false
+        "id": "65e25dfbdab2e056",
+        "type": "split",
+        "children": [
+          {
+            "id": "5b7b911e76fd3dbf",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "handouts/metodi statistici 2021-10-12.pdf"
+              }
+            }
+          },
+          {
+            "id": "32a85fa606df886d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Metodi Matematici e Statistici.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
-      },
-      {
-        "id": "cc029241746efd4a",
-        "type": "leaf",
-        "state": {
-          "type": "pdf",
-          "state": {
-            "file": "handouts/internet-security (1).pdf"
-          }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -50,7 +57,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "metodi",
+                "query": "ad-demonstration",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-03-23.md",
+                "file": "Metodi Matematici e Statistici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-03-23.md",
+                "file": "Metodi Matematici e Statistici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-03-23.md"
+                "file": "Metodi Matematici e Statistici.md"
               }
             }
           }
@@ -170,17 +177,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fae45163ea8d31d3",
+  "active": "32a85fa606df886d",
   "lastOpenFiles": [
-    "2022-03-23.md",
+    "Metodi Matematici e Statistici.md",
+    "handouts/metodi statistici 2021-10-12.pdf",
+    "2022-03-07.md",
+    "2022-03-08.md",
     "2022-03-09.md",
-    "2022-03-11.md",
     "2022-03-21.md",
+    "2022-03-23.md",
     "2022-03-16.md",
     "2022-03-14.md",
-    "2022-03-08.md",
-    "2022-03-07.md",
-    "handouts/internet-security (1).pdf",
-    "Images/data-ingestion.png"
+    "2022-03-11.md"
   ]
 }

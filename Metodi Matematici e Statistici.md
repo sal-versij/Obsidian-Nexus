@@ -52,7 +52,7 @@ title:Algebra
 3. $E,F\in\mathscr{F}\implies E\cup F\in\mathscr{F}$
 ```
 
-```ad-demonstration
+```ad-dem
 title:$E\cap F\in\mathscr{F}$
 $E,F\in\mathscr{F}\implies\bar{E},\bar{F}\in\mathscr{F}\implies\bar{F}\cup\bar{F}\in\mathscr{F}\implies\overline{\bar{E}\cup\bar{F}}\in\mathscr{F}\implies E\cap F\in\mathscr{F}$
 ```
@@ -114,7 +114,7 @@ $(\Omega,\mathscr{F},P)$ è detto spazio delle probabilità
 def!
 
 Preposizione 1
-```ad-demonstration
+```ad-dem
 title:$P[\bar{E}] = 1-P[E]$
 - $P[\Omega] = 1$
 - $\Omega = E\cup\bar{E}\;;\;E\cap\bar{E}=\emptyset$
@@ -124,7 +124,7 @@ title:$P[\bar{E}] = 1-P[E]$
 ```
 
 Preposizione 2
-```ad-demonstration
+```ad-dem
 title:$F\subseteq E\implies P[F]\leq P[E]$
 $F\subseteq E\implies E=F\cup(E-F)$
 $P[E]=P[F\cup(E-F)]=P[E]=P[F]+P[E-F]\geq P[F]$
@@ -149,7 +149,28 @@ $\implies\begin{cases}P[E\cap F] = P[F]\cdot P[E|F]\\P[E\cap F] = P[E]\cdot P[F|
 def!
 
 !th Regole della catena
-Dati $n$ eventi $E_1,E_2,\ldots,E_n$ la cui intersewzione ha probabilità positiva ($P[E_1\cap E_2\cap\ldots\cap E_n]>0$), si ha: 
-$P[E_1\cap E_2\cap\ldots\cap E_n]>0=$
+Dati $n$ eventi $E_1,E_2,\ldots,E_n$ la cui intersezione ha probabilità positiva ($P[E_1\cap E_2\cap\ldots\cap E_n]>0$), si ha: 
+$P[E_1\cap E_2\cap\ldots\cap E_n]=$
 $P[E_1]\cdot P[E_2|E_1]\cdot P[E_3|E_1\cap E_2]\cdot P[E_4|E_1\cap E_2\cap E_3]\cdot\ldots\cdot P[E_n|E_1\cap E_2\cap\ldots\cap E_{n-1}]$
+
+!def Partizione di $\Omega$
+Si dice partizione di $\Omega$ un insieme di eventi $E_i$ (*finito* o *numerabile*) con le seguenti caratteristiche:
+1. Ogni $E_i$ ha probabilità diversa da $0$
+   $$0<P[E_i]\leq1$$
+2. Gli $E_i$ sono mutualmente esclusi
+   $P[E_i\cap E_j] = 0$
+3. L'unione di tutti gli E_i copre \Omega
+   $$\bigcup_{i=1}^{n}{E_i}=\Omega$$
+def!
+th!
+
+!th Formula della probabilità totali - Legge delle alternative
+Sia {E_i} una partizione di \Omega, sia F un evento qualsiasi contenuto in \Omega, allora
+$P[F]=\sum\limits_{i=1}^{n}{P[F|E_i]P[E_i]}$
+!dem
+$P[F]=\sum\limits_{i=1}^{n}{P[F|E_i]P[E_i]}\leftarrow$
+$F=F\cap\Omega=F\cap(\bigcup_{i}E_i)=\bigcup_i(F\cap E_i)$
+$P[F]=P[\bigcup_i(F\cap E_i)]=\sum\limits_iP[F\cap E_i]=$
+$=\sum\limits_{i}{P[F|E]P[E_i]}$
+dem!
 th!
