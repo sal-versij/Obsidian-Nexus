@@ -303,5 +303,6 @@ def!
 Caso discreto
 Una variabile aleatoria X discreta può assumeresolo alcuni valori x_i ($i=1,\ldots,n$/$i=1,\ldots$)
 $P[X=x_i]\rightarrow\sum\limits_i{P[X=x_i]}=1$
-!def
+!def Densità di probabilità
+La funzione $P_x:\mathbb{R}\to[0,1]$ definita dalla relazione
 def!
