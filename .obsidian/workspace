@@ -4,33 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "65e25dfbdab2e056",
-        "type": "split",
-        "children": [
-          {
-            "id": "5b7b911e76fd3dbf",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "handouts/metodi statistici 2021-10-14.pdf"
-              }
-            }
-          },
-          {
-            "id": "32a85fa606df886d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Metodi Matematici e Statistici.md",
-                "mode": "source",
-                "source": false
-              }
-            }
+        "id": "cbd5e6b4ce773e8a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Mini Challenge Internet Security.md",
+            "mode": "source",
+            "source": false
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -126,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Metodi Matematici e Statistici.md",
+                "file": "Mini Challenge Internet Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Metodi Matematici e Statistici.md",
+                "file": "Mini Challenge Internet Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Metodi Matematici e Statistici.md"
+                "file": "Mini Challenge Internet Security.md"
               }
             }
           }
@@ -177,8 +160,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "32a85fa606df886d",
+  "active": "cbd5e6b4ce773e8a",
   "lastOpenFiles": [
+    "Mini Challenge Internet Security.md",
     "Metodi Matematici e Statistici.md",
     "handouts/metodi statistici 2021-10-14.pdf",
     "handouts/metodi statistici 2021-12-14.pdf",
@@ -187,7 +171,6 @@
     "handouts/metodi statistici 2021-11-04.pdf",
     "handouts/metodi statistici 2021-10-28.pdf",
     "handouts/metodi statistici 2021-10-26.pdf",
-    "handouts/metodi statistici 2021-10-21.pdf",
-    "handouts/metodi statistici 2021-10-19.pdf"
+    "handouts/metodi statistici 2021-10-21.pdf"
   ]
 }

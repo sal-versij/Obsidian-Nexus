@@ -305,4 +305,6 @@ Una variabile aleatoria X discreta può assumeresolo alcuni valori x_i ($i=1,\ld
 $P[X=x_i]\rightarrow\sum\limits_i{P[X=x_i]}=1$
 !def Densità di probabilità
 La funzione $P_x:\mathbb{R}\to[0,1]$ definita dalla relazione
+$P_X(x)=P[X=x]=\begin{cases}P[X=x_i]&x=x_1 &\text{per un certo i}\\0 &x\neq x_i &\forall i\end{cases}$
 def!
+Continua con [[metodi statistici 2021-10-19.pdf]]
