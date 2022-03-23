@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-03-16.md",
+            "file": "2022-03-23.md",
             "mode": "source",
             "source": false
           }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-03-16.md",
+                "file": "2022-03-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-03-16.md",
+                "file": "2022-03-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-03-16.md"
+                "file": "2022-03-23.md"
               }
             }
           }
@@ -162,8 +162,8 @@
   },
   "active": "fae45163ea8d31d3",
   "lastOpenFiles": [
-    "2022-03-16.md",
     "2022-03-23.md",
+    "2022-03-16.md",
     "2022-03-21.md",
     "Images/data-ingestion.png",
     "Images/Esercizio20210316.png",
