@@ -284,6 +284,24 @@ def!
 
 Proprietà
 1. F_x è monotona non decrescente, cioè
-   $\impliedby t_1\leq t_2 F_x(t_1)\leq F_x(t_2)$
-   
-2. 
+   $F_x(t_1)\leq F_x(t_2)\impliedby t_1\leq t_2$
+   $A_{t_1}\subseteq A_{t_2}\implies P[A_{t_1}]\leq P[A_{t_2}]$
+2. $\lim\limits_{t\to-\infty}F_x(t)=0$ $\lim\limits_{t\to+\infty}F_x(t)=1$
+3. Per ogni valore $x_0\in\mathbb{R}$
+   $P[X=x_0]=\lim\limits_{t\to x_0^+}F_x(t)-\lim\limits_{t\to x_0^-}F_x(t)$
+4. La funzione di ripartizione $F_x$ è continua e destra, ossia:
+   per ogni valore $x_0\in\mathbb{R}$
+   $F_x[x_0](=P[X\leq x_0])=\lim\limits_{t\to x_0^+}F_x(t)$
+
+!def
+Se la variabile aleatoria X può assumere solo un numero finito( o al più numerabile) di valori, la relativa F_x sarà costante a tratti
+e la variabile viene detta descreta
+Se X può assumere i valori di un internvallo $I\subset\mathbb{R}$, allora F_x è generalmente continua e la variabile è detta continua
+def!
+
+### Densità di variabili aleatorie
+Caso discreto
+Una variabile aleatoria X discreta può assumeresolo alcuni valori x_i ($i=1,\ldots,n$/$i=1,\ldots$)
+$P[X=x_i]\rightarrow\sum\limits_i{P[X=x_i]}=1$
+!def
+def!
