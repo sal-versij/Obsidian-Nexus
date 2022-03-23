@@ -246,7 +246,7 @@ $P^{*}_{k,n-k}=\frac{n!}{k!(n-k)!}=\binom{n}{k}$
 th!
 def!
 
-!def Disposizioni semplici
+!def Disposizioni
 Si dice disposizione semplice di n oggetti di classe m ogni allineamento di m oggetti scelti fra gli n
 !th
 $D_{n,k}=\frac{n!}{(n-k)!}$
@@ -255,5 +255,35 @@ Si dice disposizione con ripetizione di n oggetti di classe m ogni allineamento 
 $D^{*}_{n,k}=n^k$
 def!
 
+!def Combinazioni
+Si dice combinazione di n oggetti di classe k, ogni raggruppamento di k oggetti comunque scelti tra gli n
+!th
+$C_{n,k}=\binom{n}{k}$
+th!
+Si dice combinazione con ripetizione di n oggetti di classe k, ogni raggruppamento di k oggetti comunque scelti tra gli n con la convenzione che ogni oggetto può essere ripetuto più volte
+!th
+$C^{*}_{n,k}=\binom{n+k-1}{k}$
+th!
+def!
+
+Variabili aleatorie
+consideriamo lo spazio di probabilità $(\Omega,\mathscr{F},P)$
+$X:\Omega\to\mathbb{R}\;\;\;\;\;\;X(\omega)=x\;\;\;\;x\in\mathbb{R}$
+$\Omega=\{\omega_1,\omega_2,\ldots,\omega_n\}$
 !def
-def
+Dato uno spazio di probabilità $(\Omega,\mathscr{F},P)$ si dice variabile aleatoria una corrispondenza tra gli evlementi di \Omega e i numeri (reali), tale corrispondenza deve soddisfare la condizione
+$A_t=\{\omega|X(\omega)\leq t\}\in\mathscr{F}\;\;\;\;\forall t\in\mathbb{R}$
+def!
+
+&Egrave; detto supporto l'insieme dei valori che la variabile aleatoria può assumere
+!def Funzioni di ripartizione
+Data la variabile aleatoria X, è detta funzione di rpartizione di C la funzione
+$F_x(t)=P[X\leq t]=P[A_t]$
+$F_x(t):\mathbb{R}\to[0,1]$
+def!
+
+Proprietà
+1. F_x è monotona non decrescente, cioè
+   $\impliedby t_1\leq t_2 F_x(t_1)\leq F_x(t_2)$
+   
+2. 
