@@ -5,9 +5,18 @@
   "notificationTimeout": 5,
   "template": "{{commandId}} - {{commandName}} - {{hotkey}}",
   "descriptionOfActions": false,
-  "mouseStatistics": {},
+  "mouseStatistics": {
+    "vantage-obsidian:build-search": 1,
+    "workspaces:open-modal": 1,
+    "obsidian-admonition:collapse-admonitions": 1,
+    "obsidian-plotly:add-plotly-dataviewjs-example": 1
+  },
   "keyboardStatistics": {
-    "markdown:toggle-preview": 3,
-    "editor:save-file": 17
+    "markdown:toggle-preview": 7,
+    "editor:save-file": 39,
+    "editor:open-search": 1,
+    "editor:open-search-replace": 1,
+    "markdown-prettifier:markdown-prettifier-run": 2,
+    "command-palette:open": 2
   }
 }
