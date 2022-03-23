@@ -164,13 +164,50 @@ Si dice partizione di $\Omega$ un insieme di eventi $E_i$ (*finito* o *numerabil
 def!
 th!
 
-!th Formula della probabilità totali - Legge delle alternative
+!th Formula della probabilità totali
 Sia {E_i} una partizione di \Omega, sia F un evento qualsiasi contenuto in \Omega, allora
 $P[F]=\sum\limits_{i=1}^{n}{P[F|E_i]P[E_i]}$
 !dem
 $P[F]=\sum\limits_{i=1}^{n}{P[F|E_i]P[E_i]}\leftarrow$
 $F=F\cap\Omega=F\cap(\bigcup_{i}E_i)=\bigcup_i(F\cap E_i)$
-$P[F]=P[\bigcup_i(F\cap E_i)]=\sum\limits_iP[F\cap E_i]=$
+$P[F]=P[\bigcup_{i}{(F\cap E_i)}]=\sum\limits_{i}{P[F\cap E_i]}=$
 $=\sum\limits_{i}{P[F|E]P[E_i]}$
 dem!
 th!
+
+!th Legge condizionata o delle alternative
+Sia {E_i} una partizione di \Omega e siano G ed F due eventi qualsiasi, allora
+$P[F|G] = \sum\limits_{i}{P[F|E_i\cap G]\cdot P[E_i|G]}$
+dove la sommatoria è estesa unicamente ai casi $P[E_i\cap G]\neq\emptyset$ 
+th!
+
+!th Formula di Bayes
+Dato un evento F e datga una partizione {E_h} di \Omega, si ha
+$P[E_h|F]=\frac{P[E|E_h]\cdot P[E_h]}{\sum\limits_{i}{P[F|E-i]\cdot P[E_i]}}$
+!dem
+$P[E_h\cap F]=P[F|E_h]P[E_h]=P[E_h|F]P[F]$
+$P[E_h|F]=\frac{P[F|E_h]\cdot P[E_h]}{P[F]}=$
+$=\frac{P[E|E_h]\cdot P[E_h]}{\sum\limits_{i}{P[F|E-i]\cdot P[E_i]}}$
+dem!
+th!
+
+Eventi indipendenti
+Osservazioni:
+$P[E|F]>P[E]$ l'evento $F$ è favorevole ad $E$
+$P[E|F]<P[E]$ l'evento $F$ è sfavorevole ad $E$
+$P[E|F]=P[E]$ l'evento $F$ è ininfluenzato oppure indipendente da $E$
+Proprietà:
+Se $E$ è indipendente da $F$ allora $F$ è indipendente da $E$
+$P[E|F]=P[E]\implies P[F|E]=P[F]$
+!dem (da ricontrollare, mi sa che il prof l'abbia sbagliata)
+$P[E\cap F]=P[E|F]P[F]=P[E]P[F]$
+$P[E\cap F]=P[F|E]P[E]=P[E]P[F]$
+$P[F|E]=P[F]$
+allora 
+$P[E\cap F]=P[E]P[F]$
+$P[E\cap F]=P[E|F]P[F]$
+dem!
+
+Proposizione
+Se E ed F sono indipendenti allora sono indipendenti anche E e neg
+
