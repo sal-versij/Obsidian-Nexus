@@ -1,0 +1,13 @@
+{
+  "showUnassigned": true,
+  "showAssigned": true,
+  "threshold": 0,
+  "notificationTimeout": 5,
+  "template": "{{commandId}} - {{commandName}} - {{hotkey}}",
+  "descriptionOfActions": false,
+  "mouseStatistics": {},
+  "keyboardStatistics": {
+    "markdown:toggle-preview": 3,
+    "editor:save-file": 17
+  }
+}
