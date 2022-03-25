@@ -12,11 +12,12 @@
     "obsidian-plotly:add-plotly-dataviewjs-example": 1
   },
   "keyboardStatistics": {
-    "markdown:toggle-preview": 9,
-    "editor:save-file": 59,
+    "markdown:toggle-preview": 11,
+    "editor:save-file": 60,
     "editor:open-search": 1,
-    "editor:open-search-replace": 1,
-    "markdown-prettifier:markdown-prettifier-run": 6,
-    "command-palette:open": 2
+    "editor:open-search-replace": 2,
+    "markdown-prettifier:markdown-prettifier-run": 7,
+    "command-palette:open": 2,
+    "cycle-through-panes:cycle-through-panes-reverse": 1
   }
 }
