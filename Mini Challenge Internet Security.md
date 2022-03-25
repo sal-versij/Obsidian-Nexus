@@ -131,3 +131,12 @@ Le funzioni hash mappano un insieme in input di cardinalità nettamente superior
 | SWIFFT                                  | 512 bits        | hash                                                       |
 | Tiger "Tiger (cryptography)")           | 192 bits        | Merkle–Damgård construction                                |
 | Whirlpool "Whirlpool (cryptography)")   | 512 bits        | hash                                                       |
+
+
+## Citations
+- https://en.wikipedia.org/wiki/List_of_hash_functions
+- https://www.sicurezzanazionale.gov.it/sisr.nsf/wp-content/uploads/2015/09/Crittografia-tra-arte-e-scienza-Tampanella.pdf
+- https://www.growhub.it/varie/come-si-fa-un-attacco-brute-force/
+- https://en.wikipedia.org/wiki/Brute-force_attack
+- https://www.proofpoint.com/it/threat-reference/brute-force-attack
+- https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/
