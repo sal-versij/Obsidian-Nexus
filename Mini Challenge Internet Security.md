@@ -5,3 +5,8 @@ Attachi possibili
 Strumenti di brute forcing
 Tabelle Rainbow/Rainbow List
 Quali hash utilizzano gli ultimi sistemi operativi
+
+Cos'è
+Chi la usa
+Perchè usarla
+Come
