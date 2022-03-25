@@ -6,7 +6,8 @@ Strumenti di brute forcing
 Tabelle Rainbow/Rainbow List
 Quali hash utilizzano gli ultimi sistemi operativi
 
-Cos'è
-Chi la usa
-Perchè usarla
-Come
+---
+
+Una funzione hash viene generalmente utilizzata per identificare un dato di variabile lunghezza con un indice di lunghezza fissa, utilizzato per esempio nelle tabelle di hash.
+
+Le funzioni hash necessitano di una collisione minimale per 
