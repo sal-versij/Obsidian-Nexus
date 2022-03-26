@@ -1,3 +1,6 @@
+---
+tags: [timeline]
+---
 # Mini Challenge Internet Security
 # Funzioni Hash
 Una funzione hash è una funzione di mappatura tra dati di arbitraria lunghezza e valori di lunghezza fissa, anche chiamati **hash values**, **hash codes**, **digests**, o semplicemente **hashes**.
@@ -45,6 +48,21 @@ In alcune analisi teoriche "difficile" ha un significato matematico specifico: *
   Un **digest** può anche servire come mezzo per identificare in modo affidabile un file.
 ## Panoramica storica delle funzioni hash
 I primi progetti di funzioni hash crittografiche risalgono alla fine degli anni '70; altre proposte sono emerse negli anni '80. Durante gli anni '90, il numero di progetti di funzioni hash è cresciuto molto rapidamente, ma per molte di queste proposte sono stati identificati difetti di sicurezza. MD5 e SHA-1 sono stati utilizzati in un numero sempre maggiore di applicazioni, dando origine al nome di "coltelli svizzeri" della crittografia. Nonostante l'importanza delle funzioni hash, solo uno sforzo limitato è stato speso per studiare le loro definizioni formali e i loro fondamenti. Nel 2004 Wang et al. hanno perfezionato la crittoanalisi differenziale al punto che trovare collisioni per MD5 è diventato molto facile; per SHA-1 è stata ottenuta una sostanziale riduzione del margine di sicurezza. Questa scoperta ha portato ad una raffica di ricerche, che hanno portato a nuove costruzioni e ad un crescente corpo di ricerca fondazionale. Il NIST ha annunciato nel novembre 2007 che avrebbe organizzato la competizione SHA-3, con l'obiettivo di selezionare una nuova famiglia di funzioni hash entro il 2012. Dai 64 candidati presentati entro ottobre 2008, 14 sono arrivati al secondo turno.
+
+### Early history
+- *Diffie* e *Hellman* hanno identificato la necessità di una funzione hash **unidirezionale** come elemento costitutivo di uno schema di firma digitale nel loro documento seminale del 1976 sulla crittografia a chiave pubblica
+- Le prime definizioni, analisi e costruzioni per le funzioni hash crittografiche possono essere trovate nel lavoro di *Rabin*, *Yuval* e *Merkle* della fine degli anni '70
+	- *Rabin* ha proposto un progetto con un risultato a 64 bit basato sul cifrario a blocchi **DES**
+	- *Yuval* ha mostrato come trovare collisioni per una funzione hash a $n$ bit in tempo $\frac{2n}{2}$ con il **birthday paradox**
+	- Il lavoro di *Merkle* ha introdotto i requisiti di **collision resistance**, **second pre-image resistance** and **pre-image resistance**
+- Nel 1987, *Damg&aring;rd* formalizzò la definizione di **collision resistance**
+- Nel 1989 anni dopo
+Naor e Yung definirono una variante delle funzioni seoncd resistenti alle preimmagini chiamata
+Universal One Way Hash Functions (UOWHFs) [66] (note anche come funzioni
+che offrono eSEC [79]). Nel 2004 Rogaway e Shrimpton [79] hanno studiato formalmente le relazioni tra la resistenza alle collisioni e diversi tipi di resistenza alla preimmagine e alla seconda preimmagine. Le funzioni di hash dovrebbero anche distruggere la struttura algebrica dello schema di firma; esempi tipici sono l'euristica di Fiat-Shamir [36] e l'attacco di Coppersmith alla funzione di hash nell'X.509 Annex D [24] che era destinato all'uso con RSA [77] (questo attacco rompe lo schema di firma costruendo coppie di messaggi (x, x0 ) per cui h(x) = 256 - h(x 0 )). Questo sviluppo ha portato al requisito che le funzioni hash hanno bisogno di un comportamento "ideale" che permetta loro di istanziare il concetto teorico di oracoli casuali (vedi ad esempio Bellare e Rogaway [10]). La costruzione di algoritmi MAC basati su funzioni hash (come HMAC) ha portato al requisito che la funzione hash possa essere usata per costruire funzioni pseudo-casuali, che è stato tra l'altro studiato da Bellare et al. [8, 6].
+*** Tradotto con www.DeepL.com/translator (versione gratuita) ***
+
+
 ## Attachi possibili
 ### Bruteforce
 #### Strumenti di brute forcing
