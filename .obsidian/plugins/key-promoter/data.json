@@ -19,15 +19,15 @@
   },
   "keyboardStatistics": {
     "markdown:toggle-preview": 16,
-    "editor:save-file": 141,
+    "editor:save-file": 169,
     "editor:open-search": 1,
     "editor:open-search-replace": 2,
-    "markdown-prettifier:markdown-prettifier-run": 16,
+    "markdown-prettifier:markdown-prettifier-run": 18,
     "command-palette:open": 5,
     "cycle-through-panes:cycle-through-panes-reverse": 1,
     "editor:fold-all": 14,
     "editor:unfold-all": 8,
-    "editor:toggle-fold": 40,
+    "editor:toggle-fold": 44,
     "cycle-through-panes:cycle-through-panes": 2,
     "editor:toggle-checklist-status": 1,
     "editor:follow-link": 1
