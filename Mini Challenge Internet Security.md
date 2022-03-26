@@ -10,8 +10,7 @@ L'uso delle funzioni hash si basa sulle proprietà statistiche della relazione t
 
 Le funzioni di hash sono collegate a (e spesso confuse con) **checksum**, **check digits**, **fingerprints**, **compressione lossy**, **funzioni di randomizzazione**, **error-correcting codes** e **cifrari**. Anche se i concetti si sovrappongono in una certa misura, ognuno ha i propri usi e requisiti ed è progettato e ottimizzato in modo diverso. La funzione hash differisce da questi concetti principalmente in termini di integrità dei dati.
 
-Nel caso di funzioni hash utilizzate nel campo della sicurezza informatica, è necessario che siano crittografiche;
-una funzione hash viene definita crittografica quando rispetta le seguenti proprietà:
+Nel caso della sicurezza informatica le funzioni hash utilizzate sono crittografiche, quindi rispetta le seguenti proprietà:
 
 - deve essere *deterministica*:
   dato lo stesso input darà **sempre** lo stesso output
@@ -22,6 +21,32 @@ una funzione hash viene definita crittografica quando rispetta le seguenti propr
   trovare due input che forniscono lo stesso digest
 - Gode della proprietà crittografica **avalanche effect**:
   una piccola modifica all'input genera un **digest** drasticamente diverso dall'originale, al punto che i due **digest** appaiono non correlati tra loro
+
+Nella crittografia teorica, il livello di sicurezza di una funzione hash crittografica è definito utilizzando le seguenti proprietà:
+- **Pre-image resistance**
+  Dato un valore di hash $h$, dovrebbe essere difficile trovare qualsiasi messaggio $m$ tale che $h = \text{hash}(m)$. Le funzioni che non soddisfano questa proprietà sono vulnerabili agli attacchi preimage.
+- **Second pre-image resistance**
+  Dato un input $m_1$, deve essere difficile trovare un diverso input $m_2$ tale che $\text{hash}(m_1) = \text{hash}(m_2)$. Questa proprietà è talvolta indicata come **weak collision resistance**. Le funzioni che mancano di questa proprietà sono vulnerabili agli attacchi di seconda immagine.
+- **Collision resistance**
+  Dovrebbe essere difficile trovare due messaggi diversi $m_1$ e $m_2$ tali che $\text{hash}(m_1) = \text{hash}(m_2)$. Una tale coppia è chiamata **cryptographic hash collision**. Questa proprietà è talvolta indicata come **strong collision resistance**. Richiede un valore di hash almeno due volte più lungo di quello richiesto per la resistenza alla pre-immagine; altrimenti le collisioni possono essere trovate da un attacco di compleanno
+
+Collision resistance implies second pre-image resistance but does not imply pre-image resistance.[[5]](https://en.wikipedia.org/wiki/Cryptographic_hash_function#cite_note-FOOTNOTERogawayShrimpton2004in_Sec._5._Implications-5) The weaker assumption is always preferred in theoretical cryptography, but in practice, a hash-function which is only second pre-image resistant is considered insecure and is therefore not recommended for real applications.
+
+Informally, these properties mean that a [malicious adversary](https://en.wikipedia.org/wiki/Adversary_(cryptography) "Adversary (cryptography)") cannot replace or modify the input data without changing its digest. Thus, if two strings have the same digest, one can be very confident that they are identical. Second pre-image resistance prevents an attacker from crafting a document with the same hash as a document the attacker cannot control. Collision resistance prevents an attacker from creating two distinct documents with the same hash.
+
+A function meeting these criteria may still have undesirable properties. Currently, popular cryptographic hash functions are vulnerable to [_length-extension_ attacks](https://en.wikipedia.org/wiki/Length_extension_attack "Length extension attack"): given hash(_m_) and len(_m_) but not _m_, by choosing a suitable _m_′ an attacker can calculate hash(_m_ ∥ _m_′), where ∥ denotes [concatenation](https://en.wikipedia.org/wiki/Concatenation "Concatenation").[[6]](https://en.wikipedia.org/wiki/Cryptographic_hash_function#cite_note-Y0rF6-6) This property can be used to break naive authentication schemes based on hash functions. The [HMAC](https://en.wikipedia.org/wiki/HMAC "HMAC") construction works around these problems.
+
+In practice, collision resistance is insufficient for many practical uses. In addition to collision resistance, it should be impossible for an adversary to find two messages with substantially similar digests; or to infer any useful information about the data, given only its digest. In particular, a hash function should behave as much as possible like a [random function](https://en.wikipedia.org/wiki/Random_function "Random function") (often called a [random oracle](https://en.wikipedia.org/wiki/Random_oracle "Random oracle") in proofs of security) while still being deterministic and efficiently computable. This rules out functions like the [SWIFFT](https://en.wikipedia.org/wiki/SWIFFT "SWIFFT") function, which can be rigorously proven to be collision-resistant assuming that certain problems on ideal lattices are computationally difficult, but, as a linear function, does not satisfy these additional properties.[[7]](https://en.wikipedia.org/wiki/Cryptographic_hash_function#cite_note-FOOTNOTELyubashevskyMicciancioPeikertRosen200854%E2%80%9372-7)
+
+Checksum algorithms, such as [CRC32](https://en.wikipedia.org/wiki/CRC32 "CRC32") and other [cyclic redundancy checks](https://en.wikipedia.org/wiki/Cyclic_redundancy_check "Cyclic redundancy check"), are designed to meet much weaker requirements and are generally unsuitable as cryptographic hash functions. For example, a CRC was used for message integrity in the [WEP](https://en.wikipedia.org/wiki/Wired_Equivalent_Privacy "Wired Equivalent Privacy") encryption standard, but an attack was readily discovered, which exploited the linearity of the checksum.
+
+### Degree of difficulty[[edit](https://en.wikipedia.org/w/index.php?title=Cryptographic_hash_function&action=edit&section=2 "Edit section: Degree of difficulty")]
+
+In cryptographic practice, "difficult" generally means "almost certainly beyond the reach of any adversary who must be prevented from breaking the system for as long as the security of the system is deemed important". The meaning of the term is therefore somewhat dependent on the application since the effort that a malicious agent may put into the task is usually proportional to their expected gain. However, since the needed effort usually multiplies with the digest length, even a thousand-fold advantage in processing power can be neutralized by adding a few dozen bits to the latter.
+
+For messages selected from a limited set of messages, for example [passwords](https://en.wikipedia.org/wiki/Password "Password") or other short messages, it can be feasible to invert a hash by trying all possible messages in the set. Because cryptographic hash functions are typically designed to be computed quickly, special [key derivation functions](https://en.wikipedia.org/wiki/Key_derivation_function "Key derivation function") that require greater computing resources have been developed that make such [brute-force attacks](https://en.wikipedia.org/wiki/Brute-force_attack "Brute-force attack") more difficult.
+
+In some [theoretical analyses](https://en.wikipedia.org/wiki/Computational_complexity_theory "Computational complexity theory") "difficult" has a specific mathematical meaning, such as "not solvable in [asymptotic](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity "Asymptotic computational complexity") [polynomial time](https://en.wikipedia.org/wiki/Polynomial_time "Polynomial time")". Such interpretations of _difficulty_ are important in the study of [provably secure cryptographic hash functions](https://en.wikipedia.org/wiki/Provably_secure_cryptographic_hash_function "Provably secure cryptographic hash function") but do not usually have a strong connection to practical security. For example, an [exponential-time](https://en.wikipedia.org/wiki/Exponential_time "Exponential time") algorithm can sometimes still be fast enough to make a feasible attack. Conversely, a polynomial-time algorithm (e.g., one that requires _n_20 steps for _n_-digit keys) may be too slow for any practical use.
 ## Panoramica storica funzioni hash
 ## Attachi possibili
 ### Bruteforce
@@ -30,70 +55,6 @@ una funzione hash viene definita crittografica quando rispetta le seguenti propr
 ## Hash e Sistemi Operativi
 ---
 # References
-## Cyclic redundancy checks
-| Nome           | Lunghezza |
-| -------------- | --------- |
-| cksum (Unix)   | 32 bits   |
-| CRC-16         | 16 bits   |
-| CRC-32         | 32 bits   |
-| CRC-32 MPEG-2  | 32 bits   |
-| CRC-64         | 64 bits   |
-
----
-## Checksums
-| Nome                 | Lunghezza       | tipo                       |
-| -------------------- | --------------- | -------------------------- |
-| BSD checksum (Unix)  | 16 bits         | sum with circular rotation |
-| SYSV checksum (Unix) | 16 bits         | sum with circular rotation |
-| sum8                 | 8 bits          | sum                        |
-| sum16                | 16 bits         | sum                        |
-| sum24                | 24 bits         | sum                        |
-| sum32                | 32 bits         | sum                        |
-| fletcher-4           | 4 bits          | sum                        |
-| fletcher-8           | 8 bits          | sum                        |
-| fletcher-16          | 16 bits         | sum                        |
-| fletcher-32          | 32 bits         | sum                        |
-| Adler-32             | 32 bits         | sum                        |
-| xor8                 | 8 bits          | sum                        |
-| Luhn algorithm       | 1 decimal digit | sum                        |
-| Verhoeff algorithm   | 1 decimal digit | sum                        |
-| Damm algorithm       | 1 decimal digit | Quasigroup operation       |
-
----
-## Universal hash function families
-| Nome                            | Lunghezza | tipo     |
-| ------------------------------- | --------- | -------- |
-| Rabin fingerprint               | variable  | multiply |
-| tabulation hashing              | variable  | XOR      |
-| universal one-way hash function |           |          |
-| Zobrist hashing                 | variable  | XOR      |
-
----
-## Non-cryptographic hash functions
-| Nome                                                                                                  | Lunghezza                          | tipo                                               |
-| ----------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------- |
-| Pearson hashing                                                                                       | 8 bits (or more)                   | XOR/table                                          |
-| Paul Hsieh's SuperFastHash                                                                            | 32 bits                            |                                                    |
-| Buzhash                                                                                               | variable                           | XOR/table                                          |
-| Fowler–Noll–Vo hash function\\                                                                        |                                    |                                                    |
-| (FNV Hash)                                                                                            | 32, 64, 128, 256,512, or 1024 bits | xor/product or product/XOR                         |
-| Jenkins hash function                                                                                 | 32 or 64 bits                      | XOR/addition                                       |
-| Bernstein's hash *djb2*                                                                               | 32 or 64 bits                      | shift/add or mult/add or shift/add/xor or mult/xor |
-| PJW hash / Elf Hash                                                                                   | 32 or 64 bits                      | add,shift,xor                                      |
-| MurmurHash                                                                                            | 32, 64, or 128 bits                | product/rotation                                   |
-| Fast-Hash                                                                                             | 32, 64 bits                        | xorshift operations                                |
-| SpookyHash                                                                                            | 32, 64, or 128 bits                | see Jenkins hash function                          |
-| CityHash                                                                                              | 32, 64, 128, or 256 bits           |                                                    |
-| FarmHash                                                                                              | 32, 64 or 128 bits                 |                                                    |
-| MetroHash                                                                                             | 64 or 128 bits                     |                                                    |
-| numeric hash (nhash)                                                                                  | variable                           | division/modulo                                    |
-| xxHash                                                                                                | 32, 64, 128 bits                   | product/rotation                                   |
-| t1ha (Fast Positive Hash)&action=edit&redlink=1 "T1ha (Fast Positive Hash) (page does not exist)")[9] | 64 and 128 bits                    | product/rotation/XOR/add                           |
-| pHash                                                                                                 | fixed or variable                  | see Perceptual hashing                             |
-| dhash                                                                                                 | 128 bits                           | see Perceptual hashing                             |
-| SDBM                                                                                                  | 32 or 64 bits                      | mult/add or shift/add also used in GNU AWK         |
-
----
 ## Keyed cryptographic hash functions
 | Nome                                       | Lunghezza Tag       | tipo                              |
 | ------------------------------------------ | ------------------- | --------------------------------- |
@@ -158,6 +119,7 @@ una funzione hash viene definita crittografica quando rispetta le seguenti propr
 - <https://en.wikipedia.org/wiki/Brute-force_attack>
 - <https://en.wikipedia.org/wiki/Deterministic_algorithm>
 - <https://en.wikipedia.org/wiki/Avalanche_effect>
+- https://en.wikipedia.org/wiki/Birthday_attack
 - <https://www.sicurezzanazionale.gov.it/sisr.nsf/wp-content/uploads/2015/09/Crittografia-tra-arte-e-scienza-Tampanella.pdf>
 - <https://www.growhub.it/varie/come-si-fa-un-attacco-brute-force/>
 - <https://www.proofpoint.com/it/threat-reference/brute-force-attack>

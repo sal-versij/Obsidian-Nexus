@@ -19,7 +19,7 @@
   },
   "keyboardStatistics": {
     "markdown:toggle-preview": 16,
-    "editor:save-file": 169,
+    "editor:save-file": 187,
     "editor:open-search": 1,
     "editor:open-search-replace": 2,
     "markdown-prettifier:markdown-prettifier-run": 18,
@@ -30,6 +30,7 @@
     "editor:toggle-fold": 44,
     "cycle-through-panes:cycle-through-panes": 2,
     "editor:toggle-checklist-status": 1,
-    "editor:follow-link": 1
+    "editor:follow-link": 1,
+    "file-explorer:new-file": 1
   }
 }
