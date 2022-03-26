@@ -45,7 +45,6 @@ In alcune analisi teoriche "difficile" ha un significato matematico specifico: *
   Un **digest** può anche servire come mezzo per identificare in modo affidabile un file.
 ## Panoramica storica delle funzioni hash
 I primi design di funzioni hash crittografiche risalgono alla fine degli anni '70; altri design sono emersi negli anni '80. Durante gli anni '90, il numero di design di funzioni hash è cresciuto molto rapidamente, ma per molte di queste proposte sono stati identificati difetti di sicurezza. Nonostante l'importanza delle funzioni hash, solo uno sforzo limitato è stato speso per studiare le loro definizioni formali e i loro fondamenti. Nel 2004 *Wang et al.*  trovarono collisioni per le maggiori funzioni dei tempi(**MD4**, **MD5**, **HAVAL-128** e **RIPEMD**). Queste scoperte hanno portato ad una raffica di ricerche, che hanno portato a nuovi design e ad un crescente corpo di ricerca fondazionale. Il **NIST** ha annunciato nel 2006 che avrebbe organizzato la competizione SHA-3, con l'obiettivo di selezionare una nuova famiglia di funzioni hash entro il 2012. Dai 64 candidati presentati entro ottobre 2008, 14 sono arrivati al secondo turno e **Keccak** arrivò all'ultimo turno diventando lo stanadrd **SHA-3**. Il 23 febbraio 2017, il **CWI** (*Centrum Wiskunde & Informatica*) e **Google** hanno annunciato l'attacco ***SHAttered***, in cui hanno generato due diversi file PDF con lo stesso hash **SHA-1**. Questo attacco è circa 100.000 volte più veloce di un collision brute-force per **SHA-1** con un *birthday attack*
-
 ### Timeline estensiva
 - *Diffie* e *Hellman* hanno identificato la necessità di una funzione hash **unidirezionale** come elemento costitutivo di uno schema di firma digitale nel loro documento seminale del 1976 sulla crittografia a chiave pubblica
 - Le prime definizioni, analisi e costruzioni per le funzioni hash crittografiche possono essere trovate nel lavoro di *Rabin*, *Yuval* e *Merkle* della fine degli anni '70
@@ -100,11 +99,30 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
 - Il 24 aprile 2019 un documento di *Gaëtan Leurent* e *Thomas Peyrin* presentato a **Eurocrypt 2019** ha descritto un miglioramento dell'attacco *chosen-prefix* precedentemente migliore nelle funzioni digest **Merkle-Damgård**-like basate su **Davies-Meyer** block ciphers.
 - Il 5 gennaio 2020 *Gaëtan Leurent* e *Thomas Peyrin* hanno pubblicato un attacco migliorato
 ## Attachi possibili
-### Bruteforce
+- Cold boot attack
+- Dictionary attack
+- Password strength
+- Smudge attack
+### Brute-force attack
+Types of Brute Force Attacks
+
+- **Simple brute force attack**
+  uses a systematic approach to ‘guess’ that doesn’t rely on outside logic.
+- **Hybrid brute force attacks**
+  starts from external logic to determine which password variation may be most likely to succeed, and then continues with the simple approach to try many possible variations.
+- **Dictionary attacks**
+  guesses usernames or passwords using a dictionary of possible strings or phrases.
+- **Rainbow table attacks**
+  a rainbow table is a precomputed table for reversing cryptographic hash functions. It can be used to guess a function up to a certain length consisting of a limited set of characters.
+- **Reverse brute force attack**
+  uses a common password or collection of passwords against many possible usernames. Targets a network of users for which the attackers have previously obtained data.
+- **Credential stuffing**
+
+uses previously-known password-username pairs, trying them against multiple websites. Exploits the fact that many users have the same username and password across different systems.
 #### Strumenti di brute forcing
 ## Hash e Sistemi Operativi
 ## Citations
-- [Wikipedia: Cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+- [Cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
   - Al-Kuwari, Saif; Davenport, James H.; Bradford, Russell J. (2011). ["Cryptographic Hash Functions: Recent Design Trends and Security Notions"](https://eprint.iacr.org/2011/565). *Cryptology ePrint Archive*. Report 2011/565.
   - Rogaway, P.; Shrimpton, T. (2004). "Cryptographic Hash-Function Basics: Definitions, Implications, and Separations for Preimage Resistance, Second-Preimage Resistance, and Collision Resistance".  [10.1.1.3.6200](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.3.6200).
   - [Mendel et al.](https://en.wikipedia.org/wiki/Cryptographic_hash_function#CITEREFMendelRechbergerSchl%C3%A4ffer2009), p. 145:Concatenating ... is often used by implementors to "hedge bets" on hash functions. A combiner of the form MD5
@@ -114,7 +132,7 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
   - [Hoch & Shamir 2008](https://en.wikipedia.org/wiki/Cryptographic_hash_function#CITEREFHochShamir2008), pp. 616–630.
   - Andrew Regenscheid, Ray Perlner, Shu-Jen Chang, John Kelsey, Mridul Nandi, Souradyuti Paul, [Status Report on the First Round of the SHA-3 Cryptographic Hash Algorithm Competition](https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7620.pdf)
   - XiaoyunWang, Dengguo Feng, Xuejia Lai, Hongbo Yu, [Collisions for Hash Functions MD4, MD5, HAVAL-128, and RIPEMD](https://eprint.iacr.org/2004/199.pdf)
-  - Alshaikhli, Imad Fakhri; AlAhmad, Mohammad Abdulateef (2015), "Cryptographic Hash Function", *Handbook of Research on Threat Detection and Countermeasures in Network Security*, IGI Global, pp. 80–94, [doi](https://en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.4018/978-1-4666-6583-5.ch006](https://doi.org/10.4018%2F978-1-4666-6583-5.ch006), [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-1-4666-6583-5](https://en.wikipedia.org/wiki/Special:BookSources/978-1-4666-6583-5 "Special:BookSources/978-1-4666-6583-5")
+  - Alshaikhli, Imad Fakhri; AlAhmad, Mohammad Abdulateef (2015), "Cryptographic Hash Function", *Handbook of Research on Threat Detection and Countermeasures in Network Security*, IGI Global, pp. 80–94 [10.4018/978-1-4666-6583-5.ch006](https://doi.org/10.4018%2F978-1-4666-6583-5.ch006), [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-1-4666-6583-5](https://en.wikipedia.org/wiki/Special:BookSources/978-1-4666-6583-5 "Special:BookSources/978-1-4666-6583-5")
   - Xiaoyun Wang, [Yiqun Lisa Yin](https://en.wikipedia.org/wiki/Yiqun_Lisa_Yin "Yiqun Lisa Yin"), and Hongbo Yu, [Finding Collisions in the Full SHA-1](http://people.csail.mit.edu/yiqun/SHA1AttackProceedingVersion.pdf)
   - Bruce Schneier, [Cryptanalysis of SHA-1](http://www.schneier.com/blog/archives/2005/02/cryptanalysis_o.html) (summarizes Wang et al. results and their implications)
   - Fox-Brewster, Thomas. ["Google Just 'Shattered' An Old Crypto Algorithm – Here's Why That's Big For Web Security"](https://www.forbes.com/sites/thomasbrewster/2017/02/23/google-sha-1-hack-why-it-matters/#3f73df04c8cd). *Forbes*. Retrieved 2017-02-24.
@@ -123,33 +141,34 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
   - Goodin, Dan (2012-12-10). ["25-GPU cluster cracks every standard Windows password in <6 hours"](https://arstechnica.com/information-technology/2012/12/25-gpu-cluster-cracks-every-standard-windows-password-in-6-hours/). [Ars Technica](https://en.wikipedia.org/wiki/Ars_Technica "Ars Technica"). Retrieved 2020-11-23.
   - Claburn, Thomas (February 14, 2019). ["Use an 8-char Windows NTLM password? Don't. Every single one can be cracked in under 2.5hrs"](https://www.theregister.co.uk/2019/02/14/password_length/). *[www.theregister.co.uk](http://www.theregister.co.uk)*. Retrieved 2020-11-26.
   - ["Mind-blowing GPU performance"](https://improsec.com/tech-blog/mind-blowing-gpu-performance). Improsec. January 3, 2020.
-  - Grassi Paul A. (June 2017). *SP 800-63B-3 – Digital Identity Guidelines, Authentication and Lifecycle Management*. NIST. [doi](https://en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.6028/NIST.SP.800-63b](https://doi.org/10.6028%2FNIST.SP.800-63b).
+  - Grassi Paul A. (June 2017). *SP 800-63B-3 – Digital Identity Guidelines, Authentication and Lifecycle Management*. NIST. [10.6028/NIST.SP.800-63b](https://doi.org/10.6028%2FNIST.SP.800-63b).
 - [The First 30 Years of Cryptographic Hash Functions and the NIST SHA-3 Competition by Bart Preneel](https://www.esat.kuleuven.be/cosic/publications/article-1532.pdf)
 - [Lifetimes of popular cryptographic hashes](https://valerieaurora.org/hash.html)
 - [Collisions for Hash Functions MD4, MD5, HAVAL-128 and RIPEMD](https://eprint.iacr.org/2004/199.pdf)
+- [Password cracking](https://en.wikipedia.org/wiki/Password_cracking)
 
 ---
 # References
-- <https://en.wikipedia.org/wiki/Hash_function>
-- <https://en.wikipedia.org/wiki/List_of_hash_functions>
-- <https://en.wikipedia.org/wiki/Cryptographic_hash_function>
-- <https://en.wikipedia.org/wiki/Deterministic_algorithm>
-- <https://en.wikipedia.org/wiki/Avalanche_effect>
-- <https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions>
-- <https://valerieaurora.org/hash.html>
-- <https://en.wikipedia.org/wiki/Rainbow_table>
-- <https://www.thesslstore.com/blog/rainbow-tables-a-path-to-password-gold-for-cybercriminals/>
-- <https://www.geeksforgeeks.org/understanding-rainbow-table-attack/>
-- <https://cyberhoot.com/cybrary/rainbow-tables/>
-- <https://www.beyondidentity.com/glossary/rainbow-table-attack>
-- <https://www.sciencedirect.com/topics/computer-science/rainbow-table>
-- <https://www.mrw.it/sicurezza/password-cracking-tramite-rainbow-tables_7694.html>
-- <https://en.wikipedia.org/wiki/Password_cracking>
-- <https://en.wikipedia.org/wiki/Birthday_attack>
-- <https://en.wikipedia.org/wiki/Brute-force_attack>
-- <https://www.growhub.it/varie/come-si-fa-un-attacco-brute-force/>
-- <https://www.proofpoint.com/it/threat-reference/brute-force-attack>
-- <https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/>
+- [x] <https://en.wikipedia.org/wiki/Hash_function>
+- [x] <https://en.wikipedia.org/wiki/List_of_hash_functions>
+- [x] <https://en.wikipedia.org/wiki/Cryptographic_hash_function>
+- [x] <https://en.wikipedia.org/wiki/Deterministic_algorithm>
+- [x] <https://en.wikipedia.org/wiki/Avalanche_effect>
+- [x] <https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions>
+- [x] <https://valerieaurora.org/hash.html>
+- [ ] <https://en.wikipedia.org/wiki/Rainbow_table>
+- [ ] <https://www.thesslstore.com/blog/rainbow-tables-a-path-to-password-gold-for-cybercriminals/>
+- [ ] <https://www.geeksforgeeks.org/understanding-rainbow-table-attack/>
+- [ ] <https://cyberhoot.com/cybrary/rainbow-tables/>
+- [ ] <https://www.beyondidentity.com/glossary/rainbow-table-attack>
+- [ ] <https://www.sciencedirect.com/topics/computer-science/rainbow-table>
+- [ ] <https://www.mrw.it/sicurezza/password-cracking-tramite-rainbow-tables_7694.html>
+- [ ] <https://en.wikipedia.org/wiki/Password_cracking>
+- [ ] <https://en.wikipedia.org/wiki/Birthday_attack>
+- [ ] <https://en.wikipedia.org/wiki/Brute-force_attack>
+- [ ] <https://www.growhub.it/varie/come-si-fa-un-attacco-brute-force/>
+- [ ] <https://www.proofpoint.com/it/threat-reference/brute-force-attack>
+- [ ] <https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/>
 ## Keyed cryptographic hash functions
 | Nome                                       | Lunghezza Tag       | tipo                              |
 | ------------------------------------------ | ------------------- | --------------------------------- |
