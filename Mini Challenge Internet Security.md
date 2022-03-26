@@ -45,7 +45,9 @@ In alcune analisi teoriche "difficile" ha un significato matematico specifico: *
   Un **digest** può anche servire come mezzo per identificare in modo affidabile un file.
 ## Panoramica storica delle funzioni hash
 I primi design di funzioni hash crittografiche risalgono alla fine degli anni '70; altri design sono emersi negli anni '80. Durante gli anni '90, il numero di design di funzioni hash è cresciuto molto rapidamente, ma per molte di queste proposte sono stati identificati difetti di sicurezza. Nonostante l'importanza delle funzioni hash, solo uno sforzo limitato è stato speso per studiare le loro definizioni formali e i loro fondamenti. Nel 2004 *Wang et al.* ha perfezionato la crittoanalisi differenziale al punto che trovare collisioni per **MD5** è diventato molto facile; per **SHA-1** è stata ottenuta una sostanziale riduzione del margine di sicurezza. Questa scoperta ha portato ad una raffica di ricerche, che hanno portato a nuovi edsign e ad un crescente corpo di ricerca fondazionale. Il NIST ha annunciato nel novembre 2007 che avrebbe organizzato la competizione SHA-3, con l'obiettivo di selezionare una nuova famiglia di funzioni hash entro il 2012. Dai 64 candidati presentati entro ottobre 2008, 14 sono arrivati al secondo turno.
-
+### Principali eventi
+- Dagli anni '70 aggli anni '80
+### Timeline estensiva
 - *Diffie* e *Hellman* hanno identificato la necessità di una funzione hash **unidirezionale** come elemento costitutivo di uno schema di firma digitale nel loro documento seminale del 1976 sulla crittografia a chiave pubblica
 - Le prime definizioni, analisi e costruzioni per le funzioni hash crittografiche possono essere trovate nel lavoro di *Rabin*, *Yuval* e *Merkle* della fine degli anni '70
   - *Rabin* ha proposto un progetto con un risultato a 64 bit basato sul cifrario a blocchi **DES**
@@ -53,45 +55,51 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
   - Il lavoro di *Merkle* ha introdotto i requisiti di **collision resistance**, **second pre-image resistance** and **pre-image resistance**
 - Nel 1987, *Damgård* formalizzò la definizione di **collision resistance**
 - Nel 1989 *Naor* e *Yung* definirono una variante delle funzioni **second pre-images resistant** chiamata ***Universal One Way Hash Functions (UOWHFs)***
-
-- Weaknesses in **MD4** were demonstrated by *Den Boer* and *Bosselaers* in a paper published in 1991
-
+- Nel 1991 le debolezze in **MD4** sono state dimostrate da *Den Boer* e *Bosselaers* in un documento pubblicato
+- Nel 1991 Rivest progettò **MD5** come sostituto sicuro del suo predecessore **MD4**
+- Nel 1992 la funzione originale **RIPEMD** fu progettata nell'ambito del **progetto europeo RIPE** (*RACE Integrity Primitives Evaluation*)
+- Nel 1995 il primo attacco di collisione full-round **MD4** è stato trovato da *Hans Dobbertin*
+- Nel 1996, in risposta alle debolezze di sicurezza trovate nel RIPEMD originale, *Hans Dobbertin*, *Antoon Bosselaers* e *Bart Preneel* del gruppo di ricerca **COSIC** della *Katholieke Universiteit Leuven a Leuven, Belgio* hanno pubblicato quattro varianti rafforzate: **RIPEMD-128**, **RIPEMD-160**, **RIPEMD-256**, e **RIPEMD-320**
+- Nel 1996, *Dobbertin* ha annunciato una collisione della funzione di compressione di **MD5**
+- Nel 1997 *Rogier* e *Chauvaud* hanno descritto collisioni della funzione di compressione di **MD2**, anche se non sono stati in grado di estendere l'attacco all'intero **MD2**
+- Al **CRYPTO 98**, due ricercatori francesi, Florent Chabaud e Antoine Joux, hanno presentato un attacco a SHA-0
+- Nel 2001 con la pubblicazione di **FIPS PUB 180-2**, **NIST** ha aggiunto tre funzioni hash aggiuntive nella famiglia **SHA**. Gli algoritmi sono conosciuti collettivamente come **SHA-2**, dal nome delle loro lunghezze di digest (in bit): **SHA-256**, **SHA-384** e **SHA-512**.
+- Nel 2004 **MD2** ha dimostrato di essere vulnerabile ad un attacco preimage
+- Nel 2004, *Biham* e *Chen* hanno trovato delle quasi-collisioni per **SHA-0** - due messaggi che hanno un hash quasi uguale; in questo caso, 142 dei 160 bit sono uguali. Hanno anche trovato collisioni complete di *SHA-0* ridotte a 62 dei suoi 80 round
 - Nel 2004 *Rogaway* e *Shrimpton* hanno studiato formalmente le relazioni tra la collision resistance e diversi tipi di resistenza a pre-image e second pre-image
-- Le funzioni di hash dovrebbero anche distruggere la struttura algebrica dello schema di firma; esempi tipici sono l'euristica di *Fiat-Shamir* e l'attacco di *Coppersmith* alla funzione di hash nell'*X.509 Annex D*
-- La costruzione di algoritmi MAC basati su funzioni hash (come HMAC) ha portato al requisito che la funzione hash possa essere usata per costruire funzioni pseudo-casuali, che è stato tra l'altro studiato da *Bellare et al.*
-
-In 1991 Rivest designed **MD5** as a secure replacement for his predecessor **MD4**
-In 1992 the original **RIPEMD** function was designed in the framework of the **EU project RIPE** (*RACE Integrity Primitives Evaluation*)
-In 1995 the first full-round **MD4** collision attack was found by *Hans Dobbertin* 
-In 1996, in response to security weaknesses found in the original RIPEMD, *Hans Dobbertin*, *Antoon Bosselaers* and *Bart Preneel* at the **COSIC** research group at the *Katholieke Universiteit Leuven in Leuven, Belgium* published four strengthened variants: **RIPEMD-128**, **RIPEMD-160**, **RIPEMD-256**, and **RIPEMD-320**
-In 1996, *Dobbertin* announced a collision of the compression function of **MD5**
-In 1997 *Rogier* and *Chauvaud* described collisions of **MD2**'s compression function, although they were unable to extend the attack to the full **MD2**
-At **CRYPTO 98**, two French researchers, Florent Chabaud and Antoine Joux, presented an attack on SHA-0
-In 2004 **MD2** was shown to be vulnerable to a preimage attack
-In 2004, *Biham* and *Chen* found near-collisions for **SHA-0** – two messages that hash to nearly the same value; in this case, 142 out of the 160 bits are equal. They also found full collisions of *SHA-0* reduced to 62 out of its 80 rounds
-In August 2004, *Wang et al.* found a very efficient collision attack, alongside attacks on later hash function designs in the **MD4**/**MD5**/**SHA-1**/**RIPEMD family**
-On 12 August 2004, a collision for the full **SHA-0** algorithm was announced by *Joux*, *Carribault*, *Lemuet*, and *Jalby*. This was done by using a generalization of the *Chabaud* and *Joux* attack
-On 17 August 2004, at the *Rump Session* of **CRYPTO 2004**, preliminary results were announced by *Wang*, *Feng*, *Lai*, and *Yu*, about an attack on **MD5**, **SHA-0** and other hash functions
-On 17 August 2004, collisions for HAVAL (128 bits, 3 passes) were announced by *Xiaoyun Wang*, *Dengguo Feng*, *Xuejia Lai*, and *Hongbo Yu*
-After the **CRYPTO 2004** results were published, **NIST** announced that they planned to phase out the use of **SHA-1** by 2010 in favor of the **SHA-2** variants
-In February 2005, an attack by *Xiaoyun Wang*, *Yiqun Lisa Yin*, and *Hongbo Yu* was announced which could find collisions in **SHA-0**
-In early 2005, *Vincent Rijmen* and *Elisabeth Oswald* published an attack on a reduced version of *SHA-1* – 53 out of 80 rounds – which finds collisions
-In February 2005, an attack by *Xiaoyun Wang*, *Yiqun Lisa Yin*, and *Hongbo Yu* was announced. The attacks can find collisions in the full version of **SHA-1**
-On 1 March 2005, *Vlastimil Klima* described an improved algorithm, able to construct **MD5** collisions in a few hours on a single notebook computer
-On 17 August 2005, an improvement on the SHA-1 attack was announced on behalf of *Xiaoyun Wang*, *Andrew Yao* and *Frances Yao* at the **CRYPTO 2005** Rump Session, lowering the complexity required for finding a collision in **SHA-1**
-On 18 March 2006, *Klima* published an algorithm that could find a collision within one minute on a single notebook computer, using a method he calls tunneling
-At the Rump Session of CRYPTO 2006, *Christian Rechberger* and *Christophe De Cannière* claimed to have discovered a collision attack on **SHA-1** that would allow an attacker to select at least parts of the message
-In 2008, the **pre-image resistance** of **MD4** was also broken by *Gaëtan Leurent*
-In 2008 an attack on **SHA-0** applying the boomerang attack brought the complexity of finding collisions down, estimated to take 1 hour on an average PC from the year 2008
-In 2009, **MD2** was shown to be vulnerable to a collision attack
-In 2009, security updates were issued disabling **MD2** in OpenSSL, GnuTLS, and Network Security Services
-In 2011, ***RFC 6150*** stated that **RFC 1320 (MD4)** is **historic** (obsolete)
-In 2011 an informational **RFC 6151** was approved to update the security considerations in **MD5** and **HMAC-MD5**
-On 8 October 2015, *Marc Stevens*, *Pierre Karpman*, and *Thomas Peyrin* published a *freestart collision attack* on **SHA-1**'s compression function
-	it was the first time that an attack on full **SHA-1** had been _demonstrated_; all earlier attacks were too expensive for their authors to carry them out. The authors named this significant breakthrough in the cryptanalysis of **SHA-1** ***The SHAppening***
-On 23 February 2017, the **CWI** (*Centrum Wiskunde & Informatica*) and **Google** announced the ***SHAttered*** attack, in which they generated two different PDF files with the same **SHA-1** hash. This attack is about 100,000 times faster than brute forcing a SHA-1 collision with a birthday attack
-On 24 April 2019 a paper by Gaëtan Leurent and Thomas Peyrin presented at Eurocrypt 2019 described an enhancement to the previously best chosen-prefix attack in Merkle–Damgård–like digest functions based on Davies–Meyer block ciphers.
-On 5 January 2020 the previous authors published an improved attack
+- Nell'agosto 2004, *Wang et al.* hanno trovato un attacco di collisione molto efficiente, insieme ad attacchi su progetti successivi di funzioni hash nella famiglia **MD4**/**MD5**/**SHA-1**/**RIPEMD**
+- Il 12 agosto 2004, una collisione per l'intero algoritmo **SHA-0** è stata annunciata da *Joux*, *Carribault*, *Lemuet*, e *Jalby*. Questo è stato fatto usando una generalizzazione dell'attacco di *Chabaud* e *Joux*.
+- Il 17 agosto 2004, alla *Rump Session* di **CRYPTO 2004**, sono stati annunciati risultati preliminari da *Wang*, *Feng*, *Lai*, e *Yu*, riguardo un attacco a **MD5**, **SHA-0** e altre funzioni hash
+- Il 17 agosto 2004, le collisioni per HAVAL (128 bit, 3 passaggi) sono state annunciate da *Xiaoyun Wang*, *Dengguo Feng*, *Xuejia Lai*, e *Hongbo Yu*
+- Dopo la pubblicazione dei risultati di **CRYPTO 2004**, **NIST** ha annunciato di aver pianificato di eliminare gradualmente l'uso di **SHA-1** entro il 2010 in favore delle varianti **SHA-2**.
+- Nel febbraio 2005, fu annunciato un attacco da parte di *Xiaoyun Wang*, *Yiqun Lisa Yin*, e *Hongbo Yu* che poteva trovare collisioni in **SHA-0**
+- All'inizio del 2005, *Vincent Rijmen* e *Elisabeth Oswald* hanno pubblicato un attacco su una versione ridotta di *SHA-1* - 53 su 80 round - che trova collisioni
+- Nel febbraio 2005, un attacco di *Xiaoyun Wang*, *Yiqun Lisa Yin*, e *Hongbo Yu* è stato annunciato. L'attacco può trovare collisioni nella versione completa di **SHA-1**
+- Il 1° marzo 2005, *Vlastimil Klima* ha descritto un algoritmo migliorato, in grado di costruire le collisioni **MD5** in poche ore su un singolo computer portatile
+- Il 17 agosto 2005, un miglioramento dell'attacco SHA-1 è stato annunciato a nome di *Xiaoyun Wang*, *Andrew Yao* e *Frances Yao* alla **CRYPTO 2005** Rump Session, abbassando la complessità richiesta per trovare una collisione in **SHA-1**
+- Il 18 marzo 2006, *Klima* ha pubblicato un algoritmo che potrebbe trovare una collisione in un minuto su un singolo computer notebook, usando un metodo che lui chiama tunneling
+- Alla Rump Session di CRYPTO 2006, *Christian Rechberger* e *Christophe De Cannière* affermarono di aver scoperto un attacco di collisione su **SHA-1** che avrebbe permesso ad un attaccante di selezionare almeno parti del messaggio
+- Nel 2006, **NIST** ha iniziato ad organizzare il concorso **NIST** per funzioni di hash per creare un nuovo standard di hash, **SHA-3**. **SHA-3** non è destinato a sostituire **SHA-2**, poiché nessun attacco significativo a **SHA-2** è stato dimostrato. A causa del successo degli attacchi a **MD5**, **SHA-0** e **SHA-1**, **NIST** ha percepito la necessità di un hash crittografico alternativo e diverso, che è diventato **SHA-3**
+- Nel 2008, anche la **resistenza pre-immagine** di **MD4** è stata violata da *Gaëtan Leurent*.
+- Nel 2008 un attacco a **SHA-0** applicando l'attacco boomerang ha portato la complessità della ricerca di collisioni, stimata in 1 ora su un PC medio dell'anno 2008
+- Nel 2009, **MD2** ha dimostrato di essere vulnerabile ad un attacco di collisione
+- Nel 2009, sono stati rilasciati aggiornamenti di sicurezza che disabilitano **MD2** in OpenSSL, GnuTLS, e Network Security Services
+- Nel luglio 2009, 14 algoritmi sono stati selezionati per il secondo round per **SHA-3**
+- Nel dicembre 2010 **Keccak** ha avanzato all'ultimo turno del concorso **NIST** per **SHA-3**
+- Nel 2011, ***RFC 6150*** ha dichiarato che **RFC 1320 (MD4)** è **storico** (obsoleto)
+- Nel 2011 è stata approvata una **RFC 6151** informativa per aggiornare le considerazioni sulla sicurezza in **MD5** e **HMAC-MD5**
+- Nel gennaio 2011, **NIST** ha pubblicato **SP800-131A**, che ha specificato un passaggio dal minimo allora corrente di 80-bit di sicurezza (fornito da **SHA-1**) consentito per l'uso del governo federale fino alla fine del 2013, a 112-bit di sicurezza (fornito da **SHA-2**) sia il requisito minimo (a partire dal 2014) e il livello di sicurezza consigliato (a partire dalla data di pubblicazione nel 2011)
+- Nel marzo 2012, lo standard è stato aggiornato in **FIPS PUB 180-4**, aggiungendo le funzioni hash **SHA-512/224** e **SHA-512/256**, e descrivendo un metodo per generare valori iniziali per versioni troncate di **SHA-512**
+- Nel luglio 2012, **NIST** ha rivisto **SP800-57**, che fornisce una guida per la gestione delle chiavi crittografiche. La pubblicazione ha vietato la creazione di firme digitali con una sicurezza hash inferiore a 112 bit dopo il 2013.
+- Nel 2012 il concorso **NIST** per le funzioni di hash ha selezionato una nuova funzione di hash, **SHA-3**. L'algoritmo **SHA-3** non è derivato da **SHA-2**
+- Nel 2014 **NIST** ha pubblicato un progetto **FIPS 202** "**SHA-3** Standard: *Funzioni Hash e Extendable-Output* basate sulla permutazione".
+- Il 5 agosto 2015 **FIPS 202** è stato approvato
+- Il 5 agosto 2015 **NIST** ha annunciato che **SHA-3** era diventato uno standard di hashing
+- L'8 ottobre 2015, *Marc Stevens*, *Pierre Karpman*, e *Thomas Peyrin* hanno pubblicato un *attacco alla collisione di freestart* sulla funzione di compressione di **SHA-1**
+  era la prima volta che un attacco su **SHA-1** completo era stato *dimostrato*; tutti gli attacchi precedenti erano troppo costosi per i loro autori per portarli a termine. Gli autori hanno chiamato questo significativo passo avanti nella crittoanalisi di **SHA-1** ***The SHAppening***.
+- Il 23 febbraio 2017, il **CWI** (*Centrum Wiskunde & Informatica*) e **Google** hanno annunciato l'attacco ***SHAttered***, in cui hanno generato due diversi file PDF con lo stesso hash **SHA-1**. Questo attacco è circa 100.000 volte più veloce della forza bruta di una collisione **SHA-1** con un *attacco di compleanno*
+- Il 24 aprile 2019 un documento di *Gaëtan Leurent* e *Thomas Peyrin* presentato a **Eurocrypt 2019** ha descritto un miglioramento dell'attacco chosen-prefix precedentemente migliore nelle funzioni digest **Merkle-Damgård**-like basate su **Davies-Meyer** block ciphers.
+- Il 5 gennaio 2020 *Gaëtan Leurent* e *Thomas Peyrin* hanno pubblicato un attacco migliorato
 ## Attachi possibili
 ### Bruteforce
 #### Strumenti di brute forcing
