@@ -44,9 +44,8 @@ In alcune analisi teoriche "difficile" ha un significato matematico specifico: *
 - Identificatore di file o dati
   Un **digest** può anche servire come mezzo per identificare in modo affidabile un file.
 ## Panoramica storica delle funzioni hash
-I primi design di funzioni hash crittografiche risalgono alla fine degli anni '70; altri design sono emersi negli anni '80. Durante gli anni '90, il numero di design di funzioni hash è cresciuto molto rapidamente, ma per molte di queste proposte sono stati identificati difetti di sicurezza. Nonostante l'importanza delle funzioni hash, solo uno sforzo limitato è stato speso per studiare le loro definizioni formali e i loro fondamenti. Nel 2004 *Wang et al.* ha perfezionato la crittoanalisi differenziale al punto che trovare collisioni per **MD5** è diventato molto facile; per **SHA-1** è stata ottenuta una sostanziale riduzione del margine di sicurezza. Questa scoperta ha portato ad una raffica di ricerche, che hanno portato a nuovi edsign e ad un crescente corpo di ricerca fondazionale. Il NIST ha annunciato nel novembre 2007 che avrebbe organizzato la competizione SHA-3, con l'obiettivo di selezionare una nuova famiglia di funzioni hash entro il 2012. Dai 64 candidati presentati entro ottobre 2008, 14 sono arrivati al secondo turno.
-### Principali eventi
-- Dagli anni '70 aggli anni '80
+I primi design di funzioni hash crittografiche risalgono alla fine degli anni '70; altri design sono emersi negli anni '80. Durante gli anni '90, il numero di design di funzioni hash è cresciuto molto rapidamente, ma per molte di queste proposte sono stati identificati difetti di sicurezza. Nonostante l'importanza delle funzioni hash, solo uno sforzo limitato è stato speso per studiare le loro definizioni formali e i loro fondamenti. Nel 2004 *Wang et al.*  trovarono collisioni per le maggiori funzioni dei tempi(**MD4**, **MD5**, **HAVAL-128** e **RIPEMD**). Queste scoperte hanno portato ad una raffica di ricerche, che hanno portato a nuovi design e ad un crescente corpo di ricerca fondazionale. Il **NIST** ha annunciato nel 2006 che avrebbe organizzato la competizione SHA-3, con l'obiettivo di selezionare una nuova famiglia di funzioni hash entro il 2012. Dai 64 candidati presentati entro ottobre 2008, 14 sono arrivati al secondo turno e **Keccak** arrivò all'ultimo turno diventando lo stanadrd **SHA-3**. Il 23 febbraio 2017, il **CWI** (*Centrum Wiskunde & Informatica*) e **Google** hanno annunciato l'attacco ***SHAttered***, in cui hanno generato due diversi file PDF con lo stesso hash **SHA-1**. Questo attacco è circa 100.000 volte più veloce di un collision brute-force per **SHA-1** con un *birthday attack*
+
 ### Timeline estensiva
 - *Diffie* e *Hellman* hanno identificato la necessità di una funzione hash **unidirezionale** come elemento costitutivo di uno schema di firma digitale nel loro documento seminale del 1976 sulla crittografia a chiave pubblica
 - Le prime definizioni, analisi e costruzioni per le funzioni hash crittografiche possono essere trovate nel lavoro di *Rabin*, *Yuval* e *Merkle* della fine degli anni '70
@@ -98,7 +97,7 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
 - L'8 ottobre 2015, *Marc Stevens*, *Pierre Karpman*, e *Thomas Peyrin* hanno pubblicato un *attacco alla collisione di freestart* sulla funzione di compressione di **SHA-1**
   era la prima volta che un attacco su **SHA-1** completo era stato *dimostrato*; tutti gli attacchi precedenti erano troppo costosi per i loro autori per portarli a termine. Gli autori hanno chiamato questo significativo passo avanti nella crittoanalisi di **SHA-1** ***The SHAppening***.
 - Il 23 febbraio 2017, il **CWI** (*Centrum Wiskunde & Informatica*) e **Google** hanno annunciato l'attacco ***SHAttered***, in cui hanno generato due diversi file PDF con lo stesso hash **SHA-1**. Questo attacco è circa 100.000 volte più veloce della forza bruta di una collisione **SHA-1** con un *attacco di compleanno*
-- Il 24 aprile 2019 un documento di *Gaëtan Leurent* e *Thomas Peyrin* presentato a **Eurocrypt 2019** ha descritto un miglioramento dell'attacco chosen-prefix precedentemente migliore nelle funzioni digest **Merkle-Damgård**-like basate su **Davies-Meyer** block ciphers.
+- Il 24 aprile 2019 un documento di *Gaëtan Leurent* e *Thomas Peyrin* presentato a **Eurocrypt 2019** ha descritto un miglioramento dell'attacco *chosen-prefix* precedentemente migliore nelle funzioni digest **Merkle-Damgård**-like basate su **Davies-Meyer** block ciphers.
 - Il 5 gennaio 2020 *Gaëtan Leurent* e *Thomas Peyrin* hanno pubblicato un attacco migliorato
 ## Attachi possibili
 ### Bruteforce
@@ -127,6 +126,7 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
   - Grassi Paul A. (June 2017). *SP 800-63B-3 – Digital Identity Guidelines, Authentication and Lifecycle Management*. NIST. [doi](https://en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.6028/NIST.SP.800-63b](https://doi.org/10.6028%2FNIST.SP.800-63b).
 - [The First 30 Years of Cryptographic Hash Functions and the NIST SHA-3 Competition by Bart Preneel](https://www.esat.kuleuven.be/cosic/publications/article-1532.pdf)
 - [Lifetimes of popular cryptographic hashes](https://valerieaurora.org/hash.html)
+- [Collisions for Hash Functions MD4, MD5, HAVAL-128 and RIPEMD](https://eprint.iacr.org/2004/199.pdf)
 
 ---
 # References
