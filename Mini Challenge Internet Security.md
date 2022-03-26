@@ -104,22 +104,41 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
 - Password strength
 - Smudge attack
 ### Brute-force attack
-Types of Brute Force Attacks
+Gli attacchi brute-force funzionano calcolando ogni possibile combinazione che potrebbe comporre una password e testandola per vedere se è la password corretta. All'aumentare della lunghezza della password, la quantità di tempo, in media, per trovare la password corretta aumenta esponenzialmente.
 
-- **Simple brute force attack**
-  uses a systematic approach to ‘guess’ that doesn’t rely on outside logic.
-- **Hybrid brute force attacks**
-  starts from external logic to determine which password variation may be most likely to succeed, and then continues with the simple approach to try many possible variations.
-- **Dictionary attacks**
-  guesses usernames or passwords using a dictionary of possible strings or phrases.
-- **Rainbow table attacks**
-  a rainbow table is a precomputed table for reversing cryptographic hash functions. It can be used to guess a function up to a certain length consisting of a limited set of characters.
-- **Reverse brute force attack**
-  uses a common password or collection of passwords against many possible usernames. Targets a network of users for which the attackers have previously obtained data.
+Types of Brute Force Attacks:
+
+- **Semplice attacco di brute force**
+  utilizza un approccio sistematico che non si basa su una logica esterna
+- **Attacchi dizionario**
+  indovina nomi utente o password usando un dizionario di possibili stringhe o frasi
+- **Attacchi ibridi di brute force**
+  parte da una logica esterna per determinare quale variazione di password può avere più probabilità di successo, e poi continua con il semplice approccio di provare molte possibili variazioni
+- **Attacchi rainbow table**
+  una rainbow table è una tabella precompilata per l'inversione delle funzioni hash crittografiche. Può essere usata per indovinare una funzione fino a una certa lunghezza che consiste in un insieme limitato di caratteri
+- **Attacco reverse brute force**
+  utilizza una password comune o una collezione di password contro molti possibili nomi utente. Prende di mira una rete di utenti per i quali gli aggressori hanno precedentemente ottenuto dati
 - **Credential stuffing**
-
-uses previously-known password-username pairs, trying them against multiple websites. Exploits the fact that many users have the same username and password across different systems.
+  utilizza coppie *password-username* conosciute in precedenza, provandole con più siti web. Sfrutta il fatto che molti utenti hanno lo stesso nome utente e password su diversi sistemi
 #### Strumenti di brute forcing
+- **THC-Hydra**
+  Esegue rapidamente un gran numero di combinazioni di password, sia simple brute force che dictionary-based. Può attaccare più di 50 protocolli e più sistemi operativi
+- **Aircrack-ng**
+  può essere utilizzato su Windows, Linux, iOS e Android. Utilizza un dizionario di password molto usate per violare le reti wireless
+- **John the Ripper**
+  funziona su 15 piattaforme diverse, tra cui Unix, Windows e OpenVMS. Prova tutte le combinazioni possibili usando un dizionario di possibili password
+- **L0phtCrack**
+  uno strumento per craccare le password di Windows. Utilizza **rainbow tables**, dizionari e algoritmi *multiprocessore*
+- **Ophcrack**
+  Ophcrack è un altro strumento per eseguire brute-force usato appositamente per craccare le password di Windows. Cracca le password di Windows utilizzando gli hash LM attraverso le **rainbow tables**
+- **Hashcat**
+  funziona su Windows, Linux e Mac OS. Può eseguire semplici attacchi brute force, rule-based e hybrid.
+- **DaveGrohl**
+  uno strumento open-source per craccare Mac OS. Può essere distribuito su più computer
+- **Ncrack**
+  uno strumento per craccare l'autenticazione di rete. Può essere usato su Windows, Linux e BSD
+- **Rainbow Crack**
+  genera **rainbow tables** da utilizzare durante degli attacchi, differisce da altri strumenti convenzionali di brute-forcing perchè le **rainbow tables** sono precomputed
 ## Hash e Sistemi Operativi
 ## Citations
 - [Cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
