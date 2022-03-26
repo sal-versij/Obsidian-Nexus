@@ -1,16 +1,16 @@
 # Mini Challenge Internet Security
 # Funzioni Hash
 Una funzione hash è una funzione di mappatura tra dati di arbitraria lunghezza e valori di lunghezza fissa, anche chiamati **hash values**, **hash codes**, **digests**, o semplicemente **hashes**.
-Le funzioni hash mappano un insieme in input di cardinalità nettamente superiore rispetto all'output, questo comporta inevitabilmente collisioni, dimostrato dal teorema dei cassetti, quindi una metrica da analizzare quando si parla di funzioni hash è proprio la probabilità di collissione.
+Le funzioni hash mappano un insieme in input di cardinalità nettamente superiore rispetto all'output, questo comporta inevitabilmente delle collisioni, cosa dimostrata dal teorema dei cassetti. Una metrica da analizzare quando si parla di funzioni hash è proprio la probabilità di collisione.
 
 L'uso delle funzioni hash si basa sulle proprietà statistiche della relazione tra chiave e funzione:
 
-- nel caso peggiore si ha elevatissima probabiltà di collisioni, ma il caso peggiore stesso ha probabilità inifitamente piccola
+- nel caso peggiore si ha elevatissima probabiltà di collisioni, ma il caso peggiore stesso ha probabilità infinitamente piccola
 - nel caso medio si ha collisione minima
 
-Le funzioni di hash sono collegate a (e spesso confuse con) **checksum**, **check digits**, **fingerprints**, **compressione lossy**, **funzioni di randomizzazione**, **error-correcting codes** e **cifrari**. Anche se i concetti si sovrappongono in una certa misura, ognuno ha i propri usi e requisiti ed è progettato e ottimizzato in modo diverso. La funzione hash differisce da questi concetti principalmente in termini di integrità dei dati.
+Le funzioni di hash sono collegate (e spesso confuse con) a **checksum**, **check digits**, **fingerprints**, **compressione lossy**, **funzioni di randomizzazione**, **error-correcting codes** e **cifrari**. Anche se i concetti si sovrappongono in una certa misura, ognuno ha i propri usi e requisiti ed è progettato e ottimizzato in modo diverso. La funzione hash differisce da questi concetti principalmente in termini di integrità dei dati.
 ## Funzioni Hash in sicurezza informatica
-Nella sicurezza informatica le funzioni hash utilizzate devono essere crittografiche, quindi rispettare le seguenti proprietà:
+Nella sicurezza informatica le funzioni hash utilizzate devono essere crittografiche, e quindi devono rispettare le seguenti proprietà:
 
 - deve essere *deterministica*:
   dato lo stesso input darà **sempre** lo stesso output
