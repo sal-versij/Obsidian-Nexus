@@ -18,12 +18,12 @@
     "workspace:close-others": 1
   },
   "keyboardStatistics": {
-    "markdown:toggle-preview": 16,
-    "editor:save-file": 206,
+    "markdown:toggle-preview": 18,
+    "editor:save-file": 221,
     "editor:open-search": 1,
     "editor:open-search-replace": 2,
-    "markdown-prettifier:markdown-prettifier-run": 24,
-    "command-palette:open": 5,
+    "markdown-prettifier:markdown-prettifier-run": 25,
+    "command-palette:open": 6,
     "cycle-through-panes:cycle-through-panes-reverse": 1,
     "editor:fold-all": 14,
     "editor:unfold-all": 8,

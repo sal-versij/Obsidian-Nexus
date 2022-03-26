@@ -9,38 +9,29 @@ L'uso delle funzioni hash si basa sulle proprietà statistiche della relazione t
 - nel caso medio si ha collisione minima
 
 Le funzioni di hash sono collegate a (e spesso confuse con) **checksum**, **check digits**, **fingerprints**, **compressione lossy**, **funzioni di randomizzazione**, **error-correcting codes** e **cifrari**. Anche se i concetti si sovrappongono in una certa misura, ognuno ha i propri usi e requisiti ed è progettato e ottimizzato in modo diverso. La funzione hash differisce da questi concetti principalmente in termini di integrità dei dati.
-
-Nel caso della sicurezza informatica le funzioni hash utilizzate sono crittografiche, quindi rispetta le seguenti proprietà:
+## Funzioni Hash in sicurezza informatica
+Nella sicurezza informatica le funzioni hash utilizzate devono essere crittografiche, quindi rispettare le seguenti proprietà:
 
 - deve essere *deterministica*:
   dato lo stesso input darà **sempre** lo stesso output
 - è *efficente* da computare per ogni dato input
-- **non** è possibile *invertire* il processo (**Pre-image resistance**):
-  è impossibile generare un messaggio che produce un predeterminato **digest**
-- **non** è possibile generare una *collisione*:
+- deve essere *difficile* invertire il processo (**Pre-image resistance**):
+  deve essere *difficile* generare un messaggio che produce un predeterminato **digest**
+- deve essere *difficile* generare una *collisione*:
   - **Second pre-image resistance**
-    Dato un input, deve essere difficile trovare un diverso input che risulti nello stesso **digest**; questa proprietà è talvolta indicata come **weak collision resistance**.
+    dato un input, deve essere difficile trovare un diverso input che risulti nello stesso **digest**; questa proprietà è talvolta indicata come **weak collision resistance**.
   - **Collision resistance**
-    Dovrebbe essere difficile trovare due messaggi diversi che risultino nello stesso **digest**; questa proprietà è talvolta indicata come **strong collision resistance**.
-    Una coppia di messaggi che genera lo stesso **digest** è chiamata **cryptographic hash collision**. 
-- Gode della proprietà crittografica **avalanche effect**:
+    deve essere difficile trovare due messaggi diversi che risultino nello stesso **digest**; questa proprietà è talvolta indicata come **strong collision resistance**.
+    Una coppia di messaggi che genera lo stesso **digest** è chiamata **cryptographic hash collision**.
+- gode della proprietà crittografica **avalanche effect**:
   una piccola modifica all'input genera un **digest** drasticamente diverso dall'originale, al punto che i due **digest** appaiono non correlati tra loro
 
-La **collision resistance** implica la **Second pre-image resistance**, ma non implica la **Pre-image resistance**. L'assunzione più debole è sempre preferita nella crittografia teorica, ma in pratica, una funzione hash che è solo *Second pre-image resistant* è considerata insicura e quindi non è raccomandata per applicazioni reali.
+La **collision resistance** implica la **Second pre-image resistance**, ma non implica la **Pre-image resistance**. L'assunzione più debole è sempre preferita nella crittografia teorica, ma in pratica, una funzione hash che è solo **Second pre-image resistant** è considerata insicura e quindi non è raccomandata per applicazioni reali.
+### Degree of difficulty
+Nella pratica crittografica, *"difficile"* significa generalmente *"quasi certamente al di fuori della portata di qualsiasi avversario a cui deve essere impedito di violare il sistema per tutto il tempo in cui la sicurezza del sistema è considerata importante"*. Il significato del termine è quindi in qualche modo dipendente dall'applicazione, poiché lo sforzo che un agente maligno può mettere nel compito è di solito proporzionale al suo guadagno atteso. 
+Tuttavia, poiché lo sforzo necessario di solito si moltiplica con la lunghezza del digest, anche un vantaggio di mille volte nella potenza di elaborazione può essere neutralizzato aggiungendo qualche decina di bit a quest'ultimo.
 
-> Informally, these properties mean that a [malicious adversary](https://en.wikipedia.org/wiki/Adversary_(cryptography) "Adversary (cryptography)") cannot replace or modify the input data without changing its digest. Thus, if two strings have the same digest, one can be very confident that they are identical. Second pre-image resistance prevents an attacker from crafting a document with the same hash as a document the attacker cannot control. Collision resistance prevents an attacker from creating two distinct documents with the same hash.
-
-> A function meeting these criteria may still have undesirable properties. Currently, popular cryptographic hash functions are vulnerable to [*length-extension* attacks](https://en.wikipedia.org/wiki/Length_extension_attack "Length extension attack"): given hash(*m*) and len(*m*) but not *m*, by choosing a suitable *m*′ an attacker can calculate hash(*m* ∥ *m*′), where ∥ denotes [concatenation](https://en.wikipedia.org/wiki/Concatenation "Concatenation").[[6]](<https://en.wikipedia.org/wiki/Cryptographic_hash_function#cite_note-Y0rF6-6>) This property can be used to break naive authentication schemes based on hash functions. The [HMAC](https://en.wikipedia.org/wiki/HMAC "HMAC") construction works around these problems.
-
-> In practice, collision resistance is insufficient for many practical uses. In addition to collision resistance, it should be impossible for an adversary to find two messages with substantially similar digests; or to infer any useful information about the data, given only its digest. In particular, a hash function should behave as much as possible like a [random function](https://en.wikipedia.org/wiki/Random_function "Random function") (often called a [random oracle](https://en.wikipedia.org/wiki/Random_oracle "Random oracle") in proofs of security) while still being deterministic and efficiently computable. This rules out functions like the [SWIFFT](https://en.wikipedia.org/wiki/SWIFFT "SWIFFT") function, which can be rigorously proven to be collision-resistant assuming that certain problems on ideal lattices are computationally difficult, but, as a linear function, does not satisfy these additional properties.[[7]](<https://en.wikipedia.org/wiki/Cryptographic_hash_function#cite_note-FOOTNOTELyubashevskyMicciancioPeikertRosen200854%E2%80%9372-7>)
-
-Checksum algorithms, such as [CRC32](https://en.wikipedia.org/wiki/CRC32 "CRC32") and other [cyclic redundancy checks](https://en.wikipedia.org/wiki/Cyclic_redundancy_check "Cyclic redundancy check"), are designed to meet much weaker requirements and are generally unsuitable as cryptographic hash functions. For example, a CRC was used for message integrity in the [WEP](https://en.wikipedia.org/wiki/Wired_Equivalent_Privacy "Wired Equivalent Privacy") encryption standard, but an attack was readily discovered, which exploited the linearity of the checksum.
-### Degree of difficulty[[edit](https://en.wikipedia.org/w/index.php?title=Cryptographic_hash_function&action=edit&section=2 "Edit section: Degree of difficulty")]
-In cryptographic practice, "difficult" generally means "almost certainly beyond the reach of any adversary who must be prevented from breaking the system for as long as the security of the system is deemed important". The meaning of the term is therefore somewhat dependent on the application since the effort that a malicious agent may put into the task is usually proportional to their expected gain. However, since the needed effort usually multiplies with the digest length, even a thousand-fold advantage in processing power can be neutralized by adding a few dozen bits to the latter.
-
-For messages selected from a limited set of messages, for example [passwords](https://en.wikipedia.org/wiki/Password "Password") or other short messages, it can be feasible to invert a hash by trying all possible messages in the set. Because cryptographic hash functions are typically designed to be computed quickly, special [key derivation functions](https://en.wikipedia.org/wiki/Key_derivation_function "Key derivation function") that require greater computing resources have been developed that make such [brute-force attacks](https://en.wikipedia.org/wiki/Brute-force_attack "Brute-force attack") more difficult.
-
-In some [theoretical analyses](https://en.wikipedia.org/wiki/Computational_complexity_theory "Computational complexity theory") "difficult" has a specific mathematical meaning, such as "not solvable in [asymptotic](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity "Asymptotic computational complexity") [polynomial time](https://en.wikipedia.org/wiki/Polynomial_time "Polynomial time")". Such interpretations of *difficulty* are important in the study of [provably secure cryptographic hash functions](https://en.wikipedia.org/wiki/Provably_secure_cryptographic_hash_function "Provably secure cryptographic hash function") but do not usually have a strong connection to practical security. For example, an [exponential-time](https://en.wikipedia.org/wiki/Exponential_time "Exponential time") algorithm can sometimes still be fast enough to make a feasible attack. Conversely, a polynomial-time algorithm (e.g., one that requires _n_20 steps for *n*-digit keys) may be too slow for any practical use.
+In some theoretical analyses "difficult" has a specific mathematical meaning, such as *"not solvable in asymptotic polynomial time)"*. Such interpretations of *difficulty* are important in the study of provably secure cryptographic hash functions but do not usually have a strong connection to practical security. For example, an exponential-time algorithm can sometimes still be fast enough to make a feasible attack. Conversely, a polynomial-time algorithm (e.g., one that requires $20n$ steps for $n$-digit keys) may be too slow for any practical use.
 ## Panoramica storica funzioni hash
 ## Attachi possibili
 ### Bruteforce
