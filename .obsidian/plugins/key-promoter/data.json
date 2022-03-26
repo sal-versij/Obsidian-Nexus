@@ -9,14 +9,23 @@
     "vantage-obsidian:build-search": 1,
     "workspaces:open-modal": 1,
     "obsidian-admonition:collapse-admonitions": 1,
-    "obsidian-plotly:add-plotly-dataviewjs-example": 1
+    "obsidian-plotly:add-plotly-dataviewjs-example": 1,
+    "daily-notes": 2,
+    "open-with-default-app:open": 1,
+    "open-with-default-app:show": 1
   },
   "keyboardStatistics": {
-    "markdown:toggle-preview": 7,
-    "editor:save-file": 44,
+    "markdown:toggle-preview": 14,
+    "editor:save-file": 117,
     "editor:open-search": 1,
-    "editor:open-search-replace": 1,
-    "markdown-prettifier:markdown-prettifier-run": 2,
-    "command-palette:open": 2
+    "editor:open-search-replace": 2,
+    "markdown-prettifier:markdown-prettifier-run": 16,
+    "command-palette:open": 5,
+    "cycle-through-panes:cycle-through-panes-reverse": 1,
+    "editor:fold-all": 11,
+    "editor:unfold-all": 5,
+    "editor:toggle-fold": 25,
+    "cycle-through-panes:cycle-through-panes": 2,
+    "editor:toggle-checklist-status": 1
   }
 }
