@@ -99,10 +99,6 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
 - Il 24 aprile 2019 un documento di *Gaëtan Leurent* e *Thomas Peyrin* presentato a **Eurocrypt 2019** ha descritto un miglioramento dell'attacco *chosen-prefix* precedentemente migliore nelle funzioni digest **Merkle-Damgård**-like basate su **Davies-Meyer** block ciphers.
 - Il 5 gennaio 2020 *Gaëtan Leurent* e *Thomas Peyrin* hanno pubblicato un attacco migliorato
 ## Attachi possibili
-- Cold boot attack
-- Dictionary attack
-- Password strength
-- Smudge attack
 ### Brute-force attack
 Gli attacchi brute-force funzionano calcolando ogni possibile combinazione che potrebbe comporre una password e testandola per vedere se è la password corretta. All'aumentare della lunghezza della password, la quantità di tempo, in media, per trovare la password corretta aumenta esponenzialmente.
 
@@ -114,12 +110,14 @@ Types of Brute Force Attacks:
   indovina nomi utente o password usando un dizionario di possibili stringhe o frasi
 - **Attacchi ibridi di brute force**
   parte da una logica esterna per determinare quale variazione di password può avere più probabilità di successo, e poi continua con il semplice approccio di provare molte possibili variazioni
-- **Attacchi rainbow table**
-  una rainbow table è una tabella precompilata per l'inversione delle funzioni hash crittografiche. Può essere usata per indovinare una funzione fino a una certa lunghezza che consiste in un insieme limitato di caratteri
 - **Attacco reverse brute force**
   utilizza una password comune o una collezione di password contro molti possibili nomi utente. Prende di mira una rete di utenti per i quali gli aggressori hanno precedentemente ottenuto dati
 - **Credential stuffing**
   utilizza coppie *password-username* conosciute in precedenza, provandole con più siti web. Sfrutta il fatto che molti utenti hanno lo stesso nome utente e password su diversi sistemi
+  
+#### Rainbow tables
+  una rainbow table è una tabella precompilata per l'inversione delle funzioni hash crittografiche. Può essere usata per indovinare una funzione fino a una certa lunghezza che consiste in un insieme limitato di caratteri
+  
 #### Strumenti di brute forcing
 - **THC-Hydra**
   Esegue rapidamente un gran numero di combinazioni di password, sia simple brute force che dictionary-based. Può attaccare più di 50 protocolli e più sistemi operativi
@@ -139,6 +137,7 @@ Types of Brute Force Attacks:
   uno strumento per craccare l'autenticazione di rete. Può essere usato su Windows, Linux e BSD
 - **Rainbow Crack**
   genera **rainbow tables** da utilizzare durante degli attacchi, differisce da altri strumenti convenzionali di brute-forcing perchè le **rainbow tables** sono precomputed
+### Birthday Attack
 ## Hash e Sistemi Operativi
 ## Citations
 - [Cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
@@ -176,6 +175,8 @@ Types of Brute Force Attacks:
 - [x] <https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions>
 - [x] <https://valerieaurora.org/hash.html>
 - [ ] <https://en.wikipedia.org/wiki/Rainbow_table>
+- [ ] https://crackstation.net/hashing-security.htm
+- [ ] https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle
 - [ ] <https://www.thesslstore.com/blog/rainbow-tables-a-path-to-password-gold-for-cybercriminals/>
 - [ ] <https://www.geeksforgeeks.org/understanding-rainbow-table-attack/>
 - [ ] <https://cyberhoot.com/cybrary/rainbow-tables/>
