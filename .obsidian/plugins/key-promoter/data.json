@@ -22,9 +22,9 @@
     "markdown-prettifier:markdown-prettifier-run": 16,
     "command-palette:open": 5,
     "cycle-through-panes:cycle-through-panes-reverse": 1,
-    "editor:fold-all": 11,
+    "editor:fold-all": 12,
     "editor:unfold-all": 5,
-    "editor:toggle-fold": 25,
+    "editor:toggle-fold": 27,
     "cycle-through-panes:cycle-through-panes": 2,
     "editor:toggle-checklist-status": 1
   }
