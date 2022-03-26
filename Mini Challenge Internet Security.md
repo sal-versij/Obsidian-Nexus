@@ -43,8 +43,8 @@ In alcune analisi teoriche "difficile" ha un significato matematico specifico: *
   Un sistema (o protocollo, o funzione) di *proof-of-work* è una misura economica per scoraggiare gli attacchi *denial-of-service* e altri abusi di servizio come lo *spam* su una rete, richiedendo del lavoro all'usufruitore del servizio. Una caratteristica chiave di questi schemi è la loro asimmetria: il lavoro deve essere moderatamente difficile (ma fattibile) dal lato del richiedente ma facile da verificare per il fornitore del servizio.
 - Identificatore di file o dati
   Un **digest** può anche servire come mezzo per identificare in modo affidabile un file.
-## Panoramica storica funzioni hash
-
+## Panoramica storica delle funzioni hash
+I primi progetti di funzioni hash crittografiche risalgono alla fine degli anni '70; altre proposte sono emerse negli anni '80. Durante gli anni '90, il numero di progetti di funzioni hash è cresciuto molto rapidamente, ma per molte di queste proposte sono stati identificati difetti di sicurezza. MD5 e SHA-1 sono stati utilizzati in un numero sempre maggiore di applicazioni, dando origine al nome di "coltelli svizzeri" della crittografia. Nonostante l'importanza delle funzioni hash, solo uno sforzo limitato è stato speso per studiare le loro definizioni formali e i loro fondamenti. Nel 2004 Wang et al. hanno perfezionato la crittoanalisi differenziale al punto che trovare collisioni per MD5 è diventato molto facile; per SHA-1 è stata ottenuta una sostanziale riduzione del margine di sicurezza. Questa scoperta ha portato ad una raffica di ricerche, che hanno portato a nuove costruzioni e ad un crescente corpo di ricerca fondazionale. Il NIST ha annunciato nel novembre 2007 che avrebbe organizzato la competizione SHA-3, con l'obiettivo di selezionare una nuova famiglia di funzioni hash entro il 2012. Dai 64 candidati presentati entro ottobre 2008, 14 sono arrivati al secondo turno.
 ## Attachi possibili
 ### Bruteforce
 #### Strumenti di brute forcing
@@ -78,7 +78,17 @@ In alcune analisi teoriche "difficile" ha un significato matematico specifico: *
 - <https://en.wikipedia.org/wiki/Cryptographic_hash_function>
 - <https://en.wikipedia.org/wiki/Deterministic_algorithm>
 - <https://en.wikipedia.org/wiki/Avalanche_effect>
+- <https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions>
 - <https://valerieaurora.org/hash.html>
+- https://www.esat.kuleuven.be/cosic/publications/article-1532.pdf
+- https://en.wikipedia.org/wiki/Rainbow_table
+- https://www.thesslstore.com/blog/rainbow-tables-a-path-to-password-gold-for-cybercriminals/
+- https://www.geeksforgeeks.org/understanding-rainbow-table-attack/
+- https://cyberhoot.com/cybrary/rainbow-tables/
+- https://www.beyondidentity.com/glossary/rainbow-table-attack
+- https://www.sciencedirect.com/topics/computer-science/rainbow-table
+- https://www.mrw.it/sicurezza/password-cracking-tramite-rainbow-tables_7694.html
+- <https://en.wikipedia.org/wiki/Password_cracking>
 - <https://en.wikipedia.org/wiki/Birthday_attack>
 - <https://en.wikipedia.org/wiki/Brute-force_attack>
 - <https://www.growhub.it/varie/come-si-fa-un-attacco-brute-force/>
