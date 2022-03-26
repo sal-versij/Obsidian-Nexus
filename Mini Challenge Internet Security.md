@@ -1,7 +1,19 @@
 # Mini Challenge Internet Security
 # Funzioni Hash
 Una funzione hash è una funzione di mappatura tra dati di arbitraria lunghezza e **digest** di lunghezza fissa.
-Le funzioni hash mappano un insieme in input di cardinalità nettamente superiore rispetto all'output, questo comporta collisioni, e in alcuni casi di utilizzo è necessario minimizzare queste collisioni
+Le funzioni hash mappano un insieme in input di cardinalità nettamente superiore rispetto all'output, questo comporta inevitabilmente collisioni, dimostrato dal teorema dei cassetti, quindi una metrica da analizzare quando si parla di funzioni hash è proprio la probabilità di collissione.
+
+Una funzione hash viene definita crittografica quando rispetta le seguenti proprietà:
+- deve essere deterministica,
+  dato lo stesso input darà **sempre** lo stesso output 
+- è efficente da computare per ogni dato input
+- non è possibile invertire il processo,
+  è impossibile generare un messaggio che produce un predeterminato **digest**
+- non è possibile generare una collisione, dunque trovare due input che forniscono lo stesso digest
+- una piccola modifica all'input genera un **digest** drasticamente diverso dall'originale che appaiono non correlati tra loro ([[#Effetto valanga]])
+
+## Effetto valanga
+In crittografia, l'**effetto valanga** è la proprietà desiderabile degli algoritmi crittografici, tipicamente i cifrari a blocchi e le funzioni hash crittografiche, per cui se un input viene cambiato leggermente (e.g. cambiando un singolo bit), l'output cambia significativamente (e.g. metà dei bit di output si capovolgono). Nel caso di cifrari a blocchi di alta qualità, un cambiamento così piccolo nella chiave o nel testo in chiaro dovrebbe causare un cambiamento drastico nel testo cifrato. Il termine attuale è stato usato per la prima volta da Horst Feistel, anche se il concetto risale almeno alla _diffusione_ di Shannon.
 ## Panoramica storica funzioni hash
 ## Attachi possibili
 ### Bruteforce
@@ -135,8 +147,11 @@ Le funzioni hash mappano un insieme in input di cardinalità nettamente superior
 
 ## Citations
 - https://en.wikipedia.org/wiki/List_of_hash_functions
+- https://en.wikipedia.org/wiki/Cryptographic_hash_function
+- https://en.wikipedia.org/wiki/Brute-force_attack
+- https://en.wikipedia.org/wiki/Deterministic_algorithm
+- https://en.wikipedia.org/wiki/Avalanche_effect
 - https://www.sicurezzanazionale.gov.it/sisr.nsf/wp-content/uploads/2015/09/Crittografia-tra-arte-e-scienza-Tampanella.pdf
 - https://www.growhub.it/varie/come-si-fa-un-attacco-brute-force/
-- https://en.wikipedia.org/wiki/Brute-force_attack
 - https://www.proofpoint.com/it/threat-reference/brute-force-attack
 - https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/
