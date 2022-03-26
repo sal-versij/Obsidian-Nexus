@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "cbd5e6b4ce773e8a",
+        "id": "6f89fc956562ab79",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ad-demonstration",
+                "query": "mini chall",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,17 +160,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cbd5e6b4ce773e8a",
+  "active": "6f89fc956562ab79",
   "lastOpenFiles": [
     "Mini Challenge Internet Security.md",
+    "Untitled 1.md",
+    "OpenCL.md",
     "Untitled.md",
     "2022-03-25.md",
     "2022-03-23.md",
     "Metodi Matematici e Statistici.md",
     "handouts/metodi statistici 2021-10-14.pdf",
     "handouts/metodi statistici 2021-12-14.pdf",
-    "handouts/metodi statistici 2021-11-30.pdf",
-    "handouts/metodi statistici 2021-11-18.pdf",
-    "handouts/metodi statistici 2021-11-04.pdf"
+    "handouts/metodi statistici 2021-11-30.pdf"
   ]
 }
