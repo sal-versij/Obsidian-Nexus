@@ -163,7 +163,7 @@ Types of Brute Force Attacks:
 - [The First 30 Years of Cryptographic Hash Functions and the NIST SHA-3 Competition by Bart Preneel](https://www.esat.kuleuven.be/cosic/publications/article-1532.pdf)
 - [Lifetimes of popular cryptographic hashes](https://valerieaurora.org/hash.html)
 - [Collisions for Hash Functions MD4, MD5, HAVAL-128 and RIPEMD](https://eprint.iacr.org/2004/199.pdf)
-- [Password cracking](https://en.wikipedia.org/wiki/Password_cracking)
+- [popular tools for brute force attacks](https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/)
 
 ---
 # References
@@ -188,7 +188,7 @@ Types of Brute Force Attacks:
 - [ ] <https://en.wikipedia.org/wiki/Brute-force_attack>
 - [ ] <https://www.growhub.it/varie/come-si-fa-un-attacco-brute-force/>
 - [ ] <https://www.proofpoint.com/it/threat-reference/brute-force-attack>
-- [ ] <https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/>
+- [x] <https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/>
 ## Keyed cryptographic hash functions
 | Nome                                       | Lunghezza Tag       | tipo                              |
 | ------------------------------------------ | ------------------- | --------------------------------- |
