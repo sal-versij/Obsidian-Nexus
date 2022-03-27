@@ -172,13 +172,27 @@ Tipi di attacchi di forza bruta:
 - **Rainbow Crack**
   genera **rainbow tables** da utilizzare durante degli attacchi, differisce da altri strumenti convenzionali di brute-forcing perchè le **rainbow tables** sono precomputed
 ## Hash e Sistemi Operativi
-**Usually password format is set to $id$salt$hashed , The $id is the algorithm used On GNU/Linux as follows:**
+### Linux
+Principalmente su linux le password sono hash-ate con un lungo *salt*, gli algoritmi utilizzabili sono:
+- MD5, Blowfish, SHA-256, SHA-512.
 
--   $1$ is MD5.
--   $2a$ is Blowfish.
--   $2y$ is Blowfish.
--   $5$ is SHA-256.
--   $6$ is SHA-512.
+### Windows
+Per l'uso nelle reti **Windows**, inclusi i domini *Active Directory*, la password è memorizzata in due modi diversi per impostazione predefinita: come *LAN Manager one-way function* (**LM OWF**) e come **NT OWF.** 
+
+Ci sono molti tipi diversi di funzioni unidirezionali. Tutte le funzioni hash sono, per definizione, funzioni unidirezionali. Tuttavia, anche le funzioni crittografiche ordinarie che sono tipicamente reversibili possono essere usate per creare una funzione unidirezionale. Questo può essere fatto scambiando i dati e la chiave in una funzione crittografica e criptando il valore fisso (la chiave) usando i dati come chiave. Questo è il caso per l'**hash LM** che viene calcolato come segue:
+
+1.  La password è riempita con byte NULL fino a 14 caratteri esatti. Se la password è più lunga di 14 caratteri, viene sostituita con 14 byte NULL per le restanti operazioni.
+2.  La password viene convertita in tutte le lettere maiuscole.
+3.  La password viene divisa in due chiavi da 7 byte (56 bit).
+4.  Ogni chiave è usata per criptare una stringa fissa.
+5.  I due risultati del passo 4 sono concatenati e memorizzati come hash LM.
+
+L'algoritmo **LM OWF** è incluso in **Windows** per la retro-compatibilità con software e hardware che non possono usare algoritmi più recenti.
+
+L'**hash NT** è semplicemente un hash. La password è sottoposta a hash utilizzando l'algoritmo **MD4** e memorizzata. L'**NT OWF** è usato per l'autenticazione dei membri del dominio sia nei domini **Windows NT 4.0** e precedenti che nei domini *Active Directory*.
+
+Né l'**hash NT** né l'**hash LM** sono concatenati con un qualche tipo di *salt*.
+
 ## Bibliografia
 - [Cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
   - Al-Kuwari, Saif; Davenport, James H.; Bradford, Russell J. (2011). ["Cryptographic Hash Functions: Recent Design Trends and Security Notions"](https://eprint.iacr.org/2011/565). *Cryptology ePrint Archive*. Report 2011/565
@@ -215,10 +229,9 @@ Tipi di attacchi di forza bruta:
   - Brassard, Gilles; HØyer, Peter; Tapp, Alain (20 April 1998). *LATIN'98: Theoretical Informatics*. Lecture Notes in Computer Science. Vol. 1380. Springer, Berlin, Heidelberg. pp. 163–169
 - [understanding etc/shadow file](https://www.cyberciti.biz/faq/understanding-etcshadow-file/)
 - [Microsoft Docs](https://docs.microsoft.com/)
-- [Store passwords using reversible encryption](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/store-passwords-using-reversible-encryption)
-- https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password
-- https://docs.microsoft.com/en-us/windows-server/security/kerberos/passwords-technical-overview
-- https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-nlmp/f05874ce-efe5-45f8-b9b7-7586a45763b3
-- https://adsecurity.org/?p=1535
-- https://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service
-- https://security.stackexchange.com/questions/30654/why-doesnt-microsoft-implement-salt-on-users-passwords-in-windows/30657#30657
+- [Store passwords using Reversible Encryption](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/store-passwords-using-reversible-encryption)
+- [Passwords technical overview](https://docs.microsoft.com/en-us/windows-server/security/kerberos/passwords-technical-overview)
+- [MS NLMP](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-nlmp/f05874ce-efe5-45f8-b9b7-7586a45763b3)
+- [# Windows 10 Microsoft Passport (aka Microsoft Next Generation Credential) In Detail](https://adsecurity.org/?p=1535)
+- [LSASS](https://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service)
+- [Why doesnt microsoft implement salt on users passwords](https://security.stackexchange.com/questions/30654/why-doesnt-microsoft-implement-salt-on-users-passwords-in-windows/30657#30657)
