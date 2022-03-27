@@ -100,7 +100,7 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
 - Il 5 gennaio 2020 *Gaëtan Leurent* e *Thomas Peyrin* hanno pubblicato un attacco migliorato
 ## Attachi possibili
 ### Brute-force attack
-Gli attacchi brute-force funzionano calcolando ogni possibile combinazione che potrebbe comporre una password e testandola per vedere se è la password corretta. All'aumentare della lunghezza della password, la quantità di tempo, in media, per trovare la password corretta aumenta esponenzialmente.
+Gli attacchi brute-force consistono nel calcolare ogni possibile combinazione che potrebbe comporre una password e nel testarla per vedere se è la password corretta. All'aumentare della lunghezza della password, la quantità di tempo, in media, per trovare la password corretta aumenta esponenzialmente.
 
 Types of Brute Force Attacks:
 
