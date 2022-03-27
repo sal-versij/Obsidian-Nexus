@@ -99,10 +99,48 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
 - Il 24 aprile 2019 un documento di *Gaëtan Leurent* e *Thomas Peyrin* presentato a **Eurocrypt 2019** ha descritto un miglioramento dell'attacco *chosen-prefix* precedentemente migliore nelle funzioni digest **Merkle-Damgård**-like basate su **Davies-Meyer** block ciphers.
 - Il 5 gennaio 2020 *Gaëtan Leurent* e *Thomas Peyrin* hanno pubblicato un attacco migliorato
 ## Attachi possibili
+### Birthday Attack
+Un **birthday attack** è un tipo di attacco crittografico che sfrutta la matematica dietro il *birthday problem* nella teoria della probabilità. Questo attacco può essere usato per abusare della comunicazione tra due o più parti. L'attacco dipende dalla maggiore probabilità di collisioni riscontrata tra i tentativi di attacco casuale e un grado fisso di permutazioni (pigeonholes). Con un attacco di compleanno, è possibile trovare una collisione di una funzione hash in $\sqrt{2^n}=2^{\frac{n}{2}}$, con $2^n$ che è la classica sicurezza di resistenza della **pre-image**. C'è un risultato generale (anche se contestato) che i computer quantistici possono eseguire attacchi di compleanno, rompendo così la resistenza alle collisioni, in $\sqrt[3]{2^n}=2^{\frac{n}{3}}$.
+
+Come esempio, si consideri lo scenario in cui un insegnante con una classe di 30 studenti ($n = 30$) chiede il compleanno di tutti (per semplicità, ignorare gli anni bisestili) per determinare se due studenti hanno lo stesso compleanno (corrispondente a una collisione hash come descritto più avanti). Intuitivamente, questa possibilità può sembrare piccola. Controintuitivamente, la probabilità che almeno uno studente abbia lo stesso compleanno di *qualsiasi* altro studente in qualsiasi giorno è intorno al 70% (per $n = 30$), dalla formula $1-\frac{365!}{(365-n)!\cdot 365^n}$.
+Se l'insegnante avesse scelto un giorno *specifico* (ad esempio, il 16 settembre), allora la probabilità che almeno uno studente sia nato in quel giorno specifico è $1-(\frac{364}{365})^{30}$, circa il 7,9%.
+
+In un attacco di compleanno, l'attaccante prepara molte diverse varianti di contratti benigni e maligni, ognuno con una firma digitale. Si cerca una coppia di contratti benigni e maligni con la stessa firma. In questo esempio fittizio, supponiamo che la firma digitale di una stringa sia il primo byte del suo hash SHA-256. Dopo che la vittima accetta il contratto benigno, l'attaccante lo sostituisce con quello malevolo e sostiene che la vittima lo ha firmato, come dimostrato dalla firma digitale.
+### Precomputed hash chains e Rainbow tables
+Una tabella arcobaleno è una tabella precompilata per memorizzare l'output delle funzioni hash crittografiche, di solito per craccare gli hash delle password. Le tabelle sono di solito utilizzate per recuperare una funzione di derivazione della chiave fino ad una certa lunghezza che consiste in un insieme limitato di caratteri. È un esempio pratico di un compromesso spazio-tempo, utilizzando meno tempo di elaborazione del computer e più memoria di un attacco brute-force che calcola un hash ad ogni tentativo, ma più tempo di elaborazione e meno memoria di una semplice funzione di derivazione della chiave con una voce per hash. L'uso di una derivazione della chiave che impiega un sale rende questo attacco non fattibile.
+
+Il contenuto della tabella non dipende dal valore di hash da invertire. Viene creata una volta e poi utilizzata ripetutamente per le ricerche senza modifiche.
+Aumentando la lunghezza della catena diminuisce la dimensione della tabella, aumentando anche il tempo richiesto per eseguire le ricerche, e questo è il compromesso tempo-memoria della **rainbow table**.
+#### Precomputed hash chains
+Supponiamo di avere una funzione di hash delle password $H$ e un insieme finito di password $P$. L'obiettivo è precompilare una struttura dati che, dato qualsiasi output $h$ della funzione di hash, possa localizzare un elemento $p$ in $P$ tale che $H(p) = h$, o determinare che non esiste un tale $p$ in $P$. Il modo più semplice per farlo è calcolare $H(p)$ per tutti gli $p$ in $P$, ma poi la memorizzazione della tabella richiede $\Theta(|P|n)$ bit di spazio, dove $|P|$ è la dimensione dell'insieme $P$ e $n$ è la dimensione di un output di $H$, che è proibitivo per grandi $|P|$. Le catene di hash sono una tecnica per diminuire questo requisito di spazio. L'idea è di definire una *reduction function* $R$ che rimappa i valori di hash in valori in $P$. Si noti, tuttavia, che la *reduction function* non è in realtà un'inversa della funzione hash, ma piuttosto una funzione diversa con un dominio e un codominio invertiti rispetto alla funzione hash. Alternando la funzione hash con la *reduction function*, si formano delle *catene* di password e valori hash alternati. Per esempio, se $P$ fosse l'insieme delle password alfabetiche minuscole di 6 caratteri, e i valori di hash fossero lunghi 32 bit, una catena potrebbe essere come questa:
+${\displaystyle {\color {Red}{\mathtt {aaaaaa}}}\,{\xrightarrow[{\;H\;}]{}}\,{\mathtt {281DAF40}}\,{\xrightarrow[{\;R\;}]{}}\,{\mathtt {sgfnyd}}\,{\xrightarrow[{\;H\;}]{}}\,{\mathtt {920ECF10}}\,{\xrightarrow[{\;R\;}]{}}\,{\color {Violet}{\mathtt {kiebgt}}}}$
+L'unico requisito per la funzione di riduzione è di essere in grado di restituire un valore "plain text" in una dimensione specifica.
+
+Per generare la tabella, scegliamo un insieme casuale di *password iniziali* da $P$, calcoliamo catene di una lunghezza fissa $k$ per ciascuna di esse e memorizziamo *solo* la prima e l'ultima password in ogni catena. La prima password è chiamata *starting point* e l'ultima è chiamata il *endpoint*. Nell'esempio di catena di cui sopra, *"aaaaaa "* sarebbe il punto di partenza e *"kiebgt "* sarebbe il punto finale, e nessuna delle altre password (o valori di hash) verrebbe memorizzata.
+
+Proseguendo, dato un valore hash $h$ di cui vogliamo trovarne la password corrispondente, calcoliamo una catena che inizia con $h$ applicando $R$, poi $H$, poi $R$, e così via. Se in qualsiasi punto osserviamo un valore corrispondente a uno dei punti finali della tabella, otteniamo il punto di partenza corrispondente e lo usiamo per ricreare la catena. C'è una buona probabilità che questa catena contenga il valore $h$, e se è così, il valore immediatamente precedente nella catena è la password $p$ che cerchiamo.
+
+Per esempio, se ci viene dato l'hash *920ECF10*, calcoleremo la sua catena applicando prima $R$:
+${\displaystyle {\mathtt {920ECF10}}\,{\xrightarrow[{\;R\;}]{}}\,{\color {Violet}{\mathtt {kiebgt}}}}$
+Poiché *"kiebgt "* è uno dei punti finali della nostra tabella, prendiamo la corrispondente password iniziale *"aaaaaa "* e seguiamo la sua catena fino a raggiungere *920ECF10*:
+${\displaystyle {\color {Red}{\mathtt {aaaaaa}}}\,{\xrightarrow[{\;H\;}]{}}\,{\mathtt {281DAF40}}\,{\xrightarrow[{\;R\;}]{}}\,{\mathtt {sgfnyd}}\,{\xrightarrow[{\;H\;}]{}}\,{\mathtt {920ECF10}}}$
+Così, la password è *"sgfnyd "* (o una password diversa con lo stesso valore di hash).
+
+Si noti tuttavia che questa catena non contiene *sempre* il valore hash $h$; può accadere che la catena che inizia da $h$ si fonda con una catena che ha un punto di partenza diverso. Per esempio, possiamo avere un valore di hash *FB107E70*, e quando seguiamo la sua catena, otteniamo *kiebgt*:
+${\displaystyle {\mathtt {FB107E70}}\,{\xrightarrow[{\;R\;}]{}}\,{\mathtt {bvtdll}}\,{\xrightarrow[{\;H\;}]{}}\,{\mathtt {0EE80890}}\,{\xrightarrow[{\;R\;}]{}}\,{\color {Violet}{\mathtt {kiebgt}}}}$
+Ma *FB107E70* non è nella catena che inizia con *"aaaaaa "*. Questo è chiamato un *falso allarme*. In questo caso, ignoriamo la corrispondenza e continuiamo ad estendere la catena di $h$ cercando un'altra corrispondenza. Se la catena di $h$ si estende fino alla lunghezza di $k$ senza nessuna buona corrispondenza, allora la password non è mai stata prodotta in nessuna delle catene.
+#### Rainbow tables
+Le **rainbow tables** risolvono efficacemente il problema delle collisioni con le catene hash ordinarie sostituendo la singola funzione di riduzione $R$ con una sequenza di funzioni di riduzione correlate $R_1$ attraverso $R_k$. In questo modo, perché due catene collidano e si fondano devono colpire lo stesso valore *nella stessa iterazione*: di conseguenza, i valori finali in queste catene saranno identici. Un passaggio finale di post-elaborazione può ordinare le catene nella tabella e rimuovere qualsiasi catena "duplicata" che ha gli stessi valori finali di altre catene. Vengono quindi generate nuove catene per riempire la tabella.
+
+L'uso di sequenze di funzioni di riduzione cambia il modo in cui viene fatto il lookup: poiché il valore di hash di interesse può essere trovato in qualsiasi punto della catena, è necessario generare $k$ catene diverse. La prima catena assume che il valore di hash sia nell'ultima posizione di hash e applica solo $R_k$; la catena successiva assume che il valore di hash sia nella penultima posizione di hash e applica $R_{k-1}$, poi $H$, poi $R_k$; e così via fino all'ultima catena, che applica tutte le funzioni di riduzione, alternandole con $H$. Questo crea un nuovo modo di produrre un falso allarme: se "indoviniamo" male la posizione del valore di hash, potremmo valutare inutilmente una catena.
+
+Sebbene le tabelle arcobaleno debbano seguire più catene, compensano ciò avendo meno tabelle: le semplici tabelle di catene di hash non possono crescere oltre una certa dimensione senza diventare rapidamente inefficienti a causa della fusione delle catene; per far fronte a ciò, esse mantengono più tabelle, e ogni ricerca deve cercare attraverso ogni tabella. Le **tabelle arcobaleno** possono raggiungere prestazioni simili con tabelle che sono $k$ volte più grandi, permettendo loro di eseguire un fattore di $k$ in meno di ricerche.
+#### Defense against rainbow tables
+Una **rainbow table** è inefficace contro i one-way hash che includono grandi salt
 ### Brute-force attack
 Gli attacchi brute-force consistono nel calcolare ogni possibile combinazione che potrebbe comporre una password e nel testarla per vedere se è la password corretta. All'aumentare della lunghezza della password, la quantità di tempo, in media, per trovare la password corretta aumenta esponenzialmente.
 
-Types of Brute Force Attacks:
+Tipi di attacchi di forza bruta:
 
 - **Semplice attacco di brute force**
   utilizza un approccio sistematico che non si basa su una logica esterna
@@ -114,10 +152,6 @@ Types of Brute Force Attacks:
   utilizza una password comune o una collezione di password contro molti possibili nomi utente. Prende di mira una rete di utenti per i quali gli aggressori hanno precedentemente ottenuto dati
 - **Credential stuffing**
   utilizza coppie *password-username* conosciute in precedenza, provandole con più siti web. Sfrutta il fatto che molti utenti hanno lo stesso nome utente e password su diversi sistemi
-  
-#### Rainbow tables
-  una rainbow table è una tabella precompilata per l'inversione delle funzioni hash crittografiche. Può essere usata per indovinare una funzione fino a una certa lunghezza che consiste in un insieme limitato di caratteri
-  
 #### Strumenti di brute forcing
 - **THC-Hydra**
   Esegue rapidamente un gran numero di combinazioni di password, sia simple brute force che dictionary-based. Può attaccare più di 50 protocolli e più sistemi operativi
@@ -137,112 +171,67 @@ Types of Brute Force Attacks:
   uno strumento per craccare l'autenticazione di rete. Può essere usato su Windows, Linux e BSD
 - **Rainbow Crack**
   genera **rainbow tables** da utilizzare durante degli attacchi, differisce da altri strumenti convenzionali di brute-forcing perchè le **rainbow tables** sono precomputed
-### Birthday Attack
 ## Hash e Sistemi Operativi
-## Citations
+### Linux
+Principalmente su linux le password sono hash-ate con un lungo *salt*, gli algoritmi utilizzabili sono:
+- MD5, Blowfish, SHA-256, SHA-512.
+
+### Windows
+Per l'uso nelle reti **Windows**, inclusi i domini *Active Directory*, la password è memorizzata in due modi diversi per impostazione predefinita: come *LAN Manager one-way function* (**LM OWF**) e come **NT OWF.** 
+
+Ci sono molti tipi diversi di funzioni unidirezionali. Tutte le funzioni hash sono, per definizione, funzioni unidirezionali. Tuttavia, anche le funzioni crittografiche ordinarie che sono tipicamente reversibili possono essere usate per creare una funzione unidirezionale. Questo può essere fatto scambiando i dati e la chiave in una funzione crittografica e criptando il valore fisso (la chiave) usando i dati come chiave. Questo è il caso per l'**hash LM** che viene calcolato come segue:
+
+1.  La password è riempita con byte NULL fino a 14 caratteri esatti. Se la password è più lunga di 14 caratteri, viene sostituita con 14 byte NULL per le restanti operazioni.
+2.  La password viene convertita in tutte le lettere maiuscole.
+3.  La password viene divisa in due chiavi da 7 byte (56 bit).
+4.  Ogni chiave è usata per criptare una stringa fissa.
+5.  I due risultati del passo 4 sono concatenati e memorizzati come hash LM.
+
+L'algoritmo **LM OWF** è incluso in **Windows** per la retro-compatibilità con software e hardware che non possono usare algoritmi più recenti.
+
+L'**hash NT** è semplicemente un hash. La password è sottoposta a hash utilizzando l'algoritmo **MD4** e memorizzata. L'**NT OWF** è usato per l'autenticazione dei membri del dominio sia nei domini **Windows NT 4.0** e precedenti che nei domini *Active Directory*.
+
+Né l'**hash NT** né l'**hash LM** sono concatenati con un qualche tipo di *salt*.
+
+## Bibliografia
 - [Cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
-  - Al-Kuwari, Saif; Davenport, James H.; Bradford, Russell J. (2011). ["Cryptographic Hash Functions: Recent Design Trends and Security Notions"](https://eprint.iacr.org/2011/565). *Cryptology ePrint Archive*. Report 2011/565.
-  - Rogaway, P.; Shrimpton, T. (2004). "Cryptographic Hash-Function Basics: Definitions, Implications, and Separations for Preimage Resistance, Second-Preimage Resistance, and Collision Resistance".  [10.1.1.3.6200](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.3.6200).
+  - Al-Kuwari, Saif; Davenport, James H.; Bradford, Russell J. (2011). ["Cryptographic Hash Functions: Recent Design Trends and Security Notions"](https://eprint.iacr.org/2011/565). *Cryptology ePrint Archive*. Report 2011/565
+  - Rogaway, P.; Shrimpton, T. (2004). "Cryptographic Hash-Function Basics: Definitions, Implications, and Separations for Preimage Resistance, Second-Preimage Resistance, and Collision Resistance"
   - [Mendel et al.](https://en.wikipedia.org/wiki/Cryptographic_hash_function#CITEREFMendelRechbergerSchl%C3%A4ffer2009), p. 145:Concatenating ... is often used by implementors to "hedge bets" on hash functions. A combiner of the form MD5
-  - [Harnik et al. 2005](https://en.wikipedia.org/wiki/Cryptographic_hash_function#CITEREFHarnikKilianNaorReingold2005), p. 99: the concatenation of hash functions as suggested in the TLS... is guaranteed to be as secure as the candidate that remains secure.
-  - [Joux 2004](https://en.wikipedia.org/wiki/Cryptographic_hash_function#CITEREFJoux2004).
-  - [Finney, Hal](https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist) "Hal Finney (computer scientist)") (August 20, 2004). ["More Problems with Hash Functions"](https://web.archive.org/web/20160409095104/http://article.gmane.org/gmane.comp.encryption.general/5154). *The Cryptography Mailing List*. Archived from [the original](http://article.gmane.org/gmane.comp.encryption.general/5154) on April 9, 2016. Retrieved May 25, 2016.
-  - [Hoch & Shamir 2008](https://en.wikipedia.org/wiki/Cryptographic_hash_function#CITEREFHochShamir2008), pp. 616–630.
+  - [Harnik et al. 2005](https://en.wikipedia.org/wiki/Cryptographic_hash_function#CITEREFHarnikKilianNaorReingold2005), p. 99: the concatenation of hash functions as suggested in the TLS... is guaranteed to be as secure as the candidate that remains secure
+  - [Joux 2004](https://en.wikipedia.org/wiki/Cryptographic_hash_function#CITEREFJoux2004)
+  - [Finney, Hal](https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist) "Hal Finney (computer scientist)") (August 20, 2004). ["More Problems with Hash Functions"](https://web.archive.org/web/20160409095104/http://article.gmane.org/gmane.comp.encryption.general/5154). *The Cryptography Mailing List*. Archived from [the original](http://article.gmane.org/gmane.comp.encryption.general/5154) on April 9, 2016. Retrieved May 25, 2016
+  - [Hoch & Shamir 2008](https://en.wikipedia.org/wiki/Cryptographic_hash_function#CITEREFHochShamir2008), pp. 616–630
   - Andrew Regenscheid, Ray Perlner, Shu-Jen Chang, John Kelsey, Mridul Nandi, Souradyuti Paul, [Status Report on the First Round of the SHA-3 Cryptographic Hash Algorithm Competition](https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7620.pdf)
   - XiaoyunWang, Dengguo Feng, Xuejia Lai, Hongbo Yu, [Collisions for Hash Functions MD4, MD5, HAVAL-128, and RIPEMD](https://eprint.iacr.org/2004/199.pdf)
-  - Alshaikhli, Imad Fakhri; AlAhmad, Mohammad Abdulateef (2015), "Cryptographic Hash Function", *Handbook of Research on Threat Detection and Countermeasures in Network Security*, IGI Global, pp. 80–94 [10.4018/978-1-4666-6583-5.ch006](https://doi.org/10.4018%2F978-1-4666-6583-5.ch006), [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-1-4666-6583-5](https://en.wikipedia.org/wiki/Special:BookSources/978-1-4666-6583-5 "Special:BookSources/978-1-4666-6583-5")
+  - Alshaikhli, Imad Fakhri; AlAhmad, Mohammad Abdulateef (2015), "Cryptographic Hash Function", *Handbook of Research on Threat Detection and Countermeasures in Network Security*, IGI Global, pp. 80–94
   - Xiaoyun Wang, [Yiqun Lisa Yin](https://en.wikipedia.org/wiki/Yiqun_Lisa_Yin "Yiqun Lisa Yin"), and Hongbo Yu, [Finding Collisions in the Full SHA-1](http://people.csail.mit.edu/yiqun/SHA1AttackProceedingVersion.pdf)
   - Bruce Schneier, [Cryptanalysis of SHA-1](http://www.schneier.com/blog/archives/2005/02/cryptanalysis_o.html) (summarizes Wang et al. results and their implications)
-  - Fox-Brewster, Thomas. ["Google Just 'Shattered' An Old Crypto Algorithm – Here's Why That's Big For Web Security"](https://www.forbes.com/sites/thomasbrewster/2017/02/23/google-sha-1-hack-why-it-matters/#3f73df04c8cd). *Forbes*. Retrieved 2017-02-24.
-  - Alexander Sotirov, Marc Stevens, Jacob Appelbaum, Arjen Lenstra, David Molnar, Dag Arne Osvik, Benne de Weger, [MD5 considered harmful today: Creating a rogue CA certificate](http://www.win.tue.nl/hashclash/rogue-ca/), accessed March 29, 2009.
-  - Swinhoe, Dan (April 17, 2020). ["The 15 biggest data breaches of the 21st century"](https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html). CSO Magazine.
-  - Goodin, Dan (2012-12-10). ["25-GPU cluster cracks every standard Windows password in <6 hours"](https://arstechnica.com/information-technology/2012/12/25-gpu-cluster-cracks-every-standard-windows-password-in-6-hours/). [Ars Technica](https://en.wikipedia.org/wiki/Ars_Technica "Ars Technica"). Retrieved 2020-11-23.
-  - Claburn, Thomas (February 14, 2019). ["Use an 8-char Windows NTLM password? Don't. Every single one can be cracked in under 2.5hrs"](https://www.theregister.co.uk/2019/02/14/password_length/). *[www.theregister.co.uk](http://www.theregister.co.uk)*. Retrieved 2020-11-26.
-  - ["Mind-blowing GPU performance"](https://improsec.com/tech-blog/mind-blowing-gpu-performance). Improsec. January 3, 2020.
-  - Grassi Paul A. (June 2017). *SP 800-63B-3 – Digital Identity Guidelines, Authentication and Lifecycle Management*. NIST. [10.6028/NIST.SP.800-63b](https://doi.org/10.6028%2FNIST.SP.800-63b).
+  - Fox-Brewster, Thomas. ["Google Just 'Shattered' An Old Crypto Algorithm – Here's Why That's Big For Web Security"](https://www.forbes.com/sites/thomasbrewster/2017/02/23/google-sha-1-hack-why-it-matters/#3f73df04c8cd). *Forbes*. Retrieved 2017-02-24
+  - Alexander Sotirov, Marc Stevens, Jacob Appelbaum, Arjen Lenstra, David Molnar, Dag Arne Osvik, Benne de Weger, [MD5 considered harmful today: Creating a rogue CA certificate](http://www.win.tue.nl/hashclash/rogue-ca/), accessed March 29, 2009
+  - Swinhoe, Dan (April 17, 2020). ["The 15 biggest data breaches of the 21st century"](https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html). CSO Magazine
+  - Goodin, Dan (2012-12-10). ["25-GPU cluster cracks every standard Windows password in <6 hours"](https://arstechnica.com/information-technology/2012/12/25-gpu-cluster-cracks-every-standard-windows-password-in-6-hours/). [Ars Technica](https://en.wikipedia.org/wiki/Ars_Technica "Ars Technica"). Retrieved 2020-11-23
+  - Claburn, Thomas (February 14, 2019). ["Use an 8-char Windows NTLM password? Don't. Every single one can be cracked in under 2.5hrs"](https://www.theregister.co.uk/2019/02/14/password_length/). *[www.theregister.co.uk](http://www.theregister.co.uk)*. Retrieved 2020-11-26
+  - ["Mind-blowing GPU performance"](https://improsec.com/tech-blog/mind-blowing-gpu-performance). Improsec. January 3, 2020
+  - Grassi Paul A. (June 2017). *SP 800-63B-3 – Digital Identity Guidelines, Authentication and Lifecycle Management*. NIST.
 - [The First 30 Years of Cryptographic Hash Functions and the NIST SHA-3 Competition by Bart Preneel](https://www.esat.kuleuven.be/cosic/publications/article-1532.pdf)
 - [Lifetimes of popular cryptographic hashes](https://valerieaurora.org/hash.html)
 - [Collisions for Hash Functions MD4, MD5, HAVAL-128 and RIPEMD](https://eprint.iacr.org/2004/199.pdf)
-- [Password cracking](https://en.wikipedia.org/wiki/Password_cracking)
-
----
-# References
-- [x] <https://en.wikipedia.org/wiki/Hash_function>
-- [x] <https://en.wikipedia.org/wiki/List_of_hash_functions>
-- [x] <https://en.wikipedia.org/wiki/Cryptographic_hash_function>
-- [x] <https://en.wikipedia.org/wiki/Deterministic_algorithm>
-- [x] <https://en.wikipedia.org/wiki/Avalanche_effect>
-- [x] <https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions>
-- [x] <https://valerieaurora.org/hash.html>
-- [ ] <https://en.wikipedia.org/wiki/Rainbow_table>
-- [ ] https://crackstation.net/hashing-security.htm
-- [ ] https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle
-- [ ] <https://www.thesslstore.com/blog/rainbow-tables-a-path-to-password-gold-for-cybercriminals/>
-- [ ] <https://www.geeksforgeeks.org/understanding-rainbow-table-attack/>
-- [ ] <https://cyberhoot.com/cybrary/rainbow-tables/>
-- [ ] <https://www.beyondidentity.com/glossary/rainbow-table-attack>
-- [ ] <https://www.sciencedirect.com/topics/computer-science/rainbow-table>
-- [ ] <https://www.mrw.it/sicurezza/password-cracking-tramite-rainbow-tables_7694.html>
-- [ ] <https://en.wikipedia.org/wiki/Password_cracking>
-- [ ] <https://en.wikipedia.org/wiki/Birthday_attack>
-- [ ] <https://en.wikipedia.org/wiki/Brute-force_attack>
-- [ ] <https://www.growhub.it/varie/come-si-fa-un-attacco-brute-force/>
-- [ ] <https://www.proofpoint.com/it/threat-reference/brute-force-attack>
-- [ ] <https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/>
-## Keyed cryptographic hash functions
-| Nome                                       | Lunghezza Tag       | tipo                              |
-| ------------------------------------------ | ------------------- | --------------------------------- |
-| BLAKE2#BLAKE2 "BLAKE (hash function)")     | arbitrary           | keyed hash function (prefix-MAC)  |
-| BLAKE3                                     | arbitrary           | keyed hash function (supplied IV) |
-| HMAC                                       |                     |                                   |
-| KMAC                                       | arbitrary           | based on Keccak                   |
-| MD6                                        | 512 bits            | Merkle tree NLFSR                 |
-| One-key MAC (OMAC; CMAC)                   |                     |                                   |
-| PMAC (cryptography) "PMAC (cryptography)") |                     |                                   |
-| Poly1305-AES                               | 128 bits            | nonce-based                       |
-| SipHash                                    | 32, 64 or 128 bits  | non-collision-resistant PRF       |
-| HighwayHash[13]                            | 64, 128 or 256 bits | non-collision-resistant PRF       |
-| UMAC                                       |                     |                                   |
-| VMAC                                       |                     |                                   |
-
----
-## Unkeyed cryptographic hash functions
-| Nome                                    | Lunghezza Tag   | tipo                                                       |
-| --------------------------------------- | --------------- | ---------------------------------------------------------- |
-| BLAKE-256 "BLAKE (hash function)")      | 256 bits        | HAIFA structure                                            |
-| BLAKE-512 "BLAKE (hash function)")      | 512 bits        | HAIFA structure                                            |
-| BLAKE2s#BLAKE2 "BLAKE (hash function)") | up to 256 bits  | HAIFA structure                                            |
-| BLAKE2b#BLAKE2 "BLAKE (hash function)") | up to 512 bits  | HAIFA structure                                            |
-| BLAKE2X#BLAKE2 "BLAKE (hash function)") | arbitrary       | HAIFA structure, extensible-output functions (XOFs) design |
-| BLAKE3                                  | arbitrary       | Merkle tree                                                |
-| ECOH                                    | 224 to 512 bits | hash                                                       |
-| FSB                                     | 160 to 512 bits | hash                                                       |
-| GOST "GOST (hash function)")            | 256 bits        | hash                                                       |
-| Grøstl                                  | up to 512 bits  | hash                                                       |
-| HAS-160                                 | 160 bits        | hash                                                       |
-| HAVAL                                   | 128 to 256 bits | hash                                                       |
-| JH "JH (hash function)")                | 224 to 512 bits | hash                                                       |
-| LSH                                     | 256 to 512 bits | wide-pipe Merkle–Damgård construction                      |
-| MD2 "MD2 (cryptography)")               | 128 bits        | hash                                                       |
-| MD4                                     | 128 bits        | hash                                                       |
-| MD5                                     | 128 bits        | Merkle–Damgård construction                                |
-| MD6                                     | up to 512 bits  | Merkle tree NLFSR (it is also a keyed hash function)       |
-| RadioGatún                              | arbitrary       | ideal mangling function                                    |
-| RIPEMD                                  | 128 bits        | hash                                                       |
-| RIPEMD-128                              | 128 bits        | hash                                                       |
-| RIPEMD-160                              | 160 bits        | hash                                                       |
-| RIPEMD-320                              | 320 bits        | hash                                                       |
-| SHA-1                                   | 160 bits        | Merkle–Damgård construction                                |
-| SHA-224                                 | 224 bits        | Merkle–Damgård construction                                |
-| SHA-256                                 | 256 bits        | Merkle–Damgård construction                                |
-| SHA-384                                 | 384 bits        | Merkle–Damgård construction                                |
-| SHA-512                                 | 512 bits        | Merkle–Damgård construction                                |
-| SHA-3 (subset of Keccak)                | arbitrary       | sponge function                                            |
-| Skein "Skein (hash function)")          | arbitrary       | Unique Block Iteration")                                   |
-| Snefru                                  | 128 or 256 bits | hash                                                       |
-| Spectral Hash                           | 512 bits        | wide-pipe Merkle–Damgård construction                      |
-| Streebog                                | 256 or 512 bits | Merkle–Damgård construction                                |
-| SWIFFT                                  | 512 bits        | hash                                                       |
-| Tiger "Tiger (cryptography)")           | 192 bits        | Merkle–Damgård construction                                |
-| Whirlpool "Whirlpool (cryptography)")   | 512 bits        | hash                                                       |
-| ## Citations                            |                 |                                                            |
+- [popular tools for brute force attacks](https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/)
+- [Rainbow table](https://en.wikipedia.org/wiki/Rainbow_table)
+  - Oechslin, P. (2003). ["Making a Faster Cryptanalytic Time-Memory Trade-Off"](https://lasec.epfl.ch/pub/lasec/doc/Oech03.pdf) (PDF). *Advances in Cryptology - CRYPTO 2003*. Vol. 2729. pp. 617–630
+  - Hellman, M. (1980). ["A cryptanalytic time-memory trade-off"](http://www-ee.stanford.edu/~hellman/publications/36.pdf) (PDF). *IEEE Transactions on Information Theory*. **26** (4): 401–406
+  - ["LASEC - Security and Cryptography Laboratory: Dr Philippe Oechslin - Research"](https://lasec.epfl.ch/people/oechslin/). *Faculté I&C - School of Computer and Communication Sciences*. March 20
+- [crackstation](https://crackstation.net/hashing-security.htm)
+  - [Kerckhoffs's principle](https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle)
+- [Birthday attack](https://en.wikipedia.org/wiki/Birthday_attack)
+  - Daniel J. Bernstein. ["Cost analysis of hash collisions : Will quantum computers make SHARCS obsolete?"](http://cr.yp.to/hash/collisioncost-20090823.pdf) (PDF). *Cr.yp.to*. Retrieved 29 October 2017.
+  - Brassard, Gilles; HØyer, Peter; Tapp, Alain (20 April 1998). *LATIN'98: Theoretical Informatics*. Lecture Notes in Computer Science. Vol. 1380. Springer, Berlin, Heidelberg. pp. 163–169
+- [understanding etc/shadow file](https://www.cyberciti.biz/faq/understanding-etcshadow-file/)
+- [Microsoft Docs](https://docs.microsoft.com/)
+- [Store passwords using Reversible Encryption](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/store-passwords-using-reversible-encryption)
+- [Passwords technical overview](https://docs.microsoft.com/en-us/windows-server/security/kerberos/passwords-technical-overview)
+- [MS NLMP](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-nlmp/f05874ce-efe5-45f8-b9b7-7586a45763b3)
+- [# Windows 10 Microsoft Passport (aka Microsoft Next Generation Credential) In Detail](https://adsecurity.org/?p=1535)
+- [LSASS](https://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service)
+- [Why doesnt microsoft implement salt on users passwords](https://security.stackexchange.com/questions/30654/why-doesnt-microsoft-implement-salt-on-users-passwords-in-windows/30657#30657)
