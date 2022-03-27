@@ -99,27 +99,19 @@ I primi design di funzioni hash crittografiche risalgono alla fine degli anni '7
 - Il 24 aprile 2019 un documento di *Gaëtan Leurent* e *Thomas Peyrin* presentato a **Eurocrypt 2019** ha descritto un miglioramento dell'attacco *chosen-prefix* precedentemente migliore nelle funzioni digest **Merkle-Damgård**-like basate su **Davies-Meyer** block ciphers.
 - Il 5 gennaio 2020 *Gaëtan Leurent* e *Thomas Peyrin* hanno pubblicato un attacco migliorato
 ## Attachi possibili
-### Brute-force attack
-Gli attacchi brute-force funzionano calcolando ogni possibile combinazione che potrebbe comporre una password e testandola per vedere se è la password corretta. All'aumentare della lunghezza della password, la quantità di tempo, in media, per trovare la password corretta aumenta esponenzialmente.
+### Birthday Attack
+Un **birthday attack** è un tipo di attacco crittografico che sfrutta la matematica dietro il *birthday problem* nella teoria della probabilità. Questo attacco può essere usato per abusare della comunicazione tra due o più parti. L'attacco dipende dalla maggiore probabilità di collisioni riscontrata tra i tentativi di attacco casuale e un grado fisso di permutazioni (pigeonholes). Con un attacco di compleanno, è possibile trovare una collisione di una funzione hash in $\sqrt{2^n}=2^{\frac{n}{2}}$, con $2^n$ che è la classica sicurezza di resistenza della **pre-image**. C'è un risultato generale (anche se contestato) che i computer quantistici possono eseguire attacchi di compleanno, rompendo così la resistenza alle collisioni, in $\sqrt[3]{2^n}=2^{\frac{n}{3}}$.
 
-Types of Brute Force Attacks:
+Come esempio, si consideri lo scenario in cui un insegnante con una classe di 30 studenti ($n = 30$) chiede il compleanno di tutti (per semplicità, ignorare gli anni bisestili) per determinare se due studenti hanno lo stesso compleanno (corrispondente a una collisione hash come descritto più avanti). Intuitivamente, questa possibilità può sembrare piccola. Controintuitivamente, la probabilità che almeno uno studente abbia lo stesso compleanno di *qualsiasi* altro studente in qualsiasi giorno è intorno al 70% (per $n = 30$), dalla formula $1-\frac{365!}{(365-n)!\cdot 365^n}$.
+Se l'insegnante avesse scelto un giorno *specifico* (ad esempio, il 16 settembre), allora la probabilità che almeno uno studente sia nato in quel giorno specifico è $1-(\frac{364}{365})^{30}$, circa il 7,9%.
 
-- **Semplice attacco di brute force**
-  utilizza un approccio sistematico che non si basa su una logica esterna
-- **Attacchi dizionario**
-  indovina nomi utente o password usando un dizionario di possibili stringhe o frasi
-- **Attacchi ibridi di brute force**
-  parte da una logica esterna per determinare quale variazione di password può avere più probabilità di successo, e poi continua con il semplice approccio di provare molte possibili variazioni
-- **Attacco reverse brute force**
-  utilizza una password comune o una collezione di password contro molti possibili nomi utente. Prende di mira una rete di utenti per i quali gli aggressori hanno precedentemente ottenuto dati
-- **Credential stuffing**
-  utilizza coppie *password-username* conosciute in precedenza, provandole con più siti web. Sfrutta il fatto che molti utenti hanno lo stesso nome utente e password su diversi sistemi
-#### Rainbow tables
+In un attacco di compleanno, l'attaccante prepara molte diverse varianti di contratti benigni e maligni, ognuno con una firma digitale. Si cerca una coppia di contratti benigni e maligni con la stessa firma. In questo esempio fittizio, supponiamo che la firma digitale di una stringa sia il primo byte del suo hash SHA-256. Dopo che la vittima accetta il contratto benigno, l'attaccante lo sostituisce con quello malevolo e sostiene che la vittima lo ha firmato, come dimostrato dalla firma digitale.
+### Precomputed hash chains e Rainbow tables
 Una tabella arcobaleno è una tabella precompilata per memorizzare l'output delle funzioni hash crittografiche, di solito per craccare gli hash delle password. Le tabelle sono di solito utilizzate per recuperare una funzione di derivazione della chiave fino ad una certa lunghezza che consiste in un insieme limitato di caratteri. È un esempio pratico di un compromesso spazio-tempo, utilizzando meno tempo di elaborazione del computer e più memoria di un attacco brute-force che calcola un hash ad ogni tentativo, ma più tempo di elaborazione e meno memoria di una semplice funzione di derivazione della chiave con una voce per hash. L'uso di una derivazione della chiave che impiega un sale rende questo attacco non fattibile.
 
 Il contenuto della tabella non dipende dal valore di hash da invertire. Viene creata una volta e poi utilizzata ripetutamente per le ricerche senza modifiche.
 Aumentando la lunghezza della catena diminuisce la dimensione della tabella, aumentando anche il tempo richiesto per eseguire le ricerche, e questo è il compromesso tempo-memoria della **rainbow table**.
-##### Precomputed hash chains
+#### Precomputed hash chains
 Supponiamo di avere una funzione di hash delle password $H$ e un insieme finito di password $P$. L'obiettivo è precompilare una struttura dati che, dato qualsiasi output $h$ della funzione di hash, possa localizzare un elemento $p$ in $P$ tale che $H(p) = h$, o determinare che non esiste un tale $p$ in $P$. Il modo più semplice per farlo è calcolare $H(p)$ per tutti gli $p$ in $P$, ma poi la memorizzazione della tabella richiede $\Theta(|P|n)$ bit di spazio, dove $|P|$ è la dimensione dell'insieme $P$ e $n$ è la dimensione di un output di $H$, che è proibitivo per grandi $|P|$. Le catene di hash sono una tecnica per diminuire questo requisito di spazio. L'idea è di definire una *reduction function* $R$ che rimappa i valori di hash in valori in $P$. Si noti, tuttavia, che la *reduction function* non è in realtà un'inversa della funzione hash, ma piuttosto una funzione diversa con un dominio e un codominio invertiti rispetto alla funzione hash. Alternando la funzione hash con la *reduction function*, si formano delle *catene* di password e valori hash alternati. Per esempio, se $P$ fosse l'insieme delle password alfabetiche minuscole di 6 caratteri, e i valori di hash fossero lunghi 32 bit, una catena potrebbe essere come questa:
 ${\displaystyle {\color {Red}{\mathtt {aaaaaa}}}\,{\xrightarrow[{\;H\;}]{}}\,{\mathtt {281DAF40}}\,{\xrightarrow[{\;R\;}]{}}\,{\mathtt {sgfnyd}}\,{\xrightarrow[{\;H\;}]{}}\,{\mathtt {920ECF10}}\,{\xrightarrow[{\;R\;}]{}}\,{\color {Violet}{\mathtt {kiebgt}}}}$
 L'unico requisito per la funzione di riduzione è di essere in grado di restituire un valore "plain text" in una dimensione specifica.
@@ -137,14 +129,29 @@ Così, la password è *"sgfnyd "* (o una password diversa con lo stesso valore d
 Si noti tuttavia che questa catena non contiene *sempre* il valore hash $h$; può accadere che la catena che inizia da $h$ si fonda con una catena che ha un punto di partenza diverso. Per esempio, possiamo avere un valore di hash *FB107E70*, e quando seguiamo la sua catena, otteniamo *kiebgt*:
 ${\displaystyle {\mathtt {FB107E70}}\,{\xrightarrow[{\;R\;}]{}}\,{\mathtt {bvtdll}}\,{\xrightarrow[{\;H\;}]{}}\,{\mathtt {0EE80890}}\,{\xrightarrow[{\;R\;}]{}}\,{\color {Violet}{\mathtt {kiebgt}}}}$
 Ma *FB107E70* non è nella catena che inizia con *"aaaaaa "*. Questo è chiamato un *falso allarme*. In questo caso, ignoriamo la corrispondenza e continuiamo ad estendere la catena di $h$ cercando un'altra corrispondenza. Se la catena di $h$ si estende fino alla lunghezza di $k$ senza nessuna buona corrispondenza, allora la password non è mai stata prodotta in nessuna delle catene.
-##### Rainbow tables
+#### Rainbow tables
 Le **rainbow tables** risolvono efficacemente il problema delle collisioni con le catene hash ordinarie sostituendo la singola funzione di riduzione $R$ con una sequenza di funzioni di riduzione correlate $R_1$ attraverso $R_k$. In questo modo, perché due catene collidano e si fondano devono colpire lo stesso valore *nella stessa iterazione*: di conseguenza, i valori finali in queste catene saranno identici. Un passaggio finale di post-elaborazione può ordinare le catene nella tabella e rimuovere qualsiasi catena "duplicata" che ha gli stessi valori finali di altre catene. Vengono quindi generate nuove catene per riempire la tabella.
 
 L'uso di sequenze di funzioni di riduzione cambia il modo in cui viene fatto il lookup: poiché il valore di hash di interesse può essere trovato in qualsiasi punto della catena, è necessario generare $k$ catene diverse. La prima catena assume che il valore di hash sia nell'ultima posizione di hash e applica solo $R_k$; la catena successiva assume che il valore di hash sia nella penultima posizione di hash e applica $R_{k-1}$, poi $H$, poi $R_k$; e così via fino all'ultima catena, che applica tutte le funzioni di riduzione, alternandole con $H$. Questo crea un nuovo modo di produrre un falso allarme: se "indoviniamo" male la posizione del valore di hash, potremmo valutare inutilmente una catena.
 
 Sebbene le tabelle arcobaleno debbano seguire più catene, compensano ciò avendo meno tabelle: le semplici tabelle di catene di hash non possono crescere oltre una certa dimensione senza diventare rapidamente inefficienti a causa della fusione delle catene; per far fronte a ciò, esse mantengono più tabelle, e ogni ricerca deve cercare attraverso ogni tabella. Le **tabelle arcobaleno** possono raggiungere prestazioni simili con tabelle che sono $k$ volte più grandi, permettendo loro di eseguire un fattore di $k$ in meno di ricerche.
-##### Defense against rainbow tables
+#### Defense against rainbow tables
 Una **rainbow table** è inefficace contro i one-way hash che includono grandi salt
+### Brute-force attack
+Gli attacchi brute-force funzionano calcolando ogni possibile combinazione che potrebbe comporre una password e testandola per vedere se è la password corretta. All'aumentare della lunghezza della password, la quantità di tempo, in media, per trovare la password corretta aumenta esponenzialmente.
+
+Tipi di attacchi di forza bruta:
+
+- **Semplice attacco di brute force**
+  utilizza un approccio sistematico che non si basa su una logica esterna
+- **Attacchi dizionario**
+  indovina nomi utente o password usando un dizionario di possibili stringhe o frasi
+- **Attacchi ibridi di brute force**
+  parte da una logica esterna per determinare quale variazione di password può avere più probabilità di successo, e poi continua con il semplice approccio di provare molte possibili variazioni
+- **Attacco reverse brute force**
+  utilizza una password comune o una collezione di password contro molti possibili nomi utente. Prende di mira una rete di utenti per i quali gli aggressori hanno precedentemente ottenuto dati
+- **Credential stuffing**
+  utilizza coppie *password-username* conosciute in precedenza, provandole con più siti web. Sfrutta il fatto che molti utenti hanno lo stesso nome utente e password su diversi sistemi
 #### Strumenti di brute forcing
 - **THC-Hydra**
   Esegue rapidamente un gran numero di combinazioni di password, sia simple brute force che dictionary-based. Può attaccare più di 50 protocolli e più sistemi operativi
@@ -164,10 +171,9 @@ Una **rainbow table** è inefficace contro i one-way hash che includono grandi s
   uno strumento per craccare l'autenticazione di rete. Può essere usato su Windows, Linux e BSD
 - **Rainbow Crack**
   genera **rainbow tables** da utilizzare durante degli attacchi, differisce da altri strumenti convenzionali di brute-forcing perchè le **rainbow tables** sono precomputed
-### Birthday Attack
-A **birthday attack** is a type of cryptographic attack that exploits the mathematics behind the birthday problem in probability theory. This attack can be used to abuse communication between two or more parties. The attack depends on the higher likelihood of collisions found between random attack attempts and a fixed degree of permutations (pigeonholes). With a birthday attack, it is possible to find a collision of a hash function in $\sqrt{2^n}=2^{\frac{n}{2}}$, with $2^n$ being the classical preimage resistance security. There is a general (though disputed) result that quantum computers can perform birthday attacks, thus breaking collision resistance, in $\sqrt[3]{2^n}=2^{\frac{n}{3}}$
+### Pass the Hash(PtH)
 ## Hash e Sistemi Operativi
-## Citations
+## Bibliografia
 - [Cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
   - Al-Kuwari, Saif; Davenport, James H.; Bradford, Russell J. (2011). ["Cryptographic Hash Functions: Recent Design Trends and Security Notions"](https://eprint.iacr.org/2011/565). *Cryptology ePrint Archive*. Report 2011/565
   - Rogaway, P.; Shrimpton, T. (2004). "Cryptographic Hash-Function Basics: Definitions, Implications, and Separations for Preimage Resistance, Second-Preimage Resistance, and Collision Resistance"
@@ -199,8 +205,9 @@ A **birthday attack** is a type of cryptographic attack that exploits the mathem
 - [crackstation](https://crackstation.net/hashing-security.htm)
   - [Kerckhoffs's principle](https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle)
 - [Birthday attack](https://en.wikipedia.org/wiki/Birthday_attack)
-	- Daniel J. Bernstein. ["Cost analysis of hash collisions : Will quantum computers make SHARCS obsolete?"](http://cr.yp.to/hash/collisioncost-20090823.pdf) (PDF). _Cr.yp.to_. Retrieved 29 October 2017.
-	- Brassard, Gilles; HØyer, Peter; Tapp, Alain (20 April 1998). _LATIN'98: Theoretical Informatics_. Lecture Notes in Computer Science. Vol. 1380. Springer, Berlin, Heidelberg. pp. 163–169
+  - Daniel J. Bernstein. ["Cost analysis of hash collisions : Will quantum computers make SHARCS obsolete?"](http://cr.yp.to/hash/collisioncost-20090823.pdf) (PDF). *Cr.yp.to*. Retrieved 29 October 2017.
+  - Brassard, Gilles; HØyer, Peter; Tapp, Alain (20 April 1998). *LATIN'98: Theoretical Informatics*. Lecture Notes in Computer Science. Vol. 1380. Springer, Berlin, Heidelberg. pp. 163–169
+
 ---
 # References
 - [x] <https://en.wikipedia.org/wiki/Hash_function>
@@ -213,9 +220,12 @@ A **birthday attack** is a type of cryptographic attack that exploits the mathem
 - [x] <https://en.wikipedia.org/wiki/Rainbow_table>
 - [x] <https://crackstation.net/hashing-security.htm>
 - [x] <https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle>
-- [ ] <https://en.wikipedia.org/wiki/Birthday_attack>
+- [x] <https://en.wikipedia.org/wiki/Birthday_attack>
 - [x] <https://en.wikipedia.org/wiki/Brute-force_attack>
 - [x] <https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/>
+- [ ] https://www.giac.org/paper/gcih/34273/pass-the-hash-windows-10/174913#:~:text=Windows%2010%20uses%20NT%20hashes,NTLMv1%20and%20NTLMv2%20hashes%2C%20respectively.
+- [ ] https://en.wikipedia.org/wiki/Pass_the_hash
+- [ ] https://www.cybersecurity360.it/nuove-minacce/attacco-pass-the-hash-cose-come-funziona-e-come-prevenirlo/
 ## Keyed cryptographic hash functions
 | Nome                                       | Lunghezza Tag       | tipo                              |
 | ------------------------------------------ | ------------------- | --------------------------------- |
