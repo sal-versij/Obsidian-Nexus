@@ -171,8 +171,14 @@ Tipi di attacchi di forza bruta:
   uno strumento per craccare l'autenticazione di rete. Può essere usato su Windows, Linux e BSD
 - **Rainbow Crack**
   genera **rainbow tables** da utilizzare durante degli attacchi, differisce da altri strumenti convenzionali di brute-forcing perchè le **rainbow tables** sono precomputed
-### Pass the Hash(PtH)
 ## Hash e Sistemi Operativi
+**Usually password format is set to $id$salt$hashed , The $id is the algorithm used On GNU/Linux as follows:**
+
+-   $1$ is MD5.
+-   $2a$ is Blowfish.
+-   $2y$ is Blowfish.
+-   $5$ is SHA-256.
+-   $6$ is SHA-512.
 ## Bibliografia
 - [Cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
   - Al-Kuwari, Saif; Davenport, James H.; Bradford, Russell J. (2011). ["Cryptographic Hash Functions: Recent Design Trends and Security Notions"](https://eprint.iacr.org/2011/565). *Cryptology ePrint Archive*. Report 2011/565
@@ -207,79 +213,12 @@ Tipi di attacchi di forza bruta:
 - [Birthday attack](https://en.wikipedia.org/wiki/Birthday_attack)
   - Daniel J. Bernstein. ["Cost analysis of hash collisions : Will quantum computers make SHARCS obsolete?"](http://cr.yp.to/hash/collisioncost-20090823.pdf) (PDF). *Cr.yp.to*. Retrieved 29 October 2017.
   - Brassard, Gilles; HØyer, Peter; Tapp, Alain (20 April 1998). *LATIN'98: Theoretical Informatics*. Lecture Notes in Computer Science. Vol. 1380. Springer, Berlin, Heidelberg. pp. 163–169
-
----
-# References
-- [x] <https://en.wikipedia.org/wiki/Hash_function>
-- [x] <https://en.wikipedia.org/wiki/List_of_hash_functions>
-- [x] <https://en.wikipedia.org/wiki/Cryptographic_hash_function>
-- [x] <https://en.wikipedia.org/wiki/Deterministic_algorithm>
-- [x] <https://en.wikipedia.org/wiki/Avalanche_effect>
-- [x] <https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions>
-- [x] <https://valerieaurora.org/hash.html>
-- [x] <https://en.wikipedia.org/wiki/Rainbow_table>
-- [x] <https://crackstation.net/hashing-security.htm>
-- [x] <https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle>
-- [x] <https://en.wikipedia.org/wiki/Birthday_attack>
-- [x] <https://en.wikipedia.org/wiki/Brute-force_attack>
-- [x] <https://resources.infosecinstitute.com/topic/popular-tools-for-brute-force-attacks/>
-- [ ] https://www.giac.org/paper/gcih/34273/pass-the-hash-windows-10/174913#:~:text=Windows%2010%20uses%20NT%20hashes,NTLMv1%20and%20NTLMv2%20hashes%2C%20respectively.
-- [ ] https://en.wikipedia.org/wiki/Pass_the_hash
-- [ ] https://www.cybersecurity360.it/nuove-minacce/attacco-pass-the-hash-cose-come-funziona-e-come-prevenirlo/
-## Keyed cryptographic hash functions
-| Nome                                       | Lunghezza Tag       | tipo                              |
-| ------------------------------------------ | ------------------- | --------------------------------- |
-| BLAKE2#BLAKE2 "BLAKE (hash function)")     | arbitrary           | keyed hash function (prefix-MAC)  |
-| BLAKE3                                     | arbitrary           | keyed hash function (supplied IV) |
-| HMAC                                       |                     |                                   |
-| KMAC                                       | arbitrary           | based on Keccak                   |
-| MD6                                        | 512 bits            | Merkle tree NLFSR                 |
-| One-key MAC (OMAC; CMAC)                   |                     |                                   |
-| PMAC (cryptography) "PMAC (cryptography)") |                     |                                   |
-| Poly1305-AES                               | 128 bits            | nonce-based                       |
-| SipHash                                    | 32, 64 or 128 bits  | non-collision-resistant PRF       |
-| HighwayHash[13]                            | 64, 128 or 256 bits | non-collision-resistant PRF       |
-| UMAC                                       |                     |                                   |
-| VMAC                                       |                     |                                   |
-
----
-## Unkeyed cryptographic hash functions
-| Nome                                    | Lunghezza Tag   | tipo                                                       |
-| --------------------------------------- | --------------- | ---------------------------------------------------------- |
-| BLAKE-256 "BLAKE (hash function)")      | 256 bits        | HAIFA structure                                            |
-| BLAKE-512 "BLAKE (hash function)")      | 512 bits        | HAIFA structure                                            |
-| BLAKE2s#BLAKE2 "BLAKE (hash function)") | up to 256 bits  | HAIFA structure                                            |
-| BLAKE2b#BLAKE2 "BLAKE (hash function)") | up to 512 bits  | HAIFA structure                                            |
-| BLAKE2X#BLAKE2 "BLAKE (hash function)") | arbitrary       | HAIFA structure, extensible-output functions (XOFs) design |
-| BLAKE3                                  | arbitrary       | Merkle tree                                                |
-| ECOH                                    | 224 to 512 bits | hash                                                       |
-| FSB                                     | 160 to 512 bits | hash                                                       |
-| GOST "GOST (hash function)")            | 256 bits        | hash                                                       |
-| Grøstl                                  | up to 512 bits  | hash                                                       |
-| HAS-160                                 | 160 bits        | hash                                                       |
-| HAVAL                                   | 128 to 256 bits | hash                                                       |
-| JH "JH (hash function)")                | 224 to 512 bits | hash                                                       |
-| LSH                                     | 256 to 512 bits | wide-pipe Merkle–Damgård construction                      |
-| MD2 "MD2 (cryptography)")               | 128 bits        | hash                                                       |
-| MD4                                     | 128 bits        | hash                                                       |
-| MD5                                     | 128 bits        | Merkle–Damgård construction                                |
-| MD6                                     | up to 512 bits  | Merkle tree NLFSR (it is also a keyed hash function)       |
-| RadioGatún                              | arbitrary       | ideal mangling function                                    |
-| RIPEMD                                  | 128 bits        | hash                                                       |
-| RIPEMD-128                              | 128 bits        | hash                                                       |
-| RIPEMD-160                              | 160 bits        | hash                                                       |
-| RIPEMD-320                              | 320 bits        | hash                                                       |
-| SHA-1                                   | 160 bits        | Merkle–Damgård construction                                |
-| SHA-224                                 | 224 bits        | Merkle–Damgård construction                                |
-| SHA-256                                 | 256 bits        | Merkle–Damgård construction                                |
-| SHA-384                                 | 384 bits        | Merkle–Damgård construction                                |
-| SHA-512                                 | 512 bits        | Merkle–Damgård construction                                |
-| SHA-3 (subset of Keccak)                | arbitrary       | sponge function                                            |
-| Skein "Skein (hash function)")          | arbitrary       | Unique Block Iteration")                                   |
-| Snefru                                  | 128 or 256 bits | hash                                                       |
-| Spectral Hash                           | 512 bits        | wide-pipe Merkle–Damgård construction                      |
-| Streebog                                | 256 or 512 bits | Merkle–Damgård construction                                |
-| SWIFFT                                  | 512 bits        | hash                                                       |
-| Tiger "Tiger (cryptography)")           | 192 bits        | Merkle–Damgård construction                                |
-| Whirlpool "Whirlpool (cryptography)")   | 512 bits        | hash                                                       |
-| ## Citations                            |                 |                                                            |
+- [understanding etc/shadow file](https://www.cyberciti.biz/faq/understanding-etcshadow-file/)
+- [Microsoft Docs](https://docs.microsoft.com/)
+- [Store passwords using reversible encryption](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/store-passwords-using-reversible-encryption)
+- https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password
+- https://docs.microsoft.com/en-us/windows-server/security/kerberos/passwords-technical-overview
+- https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-nlmp/f05874ce-efe5-45f8-b9b7-7586a45763b3
+- https://adsecurity.org/?p=1535
+- https://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service
+- https://security.stackexchange.com/questions/30654/why-doesnt-microsoft-implement-salt-on-users-passwords-in-windows/30657#30657
