@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-03-28.md",
+            "file": "Mini Challenge Internet Security.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-03-28.md",
+                "file": "Mini Challenge Internet Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-03-28.md",
+                "file": "Mini Challenge Internet Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-03-28.md"
+                "file": "Mini Challenge Internet Security.md"
               }
             }
           }
@@ -162,8 +163,8 @@
   },
   "active": "6f89fc956562ab79",
   "lastOpenFiles": [
-    "2022-03-28.md",
     "Mini Challenge Internet Security.md",
+    "2022-03-28.md",
     "2022-03-23.md",
     "2022-03-21.md",
     "Untitled 1.md",
