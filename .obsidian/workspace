@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Mini Challenge Internet Security.md",
-            "mode": "preview",
+            "file": "2022-03-28.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mini Challenge Internet Security.md",
+                "file": "2022-03-28.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mini Challenge Internet Security.md",
+                "file": "2022-03-28.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mini Challenge Internet Security.md"
+                "file": "2022-03-28.md"
               }
             }
           }
@@ -163,6 +162,8 @@
   },
   "active": "6f89fc956562ab79",
   "lastOpenFiles": [
+    "2022-03-28.md",
+    "2022-03-21.md",
     "Mini Challenge Internet Security.md",
     "Untitled 1.md",
     "OpenCL.md",
@@ -170,8 +171,6 @@
     "2022-03-25.md",
     "2022-03-23.md",
     "Metodi Matematici e Statistici.md",
-    "handouts/metodi statistici 2021-10-14.pdf",
-    "handouts/metodi statistici 2021-12-14.pdf",
-    "handouts/metodi statistici 2021-11-30.pdf"
+    "handouts/metodi statistici 2021-10-14.pdf"
   ]
 }
