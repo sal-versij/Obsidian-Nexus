@@ -300,7 +300,7 @@ Se X può assumere i valori di un internvallo $I\subset\mathbb{R}$, allora F_x �
 def!
 
 ### Densità di variabili aleatorie
-Caso discreto
+#### Caso discreto
 Una variabile aleatoria $X$ discreta può assumeresolo alcuni valori $x_i$ ($i=1,\ldots,n$ / $i=1,\ldots$)
 $P[X=x_i]\rightarrow\sum\limits_i{P[X=x_i]}=1$
 !def Densità di probabilità
@@ -314,4 +314,32 @@ assioma:
 $P[a<X\leq b]=P[a<X<b]+P[X=b]$
 $P[a<X\leq b]\neq P[a<X<b]$
 
-$F_x(t)OP[X\leq t]=\sum\limits_{x_{i}<t}P_X(x_i)$
+$F_x(t)OP[X\leq t]=\sum\limits_{x_{i}<t}P_{X}(x_{i})$
+#### Caso Continuo
+Per definire la probabilità consideriamo la funzione di ripartizione
+$F_x(a)=P[X\leq a]$
+$F_{x}(t)=\int\limits_{-\infty}^{t}f_{X}(x)dx$
+la funzione $f_{X}(x)$ è detta funzione densità
+
+$P[a\leq X\leq b] = F_{X}(b)-F_{X}(a)=\int\limits_{a}^{b}f_{X}(x)dx$
+!dem
+$I_a=(-\infty,a)$
+$I_b=(-\infty,b)$
+$I_{ab}=[a,b]$
+$P[X\in I_b]=P[I_b]=P[I_{a}\cup I_{ab}]=P[I_{a}] + P[I_{ab}]$
+$P[I_{a}\cup I_{ab}]=P[I_{b}]-P[I_{a}]=P[X\leq b]-P[X\leq a]=F_{X}(b)-F_{X}(a)=\int\limits_{-\infty}^{b}f_X(x)dx-\int\limits_{-\infty}^{a}f_X(x)dx=\int\limits_{a}^{b}f_X(x)dx$
+dem!
+
+!def
+Sia $X$ una variabile aleatoria continua, se esiste una funzione $f_X$ tale che $\forall a,b\in\mathbb{R}$
+$P[a<X\leq b]=\int\limits_{a}^{b}f_X(x)dx$
+allora $f_X$ è detta funzione densità di probabilità
+def!
+
+osservazioni:
+1. $f_{X}(x)=0$ se $x\not\in I\subseteq\mathbb{R}$ dove $I$ è il supporto di $X$
+2. $P[a<X\leq b]=P[a<X<b]$
+Proprietà:
+Se $f_X$ è la funzione densità di una variabile aleatoria continua allora
+1. $f_{X}(x)\geq0\quad\forall x\in\mathbb{R}$ e $f(x)>0$ se $x\in I$
+2. $\int\limits_{-\infty}^{+\infty}f_{X}(x)dx=1$
