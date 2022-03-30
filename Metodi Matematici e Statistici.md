@@ -277,7 +277,7 @@ def!
 
 &Egrave; detto supporto l'insieme dei valori che la variabile aleatoria può assumere
 !def Funzioni di ripartizione
-Data la variabile aleatoria X, è detta funzione di rpartizione di C la funzione
+Data la variabile aleatoria $X$, è detta funzione di rpartizione di $X$ la funzione
 $F_x(t)=P[X\leq t]=P[A_t]$
 $F_x(t):\mathbb{R}\to[0,1]$
 def!
@@ -301,10 +301,17 @@ def!
 
 ### Densità di variabili aleatorie
 Caso discreto
-Una variabile aleatoria X discreta può assumeresolo alcuni valori x_i ($i=1,\ldots,n$/$i=1,\ldots$)
+Una variabile aleatoria $X$ discreta può assumeresolo alcuni valori $x_i$ ($i=1,\ldots,n$ / $i=1,\ldots$)
 $P[X=x_i]\rightarrow\sum\limits_i{P[X=x_i]}=1$
 !def Densità di probabilità
 La funzione $P_x:\mathbb{R}\to[0,1]$ definita dalla relazione
 $P_X(x)=P[X=x]=\begin{cases}P[X=x_i]&x=x_1 &\text{per un certo i}\\0 &x\neq x_i &\forall i\end{cases}$
 def!
-Continua con [[metodi statistici 2021-10-19.pdf]]
+
+$A=\{x_1|a<x_{i}\leq b\}$
+$P[a<X\leq b]=\sum\limits_{i\in A} P[X=x_i]=\sum\limits_{i\in A} P_X(x_i)$
+assioma:
+$P[a<X\leq b]=P[a<X<b]+P[X=b]$
+$P[a<X\leq b]\neq P[a<X<b]$
+
+$F_x(t)OP[X\leq t]=\sum\limits_{x_{i}<t}P_X(x_i)$

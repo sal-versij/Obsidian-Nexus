@@ -8,18 +8,18 @@
   "mouseStatistics": {
     "vantage-obsidian:build-search": 2,
     "workspaces:open-modal": 1,
-    "obsidian-admonition:collapse-admonitions": 4,
+    "obsidian-admonition:collapse-admonitions": 5,
     "obsidian-plotly:add-plotly-dataviewjs-example": 1,
     "daily-notes": 3,
     "open-with-default-app:open": 1,
     "open-with-default-app:show": 1,
-    "workspace:undo-close-pane": 1,
-    "workspace:close": 1,
-    "workspace:close-others": 1
+    "workspace:undo-close-pane": 2,
+    "workspace:close": 2,
+    "workspace:close-others": 2
   },
   "keyboardStatistics": {
-    "markdown:toggle-preview": 31,
-    "editor:save-file": 523,
+    "markdown:toggle-preview": 34,
+    "editor:save-file": 538,
     "editor:open-search": 4,
     "editor:open-search-replace": 2,
     "markdown-prettifier:markdown-prettifier-run": 49,
