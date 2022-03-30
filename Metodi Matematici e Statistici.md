@@ -391,5 +391,35 @@ dem!
 
 !th Disuguaglianza di Markov
 Sia $X$ una variabile aleatoria e $g:\mathbb{R}\to\mathbb{R}$ tale che $g(x)\geq0\quad\forall x\in\mathbb{R}$
-Allora, se esiste $E[g(X)]$, si h
+Allora, se esiste $E[g(X)]$, si ha:
+$P[g(X)\geq N]\leq \frac{E[g(x)]}{N}\quad\forall N>0$
+!dem
+$E[x]=\int\limits_{-\infty}^{+\infty}xf_X(x)dx$
+$E[g(x)]\int\limits_{-\infty}^{+\infty}g(x)f_X(x)dx$
+$E[g(x)]\int\limits_{-\infty}^{+\infty}g(x)f_X(x)dx\geq$
+$\geq\int\limits_{\{x|g(x)\leq N\}}g(x)f_X(x)dx\geq\int\limits_{\{x|g(x)\leq N\}}Nf_X(x)dx=$
+$=N\int\limits_{\{x|g(x)\leq N\}}f_X(x)dx=NP[g(x)\geq N]$
+$E[g(x)]\geq N\cdot P[g(x)\geq N]$
+dem!
+th!
+
+!th Disuguaglianza di cebicev
+$P[|X-E[X]|\geq \epsilon]\leq \frac{Var[X]}{\epsilon^{2}}\quad\quad\forall\epsilon>0$
+!def Momenti di una variabile aleatoria
+Si dice momento $k$-esimo di una variabile aleatoria $X$, e si indica con $\mu_k$, la seguente quantità
+$\mu_{k}=E[X^{k}]$
+- Caso discreto: $\mu_{k}=\sum\limits\limits_{i}x_{i}^{k}P_{X}(x_{i})$
+- Caso continuo: $\int\limits_{-\infty}^{+\infty}x^{k}f_{X}(x)dx$
+def!
+
+Osservazione: $Var[X]=\mu_2-(\mu_1)^2$
+!def Funzione generatrive dei momenti
+$m_{x}(t)=E[e^{tx}]$
+def!
+Proprietà:
+$\mu_{1}=[\frac{d}{dt}m_{x}(t)]_{t=0}$
+$\mu_1=\int\limits_{-\infty}^{+\infty}xf_X(x)dx$
+$m_{x}(t)=\int\limits_{-\infty}^{+\infty}e^{tx}f_{X}(x)dx$
+$\frac{d}{dt}m_{x}(t)=\int\limits_{-\infty}^{+\infty}xe^{tx}f_{X}(x)dx$
+$[\frac{d}{dt}m_{x}(t)]_{t=0}=$
 th!

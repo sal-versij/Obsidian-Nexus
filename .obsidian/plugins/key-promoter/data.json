@@ -19,7 +19,7 @@
   },
   "keyboardStatistics": {
     "markdown:toggle-preview": 35,
-    "editor:save-file": 583,
+    "editor:save-file": 615,
     "editor:open-search": 4,
     "editor:open-search-replace": 2,
     "markdown-prettifier:markdown-prettifier-run": 49,
@@ -34,6 +34,6 @@
     "file-explorer:new-file": 2,
     "workspace:close": 1,
     "darlal-switcher-plus:switcher-plus:open": 1,
-    "editor:delete-paragraph": 1
+    "editor:delete-paragraph": 2
   }
 }
