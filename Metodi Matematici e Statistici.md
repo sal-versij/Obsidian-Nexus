@@ -353,5 +353,43 @@ $\int\limits_{a}^{b}f_X(x)dx=\int\limits_{g(a)}^{g(b)}f_{X}(h(y))|\frac{dx}{dy}|
 dem!
 th!
 
-!def
+!def Valore Atteso
+Data una variabile aleatoria $X$, dotata di funzione di ripartizione, il suo valore atteso (valore medio o speranza matematica), se esiste, è data da
+$E[X]=\int\limits_{0}^{+\infty}[1-F_X(t)]dt-\int\limits_{-\infty}^{0}F_{X}(t)dt$
+si dimostra che
+- caso discreto: $E[X]=\sum\limits_{i}x_{i}P[X=x_{i}]$
+- caso continuo: $E[X]=\int\limits_{-\infty}^{+\infty}xf_X(x)$
 def!
+
+!def Moda
+Sia $X$ una variabile aleatoria, discreta o continua, si chiama moda di X il valore, se esiste, per cui è massima la densità
+def!
+
+!def Quantile
+Dato $\alpha\in(0,1)$, si dice quantile di ordine $\alpha$ della variabile aleatoria $X$ il più piccolo numero $x_\alpha$ tale che
+$P[X<x_{\alpha}]\leq \alpha \leq P[X\leq x_{\alpha}]$
+def!
+
+!def Mediana
+Si dice mediana della vbariabile aleatoria $X$ il quantile di ordine $0.5$($x_{0.5}$)
+def!
+
+!def Varianza
+Data una variabile aleatoria $X$, il cui valore atteso vale $E[X]=\mu$ si chiama varianza di $X$, e si indica con $Var[X]$, il seguente valore atteso
+$Var[X]=E[(X-\mu)^2]$
+def!
+
+Proprietà:
+$Var[X]=E[X^2]-\mu^2$
+!dem
+$Var[X]=E[(x-\mu)^2]=$
+$=E[(x^2+\mu^2-2X\mu)]=$
+$=E[x^2]+E[\mu^2]-E[2X\mu]=$
+$=E[x^2]+\mu^{2-2\mu}E[X]=$
+$=E[x^2]+\mu^2-2\mu^2=E[X^2]-\mu^2$
+dem!
+
+!th Disuguaglianza di Markov
+Sia $X$ una variabile aleatoria e $g:\mathbb{R}\to\mathbb{R}$ tale che $g(x)\geq0\quad\forall x\in\mathbb{R}$
+Allora, se esiste $E[g(X)]$, si h
+th!
