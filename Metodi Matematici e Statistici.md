@@ -343,3 +343,15 @@ Proprietà:
 Se $f_X$ è la funzione densità di una variabile aleatoria continua allora
 1. $f_{X}(x)\geq0\quad\forall x\in\mathbb{R}$ e $f(x)>0$ se $x\in I$
 2. $\int\limits_{-\infty}^{+\infty}f_{X}(x)dx=1$
+
+!th
+Sia $X$ una variabile aleatoria continua e sia $Y=g(X)$
+Se $g$ è una funzione invertibile nel supporto $I$ di $X$ e $h$ è la sua inversa, allora
+$f_Y(y)=f_X(h(y))|h'(y)|$
+!dem
+$\int\limits_{a}^{b}f_X(x)dx=\int\limits_{g(a)}^{g(b)}f_{X}(h(y))|\frac{dx}{dy}|dy=\int\limits_{g(a)}^{g(b)}f_{X}(h(y))|h'(y)|dy$
+dem!
+th!
+
+!def
+def!

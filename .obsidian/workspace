@@ -13,7 +13,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "handouts/metodi statistici 2021-10-19.pdf"
+                "file": "handouts/metodi statistici 2021-10-21.pdf"
               }
             }
           },
@@ -180,6 +180,7 @@
   "active": "b542be6ac6f7ddd4",
   "lastOpenFiles": [
     "Metodi Matematici e Statistici.md",
+    "handouts/metodi statistici 2021-10-21.pdf",
     "handouts/metodi statistici 2021-10-19.pdf",
     "2022-03-07.md",
     "Mini Challenge Internet Security.md",
@@ -187,7 +188,6 @@
     "2022-03-23.md",
     "2022-03-21.md",
     "Untitled 1.md",
-    "OpenCL.md",
-    "Untitled.md"
+    "OpenCL.md"
   ]
 }
