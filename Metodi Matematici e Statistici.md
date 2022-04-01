@@ -277,7 +277,7 @@ def!
 
 &Egrave; detto supporto l'insieme dei valori che la variabile aleatoria può assumere
 !def Funzioni di ripartizione
-Data la variabile aleatoria X, è detta funzione di rpartizione di C la funzione
+Data la variabile aleatoria $X$, è detta funzione di rpartizione di $X$ la funzione
 $F_x(t)=P[X\leq t]=P[A_t]$
 $F_x(t):\mathbb{R}\to[0,1]$
 def!
@@ -300,11 +300,126 @@ Se X può assumere i valori di un internvallo $I\subset\mathbb{R}$, allora F_x �
 def!
 
 ### Densità di variabili aleatorie
-Caso discreto
-Una variabile aleatoria X discreta può assumeresolo alcuni valori x_i ($i=1,\ldots,n$/$i=1,\ldots$)
+#### Caso discreto
+Una variabile aleatoria $X$ discreta può assumeresolo alcuni valori $x_i$ ($i=1,\ldots,n$ / $i=1,\ldots$)
 $P[X=x_i]\rightarrow\sum\limits_i{P[X=x_i]}=1$
 !def Densità di probabilità
 La funzione $P_x:\mathbb{R}\to[0,1]$ definita dalla relazione
 $P_X(x)=P[X=x]=\begin{cases}P[X=x_i]&x=x_1 &\text{per un certo i}\\0 &x\neq x_i &\forall i\end{cases}$
 def!
-Continua con [[metodi statistici 2021-10-19.pdf]]
+
+$A=\{x_1|a<x_{i}\leq b\}$
+$P[a<X\leq b]=\sum\limits_{i\in A} P[X=x_i]=\sum\limits_{i\in A} P_X(x_i)$
+assioma:
+$P[a<X\leq b]=P[a<X<b]+P[X=b]$
+$P[a<X\leq b]\neq P[a<X<b]$
+
+$F_x(t)OP[X\leq t]=\sum\limits_{x_{i}<t}P_{X}(x_{i})$
+#### Caso Continuo
+Per definire la probabilità consideriamo la funzione di ripartizione
+$F_x(a)=P[X\leq a]$
+$F_{x}(t)=\int\limits_{-\infty}^{t}f_{X}(x)dx$
+la funzione $f_{X}(x)$ è detta funzione densità
+
+$P[a\leq X\leq b] = F_{X}(b)-F_{X}(a)=\int\limits_{a}^{b}f_{X}(x)dx$
+!dem
+$I_a=(-\infty,a)$
+$I_b=(-\infty,b)$
+$I_{ab}=[a,b]$
+$P[X\in I_b]=P[I_b]=P[I_{a}\cup I_{ab}]=P[I_{a}] + P[I_{ab}]$
+$P[I_{a}\cup I_{ab}]=P[I_{b}]-P[I_{a}]=P[X\leq b]-P[X\leq a]=F_{X}(b)-F_{X}(a)=\int\limits_{-\infty}^{b}f_X(x)dx-\int\limits_{-\infty}^{a}f_X(x)dx=\int\limits_{a}^{b}f_X(x)dx$
+dem!
+
+!def
+Sia $X$ una variabile aleatoria continua, se esiste una funzione $f_X$ tale che $\forall a,b\in\mathbb{R}$
+$P[a<X\leq b]=\int\limits_{a}^{b}f_X(x)dx$
+allora $f_X$ è detta funzione densità di probabilità
+def!
+
+osservazioni:
+1. $f_{X}(x)=0$ se $x\not\in I\subseteq\mathbb{R}$ dove $I$ è il supporto di $X$
+2. $P[a<X\leq b]=P[a<X<b]$
+Proprietà:
+Se $f_X$ è la funzione densità di una variabile aleatoria continua allora
+1. $f_{X}(x)\geq0\quad\forall x\in\mathbb{R}$ e $f(x)>0$ se $x\in I$
+2. $\int\limits_{-\infty}^{+\infty}f_{X}(x)dx=1$
+
+!th
+Sia $X$ una variabile aleatoria continua e sia $Y=g(X)$
+Se $g$ è una funzione invertibile nel supporto $I$ di $X$ e $h$ è la sua inversa, allora
+$f_Y(y)=f_X(h(y))|h'(y)|$
+!dem
+$\int\limits_{a}^{b}f_X(x)dx=\int\limits_{g(a)}^{g(b)}f_{X}(h(y))|\frac{dx}{dy}|dy=\int\limits_{g(a)}^{g(b)}f_{X}(h(y))|h'(y)|dy$
+dem!
+th!
+
+!def Valore Atteso
+Data una variabile aleatoria $X$, dotata di funzione di ripartizione, il suo valore atteso (valore medio o speranza matematica), se esiste, è data da
+$E[X]=\int\limits_{0}^{+\infty}[1-F_X(t)]dt-\int\limits_{-\infty}^{0}F_{X}(t)dt$
+si dimostra che
+- caso discreto: $E[X]=\sum\limits_{i}x_{i}P[X=x_{i}]$
+- caso continuo: $E[X]=\int\limits_{-\infty}^{+\infty}xf_X(x)$
+def!
+
+!def Moda
+Sia $X$ una variabile aleatoria, discreta o continua, si chiama moda di X il valore, se esiste, per cui è massima la densità
+def!
+
+!def Quantile
+Dato $\alpha\in(0,1)$, si dice quantile di ordine $\alpha$ della variabile aleatoria $X$ il più piccolo numero $x_\alpha$ tale che
+$P[X<x_{\alpha}]\leq \alpha \leq P[X\leq x_{\alpha}]$
+def!
+
+!def Mediana
+Si dice mediana della vbariabile aleatoria $X$ il quantile di ordine $0.5$($x_{0.5}$)
+def!
+
+!def Varianza
+Data una variabile aleatoria $X$, il cui valore atteso vale $E[X]=\mu$ si chiama varianza di $X$, e si indica con $Var[X]$, il seguente valore atteso
+$Var[X]=E[(X-\mu)^2]$
+def!
+
+Proprietà:
+$Var[X]=E[X^2]-\mu^2$
+!dem
+$Var[X]=E[(x-\mu)^2]=$
+$=E[(x^2+\mu^2-2X\mu)]=$
+$=E[x^2]+E[\mu^2]-E[2X\mu]=$
+$=E[x^2]+\mu^{2-2\mu}E[X]=$
+$=E[x^2]+\mu^2-2\mu^2=E[X^2]-\mu^2$
+dem!
+
+!th Disuguaglianza di Markov
+Sia $X$ una variabile aleatoria e $g:\mathbb{R}\to\mathbb{R}$ tale che $g(x)\geq0\quad\forall x\in\mathbb{R}$
+Allora, se esiste $E[g(X)]$, si ha:
+$P[g(X)\geq N]\leq \frac{E[g(x)]}{N}\quad\forall N>0$
+!dem
+$E[x]=\int\limits_{-\infty}^{+\infty}xf_X(x)dx$
+$E[g(x)]\int\limits_{-\infty}^{+\infty}g(x)f_X(x)dx$
+$E[g(x)]\int\limits_{-\infty}^{+\infty}g(x)f_X(x)dx\geq$
+$\geq\int\limits_{\{x|g(x)\leq N\}}g(x)f_X(x)dx\geq\int\limits_{\{x|g(x)\leq N\}}Nf_X(x)dx=$
+$=N\int\limits_{\{x|g(x)\leq N\}}f_X(x)dx=NP[g(x)\geq N]$
+$E[g(x)]\geq N\cdot P[g(x)\geq N]$
+dem!
+th!
+
+!th Disuguaglianza di cebicev
+$P[|X-E[X]|\geq \epsilon]\leq \frac{Var[X]}{\epsilon^{2}}\quad\quad\forall\epsilon>0$
+!def Momenti di una variabile aleatoria
+Si dice momento $k$-esimo di una variabile aleatoria $X$, e si indica con $\mu_k$, la seguente quantità
+$\mu_{k}=E[X^{k}]$
+- Caso discreto: $\mu_{k}=\sum\limits\limits_{i}x_{i}^{k}P_{X}(x_{i})$
+- Caso continuo: $\int\limits_{-\infty}^{+\infty}x^{k}f_{X}(x)dx$
+def!
+
+Osservazione: $Var[X]=\mu_2-(\mu_1)^2$
+!def Funzione generatrive dei momenti
+$m_{x}(t)=E[e^{tx}]$
+def!
+Proprietà:
+$\mu_{1}=[\frac{d}{dt}m_{x}(t)]_{t=0}$
+$\mu_1=\int\limits_{-\infty}^{+\infty}xf_X(x)dx$
+$m_{x}(t)=\int\limits_{-\infty}^{+\infty}e^{tx}f_{X}(x)dx$
+$\frac{d}{dt}m_{x}(t)=\int\limits_{-\infty}^{+\infty}xe^{tx}f_{X}(x)dx$
+$[\frac{d}{dt}m_{x}(t)]_{t=0}=$
+th!
