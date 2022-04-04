@@ -275,7 +275,7 @@ Dato uno spazio di probabilità $(\Omega,\mathscr{F},P)$ si dice variabile aleat
 $A_t=\{\omega|X(\omega)\leq t\}\in\mathscr{F}\;\;\;\;\forall t\in\mathbb{R}$
 def!
 
-&Egrave; detto supporto l'insieme dei valori che la variabile aleatoria può assumere
+È detto supporto l'insieme dei valori che la variabile aleatoria può assumere
 !def Funzioni di ripartizione
 Data la variabile aleatoria $X$, è detta funzione di rpartizione di $X$ la funzione
 $F_x(t)=P[X\leq t]=P[A_t]$
@@ -283,6 +283,7 @@ $F_x(t):\mathbb{R}\to[0,1]$
 def!
 
 Proprietà
+
 1. F_x è monotona non decrescente, cioè
    $F_x(t_1)\leq F_x(t_2)\impliedby t_1\leq t_2$
    $A_{t_1}\subseteq A_{t_2}\implies P[A_{t_1}]\leq P[A_{t_2}]$
@@ -298,7 +299,6 @@ Se la variabile aleatoria X può assumere solo un numero finito( o al più numer
 e la variabile viene detta descreta
 Se X può assumere i valori di un internvallo $I\subset\mathbb{R}$, allora F_x è generalmente continua e la variabile è detta continua
 def!
-
 ### Densità di variabili aleatorie
 #### Caso discreto
 Una variabile aleatoria $X$ discreta può assumeresolo alcuni valori $x_i$ ($i=1,\ldots,n$ / $i=1,\ldots$)
@@ -337,10 +337,13 @@ allora $f_X$ è detta funzione densità di probabilità
 def!
 
 osservazioni:
+
 1. $f_{X}(x)=0$ se $x\not\in I\subseteq\mathbb{R}$ dove $I$ è il supporto di $X$
 2. $P[a<X\leq b]=P[a<X<b]$
+
 Proprietà:
 Se $f_X$ è la funzione densità di una variabile aleatoria continua allora
+
 1. $f_{X}(x)\geq0\quad\forall x\in\mathbb{R}$ e $f(x)>0$ se $x\in I$
 2. $\int\limits_{-\infty}^{+\infty}f_{X}(x)dx=1$
 
@@ -357,8 +360,10 @@ th!
 Data una variabile aleatoria $X$, dotata di funzione di ripartizione, il suo valore atteso (valore medio o speranza matematica), se esiste, è data da
 $E[X]=\int\limits_{0}^{+\infty}[1-F_X(t)]dt-\int\limits_{-\infty}^{0}F_{X}(t)dt$
 si dimostra che
+
 - caso discreto: $E[X]=\sum\limits_{i}x_{i}P[X=x_{i}]$
 - caso continuo: $E[X]=\int\limits_{-\infty}^{+\infty}xf_X(x)$
+
 def!
 
 !def Moda
@@ -408,8 +413,10 @@ $P[|X-E[X]|\geq \epsilon]\leq \frac{Var[X]}{\epsilon^{2}}\quad\quad\forall\epsil
 !def Momenti di una variabile aleatoria
 Si dice momento $k$-esimo di una variabile aleatoria $X$, e si indica con $\mu_k$, la seguente quantità
 $\mu_{k}=E[X^{k}]$
+
 - Caso discreto: $\mu_{k}=\sum\limits\limits_{i}x_{i}^{k}P_{X}(x_{i})$
 - Caso continuo: $\int\limits_{-\infty}^{+\infty}x^{k}f_{X}(x)dx$
+
 def!
 
 Osservazione: $Var[X]=\mu_2-(\mu_1)^2$
@@ -417,9 +424,24 @@ Osservazione: $Var[X]=\mu_2-(\mu_1)^2$
 $m_{x}(t)=E[e^{tx}]$
 def!
 Proprietà:
-$\mu_{1}=[\frac{d}{dt}m_{x}(t)]_{t=0}$
-$\mu_1=\int\limits_{-\infty}^{+\infty}xf_X(x)dx$
-$m_{x}(t)=\int\limits_{-\infty}^{+\infty}e^{tx}f_{X}(x)dx$
-$\frac{d}{dt}m_{x}(t)=\int\limits_{-\infty}^{+\infty}xe^{tx}f_{X}(x)dx$
-$[\frac{d}{dt}m_{x}(t)]_{t=0}=$
+
+- $\mu_{1}=[\frac{d}{dt}m_{x}(t)]_{t=0}$
+  !dem
+  $\mu_1=\int\limits_{-\infty}^{+\infty}xf_X(x)dx$
+  $m_{x}(t)=\int\limits_{-\infty}^{+\infty}e^{tx}f_{X}(x)dx$
+  $\frac{d}{dt}m_{x}(t)=\int\limits_{-\infty}^{+\infty}xe^{tx}f_{X}(x)dx$
+  $[\frac{d}{dt}m_{x}(t)]_{t=0}=\int\limits_{-\infty}^{+\infty}xf_X(x)dx=\mu_1$
+  dem!
+- $\frac{d^{k}}{dt^{k}}(e^{tx})=x^{k}e^{tx}$
+- $\mu_{k}=[\frac{d^{k}}{dt^{k}}m_x(t)]_{t=0}$
+
 th!
+
+Proprietà
+Siano $X$ e $Y$ due variabili aleatorie, se
+$m_{x}(t)=m_{y}(t)\quad\forall t\in[-t_{0},t_{0}]$
+allora $X$ e $Y$ hanno la medesima densità
+
+Proprietà
+Se $X$ possiede la funzione generatrice dei momenti e $Y=aX+b$, allora esiste anche $m_y(t)$ e
+$m_{y}(t)=e^{tb}m_x(at)$
