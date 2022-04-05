@@ -18,21 +18,21 @@
     "workspace:close-others": 4
   },
   "keyboardStatistics": {
-    "markdown:toggle-preview": 35,
+    "markdown:toggle-preview": 40,
     "editor:save-file": 726,
     "editor:open-search": 4,
     "editor:open-search-replace": 2,
     "markdown-prettifier:markdown-prettifier-run": 53,
     "command-palette:open": 9,
     "cycle-through-panes:cycle-through-panes-reverse": 1,
-    "editor:fold-all": 22,
-    "editor:unfold-all": 14,
-    "editor:toggle-fold": 88,
-    "cycle-through-panes:cycle-through-panes": 4,
+    "editor:fold-all": 24,
+    "editor:unfold-all": 15,
+    "editor:toggle-fold": 90,
+    "cycle-through-panes:cycle-through-panes": 5,
     "editor:toggle-checklist-status": 1,
     "editor:follow-link": 1,
     "file-explorer:new-file": 2,
-    "workspace:close": 1,
+    "workspace:close": 2,
     "darlal-switcher-plus:switcher-plus:open": 1,
     "editor:delete-paragraph": 2
   }
