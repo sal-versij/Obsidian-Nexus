@@ -19,11 +19,11 @@
     "file-explorer:new-file": 1
   },
   "keyboardStatistics": {
-    "markdown:toggle-preview": 39,
-    "editor:save-file": 779,
+    "markdown:toggle-preview": 41,
+    "editor:save-file": 791,
     "editor:open-search": 4,
     "editor:open-search-replace": 2,
-    "markdown-prettifier:markdown-prettifier-run": 54,
+    "markdown-prettifier:markdown-prettifier-run": 58,
     "command-palette:open": 9,
     "cycle-through-panes:cycle-through-panes-reverse": 1,
     "editor:fold-all": 27,
@@ -35,6 +35,7 @@
     "file-explorer:new-file": 2,
     "workspace:close": 1,
     "darlal-switcher-plus:switcher-plus:open": 1,
-    "editor:delete-paragraph": 6
+    "editor:delete-paragraph": 6,
+    "app:go-forward": 2
   }
 }

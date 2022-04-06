@@ -6,8 +6,8 @@
   - Probabilità condizionata
   - Regola della catena
   - Partizione dello spazio campionario
-	  - Formula delle probabilità totali
-	  - Legge delle alternative
+    - Formula delle probabilità totali
+    - Legge delle alternative
   - Formula di Bayes
   - Cenni di combinatoria
 - Variabili aleatorie($X$)
@@ -39,13 +39,13 @@
   - Distribuzione Geometrica($X\sim Geo(p)$)($\#(F,T)$ of $(F)^{*}T$)
     - Densità($P[X=k]=pq^{k-1}$)
     - Momenti($m_{X}(t)= \frac{pe^{t}}{1-qe^{t}}$)
-  - Distribuzione Binomiale Negativa
-    - Densità($P[X=k]=$)
-    - Momenti($m_{X}(t)=$)
-  - Distribuzione di Poisson
+  - Distribuzione Binomiale Negativa($X\sim \overline{Bin}(n,p)$)($\#F$ of $(F)^{*}T$)
+    - Densità($P[X=k]=\binom{k-1}{n-1}p^{n}q^{k-n}$)
+    - Momenti($m_{X}(t)=(\frac{pe^{t}}{1-qe^{t}})^{n}$)
+  - Distribuzione di Poisson($X\sim Poi(\mu)\sim\lim\limits_{n\to\infty;p\to0}Bin(n,p)$)
     - Schema di Poisson
-    - Densità($P[X=k]=$)
-    - Momenti($m_{X}(t)=$)
+    - Densità($P[X=k]= \frac{\mu^{k}e^{}-\mu}{k!}$)
+    - Momenti($m_{X}(t)=e^{\mu(e^{t}-1)}$)
     - Processo di Poisson
   - Distribuzione Esponenziale
     - Densità($P[X=k]=$)
@@ -97,15 +97,15 @@
   - Consistenza
   - Asintotica normalità
 - Verifica di ipotesi
-	- Ipotesi
-	- Statistica test
-	- Regione critica
-	- Errori possibili
-	- Livello di significaticità
-	- Funzione potenza
-	- P-value
-	- Test riguardanti la media di una normale
-	- Test parametrico di confronto fra due popolazioni
-	- Confronto di due normali, a campioni accoppiati
-	- Regressione lineare
-	- Test relativi ai parametri 
+  - Ipotesi
+  - Statistica test
+  - Regione critica
+  - Errori possibili
+  - Livello di significaticità
+  - Funzione potenza
+  - P-value
+  - Test riguardanti la media di una normale
+  - Test parametrico di confronto fra due popolazioni
+  - Confronto di due normali, a campioni accoppiati
+  - Regressione lineare
+  - Test relativi ai parametri
