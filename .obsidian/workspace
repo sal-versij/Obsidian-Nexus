@@ -4,14 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "d618bd0fcb70a6bd",
+        "id": "dd91737de2d2a192",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "pdf",
           "state": {
-            "file": "Mini Challenge Internet Security.md",
-            "mode": "preview",
-            "source": false
+            "file": "handouts/internet-security (1).pdf"
           }
         }
       }
@@ -40,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mini challe",
+                "query": "metodi statistici",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,8 +55,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -110,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mini Challenge Internet Security.md",
+                "file": "handouts/internet-security (1).pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mini Challenge Internet Security.md",
+                "file": "handouts/internet-security (1).pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mini Challenge Internet Security.md"
+                "file": "handouts/internet-security (1).pdf"
               }
             }
           }
@@ -161,17 +158,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d618bd0fcb70a6bd",
+  "active": "dd91737de2d2a192",
   "lastOpenFiles": [
-    "Mini Challenge Internet Security.md",
+    "handouts/internet-security (1).pdf",
+    "2022-04-06.md",
+    "handouts/Statistica_descrittiva.pdf",
+    "handouts/Stima_di_parametri.pdf",
+    "handouts/Sicurezza delle reti - Applicazioni e standard.pdf",
+    "2022-03-28.md",
     "2022-04-04.md",
     "Metodi Matematici e Statistici.md",
     "handouts/metodi statistici 2021-10-21.pdf",
-    "handouts/metodi statistici 2021-10-19.pdf",
-    "2022-03-07.md",
-    "2022-03-28.md",
-    "2022-03-23.md",
-    "2022-03-21.md",
-    "Untitled 1.md"
+    "handouts/metodi statistici 2021-10-19.pdf"
   ]
 }
