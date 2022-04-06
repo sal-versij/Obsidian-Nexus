@@ -26,4 +26,50 @@
 	- Momenti di una variabile aleatoria
 		- Funzione generatrice di momenti
 		- Funzione caratteristica
-	- 
+- Distribuzioni
+	- Distribuzione di Bernoulli
+		- Schema di Bernoulli
+		- Densità
+		- Momenti
+	- Distribuzione Binomiale
+		- Densità
+		- Momenti
+	- Distribuzione Geometrica
+		- Densità
+		- Momenti
+	- Distribuzione Binomiale Negativa
+		- Densità
+		- Momenti
+	- Distribuzione di Poisson
+		- Schema di Poisson
+		- Densità
+		- Momenti
+		- Processo di Poisson
+	- Distribuzione Esponenziale
+		- Densità
+		- Momenti
+		- Assenza di ???
+	- Distribuzione Gamma
+		- Densità
+		- Momenti
+	- Distribuzione di Weibul
+		- Funzione di rischio
+		- Densità
+		- Momenti
+	- Distribuzione Normale (di Gauss)
+		- Densità
+		- Momenti
+	- Distribuzione Normale standardizzata
+	- Distribuzione uniforme
+	- Distribuzione Chi-quadro
+	- Distribuzione T di Student
+- Vettori aleatori
+	- Funzione di ripartizione congiunta
+	- Funzione di ripartizione marginale
+	- Densità congiunta
+	- Densità marginale
+	- Teorema della Somma
+	- Covarianza
+	- Matrice di covarianza
+	- Coefficiente di correlazione
+	- Trasformazioni
