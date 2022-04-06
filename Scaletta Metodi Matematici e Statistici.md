@@ -14,15 +14,14 @@
   - Spazio di probabilità
   - Supporto($I_{X}$)
   - Funzione di ripartizione($F_X(t):\mathbb{R}\to[0,1]$)
-  - Densità($P[X=x_{i}]$)
-  - Funzione densità($f_X(x)$)
-    - Sostituzione($f(g(x))$)
-  - Densità di probabilità
-  - Valore atteso
-    - Moda
-    - Quantile
-    - Mediana
-    - Varianza
+  - Funzione densità di probabilità($f_X(x)$)
+    - Sostituzione($f_Y(y)=f_X(h(y))|h'(y)|$)
+  - Densità di probabilità($p_X(x):\mathbb{R}\to[0,1]$)
+  - Valore atteso($E[X]$)
+    - Moda(max densità)
+    - Quantile($x_{\alpha}$)
+    - Mediana($x_{0.5}$)
+    - Varianza($Var[X]$)
   - Disuguaglianza di Markov
   - Disuguaglianza di Cebicev
   - Momenti di una variabile aleatoria
