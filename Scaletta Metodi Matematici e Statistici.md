@@ -1,0 +1,29 @@
+# Scaletta Metodi Matematici e Statistici
+- Spazzi campionari ed eventi
+	- Algebra
+	- Sigma-algebra
+	- Kolmogorov
+	- Probabilità condizionata
+	- Regola della catena
+	- Formula delle probabilità totali
+	- Legge delle alternative
+	- Formula di Bayes
+	- Cenni di combinatoria
+- Variabili aleatorie
+	- Spazio di probabilità
+	- Supporto
+	- Funzione di ripartizione
+	- Densità
+		- Sostituzione
+	- Densità di probabilità
+	- Valore atteso
+		- Moda
+		- Quantile
+		- Mediana
+		- Varianza
+	- Disuguaglianza di Markov
+	- Disuguaglianza di Cebicev
+	- Momenti di una variabile aleatoria
+		- Funzione generatrice di momenti
+		- Funzione caratteristica
+	- 

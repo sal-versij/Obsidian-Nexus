@@ -13,20 +13,21 @@
     "daily-notes": 7,
     "open-with-default-app:open": 1,
     "open-with-default-app:show": 1,
-    "workspace:undo-close-pane": 4,
-    "workspace:close": 4,
-    "workspace:close-others": 4
+    "workspace:undo-close-pane": 7,
+    "workspace:close": 7,
+    "workspace:close-others": 7,
+    "file-explorer:new-file": 1
   },
   "keyboardStatistics": {
-    "markdown:toggle-preview": 35,
-    "editor:save-file": 730,
+    "markdown:toggle-preview": 37,
+    "editor:save-file": 734,
     "editor:open-search": 4,
     "editor:open-search-replace": 2,
     "markdown-prettifier:markdown-prettifier-run": 53,
     "command-palette:open": 9,
     "cycle-through-panes:cycle-through-panes-reverse": 1,
     "editor:fold-all": 22,
-    "editor:unfold-all": 14,
+    "editor:unfold-all": 15,
     "editor:toggle-fold": 88,
     "cycle-through-panes:cycle-through-panes": 4,
     "editor:toggle-checklist-status": 1,
@@ -34,6 +35,6 @@
     "file-explorer:new-file": 2,
     "workspace:close": 1,
     "darlal-switcher-plus:switcher-plus:open": 1,
-    "editor:delete-paragraph": 2
+    "editor:delete-paragraph": 3
   }
 }
