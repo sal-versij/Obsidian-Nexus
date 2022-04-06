@@ -22,15 +22,15 @@
     - Quantile($x_{\alpha}$)
     - Mediana($x_{0.5}$)
     - Varianza($Var[X]$)
-  - Disuguaglianza di Markov
-  - Disuguaglianza di Cebicev
-  - Momenti di una variabile aleatoria
-    - Funzione generatrice di momenti
-    - Funzione caratteristica
+  - Disuguaglianza di Markov($E[g(x)]\geq k\cdot P[g(x)\geq k]$)
+  - Disuguaglianza di Cebicev($Var[X]\geq\epsilon^{2}\cdot P[|X-E[X]|\geq\epsilon]$)
+  - Momenti di una variabile aleatoria($\mu_{k}$)
+    - Funzione generatrice di momenti($m_{X}(t)$)
+    - Funzione caratteristica($H_{X}(t)$)
 - Distribuzioni
-  - Distribuzione di Bernoulli
-    - Schema di Bernoulli
-    - Densità
+  - Distribuzione di Bernoulli($X\sim Ber(p)$)
+    - Schema di Bernoulli(T/F)
+    - Densità($P[X=k]=p^{k}q^{1-k}$)
     - Momenti
   - Distribuzione Binomiale
     - Densità
