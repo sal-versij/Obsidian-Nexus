@@ -29,37 +29,38 @@
     - Funzione caratteristica($H_{X}(t)$)
 - Distribuzioni
   - Distribuzione di Bernoulli($X\sim Ber(p)$)
-    - Schema di Bernoulli(T/F)
+    - Prova di Bernoulli($(T,F)$)
+    - Schema di Bernoulli($(T,F)^{*}$)
     - Densità($P[X=k]=p^{k}q^{1-k}$)
-    - Momenti
-  - Distribuzione Binomiale
-    - Densità
-    - Momenti
-  - Distribuzione Geometrica
-    - Densità
-    - Momenti
+    - Momenti($m_{X}(t)=pe^{t}+q$)
+  - Distribuzione Binomiale($X\sim Bin(n,p)$)($\#T$ of Schema di Bernoulli)
+    - Densità($P[X=k]=\binom{n}{k}p^{k}q^{n-k}$)
+    - Momenti($m_{X}(t)=(q+pe^{t})^{n}$)
+  - Distribuzione Geometrica($X\sim Geo(p)$)($\#(F,T)$ of $(F)^{*}T$)
+    - Densità($P[X=k]=pq^{k-1}$)
+    - Momenti($m_{X}(t)= \frac{pe^{t}}{1-qe^{t}}$)
   - Distribuzione Binomiale Negativa
-    - Densità
-    - Momenti
+    - Densità($P[X=k]=$)
+    - Momenti($m_{X}(t)=$)
   - Distribuzione di Poisson
     - Schema di Poisson
-    - Densità
-    - Momenti
+    - Densità($P[X=k]=$)
+    - Momenti($m_{X}(t)=$)
     - Processo di Poisson
   - Distribuzione Esponenziale
-    - Densità
-    - Momenti
+    - Densità($P[X=k]=$)
+    - Momenti($m_{X}(t)=$)
     - Assenza di ???
   - Distribuzione Gamma
-    - Densità
-    - Momenti
+    - Densità($P[X=k]=$)
+    - Momenti($m_{X}(t)=$)
   - Distribuzione di Weibul
     - Funzione di rischio
-    - Densità
-    - Momenti
+    - Densità($P[X=k]=$)
+    - Momenti($m_{X}(t)=$)
   - Distribuzione Normale (di Gauss)
-    - Densità
-    - Momenti
+    - Densità($P[X=k]=$)
+    - Momenti($m_{X}(t)=$)
   - Distribuzione Normale standardizzata
   - Distribuzione uniforme
   - Distribuzione Chi-quadro
