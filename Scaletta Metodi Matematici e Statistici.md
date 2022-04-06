@@ -1,75 +1,109 @@
 # Scaletta Metodi Matematici e Statistici
 - Spazzi campionari ed eventi
-	- Algebra
-	- Sigma-algebra
-	- Kolmogorov
-	- Probabilità condizionata
-	- Regola della catena
-	- Formula delle probabilità totali
-	- Legge delle alternative
-	- Formula di Bayes
-	- Cenni di combinatoria
+  - Algebra
+  - Sigma-algebra
+  - Kolmogorov
+  - Probabilità condizionata
+  - Regola della catena
+  - Formula delle probabilità totali
+  - Legge delle alternative
+  - Formula di Bayes
+  - Cenni di combinatoria
 - Variabili aleatorie
-	- Spazio di probabilità
-	- Supporto
-	- Funzione di ripartizione
-	- Densità
-		- Sostituzione
-	- Densità di probabilità
-	- Valore atteso
-		- Moda
-		- Quantile
-		- Mediana
-		- Varianza
-	- Disuguaglianza di Markov
-	- Disuguaglianza di Cebicev
-	- Momenti di una variabile aleatoria
-		- Funzione generatrice di momenti
-		- Funzione caratteristica
+  - Spazio di probabilità
+  - Supporto
+  - Funzione di ripartizione
+  - Densità
+    - Sostituzione
+  - Densità di probabilità
+  - Valore atteso
+    - Moda
+    - Quantile
+    - Mediana
+    - Varianza
+  - Disuguaglianza di Markov
+  - Disuguaglianza di Cebicev
+  - Momenti di una variabile aleatoria
+    - Funzione generatrice di momenti
+    - Funzione caratteristica
 - Distribuzioni
-	- Distribuzione di Bernoulli
-		- Schema di Bernoulli
-		- Densità
-		- Momenti
-	- Distribuzione Binomiale
-		- Densità
-		- Momenti
-	- Distribuzione Geometrica
-		- Densità
-		- Momenti
-	- Distribuzione Binomiale Negativa
-		- Densità
-		- Momenti
-	- Distribuzione di Poisson
-		- Schema di Poisson
-		- Densità
-		- Momenti
-		- Processo di Poisson
-	- Distribuzione Esponenziale
-		- Densità
-		- Momenti
-		- Assenza di ???
-	- Distribuzione Gamma
-		- Densità
-		- Momenti
-	- Distribuzione di Weibul
-		- Funzione di rischio
-		- Densità
-		- Momenti
-	- Distribuzione Normale (di Gauss)
-		- Densità
-		- Momenti
-	- Distribuzione Normale standardizzata
-	- Distribuzione uniforme
-	- Distribuzione Chi-quadro
-	- Distribuzione T di Student
+  - Distribuzione di Bernoulli
+    - Schema di Bernoulli
+    - Densità
+    - Momenti
+  - Distribuzione Binomiale
+    - Densità
+    - Momenti
+  - Distribuzione Geometrica
+    - Densità
+    - Momenti
+  - Distribuzione Binomiale Negativa
+    - Densità
+    - Momenti
+  - Distribuzione di Poisson
+    - Schema di Poisson
+    - Densità
+    - Momenti
+    - Processo di Poisson
+  - Distribuzione Esponenziale
+    - Densità
+    - Momenti
+    - Assenza di ???
+  - Distribuzione Gamma
+    - Densità
+    - Momenti
+  - Distribuzione di Weibul
+    - Funzione di rischio
+    - Densità
+    - Momenti
+  - Distribuzione Normale (di Gauss)
+    - Densità
+    - Momenti
+  - Distribuzione Normale standardizzata
+  - Distribuzione uniforme
+  - Distribuzione Chi-quadro
+  - Distribuzione T di Student
 - Vettori aleatori
-	- Funzione di ripartizione congiunta
-	- Funzione di ripartizione marginale
-	- Densità congiunta
-	- Densità marginale
-	- Teorema della Somma
-	- Covarianza
-	- Matrice di covarianza
-	- Coefficiente di correlazione
-	- Trasformazioni
+  - Funzione di ripartizione congiunta
+  - Funzione di ripartizione marginale
+  - Densità congiunta
+  - Densità marginale
+  - Teorema della Somma
+  - Covarianza
+  - Matrice di covarianza
+  - Coefficiente di correlazione
+  - Trasformazioni
+  - Media campionaria
+    - Valore atteso
+    - Varianza
+    - Distribuzione
+  - Momento campionario di ordine k
+  - Varianza campionaria
+    - Valore atteso noto
+    - Valore atteso incognito
+  - Convergenza
+    - Convergenza di una distribuzione
+    - Convergenza quasi certa
+    - Convergenza in media quadratica
+  - Legge debole dei grandi numeri
+  - Legge forte dei grandi numeri
+  - Centrale del limite
+  - Statistica
+  - Stimatura
+  - Correttezza
+  - Correttezza asintotica
+  - Consistenza
+  - Asintotica normalità
+- Verifica di ipotesi
+	- Ipotesi
+	- Statistica test
+	- Regione critica
+	- Errori possibili
+	- Livello di significaticità
+	- Funzione potenza
+	- P-value
+	- Test riguardanti la media di una normale
+	- Test parametrico di confronto fra due popolazioni
+	- Confronto di due normali, a campioni accoppiati
+	- Regressione lineare
+	- Test relativi ai parametri 
