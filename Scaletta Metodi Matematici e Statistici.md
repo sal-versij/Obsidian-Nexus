@@ -5,16 +5,18 @@
   - Kolmogorov
   - Probabilità condizionata
   - Regola della catena
-  - Formula delle probabilità totali
-  - Legge delle alternative
+  - Partizione dello spazio campionario
+	  - Formula delle probabilità totali
+	  - Legge delle alternative
   - Formula di Bayes
   - Cenni di combinatoria
-- Variabili aleatorie
+- Variabili aleatorie($X$)
   - Spazio di probabilità
-  - Supporto
-  - Funzione di ripartizione
-  - Densità
-    - Sostituzione
+  - Supporto($I_{X}$)
+  - Funzione di ripartizione($F_X(t):\mathbb{R}\to[0,1]$)
+  - Densità($P[X=x_{i}]$)
+  - Funzione densità($f_X(x)$)
+    - Sostituzione($f(g(x))$)
   - Densità di probabilità
   - Valore atteso
     - Moda
