@@ -10,13 +10,16 @@
     "workspaces:open-modal": 1,
     "obsidian-admonition:collapse-admonitions": 5,
     "obsidian-plotly:add-plotly-dataviewjs-example": 1,
-    "daily-notes": 9,
+    "daily-notes": 10,
     "open-with-default-app:open": 1,
     "open-with-default-app:show": 1,
     "workspace:undo-close-pane": 7,
     "workspace:close": 7,
     "workspace:close-others": 7,
-    "file-explorer:new-file": 1
+    "file-explorer:new-file": 1,
+    "find-unlinked-files:delete-unlinked-files": 1,
+    "app:delete-file": 1,
+    "editor:delete-paragraph": 1
   },
   "keyboardStatistics": {
     "markdown:toggle-preview": 41,
