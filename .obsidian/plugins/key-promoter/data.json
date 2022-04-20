@@ -22,11 +22,11 @@
     "editor:delete-paragraph": 1
   },
   "keyboardStatistics": {
-    "markdown:toggle-preview": 41,
-    "editor:save-file": 862,
+    "markdown:toggle-preview": 43,
+    "editor:save-file": 880,
     "editor:open-search": 4,
     "editor:open-search-replace": 2,
-    "markdown-prettifier:markdown-prettifier-run": 76,
+    "markdown-prettifier:markdown-prettifier-run": 86,
     "command-palette:open": 9,
     "cycle-through-panes:cycle-through-panes-reverse": 1,
     "editor:fold-all": 33,
