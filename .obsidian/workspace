@@ -14,6 +14,16 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "fe2f882f3a1df343",
+        "type": "leaf",
+        "state": {
+          "type": "pdf",
+          "state": {
+            "file": "handouts/internet-security (1).pdf"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -109,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-04-20.md",
+                "file": "handouts/internet-security (1).pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-04-20.md",
+                "file": "handouts/internet-security (1).pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-04-20.md"
+                "file": "handouts/internet-security (1).pdf"
               }
             }
           }
@@ -160,17 +170,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8076e2b6c2c7a052",
+  "active": "fe2f882f3a1df343",
   "lastOpenFiles": [
+    "handouts/internet-security (1).pdf",
     "2022-04-20.md",
+    "handouts/internet-security (2).pdf",
     "2022-04-08.md",
     "2022-04-06.md",
     "Scaletta Metodi Matematici e Statistici.md",
     "Metodi Matematici e Statistici.md",
     "2022-03-07.md",
-    "handouts/internet-security (1).pdf",
     "handouts/Statistica_descrittiva.pdf",
-    "handouts/Stima_di_parametri.pdf",
-    "handouts/Sicurezza delle reti - Applicazioni e standard.pdf"
+    "handouts/Stima_di_parametri.pdf"
   ]
 }
