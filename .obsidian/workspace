@@ -4,12 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "8076e2b6c2c7a052",
+        "id": "42914fbb4ae54b6c",
         "type": "leaf",
         "state": {
-          "type": "pdf",
+          "type": "markdown",
           "state": {
-            "file": "handouts/metodi statistici 2021-11-02.pdf"
+            "file": "2022-04-20.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -107,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "handouts/metodi statistici 2021-11-02.pdf",
+                "file": "2022-04-20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "handouts/metodi statistici 2021-11-02.pdf",
+                "file": "2022-04-20.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "handouts/metodi statistici 2021-11-02.pdf"
+                "file": "2022-04-20.md"
               }
             }
           }
@@ -158,10 +160,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8076e2b6c2c7a052",
+  "active": "42914fbb4ae54b6c",
   "lastOpenFiles": [
-    "handouts/metodi statistici 2021-11-02.pdf",
     "2022-04-20.md",
+    "handouts/metodi statistici 2021-11-02.pdf",
     "handouts/internet-security (1).pdf",
     "handouts/internet-security (2).pdf",
     "2022-04-08.md",
