@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-04-27.md",
+            "file": "2022-03-21.md",
             "mode": "source",
             "source": false
           }
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-04-27.md",
+                "file": "2022-03-21.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-04-27.md",
+                "file": "2022-03-21.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-04-27.md"
+                "file": "2022-03-21.md"
               }
             }
           }
@@ -172,6 +172,7 @@
   },
   "active": "42914fbb4ae54b6c",
   "lastOpenFiles": [
+    "2022-03-21.md",
     "2022-04-27.md",
     "handouts/internet-security (1).pdf",
     "2022-04-20.md",
@@ -180,7 +181,6 @@
     "2022-04-08.md",
     "2022-04-06.md",
     "Scaletta Metodi Matematici e Statistici.md",
-    "Metodi Matematici e Statistici.md",
-    "2022-03-07.md"
+    "Metodi Matematici e Statistici.md"
   ]
 }
