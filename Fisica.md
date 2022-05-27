@@ -4,16 +4,16 @@
 È definita quando abbiamo stabilito un procedimento, ovvero un insieme di norme atte a misurare tale grandezza e ad assegnarle un'unità di misura
 ### Sistema Internazionale
 #### MKSA
-| Grandezza             | Simbolo | Misura      | Unità |
-| --------------------- | ------- | ----------- | ----- |
-| Lunghezza             | `[L]`   | Metro       | `m`   |
-| Massa                 | `[M]`   | Chilogrammo | `kg`  |
-| Tempo                 | `[T]`   | Secondo     | `s`   |
-| Intensità di corrente | `[I]`   | Ampère      | `A`   |
-| Temperatura           | `[Θ]`   | Kelvin      | `K`   |
-| Intensità luminosa    | `[J]`   | Candela     | `cd`  |
-| Quantità di materia   | `[N]`   | mole        | `mol` |
-| ### Altro             |         |             |       |
+| Grandezza             | Simbolo    | Misura      | Unità |
+| --------------------- | ---------- | ----------- | ----- |
+| Lunghezza             | $[L]$      | Metro       | `m`   |
+| Massa                 | $[M]$      | Chilogrammo | `kg`  |
+| Tempo                 | $[T]$      | Secondo     | `s`   |
+| Intensità di corrente | $[I]$      | Ampère      | `A`   |
+| Temperatura           | $[\Theta]$ | Kelvin      | `K`   |
+| Intensità luminosa    | $[J]$      | Candela     | `cd`  |
+| Quantità di materia   | $[N]$      | mole        | `mol` |
+| ### Altro             |            |             |       |
 
 - Equazione dimensionale
 - Errori di misura
@@ -93,12 +93,22 @@ Assioma $\equiv$ Postulato
 
 In fisica
 Legge $\equiv$ Principio
+### Leggi di newton
+#### Principio di inerzia
+Un corpo non soggetto a forze esterne permane nel suo stato di quiete o di moto rettiliineo uniforme
 
-- Principio di inerzia
-- Massa inerziale
-- Forza: 2a legge di Newton
-### Principio di Azione e Reazione
-- Leggi della forzaorza gravitazionale
+Massa inerziale
+$m_{1} = m_{0} \frac{a_{0}}{a_{1}}$
+#### Forza
+$\vec{F}=m\vec{a}$
+#### Principio di Azione e Reazione
+Quando due corpiinteragiscono la forza $\vec{F}_{12}$(**azione**)  che il corpo 1 esercita sul corpo 2 è uguale ed opposta alla forza $\vec{F}_{21}$(**reazione**) che il corpo 2 esercita sul corpo 1
+$\vec{F}_{12} = -\vec{F}_{21}$
+Unità di misura
+$[F] = [m][a] = [M][LT^{-2}] = [MLT^{-2}]$
+$\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
+### Altro
+- Leggi della forza gravitazionale ($\vec{F} = G \frac{m_{1}m_{2}}{r^{2}}$)
 - forza peso
 - forza elastica
 - Reazioni vincolari
