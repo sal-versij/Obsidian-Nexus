@@ -13,7 +13,8 @@
 | Temperatura           | `[Θ]`   | Kelvin      | `K`   |
 | Intensità luminosa    | `[J]`   | Candela     | `cd`  |
 | Quantità di materia   | `[N]`   | mole        | `mol` |
-### Altro
+| ### Altro             |         |             |       |
+
 - Equazione dimensionale
 - Errori di misura
 - Approssimazione
@@ -24,16 +25,30 @@
 - Prodotto scalare e prodotto vettoriale
 - Prodotto scalare: Proprietà
 ## Cinematica
+### Moti rettilinei
+Velocità: $v_{x}= \frac{dx}{dt}$
+Accelerazione: $a_{x}= \frac{dv_{x}}{dt}$
+N.B. $v_{x}dv_{x} = v_{x}a_{x}dt = a_{x}dx$
+#### Moto rettilineo uniforme
+> $a_{x}(t)=0$
+> $v_{x}(t)={v_{x}}_{0}$
+> Eq. Orarie
+> $x(t)=x_{0}+{v_{x}}_{0}t$
+#### Moto rettilineo uniformemente accelerato
+> $a_{x}(t)={a_{x}}_{0}$
+> Eq. Orarie
+> $x(t)=x_{0} + {v_{x}}_{0}t + \frac{1}{2}a_{x}t^{2}$
+> $v_{x}(t) = {v_{x}}_{0} + a_{x}t$
+### Moto parabolico
+> Eq. Orarie
+> $\cases{}{}$
+### Altro
 - Prodotto vettoriale: Proprietà
 - Derivata di un vettore
 - Velocità
 - Accelerazione
 - Somma integrale di vettori
 - Legge oraria
-- Moti rettilinei
-- Moto rettilineo uniforme
-- Moto rettilineo uniformemente accelerato
-- Moto parabolico
 - Moto nel piano
 - Moti circolari
 - Moto circolare uniforme
