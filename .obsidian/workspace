@@ -4,16 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "42914fbb4ae54b6c",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Fisica.md",
-            "mode": "source",
-            "source": false
+        "id": "36c2f415f9c65316",
+        "type": "split",
+        "children": [
+          {
+            "id": "42914fbb4ae54b6c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "handouts/Fisica/LEZIONI/1-INTRODUZIONE/1_4_SLIDES.pdf"
+              }
+            }
+          },
+          {
+            "id": "dd54922ba561cb82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fisica.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -57,13 +74,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6037de26520a8a96",
@@ -162,17 +177,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "42914fbb4ae54b6c",
+  "active": "dd54922ba561cb82",
   "lastOpenFiles": [
     "Fisica.md",
-    "Grandezza Scalare.md",
+    "handouts/Fisica/LEZIONI/1-INTRODUZIONE/1_4_SLIDES.pdf",
     "handouts/metodi statistici 2021-10-07.pdf",
-    "2022-05-02.md",
-    "2022-04-27.md",
-    "2022-04-20.md",
-    "2022-04-06.md",
-    "2022-04-04.md",
+    "handouts/dive_into_data_mining.pdf",
+    "handouts/Stima_di_parametri.pdf",
+    "handouts/internet-security (2).pdf",
+    "handouts/internet-security (1).pdf",
     "2022-03-28.md",
-    "2022-03-25.md"
+    "2022-05-02.md",
+    "Grandezza Scalare.md"
   ]
 }

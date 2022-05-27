@@ -1,8 +1,19 @@
 # Fisica
 ## Introduzione
-- Grandezza fisica
-- Unità di misura
-- Sistema Internazionale
+### Grandezza fisica
+È definita quando abbiamo stabilito un procedimento, ovvero un insieme di norme atte a misurare tale grandezza e ad assegnarle un'unità di misura
+### Sistema Internazionale
+#### MKSA
+| Grandezza             | Identificativo | Misura      | Unità |
+| --------------------- | -------------- | ----------- | ----- |
+| Lunghezza             | `[L]`          | Metro       | `m`   |
+| Massa                 | `[M]`          | Chilogrammo | `kg`  |
+| Tempo                 | `[T]`          | Secondo     | `s`   |
+| Intensità di corrente |                | Ampère      | `A`   |
+| Temperatura           |                | Kelvin      | `K`   |
+| Intensità luminosa    |                | Candela     | `cd`  |
+| Quantità di materia   |                | mole        | `mol` |
+
 - Equazione dimensionale
 - Errori di misura
 - Approssimazione
@@ -18,24 +29,23 @@
 - Velocità
 - Accelerazione
 - Somma integrale di vettori
-- Legge oraria –
+- Legge oraria
 - Moti rettilinei
 - Moto rettilineo uniforme
 - Moto rettilineo uniformemente accelerato
 - Moto parabolico
 - Moto nel piano
 - Moti circolari
-- Moto circolare uniforme –
+- Moto circolare uniforme
 - Cinematica rotazionale
-- Principio di inerzia –
+- Principio di inerzia
 - Massa inerziale
-- Forza: 2a legge di Newton –
+- Forza: 2a legge di Newton
 ## Dinamica del punto materiale
 - Principio di Azione e Reazione
-- Leggi della forza:
-  forza gravitazionale,
-  forza peso,
-  forza elastica
+  - Leggi della forzaorza gravitazionale
+  - forza peso
+  - forza elastica
 - Reazioni vincolari
 - Tensione dei fili
 - Diagramma del corpo libero
@@ -43,15 +53,15 @@
 - Forza di attrito radente
 - Moto lungo un piano inclinato scabro
 - Moti circolari: Forze centripete
-- Quantità di moto –
+- Quantità di moto
 - Impulso
-- Momento angolare –
+- Momento angolare
 - Momento meccanico
 ## CONS. ENERGIA
-- Generalità sui principi di conservazione –
-- Principio di conservazione dell’energia –
-- Lavoro –
-- Energia cinetica –
+- Generalità sui principi di conservazione
+- Principio di conservazione dell’energia
+- Lavoro
+- Energia cinetica
 - Teorema delle forze vive
 - Forze conservative
 - Energia potenziale
@@ -65,23 +75,23 @@
 - Energia cinetica e potenziale nei moti armonici semplici
 - Pendolo semplice
 - Oscillatore armonico smorzato
-- Oscillatore armonico smorzato:
-  smorzamento forte,
-  critico
-  smorzamento debole
-- Oscillatore armonico forzato –
+- Oscillatore armonico smorzato
+  - smorzamento forte
+  - critico
+  - smorzamento debole
+- Oscillatore armonico forzato
 - Risonanza
 ## DINAMICA DEI SISTEMI DI PUNTI MATERIALI
 - Sistemi di punti.
-  Forze interne
-  forze esterne –
+  - Forze interne
+  - forze esterne
 - Centro di massa
 - Moto del centro di massa
 - Conservazione della quantità di moto
-- Urti tra punti materiali:
-  elastico,
-  anelastico e
-  completamente anelastico
+- Urti tra punti materiali
+  - elastico
+  - anelastico
+  - completamente anelastico
 - Urto elastico frontale
 - Momento angolare
 - Momento meccanico
@@ -96,7 +106,7 @@
 - Lavoro ed energia cinetica nel moto rotatorio-
 - Teorema di HuygensSteiner
 - Leggi di conservazione nel moto di un corpo rigido
-- Moto rototraslatorio –
+- Moto rototraslatorio
 - Moto di puro rotolamento
 ## PROPIETA’ MECCANICHE DEI FLUIDI
 - Generalità sui fluidi
@@ -106,7 +116,7 @@
 - Principio di Pascal
 - Vasi comunicanti
 - Paradosso idrostatico
-- Principio di Archimede –
+- Principio di Archimede
 - Galleggianti
 - Fluido ideale
 - Regime stazionario
