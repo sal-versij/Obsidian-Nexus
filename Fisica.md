@@ -41,7 +41,21 @@ N.B. $v_{x}dv_{x} = v_{x}a_{x}dt = a_{x}dx$
 > $v_{x}(t) = {v_{x}}_{0} + a_{x}t$
 ### Moto parabolico
 > Eq. Orarie
-> $\cases{}{}$
+> $\begin{cases} x={v_{x}}_{0}t \\ y={v_{y}}_{0}t - \frac{1}{2}gt^{2} \end{cases}$
+### Moti circolari
+Raggio: $r$
+Arco: $s$
+Posizione angolare: $\theta = \theta(t) = \frac{s}{r}$
+Velocità angolare media: $\omega_{m}= \frac{\theta_{2}-\theta_{1}}{t_{2}-t_{1}} = \frac{\Delta\theta}{\Delta t}$
+Velocità angolare: $\omega = \omega(t)= \lim\limits_{\Delta t\to0} \frac{\Delta\theta}{\Delta t} = \frac{d\theta}{dt}$
+Accellerazione angolare media: $\alpha_{m} = \frac{\omega_{2}-\omega_{1}}{t_{2}-t_{1}} = \frac{\Delta\omega}{\Delta t}$
+Accellerazione angolare: $\alpha = \alpha(t)= \lim\limits_{\Delta t\to0} \frac{\Delta\omega}{\Delta t} = \frac{d\omega}{dt} = \frac{d^{2}\theta}{dt^2}$
+#### Moto circolare uniforme
+> $v = \frac{ds}{dt} = \text{costante}$
+> $\omega = \frac{d\theta}{dt}=\frac{d}{dt} \left( \frac{1}{r} \right) = \frac{1}{r} \frac{ds}{dt} = \frac{v}{r} = \text{costante}$
+> Eq. Oraria
+> $s(t) = s_0 + vt$
+> $\theta(t)=\theta_$
 ### Altro
 - Prodotto vettoriale: Proprietà
 - Derivata di un vettore
@@ -50,8 +64,6 @@ N.B. $v_{x}dv_{x} = v_{x}a_{x}dt = a_{x}dx$
 - Somma integrale di vettori
 - Legge oraria
 - Moto nel piano
-- Moti circolari
-- Moto circolare uniforme
 - Cinematica rotazionale
 - Principio di inerzia
 - Massa inerziale
