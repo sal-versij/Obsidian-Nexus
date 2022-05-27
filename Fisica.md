@@ -4,16 +4,16 @@
 È definita quando abbiamo stabilito un procedimento, ovvero un insieme di norme atte a misurare tale grandezza e ad assegnarle un'unità di misura
 ### Sistema Internazionale
 #### MKSA
-| Grandezza             | Identificativo | Misura      | Unità |
-| --------------------- | -------------- | ----------- | ----- |
-| Lunghezza             | `[L]`          | Metro       | `m`   |
-| Massa                 | `[M]`          | Chilogrammo | `kg`  |
-| Tempo                 | `[T]`          | Secondo     | `s`   |
-| Intensità di corrente |                | Ampère      | `A`   |
-| Temperatura           |                | Kelvin      | `K`   |
-| Intensità luminosa    |                | Candela     | `cd`  |
-| Quantità di materia   |                | mole        | `mol` |
-
+| Grandezza             | Simbolo | Misura      | Unità |
+| --------------------- | ------- | ----------- | ----- |
+| Lunghezza             | `[L]`   | Metro       | `m`   |
+| Massa                 | `[M]`   | Chilogrammo | `kg`  |
+| Tempo                 | `[T]`   | Secondo     | `s`   |
+| Intensità di corrente | `[I]`   | Ampère      | `A`   |
+| Temperatura           | `[Θ]`   | Kelvin      | `K`   |
+| Intensità luminosa    | `[J]`   | Candela     | `cd`  |
+| Quantità di materia   | `[N]`   | mole        | `mol` |
+### Altro
 - Equazione dimensionale
 - Errori di misura
 - Approssimazione
