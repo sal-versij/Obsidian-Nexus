@@ -50,12 +50,26 @@ Velocità angolare media: $\omega_{m}= \frac{\theta_{2}-\theta_{1}}{t_{2}-t_{1}}
 Velocità angolare: $\omega = \omega(t)= \lim\limits_{\Delta t\to0} \frac{\Delta\theta}{\Delta t} = \frac{d\theta}{dt}$
 Accellerazione angolare media: $\alpha_{m} = \frac{\omega_{2}-\omega_{1}}{t_{2}-t_{1}} = \frac{\Delta\omega}{\Delta t}$
 Accellerazione angolare: $\alpha = \alpha(t)= \lim\limits_{\Delta t\to0} \frac{\Delta\omega}{\Delta t} = \frac{d\omega}{dt} = \frac{d^{2}\theta}{dt^2}$
+
+Introducendo il sistema di riferimeno cartesiano $O_{xy}$
+$x(t) = r \cos[\theta(t)]$
+$y(t) = r \sin[\theta(t)]$
 #### Moto circolare uniforme
 > $v = \frac{ds}{dt} = \text{costante}$
 > $\omega = \frac{d\theta}{dt}=\frac{d}{dt} \left( \frac{1}{r} \right) = \frac{1}{r} \frac{ds}{dt} = \frac{v}{r} = \text{costante}$
 > Eq. Oraria
 > $s(t) = s_0 + vt$
-> $\theta(t)=\theta_$
+> $\theta(t)=\theta_{0} + \omega t$
+#### Moto circolare uniformemente accelerato
+> $\alpha = \text{costante}$
+> Eq. Oraria
+> $\theta(t)=\theta_{0} + \omega_0 t + \frac{1}{2}\alpha t^2$
+> $\omega(t) = \omega_{0} + \alpha t$
+### Cinematica rotazionale
+$s=\theta r$
+$v = \frac{ds}{dt}=r\frac{d\theta}{dt} = r\omega \implies v = r\omega$
+$a_{T} = \frac{dv}{dt} = r \frac{d\omega}{dt}=r\alpha \implies a_{T} = r\alpha$
+$a_{R} = \frac{v^{2}}{r} \implies a_{R} = r\omega^{2}$
 ### Altro
 - Prodotto vettoriale: Proprietà
 - Derivata di un vettore
@@ -64,15 +78,29 @@ Accellerazione angolare: $\alpha = \alpha(t)= \lim\limits_{\Delta t\to0} \frac{\
 - Somma integrale di vettori
 - Legge oraria
 - Moto nel piano
-- Cinematica rotazionale
+## Dinamica del punto materiale
+Glossario
+
+| Nome      | definizione                                                                                                                        |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Legge     | Relazione determinata  e costante fra grandezze variabili che entrano in un fenomeno                                               |
+| Principio | Idea originaria, criterio dal quale deriva un sistema di idee o sul quale si fondano gli elementi di una speculazione              |
+| Postulato | Proposizione non dimostrata (e non necessariamente evidente), ma ammessa come vera per fondare un procedimento o una dimostrazione |
+| Assioma   | Principio iniziale evidente ed indimostrabile che può fare da premessa ad un ragionamento, una teoria, etc.                        |
+
+In matematica
+Assioma $\equiv$ Postulato
+
+In fisica
+Legge $\equiv$ Principio
+
 - Principio di inerzia
 - Massa inerziale
 - Forza: 2a legge di Newton
-## Dinamica del punto materiale
-- Principio di Azione e Reazione
-  - Leggi della forzaorza gravitazionale
-  - forza peso
-  - forza elastica
+### Principio di Azione e Reazione
+- Leggi della forzaorza gravitazionale
+- forza peso
+- forza elastica
 - Reazioni vincolari
 - Tensione dei fili
 - Diagramma del corpo libero

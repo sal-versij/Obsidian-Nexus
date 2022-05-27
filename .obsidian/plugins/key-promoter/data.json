@@ -23,15 +23,15 @@
   },
   "keyboardStatistics": {
     "markdown:toggle-preview": 45,
-    "editor:save-file": 1166,
+    "editor:save-file": 1210,
     "editor:open-search": 4,
     "editor:open-search-replace": 5,
-    "markdown-prettifier:markdown-prettifier-run": 170,
+    "markdown-prettifier:markdown-prettifier-run": 181,
     "command-palette:open": 12,
     "cycle-through-panes:cycle-through-panes-reverse": 1,
-    "editor:fold-all": 39,
+    "editor:fold-all": 41,
     "editor:unfold-all": 18,
-    "editor:toggle-fold": 157,
+    "editor:toggle-fold": 168,
     "cycle-through-panes:cycle-through-panes": 8,
     "editor:toggle-checklist-status": 1,
     "editor:follow-link": 1,
@@ -39,6 +39,7 @@
     "workspace:close": 1,
     "darlal-switcher-plus:switcher-plus:open": 1,
     "editor:delete-paragraph": 9,
-    "app:go-forward": 2
+    "app:go-forward": 2,
+    "editor:toggle-bold": 1
   }
 }
