@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Fisica.md",
+            "file": "2022-05-30.md",
             "mode": "source",
             "source": false
           }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fisica.md",
+                "file": "2022-05-30.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fisica.md",
+                "file": "2022-05-30.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fisica.md"
+                "file": "2022-05-30.md"
               }
             }
           }
@@ -162,6 +162,7 @@
   },
   "active": "dd54922ba561cb82",
   "lastOpenFiles": [
+    "2022-05-30.md",
     "Fisica.md",
     "handouts/Fisica/LEZIONI/1-INTRODUZIONE/1_4_SLIDES.pdf",
     "handouts/metodi statistici 2021-10-07.pdf",
@@ -170,7 +171,6 @@
     "handouts/internet-security (2).pdf",
     "handouts/internet-security (1).pdf",
     "2022-03-28.md",
-    "2022-05-02.md",
-    "Grandezza Scalare.md"
+    "2022-05-02.md"
   ]
 }
