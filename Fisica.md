@@ -108,9 +108,9 @@ Unità di misura
 $[F] = [m][a] = [M][LT^{-2}] = [MLT^{-2}]$
 $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
 ### Altro
-- Leggi della forza gravitazionale ($\vec{F} = G \frac{m_{1}m_{2}}{r^{2}}$)
-- forza peso
-- forza elastica
+- Leggi della forza gravitazionale ($F_{12} = F_{21} = G \frac{m_{1}m_{2}}{r^{2}}$)
+- forza peso ($F=mg$)
+- forza elastica ($F = kx$)
 - Reazioni vincolari
 - Tensione dei fili
 - Diagramma del corpo libero
@@ -122,7 +122,7 @@ $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
 - Impulso
 - Momento angolare
 - Momento meccanico
-## CONS. ENERGIA
+## Conservazione dell'energia
 - Generalità sui principi di conservazione
 - Principio di conservazione dell’energia
 - Lavoro
@@ -134,7 +134,7 @@ $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
 - Conservazione dell’energia meccanica
 - Forze non conservative
 - Potenza
-## OSCILLAZIONI
+## Oscillazioni
 - Oscillatore armonico semplice
 - Sistema massa-molla: equazione del moto e soluzione
 - Energia cinetica e potenziale nei moti armonici semplici
@@ -146,7 +146,7 @@ $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
   - smorzamento debole
 - Oscillatore armonico forzato
 - Risonanza
-## DINAMICA DEI SISTEMI DI PUNTI MATERIALI
+## Dinamica dei sistemi di punti materiali
 - Sistemi di punti.
   - Forze interne
   - forze esterne
@@ -162,7 +162,7 @@ $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
 - Momento meccanico
 - Teorema del momento angolare
 - Conservazione del momento angolare
-## DINAMICA DEL CORPO RIGIDO
+## Dinamica del corpo rigido
 - Corpo rigido
 - Moto di un corpo rigido
 - Equazione del moto di un corpo rotante
@@ -173,7 +173,7 @@ $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
 - Leggi di conservazione nel moto di un corpo rigido
 - Moto rototraslatorio
 - Moto di puro rotolamento
-## PROPIETA’ MECCANICHE DEI FLUIDI
+## Proprietà meccaniche dei fluidi
 - Generalità sui fluidi
 - Pressione
 - Equilibrio statico di un fluido
