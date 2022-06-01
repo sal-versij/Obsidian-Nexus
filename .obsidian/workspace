@@ -14,6 +14,16 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "34fbde583811190e",
+        "type": "leaf",
+        "state": {
+          "type": "pdf",
+          "state": {
+            "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -163,6 +173,7 @@
   "active": "772f91ac19ba47f7",
   "lastOpenFiles": [
     "Esercizi Fisica.md",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf",
     "Fisica.md",
     "handouts/Fisica/ESERCIZI IN AULA/Esercizio_10.pdf",
     "handouts/Fisica/LEZIONI/3 - DINAMICA DEL PUNTO MATERIALE.pdf",
@@ -170,7 +181,6 @@
     "handouts/internet security/ssltls.pdf",
     "handouts/internet security/internet-security (2).pdf",
     "handouts/internet security/internet-security (1).pdf",
-    "handouts/internet security/Sicurezza delle reti - Applicazioni e standard.pdf",
-    "2022-05-30.md"
+    "handouts/internet security/Sicurezza delle reti - Applicazioni e standard.pdf"
   ]
 }
