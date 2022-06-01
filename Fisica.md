@@ -118,14 +118,15 @@ $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
   - statico ($F < F_{s} \implies v = 0$, $F_{s} \leq \mu_{s}N$)
   - dinamico ($F = F_{k} \implies v = \text{cost}$, $F_{k} = \mu_{k}N$)
 - Moti circolari: Forze centripete ($a_{r} = \frac{v^{2}}{r}$, $\vec{F}_{\text{cent.}} = \frac{mv^{2}}{r}$, $\min\mu_{s} = \frac{v^{2}}{gr}$)
+### Dinamica Rotazionale
+- Momento meccanico ($\vec{\tau} = \vec{r}\land\vec{F}$, $[\tau]=[]$)
+- Momento angolare ($\vec{L} = \vec{r}\land\vec{p}$)
 ### Altro
 - Leggi della forza gravitazionale ($F_{12} = F_{21} = G \frac{m_{1}m_{2}}{r^{2}}$)
 - forza peso ($F=mg$)
 - forza elastica ($F = kx$)
-- Quantità di moto
-- Impulso
-- Momento angolare
-- Momento meccanico
+- Quantità di moto ($\vec{p} = m\vec{v}$, $\vec{F} = \frac{d\vec{p}}{dt}$)
+- Impulso ($\vec{J} = \int\limits_{0}^{t}\vec{F}dt \implies \vec{J} = \Delta\vec{p}$)
 ## Conservazione dell'energia
 - Generalità sui principi di conservazione
 - Principio di conservazione dell’energia
