@@ -119,8 +119,19 @@ $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
   - dinamico ($F = F_{k} \implies v = \text{cost}$, $F_{k} = \mu_{k}N$)
 - Moti circolari: Forze centripete ($a_{r} = \frac{v^{2}}{r}$, $\vec{F}_{\text{cent.}} = \frac{mv^{2}}{r}$, $\min\mu_{s} = \frac{v^{2}}{gr}$)
 ### Dinamica Rotazionale
-- Momento meccanico ($\vec{\tau} = \vec{r}\land\vec{F}$, $[\tau]=[]$)
-- Momento angolare ($\vec{L} = \vec{r}\land\vec{p}$)
+Momento meccanico ($\vec{\tau} = \vec{r}\land\vec{F}$, $[\tau]=[Nm]$)
+Momento angolare ($\vec{L} = \vec{r}\land\vec{p}$,$[L]=[m^{2}\,kg\,s^{-1}]$)
+Correlazione
+$$
+\frac{d\vec{L}}{dt} =
+\frac{d}{dt} \left( \vec{r} \land \vec{p} \right) = 
+\frac{d\vec{r}}{dt} \land \vec{p} + \vec{r} \land \frac{d\vec{p}}{dt} = 
+\vec{v} \land m\vec{v} + \vec{r} \land \vec{F} = 
+\vec{r} \land \vec{F} = 
+\vec{\tau}
+$$
+Conservazione del momento angolare
+$\vec{\tau} = 0 \implies \vec{L} = \text{const}$
 ### Altro
 - Leggi della forza gravitazionale ($F_{12} = F_{21} = G \frac{m_{1}m_{2}}{r^{2}}$)
 - forza peso ($F=mg$)

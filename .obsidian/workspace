@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Fisica.md",
+            "file": "Esercizi Fisica.md",
             "mode": "source",
             "source": false
           }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fisica.md",
+                "file": "Esercizi Fisica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fisica.md",
+                "file": "Esercizi Fisica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fisica.md"
+                "file": "Esercizi Fisica.md"
               }
             }
           }
@@ -162,15 +162,15 @@
   },
   "active": "772f91ac19ba47f7",
   "lastOpenFiles": [
+    "Esercizi Fisica.md",
     "Fisica.md",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_10.pdf",
     "handouts/Fisica/LEZIONI/3 - DINAMICA DEL PUNTO MATERIALE.pdf",
     "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
     "handouts/internet security/ssltls.pdf",
     "handouts/internet security/internet-security (2).pdf",
     "handouts/internet security/internet-security (1).pdf",
     "handouts/internet security/Sicurezza delle reti - Applicazioni e standard.pdf",
-    "2022-06-01.md",
-    "2022-05-30.md",
-    "handouts/Fisica/LEZIONI/1-INTRODUZIONE/1_4_SLIDES.pdf"
+    "2022-05-30.md"
   ]
 }
