@@ -10,7 +10,7 @@
     "workspaces:open-modal": 2,
     "obsidian-admonition:collapse-admonitions": 6,
     "obsidian-plotly:add-plotly-dataviewjs-example": 1,
-    "daily-notes": 16,
+    "daily-notes": 17,
     "open-with-default-app:open": 1,
     "open-with-default-app:show": 4,
     "workspace:undo-close-pane": 11,
@@ -23,7 +23,7 @@
   },
   "keyboardStatistics": {
     "markdown:toggle-preview": 45,
-    "editor:save-file": 1261,
+    "editor:save-file": 1263,
     "editor:open-search": 4,
     "editor:open-search-replace": 5,
     "markdown-prettifier:markdown-prettifier-run": 189,
