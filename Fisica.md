@@ -107,17 +107,21 @@ $\vec{F}_{12} = -\vec{F}_{21}$
 Unità di misura
 $[F] = [m][a] = [M][LT^{-2}] = [MLT^{-2}]$
 $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
+### Reazioni vincolari
+- Reazione Normale
+- Tensione Molla
+- Tensione dei fili
+- Diagramma del corpo libero
+	- Moto lungo un piano inclinato liscio
+- Forza di attrito radente ($\vec{F}_{att} = \nu$)
+	- statico ($F < F_{s} \implies v = 0$)
+	- dinamico ($F = F_{k} \implies v = \text{cost}$)
+- Moto lungo un piano inclinato scabro
+- Moti circolari: Forze centripete
 ### Altro
 - Leggi della forza gravitazionale ($F_{12} = F_{21} = G \frac{m_{1}m_{2}}{r^{2}}$)
 - forza peso ($F=mg$)
 - forza elastica ($F = kx$)
-- Reazioni vincolari
-- Tensione dei fili
-- Diagramma del corpo libero
-- Moto lungo un piano inclinato liscio
-- Forza di attrito radente
-- Moto lungo un piano inclinato scabro
-- Moti circolari: Forze centripete
 - Quantità di moto
 - Impulso
 - Momento angolare

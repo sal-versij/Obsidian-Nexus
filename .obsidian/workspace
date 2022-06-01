@@ -4,12 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "dd54922ba561cb82",
+        "id": "772f91ac19ba47f7",
         "type": "leaf",
         "state": {
-          "type": "pdf",
+          "type": "markdown",
           "state": {
-            "file": "handouts/internet security/ssltls.pdf"
+            "file": "Fisica.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -107,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "handouts/internet security/ssltls.pdf",
+                "file": "Fisica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "handouts/internet security/ssltls.pdf",
+                "file": "Fisica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "handouts/internet security/ssltls.pdf"
+                "file": "Fisica.md"
               }
             }
           }
@@ -158,17 +160,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dd54922ba561cb82",
+  "active": "772f91ac19ba47f7",
   "lastOpenFiles": [
+    "Fisica.md",
+    "handouts/Fisica/LEZIONI/3 - DINAMICA DEL PUNTO MATERIALE.pdf",
+    "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
     "handouts/internet security/ssltls.pdf",
     "handouts/internet security/internet-security (2).pdf",
     "handouts/internet security/internet-security (1).pdf",
     "handouts/internet security/Sicurezza delle reti - Applicazioni e standard.pdf",
     "2022-06-01.md",
     "2022-05-30.md",
-    "Fisica.md",
-    "handouts/Fisica/LEZIONI/1-INTRODUZIONE/1_4_SLIDES.pdf",
-    "handouts/metodi statistici 2021-10-07.pdf",
-    "handouts/dive_into_data_mining.pdf"
+    "handouts/Fisica/LEZIONI/1-INTRODUZIONE/1_4_SLIDES.pdf"
   ]
 }
