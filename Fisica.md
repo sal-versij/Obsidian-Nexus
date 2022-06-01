@@ -108,16 +108,16 @@ Unità di misura
 $[F] = [m][a] = [M][LT^{-2}] = [MLT^{-2}]$
 $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
 ### Reazioni vincolari
-- Reazione Normale
-- Tensione Molla
-- Tensione dei fili
+- Reazione Normale ($\vec{N}$)
+- Tensione Molla ($\vec{T}$)
+- Tensione dei fili ($\vec{F}_{T}$)
 - Diagramma del corpo libero
-	- Moto lungo un piano inclinato liscio
-- Forza di attrito radente ($\vec{F}_{att} = \nu$)
-	- statico ($F < F_{s} \implies v = 0$)
-	- dinamico ($F = F_{k} \implies v = \text{cost}$)
-- Moto lungo un piano inclinato scabro
-- Moti circolari: Forze centripete
+  - Moto lungo un piano inclinato liscio
+  - Moto lungo un piano inclinato scabro
+- Forza di attrito radente ($\vec{F}_{att} = \mu N(-\hat{s})$)
+  - statico ($F < F_{s} \implies v = 0$, $F_{s} \leq \mu_{s}N$)
+  - dinamico ($F = F_{k} \implies v = \text{cost}$, $F_{k} = \mu_{k}N$)
+- Moti circolari: Forze centripete ($a_{r} = \frac{v^{2}}{r}$, $\vec{F}_{\text{cent.}} = \frac{mv^{2}}{r}$, $\min\mu_{s} = \frac{v^{2}}{gr}$)
 ### Altro
 - Leggi della forza gravitazionale ($F_{12} = F_{21} = G \frac{m_{1}m_{2}}{r^{2}}$)
 - forza peso ($F=mg$)

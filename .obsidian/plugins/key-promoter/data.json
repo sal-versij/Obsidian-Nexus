@@ -23,10 +23,10 @@
   },
   "keyboardStatistics": {
     "markdown:toggle-preview": 46,
-    "editor:save-file": 1277,
+    "editor:save-file": 1307,
     "editor:open-search": 4,
     "editor:open-search-replace": 5,
-    "markdown-prettifier:markdown-prettifier-run": 189,
+    "markdown-prettifier:markdown-prettifier-run": 194,
     "command-palette:open": 12,
     "cycle-through-panes:cycle-through-panes-reverse": 1,
     "editor:fold-all": 46,
