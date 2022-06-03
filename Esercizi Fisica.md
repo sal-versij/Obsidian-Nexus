@@ -21,9 +21,22 @@ $\frac{2H}{g} = \left( t_{2} - \frac{H}{v_{s}} \right)^{2}$
 $t_{2}^{2} -\frac{2Ht_{2}}{v_{s}} + \frac{H^{2}}{v_{s}^{2}} -\frac{2H}{g} = 0$
 $H^{2} -2v_{s}(t_{2}\frac{v_{s}}{g}) H +(t_{2}v_{s})^{2} = 0$
 $H = v_{s}\left(t_{2}\frac{v_{s}}{g}\right) \pm\sqrt{\left[v_{s}\left(t_{2}\frac{v_{s}}{g}\right)\right]^{2} -(t_{2}v_{s})^{2}}$
-
 ## [[Esercizio_11.pdf]]
 > Una sferetta di acciaio è lasciata cadere dal tetto di un edificio. Un uomo posto dietro una finestra alta $h = 1.2$ m nota che la sferetta impiega un tempo $\Delta t = 0.125 s$ ad attraversare la luce della finestra.
-> La sferetta continua la caduta fino ad urtare in modo completamente elastico il marciapiede e riappare sul davanzale della finestra dopo un tempo $\Delta t' = 2.00 s$ che è passata la prima volta cadendo. 
+> La sferetta continua la caduta fino ad urtare in modo completamente elastico il marciapiede e riappare sul davanzale della finestra dopo un tempo $\Delta t' = 2.00 s$ che è passata la prima volta cadendo.
 > Calcolare l'altezza dell'edificio.
 
+$h=1.2$ Altezza propria finestra
+$h_{f}$ Altezza finestra rispetto al suolo
+$\Delta t = 0.125 s$ Primo attraversamento
+$\Delta t' = 2.00 s$ Scomparsa fino a riapparsa
+$\vec{a} = -g\hat{y}$ Velocità sferetta
+$y_{0} = H = ?$ Altezza edificio
+$y(t_{0}) = y_{0}$
+$y(t_{1}) = h_{f}+h$
+$y(t_{2}) = h_{f}$
+$y(t_{3}) = 0$
+$y(t_{4}) = h_{f}$
+$t_{4}-t_{2} = \Delta t'$
+$t_{2}-t_{1} = \Delta t$
+$y(t) =\begin{cases} y_{0} +v_{0}t +\frac{1}{2}at^{2} \;\; &t\leq t_3 \\ y_{0} -v_{t_{3}}t +\frac{1}{2}at^{2} \;\; &t > t_3 \end{cases}$

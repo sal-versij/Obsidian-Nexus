@@ -7,11 +7,9 @@
         "id": "772f91ac19ba47f7",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "pdf",
           "state": {
-            "file": "Esercizi Fisica.md",
-            "mode": "source",
-            "source": false
+            "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf"
           }
         }
       },
@@ -119,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Esercizi Fisica.md",
+                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Esercizi Fisica.md",
+                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Esercizi Fisica.md"
+                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf"
               }
             }
           }
@@ -172,15 +170,15 @@
   },
   "active": "772f91ac19ba47f7",
   "lastOpenFiles": [
-    "Esercizi Fisica.md",
     "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf",
-    "Fisica.md",
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_10.pdf",
-    "handouts/Fisica/LEZIONI/3 - DINAMICA DEL PUNTO MATERIALE.pdf",
-    "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
-    "handouts/internet security/ssltls.pdf",
-    "handouts/internet security/internet-security (2).pdf",
-    "handouts/internet security/internet-security (1).pdf",
-    "handouts/internet security/Sicurezza delle reti - Applicazioni e standard.pdf"
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_45.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_37.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_27.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_19.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_17.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_16.pdf",
+    "Esercizi Fisica.md",
+    "Fisica.md"
   ]
 }
