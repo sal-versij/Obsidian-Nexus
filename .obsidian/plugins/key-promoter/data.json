@@ -24,7 +24,7 @@
   "keyboardStatistics": {
     "markdown:toggle-preview": 44,
     "editor:save-file": 985,
-    "editor:open-search": 5,
+    "editor:open-search": 6,
     "editor:open-search-replace": 2,
     "markdown-prettifier:markdown-prettifier-run": 119,
     "command-palette:open": 10,
@@ -32,7 +32,7 @@
     "editor:fold-all": 35,
     "editor:unfold-all": 18,
     "editor:toggle-fold": 129,
-    "cycle-through-panes:cycle-through-panes": 6,
+    "cycle-through-panes:cycle-through-panes": 8,
     "editor:toggle-checklist-status": 1,
     "editor:follow-link": 1,
     "file-explorer:new-file": 2,
