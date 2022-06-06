@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "handouts/Fisica/LEZIONI/6 - OSCILLAZIONI.pdf",
+                "file": "Fisica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "handouts/Fisica/LEZIONI/6 - OSCILLAZIONI.pdf",
+                "file": "Fisica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "handouts/Fisica/LEZIONI/6 - OSCILLAZIONI.pdf"
+                "file": "Fisica.md"
               }
             }
           }
@@ -180,11 +180,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fb27f8b0e2d21082",
+  "active": "5cafa9a0d56a35f4",
   "lastOpenFiles": [
+    "Fisica.md",
     "handouts/Fisica/LEZIONI/6 - OSCILLAZIONI.pdf",
     "handouts/Fisica/LEZIONI/3 - DINAMICA DEL PUNTO MATERIALE.pdf",
-    "Fisica.md",
     "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
     "2022-05-02.md",
     "2022-04-27.md",
