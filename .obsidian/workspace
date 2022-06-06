@@ -14,6 +14,16 @@
         }
       },
       {
+        "id": "2d6453db74976b29",
+        "type": "leaf",
+        "state": {
+          "type": "pdf",
+          "state": {
+            "file": "handouts/Fisica/LEZIONI/3 - DINAMICA DEL PUNTO MATERIALE.pdf"
+          }
+        }
+      },
+      {
         "id": "5cafa9a0d56a35f4",
         "type": "leaf",
         "state": {
@@ -22,16 +32,6 @@
             "file": "Fisica.md",
             "mode": "preview",
             "source": false
-          }
-        }
-      },
-      {
-        "id": "fb27f8b0e2d21082",
-        "type": "leaf",
-        "state": {
-          "type": "pdf",
-          "state": {
-            "file": "handouts/Fisica/LEZIONI/6 - OSCILLAZIONI.pdf"
           }
         }
       }
@@ -183,9 +183,9 @@
   "active": "5cafa9a0d56a35f4",
   "lastOpenFiles": [
     "Fisica.md",
-    "handouts/Fisica/LEZIONI/6 - OSCILLAZIONI.pdf",
     "handouts/Fisica/LEZIONI/3 - DINAMICA DEL PUNTO MATERIALE.pdf",
     "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
+    "handouts/Fisica/LEZIONI/6 - OSCILLAZIONI.pdf",
     "2022-05-02.md",
     "2022-04-27.md",
     "2022-04-20.md",
