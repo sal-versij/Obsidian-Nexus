@@ -4,22 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "772f91ac19ba47f7",
+        "id": "42914fbb4ae54b6c",
         "type": "leaf",
         "state": {
           "type": "pdf",
           "state": {
-            "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf"
-          }
-        }
-      },
-      {
-        "id": "34fbde583811190e",
-        "type": "leaf",
-        "state": {
-          "type": "pdf",
-          "state": {
-            "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf"
+            "file": "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf"
           }
         }
       }
@@ -48,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "metodi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf",
+                "file": "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf",
+                "file": "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf"
+                "file": "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf"
               }
             }
           }
@@ -168,17 +158,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "772f91ac19ba47f7",
+  "active": "42914fbb4ae54b6c",
   "lastOpenFiles": [
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf",
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_45.pdf",
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_37.pdf",
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf",
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_27.pdf",
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_19.pdf",
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_17.pdf",
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_16.pdf",
-    "Esercizi Fisica.md",
-    "Fisica.md"
+    "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
+    "Fisica.md",
+    "2022-05-02.md",
+    "2022-04-27.md",
+    "2022-04-20.md",
+    "2022-04-06.md",
+    "2022-04-04.md",
+    "2022-03-28.md",
+    "2022-03-25.md",
+    "2022-03-23.md"
   ]
 }
