@@ -141,6 +141,26 @@ $\vec{\tau} = 0 \implies \vec{L} = \text{const}$
 - Quantità di moto ($\vec{p} = m\vec{v}$, $\vec{F} = \frac{d\vec{p}}{dt}$)
 - Impulso ($\vec{J} = \int\limits_{0}^{t}\vec{F}dt \implies \vec{J} = \Delta\vec{p}$)
 ## Conservazione dell'energia
+### Calcolo di energia potenziale
+#### Forza peso:
+$U(P) = U(y) = -\int\limits_{0}^{P}\vec{P}\cdot d\, \vec{y} +U(0) = -\int\limits_{0}^{y}(-mg)dy +U(0) = mgy +U(0)$
+$U(0) = 0 \implies U(y) = mgy$
+#### Forza elastica:
+$U(P) = U(x) = -\int\limits_{0}^{P}\vec{F_{el}}\cdot d\, \vec{x} +U(0) = -\int\limits_{0}^{x}(-kx)dx +U(0) = \frac{1}{2}kx^{2} +U(0)$
+$U(0) = 0 \implies U(y) = \frac{1}{2}kx^{2}$
+#### Gravitazionale:
+$F_{G} = -G\frac{Mm}{r^{2}}\hat{r}$
+$\Delta U = U(P) - U(P_{0}) = -\int\limits_{P_{0}}^{P} \vec{F_{G}} \cdot d\,\vec{r} = -\int\limits_{P_{0}}^{P} -G\frac{Mm}{r^{2}}\hat{r} \cdot d\,\vec{r} = GMm \int\limits_{r_{0}}^{r} \frac{dr}{r^{2}} = -GMm \left( \frac{1}{r} - \frac{1}{r_{0}} \right)$
+### Forze non conservative
+#### Forza di attrito
+$W = \int\limits_{la}^{b}\vec{F_{a}} \cdot d\,\vec{r} = \int\limits_{la}^{b}\mu N(-\hat{s}) \cdot d\,\vec{r}$
+dove
+$\hat{s} \parallel d\,\vec{r} \implies \hat{s} \cdot d\,\vec{r} = dr$
+
+$W = -\mu N \int\limits_{la}^{b}dr$
+In base al percorso: $W = -\mu Nl$
+
+### Altro
 - Generalità sui principi di conservazione
 - Principio di conservazione dell’energia
 - Lavoro ($W = \vec{F}\cdot\vec{\Delta r}$ $[J] = [MS^{2}T^{-2}]$)
@@ -151,19 +171,8 @@ $\vec{\tau} = 0 \implies \vec{L} = \text{const}$
   2. Una forza si dice conservativa se il lavoro compiuto dalla forza su un punto materiale che si muove su un qualsiasi percorso chiuso è nullo
   3. Una forza si dice conservativa se il lavoro compiuto dalla forza per spostare un punto materiale da un punto ad un altro dipende soltanto da questi due punti e non dal percorso
 - Energia potenziale ($U | W_{c} = -(U_{B} - U_{A}) = -\Delta U$)
-- Calcolo di energia potenziale da:
-  - Forza peso:
-    $U(P) = U(y) = -\int\limits_{0}^{P}\vec{P}\cdot d\, \vec{y} +U(0) = -\int\limits_{0}^{y}(-mg)dy +U(0) = mgy +U(0)$
-    $U(0) = 0 \implies U(y) = mgy$
-  - Forza elastica:
-    $U(P) = U(x) = -\int\limits_{0}^{P}\vec{F_{el}}\cdot d\, \vec{x} +U(0) = -\int\limits_{0}^{x}(-kx)dx +U(0) = \frac{1}{2}kx^{2} +U(0)$
-    $U(0) = 0 \implies U(y) = \frac{1}{2}kx^{2}$
-  - Gravitazionale:
-    $F_{G} = -G\frac{Mm}{r^{2}}\hat{r}$
-	$\Delta U = U(P) - U(P_{0}) = -\int\limits_{P_{0}}^{P} \vec{F_{G}} \cdot d\,\vec{r} = -\int\limits_{P_{0}}^{P} -G\frac{Mm}{r^{2}}\hat{r} \cdot d\,\vec{r} = GMm \int\limits_{r_{0}}^{r} \frac{dr}{r^{2}}$
-- Conservazione dell’energia meccanica
-- Forze non conservative
-- Potenza
+- Conservazione dell’energia meccanica ($E = K + U$; $W = \Delta K = W_{nc} + W_{c} \overset{W_{c} = -\Delta U}{\implies} \Delta K = W_{nc} - \Delta U \implies W_{nc} = \Delta K + \Delta U = \Delta E \implies (W_{nc} = 0 \implies E = \text{const})$)
+- Potenza ($\frac{W}{\Delta t}$; $\frac{dW}{dt}$; $[W]=[J/s]=[MS^{2}T^{-3}]$)
 ## Oscillazioni
 - Oscillatore armonico semplice
 - Sistema massa-molla: equazione del moto e soluzione
