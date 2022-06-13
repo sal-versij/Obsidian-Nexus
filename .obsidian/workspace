@@ -4,12 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "42914fbb4ae54b6c",
+        "id": "5a32506942f50c1a",
         "type": "leaf",
         "state": {
-          "type": "pdf",
+          "type": "markdown",
           "state": {
-            "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf"
+            "file": "Fisica.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -38,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "metodi",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf",
+                "file": "Fisica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf",
+                "file": "Fisica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf"
+                "file": "Fisica.md"
               }
             }
           }
@@ -159,17 +161,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "42914fbb4ae54b6c",
+  "active": "5a32506942f50c1a",
   "lastOpenFiles": [
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf",
-    "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
     "Fisica.md",
-    "handouts/Fisica/LEZIONI/3 - DINAMICA DEL PUNTO MATERIALE.pdf",
-    "handouts/Fisica/LEZIONI/6 - OSCILLAZIONI.pdf",
-    "2022-05-02.md",
-    "2022-04-27.md",
-    "2022-04-20.md",
-    "2022-04-06.md",
-    "2022-04-04.md"
+    "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_11.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_10.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_45.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_37.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_27.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_19.pdf",
+    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_17.pdf"
   ]
 }

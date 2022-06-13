@@ -141,7 +141,7 @@ $\vec{\tau} = 0 \implies \vec{L} = \text{const}$
 ## Conservazione dell'energia
 - Generalità sui principi di conservazione
 - Principio di conservazione dell’energia
-- Lavoro
+- Lavoro ($W = F\Delta r$)
 - Energia cinetica
 - Teorema delle forze vive
 - Forze conservative
