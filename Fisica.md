@@ -13,8 +13,9 @@
 | Temperatura           | $[\Theta]$ | Kelvin      | `K`   |
 | Intensità luminosa    | $[J]$      | Candela     | `cd`  |
 | Quantità di materia   | $[N]$      | mole        | `mol` |
-| ### Altro             |            |             |       |
 
+---
+### Altro
 - Equazione dimensionale
 - Errori di misura
 - Approssimazione
@@ -159,7 +160,6 @@ $\hat{s} \parallel d\,\vec{r} \implies \hat{s} \cdot d\,\vec{r} = dr$
 
 $W = -\mu N \int\limits_{la}^{b}dr$
 In base al percorso: $W = -\mu Nl$
-
 ### Altro
 - Generalità sui principi di conservazione
 - Principio di conservazione dell’energia
@@ -172,19 +172,7 @@ In base al percorso: $W = -\mu Nl$
   3. Una forza si dice conservativa se il lavoro compiuto dalla forza per spostare un punto materiale da un punto ad un altro dipende soltanto da questi due punti e non dal percorso
 - Energia potenziale ($U | W_{c} = -(U_{B} - U_{A}) = -\Delta U$)
 - Conservazione dell’energia meccanica ($E = K + U$; $W = \Delta K = W_{nc} + W_{c} \overset{W_{c} = -\Delta U}{\implies} \Delta K = W_{nc} - \Delta U \implies W_{nc} = \Delta K + \Delta U = \Delta E \implies (W_{nc} = 0 \implies E = \text{const})$)
-- Potenza ($\frac{W}{\Delta t}$; $\frac{dW}{dt}$; $[W]=[J/s]=[MS^{2}T^{-3}]$)
-## Oscillazioni
-- Oscillatore armonico semplice
-- Sistema massa-molla: equazione del moto e soluzione
-- Energia cinetica e potenziale nei moti armonici semplici
-- Pendolo semplice
-- Oscillatore armonico smorzato
-- Oscillatore armonico smorzato
-  - smorzamento forte
-  - critico
-  - smorzamento debole
-- Oscillatore armonico forzato
-- Risonanza
+  - Potenza ($P_{m} = \frac{W}{\Delta t}$; $P = \frac{dW}{dt}$; $[W]=[J/s]=[MS^{2}T^{-3}]$) ($\begin{cases} dW &= P dt \\ dW &= \vec{F}\cdot d\,\vec{r} = \vec{F}\cdot\vec{v} dt \end{cases}\implies P=\vec{F}\cdot\vec{v}$)
 ## Dinamica dei sistemi di punti materiali
 - Sistemi di punti.
   - Forze interne
@@ -201,6 +189,18 @@ In base al percorso: $W = -\mu Nl$
 - Momento meccanico
 - Teorema del momento angolare
 - Conservazione del momento angolare
+## Oscillazioni
+- Oscillatore armonico semplice
+- Sistema massa-molla: equazione del moto e soluzione
+- Energia cinetica e potenziale nei moti armonici semplici
+- Pendolo semplice
+- Oscillatore armonico smorzato
+- Oscillatore armonico smorzato
+  - smorzamento forte
+  - critico
+  - smorzamento debole
+- Oscillatore armonico forzato
+- Risonanza
 ## Dinamica del corpo rigido
 - Corpo rigido
 - Moto di un corpo rigido
