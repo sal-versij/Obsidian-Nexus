@@ -122,6 +122,7 @@ $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
 Momento meccanico ($\vec{\tau} = \vec{r}\land\vec{F}$, $[\tau]=[Nm]$)
 Momento angolare ($\vec{L} = \vec{r}\land\vec{p}$,$[L]=[m^{2}\,kg\,s^{-1}]$)
 Correlazione
+
 $$
 \frac{d\vec{L}}{dt} =
 \frac{d}{dt} \left( \vec{r} \land \vec{p} \right) = 
@@ -130,6 +131,7 @@ $$
 \vec{r} \land \vec{F} = 
 \vec{\tau}
 $$
+
 Conservazione del momento angolare
 $\vec{\tau} = 0 \implies \vec{L} = \text{const}$
 ### Altro
@@ -141,11 +143,14 @@ $\vec{\tau} = 0 \implies \vec{L} = \text{const}$
 ## Conservazione dell'energia
 - Generalità sui principi di conservazione
 - Principio di conservazione dell’energia
-- Lavoro ($W = F\Delta r$)
-- Energia cinetica
-- Teorema delle forze vive
+- Lavoro ($W = \vec{F}\cdot\vec{\Delta r}$ $[J] = [MS^{2}T^{-2}]$)
+- Energia cinetica ($K= \frac{1}{2}mv^{2}$)
+- Teorema dell'energia cinetica (o delle forze vive) ($W = K_{b} - K_{a} = \Delta K$)
 - Forze conservative
-- Energia potenziale
+	1. Una forza si dice conservativa se l'energia cinetica della particella su cui agisce torna ad assumere il suo valore iniziale dopo ogni qualsiasi percorso chiuso
+	2. Una forza si dice conservativa se il lavoro compiuto dalla forza su un punto materiale che si muove su un qualsiasi percorso chiuso è nullo
+	3. Una forza si dice conservativa se il lavoro compiuto dalla forza per spostare un punto materiale da un punto ad un altro dipende soltanto da questi due punti e non dal percorso
+- Energia potenziale ($E_{h}$)
 - Calcolo di energia potenziale
 - Conservazione dell’energia meccanica
 - Forze non conservative
