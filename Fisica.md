@@ -174,9 +174,9 @@ In base al percorso: $W = -\mu Nl$
 - Conservazione dell’energia meccanica ($E = K + U$; $W = \Delta K = W_{nc} + W_{c} \overset{W_{c} = -\Delta U}{\implies} \Delta K = W_{nc} - \Delta U \implies W_{nc} = \Delta K + \Delta U = \Delta E \implies (W_{nc} = 0 \implies E = \text{const})$)
   - Potenza ($P_{m} = \frac{W}{\Delta t}$; $P = \frac{dW}{dt}$; $[W]=[J/s]=[MS^{2}T^{-3}]$) ($\begin{cases} dW &= P dt \\ dW &= \vec{F}\cdot d\,\vec{r} = \vec{F}\cdot\vec{v} dt \end{cases}\implies P=\vec{F}\cdot\vec{v}$)
 ## Dinamica dei sistemi di punti materiali
-- Sistemi di punti.
+- Sistemi di punti
   - Forze interne
-  - forze esterne
+  - Forze esterne
 - Centro di massa
 - Moto del centro di massa
 - Conservazione della quantità di moto
