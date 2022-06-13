@@ -147,11 +147,20 @@ $\vec{\tau} = 0 \implies \vec{L} = \text{const}$
 - Energia cinetica ($K= \frac{1}{2}mv^{2}$)
 - Teorema dell'energia cinetica (o delle forze vive) ($W = K_{b} - K_{a} = \Delta K$)
 - Forze conservative
-	1. Una forza si dice conservativa se l'energia cinetica della particella su cui agisce torna ad assumere il suo valore iniziale dopo ogni qualsiasi percorso chiuso
-	2. Una forza si dice conservativa se il lavoro compiuto dalla forza su un punto materiale che si muove su un qualsiasi percorso chiuso è nullo
-	3. Una forza si dice conservativa se il lavoro compiuto dalla forza per spostare un punto materiale da un punto ad un altro dipende soltanto da questi due punti e non dal percorso
-- Energia potenziale ($E_{h}$)
-- Calcolo di energia potenziale
+  1. Una forza si dice conservativa se l'energia cinetica della particella su cui agisce torna ad assumere il suo valore iniziale dopo ogni qualsiasi percorso chiuso
+  2. Una forza si dice conservativa se il lavoro compiuto dalla forza su un punto materiale che si muove su un qualsiasi percorso chiuso è nullo
+  3. Una forza si dice conservativa se il lavoro compiuto dalla forza per spostare un punto materiale da un punto ad un altro dipende soltanto da questi due punti e non dal percorso
+- Energia potenziale ($U | W_{c} = -(U_{B} - U_{A}) = -\Delta U$)
+- Calcolo di energia potenziale da:
+  - Forza peso:
+    $U(P) = U(y) = -\int\limits_{0}^{P}\vec{P}\cdot d\, \vec{y} +U(0) = -\int\limits_{0}^{y}(-mg)dy +U(0) = mgy +U(0)$
+    $U(0) = 0 \implies U(y) = mgy$
+  - Forza elastica:
+    $U(P) = U(x) = -\int\limits_{0}^{P}\vec{F_{el}}\cdot d\, \vec{x} +U(0) = -\int\limits_{0}^{x}(-kx)dx +U(0) = \frac{1}{2}kx^{2} +U(0)$
+    $U(0) = 0 \implies U(y) = \frac{1}{2}kx^{2}$
+  - Gravitazionale:
+    $F_{G} = -G\frac{Mm}{r^{2}}\hat{r}$
+	$\Delta U = U(P) - U(P_{0}) = -\int\limits_{P_{0}}^{P} \vec{F_{G}} \cdot d\,\vec{r} = -\int\limits_{P_{0}}^{P} -G\frac{Mm}{r^{2}}\hat{r} \cdot d\,\vec{r} = GMm \int\limits_{r_{0}}^{r} \frac{dr}{r^{2}}$
 - Conservazione dell’energia meccanica
 - Forze non conservative
 - Potenza
