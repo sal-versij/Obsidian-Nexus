@@ -121,7 +121,7 @@ $\frac{\text{kg m}}{\text{s}^{2}}\equiv\text{N}$ (**Newton**)
 - Moti circolari: Forze centripete ($a_{r} = \frac{v^{2}}{r}$, $\vec{F}_{\text{cent.}} = \frac{mv^{2}}{r}$, $\min\mu_{s} = \frac{v^{2}}{gr}$)
 ### Dinamica Rotazionale
 Momento meccanico ($\vec{\tau} = \vec{r}\land\vec{F}$, $[\tau]=[Nm]$)
-Momento angolare ($\vec{L} = \vec{r}\land\vec{p}$,$[L]=[m^{2}\,kg\,s^{-1}]$)
+Momento angolare ($\vec{L} = \vec{r}\land\vec{p}$,$[L]=\left[\frac{m^{2}\,kg}{s}\right]$)
 Correlazione
 
 $$
@@ -184,9 +184,9 @@ In base al percorso: $W = -\mu Nl$
   - elastico ($\Delta K_{tot} = 0$; $\Delta \vec{P}_{tot} = 0$)
   - anelastico ($\Delta K \neq 0$; $\Delta \vec{P}_{tot} \neq 0$)
   - completamente anelastico ($P_{tot}=\text{const}$)
-- Urto elastico frontale ()
-- Momento angolare
-- Momento meccanico
+- Urto elastico frontale ($\begin{cases} w_{1} &= \frac{m_{1}-m_{2}}{m_{1}+m_{2}} v_{1} &+ \frac{2m_{2}}{m_{1}+m_{2}} v_{2} \\ w_{2} &= \frac{2m_{1}}{m_{1}+m_{2}} v_{1} &+ \frac{m_{2}-m_{1}}{m_{1}+m_{2}} v_{2} \end{cases}$)
+- Momento angolare ($\vec{L}_{tot} = \sum\limits_{i=1}^{n}\vec{L}_{i} = \sum\limits_{i=1}^{n}\vec{r}_{i} \wedge m_{i}\vec{v}_{i}$)
+- Momento meccanico ($\vec{\tau}_{tot} = \sum\limits_{i=1}^{n}\vec{\tau}^{(I)}_{i} + \sum\limits_{i=1}^{n}\vec{\tau}^{(E)}_{i} \overset{\vec{\tau}^{(I)}_{tot}=0} \implies \vec{\tau}_{tot} = \vec{\tau}^{(E)}_{tot}$)
 - Teorema del momento angolare
 - Conservazione del momento angolare
 ## Dinamica del corpo rigido
