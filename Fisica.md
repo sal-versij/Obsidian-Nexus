@@ -206,8 +206,8 @@ In base al percorso: $W = -\mu Nl$
 - Equazione del moto di un corpo rotante
 - Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
 - Momento di inerzia rispetto ad un asse fisso
-- Lavoro ed energia cinetica nel moto rotatorio-
-- Teorema di HuygensSteiner
+- Lavoro ed energia cinetica nel moto rotatorio
+- Teorema di Huygens-Steiner
 - Leggi di conservazione nel moto di un corpo rigido
 - Moto rototraslatorio
 - Moto di puro rotolamento
