@@ -179,12 +179,12 @@ In base al percorso: $W = -\mu Nl$
   - Forze esterne ($F_{i}^{(E)}$)
 - Centro di massa ($\vec{r}_{CM} = \frac{\sum\limits_{i=1}^{n}m_{i}\vec{r}_{i}}{M}$; $M=\sum\limits_{i=1}^{n}m_{i}$)
 - Moto del centro di massa ($\vec{P}_{tot} = M \vec{v}_{CM}$; $F_{tot}^{(E)} = M\vec{a}_{CM} = \frac{d}{dt}\vec{P}_{tot}$)
-- Conservazione della quantità di moto ()
+- Conservazione della quantità di moto ($\Delta \vec{P}_{tot} = 0$)
 - Urti tra punti materiali
-  - elastico
-  - anelastico
-  - completamente anelastico
-- Urto elastico frontale
+  - elastico ($\Delta K_{tot} = 0$; $\Delta \vec{P}_{tot} = 0$)
+  - anelastico ($\Delta K \neq 0$; $\Delta \vec{P}_{tot} \neq 0$)
+  - completamente anelastico ($P_{tot}=\text{const}$)
+- Urto elastico frontale ()
 - Momento angolare
 - Momento meccanico
 - Teorema del momento angolare
