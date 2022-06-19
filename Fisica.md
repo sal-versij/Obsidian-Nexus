@@ -185,10 +185,21 @@ In base al percorso: $W = -\mu Nl$
   - anelastico ($\Delta K \neq 0$; $\Delta \vec{P}_{tot} \neq 0$)
   - completamente anelastico ($P_{tot}=\text{const}$)
 - Urto elastico frontale ($\begin{cases} w_{1} &= \frac{m_{1}-m_{2}}{m_{1}+m_{2}} v_{1} &+ \frac{2m_{2}}{m_{1}+m_{2}} v_{2} \\ w_{2} &= \frac{2m_{1}}{m_{1}+m_{2}} v_{1} &+ \frac{m_{2}-m_{1}}{m_{1}+m_{2}} v_{2} \end{cases}$)
-- Momento angolare ($\vec{L}_{tot} = \sum\limits_{i=1}^{n}\vec{L}_{i} = \sum\limits_{i=1}^{n}\vec{r}_{i} \wedge m_{i}\vec{v}_{i}$)
-- Momento meccanico ($\vec{\tau}_{tot} = \sum\limits_{i=1}^{n}\vec{\tau}^{(I)}_{i} + \sum\limits_{i=1}^{n}\vec{\tau}^{(E)}_{i} \overset{\vec{\tau}^{(I)}_{tot}=0} \implies \vec{\tau}_{tot} = \vec{\tau}^{(E)}_{tot}$)
-- Teorema del momento angolare
-- Conservazione del momento angolare
+- Momenti
+  - Momento angolare ($\vec{L}_{tot} = \sum\limits_{i=1}^{n}\vec{L}_{i} = \sum\limits_{i=1}^{n}\vec{r}_{i} \wedge m_{i}\vec{v}_{i}$)
+  - Momento meccanico ($\vec{\tau}_{tot} = \sum\limits_{i=1}^{n}\vec{\tau}^{(I)}_{i} + \sum\limits_{i=1}^{n}\vec{\tau}^{(E)}_{i} \overset{\vec{\tau}^{(I)}_{tot}=0} \implies \vec{\tau}_{tot} = \vec{\tau}^{(E)}_{tot}$)
+  - Correlazione
+    - Polo Fisso
+    $\frac{d\vec{L}_{tot}}{dt} = \vec{\tau}^{(E)}_{tot}$
+    - Polo Mobile con velocità ($\vec{v}_{0}$)
+    $\frac{d\vec{L}_{tot}}{dt} = \vec{\tau}^{(E)}_{tot} - \vec{v}_{0} \wedge \vec{P}_{tot}$
+    - Generalmente ($\vec{\tau}^{(E)}_{tot} = \frac{d\vec{L}_{tot}}{dt} + \vec{v}_{0} \wedge M \vec{v}_{CM}$)
+- Teorema del momento angolare ($\vec{\tau}^{(E)}_{tot} = \frac{d\vec{L}_{tot}}{dt} \equiv \vec{v}_{0} \wedge M \vec{v}_{CM} = 0$)
+  - $O$ fisso $\impliedby \vec{v}_{0}=0$
+  - $CM$ fermo $\impliedby \vec{v}_{CM} = 0$
+  - $O \equiv CM \impliedby \vec{v}_{CM} = \vec{v}_{O}$
+  - $O$ si muove parallelemente al moto del $CM$$\impliedby \vec{v}_{O}\parallel\vec{v}_{CM}$
+- Conservazione del momento angolare ($\tau^{(E)} = 0 \implies \vec{L} = \text{const}$)
 ## Dinamica del corpo rigido
 - Corpo rigido
 - Moto di un corpo rigido
