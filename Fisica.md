@@ -175,11 +175,11 @@ In base al percorso: $W = -\mu Nl$
   - Potenza ($P_{m} = \frac{W}{\Delta t}$; $P = \frac{dW}{dt}$; $[W]=[J/s]=[MS^{2}T^{-3}]$) ($\begin{cases} dW &= P dt \\ dW &= \vec{F}\cdot d\,\vec{r} = \vec{F}\cdot\vec{v} dt \end{cases}\implies P=\vec{F}\cdot\vec{v}$)
 ## Dinamica dei sistemi di punti materiali
 - Sistemi di punti
-  - Forze interne
-  - Forze esterne
-- Centro di massa
-- Moto del centro di massa
-- Conservazione della quantità di moto
+  - Forze interne ($F_{i}^{(I)}$ generalmente $=0$)
+  - Forze esterne ($F_{i}^{(E)}$)
+- Centro di massa ($\vec{r}_{CM} = \frac{\sum\limits_{i=1}^{n}m_{i}\vec{r}_{i}}{M}$; $M=\sum\limits_{i=1}^{n}m_{i}$)
+- Moto del centro di massa ($\vec{P}_{tot} = M \vec{v}_{CM}$; $F_{tot}^{(E)} = M\vec{a}_{CM} = \frac{d}{dt}\vec{P}_{tot}$)
+- Conservazione della quantità di moto ()
 - Urti tra punti materiali
   - elastico
   - anelastico
@@ -189,6 +189,17 @@ In base al percorso: $W = -\mu Nl$
 - Momento meccanico
 - Teorema del momento angolare
 - Conservazione del momento angolare
+## Dinamica del corpo rigido
+- Corpo rigido
+- Moto di un corpo rigido
+- Equazione del moto di un corpo rotante
+- Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
+- Momento di inerzia rispetto ad un asse fisso
+- Lavoro ed energia cinetica nel moto rotatorio-
+- Teorema di HuygensSteiner
+- Leggi di conservazione nel moto di un corpo rigido
+- Moto rototraslatorio
+- Moto di puro rotolamento
 ## Oscillazioni
 - Oscillatore armonico semplice
 - Sistema massa-molla: equazione del moto e soluzione
@@ -201,17 +212,6 @@ In base al percorso: $W = -\mu Nl$
   - smorzamento debole
 - Oscillatore armonico forzato
 - Risonanza
-## Dinamica del corpo rigido
-- Corpo rigido
-- Moto di un corpo rigido
-- Equazione del moto di un corpo rotante
-- Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
-- Momento di inerzia rispetto ad un asse fisso
-- Lavoro ed energia cinetica nel moto rotatorio-
-- Teorema di HuygensSteiner
-- Leggi di conservazione nel moto di un corpo rigido
-- Moto rototraslatorio
-- Moto di puro rotolamento
 ## Proprietà meccaniche dei fluidi
 - Generalità sui fluidi
 - Pressione
