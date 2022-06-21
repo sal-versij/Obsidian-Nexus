@@ -202,22 +202,21 @@ In base al percorso: $W = -\mu Nl$
 - Conservazione del momento angolare ($\tau^{(E)} = 0 \implies \vec{L} = \text{const}$)
 ## Dinamica del corpo rigido
 ### Corpo rigido
-  > sistema di punti materiali in cui le distanze tra tutte le possibili coppie di punti non possono variare
-
+> sistema di punti materiali in cui le distanze tra tutte le possibili coppie di punti non possono variare
 #### Densità
 - Corpo ($\rho = \frac{dm}{dV} \left[\frac{kg}{m^{3}}\right]$)
 - Superficiale ($\sigma = \frac{dm}{dS} \left[\frac{kg}{m^{2}}\right]$)
 - Lineare ($\lambda = \frac{dm}{dL} \left[\frac{kg}{m}\right]$)
-#### Massa 
+#### Massa
 $M = \int_{V}\rho dV$
-#### Corpo omogeneo 
+#### Corpo omogeneo
 $\rho = \text{const} = \frac{M}{V}$
-#### Centro di massa 
+#### Centro di massa
 $\vec{r}_{CM} = \frac{\int_{V}\vec{r}dm}{\int_{M}dm} = \frac{\int_{V}\vec{r}\rho dV}{M}$
 $\rho = \text{const} \implies \vec{r}_{CM} = \frac{\rho\int_{V}\vec{r} dV}{M} = \frac{\int_{V}\vec{r} dV}{V}$
-
 ### Corpo continuo soggetto alla forza peso
 $\vec{P}_{tot} = \int_{M}\vec{g}dm = \vec{g}\int_{M}dm = M\vec{g}$
+
 $$
 \displaylines{
 \vec{\tau}_{tot} = \int_{M}\vec{r}\wedge\vec{g}dm = \left( \int_M\vec{r}dm \right)\wedge\vec{g} = M \frac{\int_M\vec{r}dm}{M}\wedge\vec{g} = \\
@@ -225,12 +224,13 @@ M\vec{r}_{CM}\wedge\vec{g} = \vec{r}_{CM}\wedge M\vec{g} = \\
 \vec{r}_{CM}\wedge\vec{P}_{tot}
 }
 $$
+
 > Se z è la quota dell’elemento di massa $dm$ rispetto alla quota di riferimento, esso avrà energia potenziale:
 
 $dU = z g dm$
 $U = \int_{M}zgdm = g\int_{M}zdm = gM \frac{\int_{M}zdm}{M} = M g z_{CM}$
 ### Moto di un corpo rigido
-#### Moto di pura traslazione:
+#### Moto di pura traslazione
 > tutti i punti descrivono traiettorie eguali, percorse con la stessa velocità $v = v_{CM}$
 
 $$
@@ -241,14 +241,46 @@ $$
 E_{cin} = \frac{1}{2}Mv_{CM}^{2} \\
 }
 $$
-#### Moto di pura rotazione:
+#### Moto di pura rotazione
 > tutti i punti descrivono un moto circolare, le traiettorie sono archi di circonferenze diverse che stanno su piani paralleli e hanno il centro su uno stesso asse, l’asse di rotazione. In un dato istante tutti i punti hanno la stessa velocità angolare $\vec{\omega}$ che è parallela all’asse di rotazione
 
 $$
+\displaylines{
+\tau^{(E)}_{tot} = \frac{d\vec{L}}{dt}
+}
 $$
-## Altro
-- Equazione del moto di un corpo rotante
-- Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
+#### Moto rispetto al centro di massa
+> La velocità di ogni punto è la somma della velocità di traslazione ($\vec{v}_{CM}$) e della velocità lineare legata al moto di rotazione ($\vec{v}_{rot}= \vec{\omega}\wedge\vec{r}$)
+#### Moto di rototraslazione
+> traslazione infinitesima con velocità $\vec{v}$ + rotazione infinitesima con velocità angolare $\vec{\omega}$
+>
+> con $\vec{v}$ e $\vec{\omega}$ variabili nel tempo e indipendenti tra di loro
+
+```ad-note
+La descrizione del moto di rotazione di un corpo rigido non è univoca.
+$\vec{\omega}$ è unica, $\vec{v}$ dipende dall'asse di rotazione scelto.
+```
+
+### Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
+#### Momento Angolare
+- asse di rotazione: asse $\hat{z}$
+- velocità angolare $\vec{\omega} \parallel \hat{z}$
+- accellerazione angolare $\vec{\alpha} = \frac{d\vec{\omega}}{dt} \parallel \hat{z}$
+- momento angolare
+  $d\vec{L} = \vec{r}\wedge dm\vec{v}$
+  $\vec{r} \bot \vec{v}$
+  $dL = r\,dm\,v = r\,dm\,\omega\,R$
+
+- momento angolare assiale 
+  $$
+ \displaylines{
+ dL_{z} = dL cos\left(\frac{\pi}{2}-\theta\right) = 
+ dL sin\theta = r\,dm\,\omega\,R\,sin\theta = \\
+ = \left(r\,sin\theta\right)dm\,\omega\,R = dm\,R^{2}\,\omega
+ }
+ $$
+
+### Altro
 - Momento di inerzia rispetto ad un asse fisso
 - Lavoro ed energia cinetica nel moto rotatorio
 - Teorema di Huygens-Steiner
