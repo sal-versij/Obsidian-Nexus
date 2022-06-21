@@ -201,11 +201,25 @@ In base al percorso: $W = -\mu Nl$
   - $O$ si muove parallelemente al moto del $CM$$\impliedby \vec{v}_{O}\parallel\vec{v}_{CM}$
 - Conservazione del momento angolare ($\tau^{(E)} = 0 \implies \vec{L} = \text{const}$)
 ## Dinamica del corpo rigido
-- Corpo rigido:
-
+### Corpo rigido
   > sistema di punti materiali in cui le distanze tra tutte le possibili coppie di punti non possono variare
 
-  - Densità ($a$)
+#### Densità
+- Corpo ($\rho = \frac{dm}{dV} \left[\frac{kg}{m^{3}}\right]$)
+- Superficiale ($\sigma = \frac{dm}{dS} \left[\frac{kg}{m^{2}}\right]$)
+- Lineare ($\lambda = \frac{dm}{dL} \left[\frac{kg}{m}\right]$)
+#### Massa 
+$M = \int_{V}\rho dV$
+#### Corpo omogeneo 
+$\rho = \text{const} = \frac{M}{V}$
+#### Centro di massa 
+$\vec{r}_{CM} = \frac{\int_{V}\vec{r}dm}{\int_{M}dm} = \frac{\int_{V}\vec{r}\rho dV}{M}$
+$\rho = \text{const} \implies \vec{r}_{CM} = \frac{\rho\int_{V}\vec{r} dV}{M} = \frac{\int_{V}\vec{r} dV}{V}$
+
+### Corpo continuo soggetto alla forza peso
+$\vec{P}_{tot} = \int_{M}\vec{g}dm = \vec{g}\int_{M}dm = M\vec{g}$
+
+## Altro
 - Moto di un corpo rigido
 - Equazione del moto di un corpo rotante
 - Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
