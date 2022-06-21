@@ -218,9 +218,35 @@ $\rho = \text{const} \implies \vec{r}_{CM} = \frac{\rho\int_{V}\vec{r} dV}{M} = 
 
 ### Corpo continuo soggetto alla forza peso
 $\vec{P}_{tot} = \int_{M}\vec{g}dm = \vec{g}\int_{M}dm = M\vec{g}$
+$$
+\displaylines{
+\vec{\tau}_{tot} = \int_{M}\vec{r}\wedge\vec{g}dm = \left( \int_M\vec{r}dm \right)\wedge\vec{g} = M \frac{\int_M\vec{r}dm}{M}\wedge\vec{g} = \\
+M\vec{r}_{CM}\wedge\vec{g} = \vec{r}_{CM}\wedge M\vec{g} = \\
+\vec{r}_{CM}\wedge\vec{P}_{tot}
+}
+$$
+> Se z è la quota dell’elemento di massa $dm$ rispetto alla quota di riferimento, esso avrà energia potenziale:
 
+$dU = z g dm$
+$U = \int_{M}zgdm = g\int_{M}zdm = gM \frac{\int_{M}zdm}{M} = M g z_{CM}$
+### Moto di un corpo rigido
+#### Moto di pura traslazione:
+> tutti i punti descrivono traiettorie eguali, percorse con la stessa velocità $v = v_{CM}$
+
+$$
+\displaylines{
+\vec{v}_{i} = \vec{v}_{CM} \\
+\vec{P}_{tot} = M\vec{v}_{CM} \\
+\vec{F}^{(E)}_{tot} = M\vec{a}_{CM} = \frac{d\vec{P}_{tot}}{dt} \\
+E_{cin} = \frac{1}{2}Mv_{CM}^{2} \\
+}
+$$
+#### Moto di pura rotazione:
+> tutti i punti descrivono un moto circolare, le traiettorie sono archi di circonferenze diverse che stanno su piani paralleli e hanno il centro su uno stesso asse, l’asse di rotazione. In un dato istante tutti i punti hanno la stessa velocità angolare $\vec{\omega}$ che è parallela all’asse di rotazione
+
+$$
+$$
 ## Altro
-- Moto di un corpo rigido
 - Equazione del moto di un corpo rotante
 - Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
 - Momento di inerzia rispetto ad un asse fisso
