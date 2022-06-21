@@ -260,7 +260,6 @@ $$
 La descrizione del moto di rotazione di un corpo rigido non è univoca.
 $\vec{\omega}$ è unica, $\vec{v}$ dipende dall'asse di rotazione scelto.
 ```
-
 ### Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
 #### Momento Angolare
 - asse di rotazione: asse $\hat{z}$
@@ -270,19 +269,18 @@ $\vec{\omega}$ è unica, $\vec{v}$ dipende dall'asse di rotazione scelto.
   $d\vec{L} = \vec{r}\wedge dm\vec{v}$
   $\vec{r} \bot \vec{v}$
   $dL = r\,dm\,v = r\,dm\,\omega\,R$
-
-- momento angolare assiale 
-  $$
- \displaylines{
- dL_{z} = dL cos\left(\frac{\pi}{2}-\theta\right) = 
- dL sin\theta = r\,dm\,\omega\,R\,sin\theta = \\
- = \left(r\,sin\theta\right)dm\,\omega\,R = dm\,R^{2}\,\omega
- }
- $$
-
+- momento angolare assiale
+  $dL_{z} = dL cos\left(\frac{\pi}{2}-\theta\right) = dL sin\theta = r\,dm\,\omega\,R\,sin\theta = \left(r\,sin\theta\right)dm\,\omega\,R = dm\,R^{2}\,\omega$
+- momento angolare del corpo ($\vec{L} = \int d\vec{L}$; $L_{z} = \int dL_{z} = \int dm\,R^{2}\,\omega = \left(\int dm\,R^{2}\right)\omega$)
+- momento di inerzia del corpo rispetto all’asse z
+  $I_{z} = \int dm\,R^{2} = \int dm(x^{2}+y^{2})$
+  $L_{z} = I_{z}\omega$
+- componente ortogonale all’asse di rotazione
+  $L_{\bot} = \int dL_{bot} = \int dL\,cos\theta = r\,dm\,\omega\,R\,cos\theta$
+  $L_{bot} = 0 \iff \hat{z}$ è un'asse di simmetria e $\vec{L}\parallel\vec{\omega}$; $\vec{\tau}\parallel\vec{\alpha}$
+### Lavoro ed energia cinetica nel moto rotatorio
+$K_{tot} = \int \frac{1}{2}dm\,v^{2}= \int \frac{1}{2}dm (\omega R)^{2}= \frac{1}{2}\omega^{2}\int R^{2}dm = \frac{1}{2}I_{z}\omega^{2}$
 ### Altro
-- Momento di inerzia rispetto ad un asse fisso
-- Lavoro ed energia cinetica nel moto rotatorio
 - Teorema di Huygens-Steiner
 - Leggi di conservazione nel moto di un corpo rigido
 - Moto rototraslatorio
