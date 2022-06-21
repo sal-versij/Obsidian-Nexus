@@ -7,9 +7,11 @@
         "id": "42914fbb4ae54b6c",
         "type": "leaf",
         "state": {
-          "type": "pdf",
+          "type": "markdown",
           "state": {
-            "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf"
+            "file": "Fisica.md",
+            "mode": "preview",
+            "source": false
           }
         }
       }
@@ -107,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf",
+                "file": "Fisica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf",
+                "file": "Fisica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf"
+                "file": "Fisica.md"
               }
             }
           }
@@ -160,9 +162,9 @@
   },
   "active": "42914fbb4ae54b6c",
   "lastOpenFiles": [
+    "Fisica.md",
     "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf",
     "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf",
-    "Fisica.md",
     "handouts/Fisica/LEZIONI/3 - DINAMICA DEL PUNTO MATERIALE.pdf",
     "handouts/Fisica/LEZIONI/6 - OSCILLAZIONI.pdf",
     "2022-05-02.md",
