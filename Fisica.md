@@ -201,7 +201,11 @@ In base al percorso: $W = -\mu Nl$
   - $O$ si muove parallelemente al moto del $CM$$\impliedby \vec{v}_{O}\parallel\vec{v}_{CM}$
 - Conservazione del momento angolare ($\tau^{(E)} = 0 \implies \vec{L} = \text{const}$)
 ## Dinamica del corpo rigido
-- Corpo rigido
+- Corpo rigido:
+
+  > sistema di punti materiali in cui le distanze tra tutte le possibili coppie di punti non possono variare
+
+  - Densità ($a$)
 - Moto di un corpo rigido
 - Equazione del moto di un corpo rotante
 - Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
