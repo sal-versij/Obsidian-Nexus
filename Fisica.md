@@ -445,78 +445,106 @@ $m\vec{a} = \vec{F}_{molla}+\vec{R}_{mezzo}$
 $\vec{R}_{mezzo} = -b\vec{v}$
 $m \frac{d^{2}x}{dt^{2}} = -kx-bv$
 $\frac{d^{2}x}{dt^{2}} + \frac{b}{m} \frac{dx}{dt} + \frac{k}{m}x=0$
-Coeficiente di smorzamento: $\lambda\equiv \frac{b}{2m}$
+Coeficiente di smorzamento: $\gamma\equiv \frac{b}{2m}$
 Pulsazione propria: $\omega_{0}^{2}\equiv \frac{k}{m}$
 
 Eq. differenziale dell'**Oscillatore armonico smorzato**
-$\frac{d^{2}x}{dt^{2}} + 2\lambda\frac{dx}{dt} + \omega_{0}^{2}x=0$
+$\frac{d^{2}x}{dt^{2}} + 2\gamma\frac{dx}{dt} + \omega_{0}^{2}x=0$
 Soluzione di prova
 $x(t) = e^{\alpha t}$
 $\frac{dx}{dt} = \alpha e^{\alpha t}$
 $\frac{d^{2}x}{dt^{2}} = \alpha^{2} e^{\alpha t}$
 Sostituendo:
-$\alpha^{2} e^{\alpha t} + 2\lambda\alpha e^{\alpha t} + 1\omega_{0}^{2}e^{\alpha t} = 0$
-$e^{\alpha t}\left(\alpha^{2} + 2\lambda\alpha + 1\omega_{0}^{2}\right) = 0$
+$\alpha^{2} e^{\alpha t} + 2\gamma\alpha e^{\alpha t} + 1\omega_{0}^{2}e^{\alpha t} = 0$
+$e^{\alpha t}\left(\alpha^{2} + 2\gamma\alpha + 1\omega_{0}^{2}\right) = 0$
 Quindi $x(t) = e^{\alpha t}$ è soluzione solo se $\alpha$ è tale che:
-$\alpha^{2} + 2\lambda\alpha+\omega_{0}^{2} = 0$ (Equazione caratteristica)
-$\alpha = -\lambda\pm\sqrt{\lambda^{2}-\omega_{0}^{2}}$
+$\alpha^{2} + 2\gamma\alpha+\omega_{0}^{2} = 0$ (Equazione caratteristica)
+$\alpha = -\gamma\pm\sqrt{\gamma^{2}-\omega_{0}^{2}}$
 Ci sono 3 casi
-#### Smorzamento Forte ($\lambda^{2}>\omega_{0}^{2}$)
-$\lambda^{2}>\omega_{0}^{2} \implies$ $\alpha_{1}$ e $\alpha_{2}$ reali distinte
+#### Smorzamento Forte ($\gamma^{2}>\omega_{0}^{2}$)
+$\gamma^{2}>\omega_{0}^{2} \implies$ $\alpha_{1}$ e $\alpha_{2}$ reali distinte
 Soluzioni reali dell'equazione caratteristica:
-$\alpha_{1} = -\lambda +\sqrt{\lambda^{2}-\omega_{0}^{2}} = -\lambda +\beta$
-$\alpha_{2} =  -\lambda -\sqrt{\lambda^{2}-\omega_{0}^{2}} = -\lambda -\beta$
-ove $\beta=\sqrt{\lambda^{2}-\omega_{0}^{2}}<\lambda \implies \alpha_{1},\alpha_{2}<0$ 
+$\alpha_{1} = -\gamma +\sqrt{\gamma^{2}-\omega_{0}^{2}} = -\gamma +\beta$
+$\alpha_{2} =  -\gamma -\sqrt{\gamma^{2}-\omega_{0}^{2}} = -\gamma -\beta$
+ove $\beta=\sqrt{\gamma^{2}-\omega_{0}^{2}}<\gamma \implies \alpha_{1},\alpha_{2}<0$ 
 
 Soluzione generale
-$x(t) = Ae^{\alpha_{1} t} + Be^{\alpha_{2} t} = e^{-\lambda t}(Ae^{\beta t} + Be^{-\beta t})$
+$x(t) = Ae^{\alpha_{1} t} + Be^{\alpha_{2} t} = e^{-\gamma t}(Ae^{\beta t} + Be^{-\beta t})$
 
 ```ad-note
 $A$ e $B$ dipendono dalle condizioni iniziali ($x(0)$ e $v(0)$)
 ```
 
 $x(t)$ decrescente esponanzialmente $\implies$ non ci sono oscillazioni
-#### Smorzamento Critico ($\lambda^{2}=\omega_{0}^{2}$)
-$\lambda^{2}=\omega_{0}^{2} \implies$ $\alpha_{1} = \alpha_{2}$ reali e coincidenti
+#### Smorzamento Critico ($\gamma^{2}=\omega_{0}^{2}$)
+$\gamma^{2}=\omega_{0}^{2} \implies$ $\alpha_{1} = \alpha_{2}$ reali e coincidenti
 
 Soluzioni reali dell'equazione caratteristica:
-$\alpha_{1} = \alpha_{2} =  -\lambda$ 
+$\alpha_{1} = \alpha_{2} =  -\gamma$ 
 
 Soluzione generale
-$x(t) = e^{-\lambda t}(At+B)$
+$x(t) = e^{-\gamma t}(At+B)$
 
 ```ad-note
 $A$ e $B$ dipendono dalle condizioni iniziali ($x(0)$ e $v(0)$)
 ```
 
 $x(t)$ decrescente esponanzialmente $\implies$ non ci sono oscillazioni
-#### Smorzamento Debole ($\lambda^{2}<\omega_{0}^{2}$)
-$\lambda^{2}<\omega_{0}^{2} \implies$ $\alpha_{1}$ e $\alpha_{2}$ immaginarie coniugate
+#### Smorzamento Debole ($\gamma^{2}<\omega_{0}^{2}$)
+$\gamma^{2}<\omega_{0}^{2} \implies$ $\alpha_{1}$ e $\alpha_{2}$ immaginarie coniugate
 
 Soluzioni reali dell'equazione caratteristica:
-$\alpha_{1} = -\lambda +i\sqrt{\omega_{0}^{2}-\lambda^{2}} = -\lambda +i\omega$
-$\alpha_{2} =  -\lambda -i\sqrt{\omega_{0}^{2}-\lambda^{2}} = -\lambda -i\omega$
-ove $\omega^{2} = \omega_{0}^{2}-\lambda^{2}$
+$\alpha_{1} = -\gamma +i\sqrt{\omega_{0}^{2}-\gamma^{2}} = -\gamma +i\omega$
+$\alpha_{2} =  -\gamma -i\sqrt{\omega_{0}^{2}-\gamma^{2}} = -\gamma -i\omega$
+ove $\omega^{2} = \omega_{0}^{2}-\gamma^{2}$
 
 Soluzione generale
-$x(t) = a_{1}e^{\alpha_{1} t} + a_{2}e^{\alpha_{2} t} = e^{-\lambda t}(a_{1}e^{i\omega t} + a_{2}e^{-i\omega t})$
+$x(t) = a_{1}e^{\alpha_{1} t} + a_{2}e^{\alpha_{2} t} = e^{-\gamma t}(a_{1}e^{i\omega t} + a_{2}e^{-i\omega t})$
 
 utilizzando la *Formula di Eulero*:
 $e^{\pm i\omega t} = \cos\omega t \pm i\sin\omega t$
 la soluzione può essere riscritta come:
-$x(t) = Ae^{-\lambda t}\sin(\omega t+\phi)$
+$x(t) = Ae^{-\gamma t}\sin(\omega t+\phi)$
 
 ```ad-note
 $A$ e $\phi$ dipendono dalle condizioni iniziali ($x(0)$ e $v(0)$)
 ```
 
-$\omega = \sqrt{\omega_{0}^{2}-\lambda^{2}}<\omega_{0}$
+$\omega = \sqrt{\omega_{0}^{2}-\gamma^{2}}<\omega_{0}$
 Pseudo periodo: $T = \frac{2\pi}{\omega}$
-##### Determinare
+##### Determinare $A$ e $\phi$
+$A$ e $\phi$ reali tali che:
+$$
+\displaylines{
+\begin{cases}
+a_{1} + a_{2}    &=  2a  &= A\sin\phi \\
+i(a_{1} - a_{2}) &= -2b &= A\cos\phi  \\
+\end{cases} \implies 
+\begin{cases}
+A^{2}    &= (2a)^{2}+(-2b)^{2} \\
+\tan\phi &= -\frac{a}{b}  \\
+\end{cases} \\
+f(t) = A\sin(\omega t +\phi) \\
+x(t) = Ae^{-\gamma t}\sin(\omega t +\phi)
+}
+$$
+### Oscillatore armonico forzato
+Oscillazione pesistente dovuta ad un'applicazione di forza sinusuidale
+$m \frac{d^{2}x}{dt^{2}} = -kx -bv +F_{0}\sin\omega t$
+Pulsazione propria: $\omega_{0}^{2} = \frac{k}{m}$
+Coeff. di smorzamento $\gamma = \frac{b}{2m}$
+
+Eq. differenziale dell'***Oscillatore Armonico Forzato***
+$\frac{d^{2}x}{dt^{2}} + 2\gamma \frac{dx}{dt}+ \omega_{0}^{2}x = \frac{F_{0}}{m}\sin\omega t$
+Soluzione generale
+$x(t) = A\sin(\omega t +\phi) +a_{1}e^{\alpha_{1}t} +a_{2}e^{\alpha_{2}t}$
+con:
+- $\alpha_{1}$ e $\alpha_{2}$ soluzioni dell'equazione caratteristica $\alpha^{2}+ 2\gamma\alpha + \omega_{0}^{2} = 0$
+- $\alpha_{1}$ e $\alpha_{2}$ dipendenti dalle condizioni iniziali
+
 ### Altro
 - Oscillatore armonico semplice
 - Energia cinetica e potenziale nei moti armonici semplici ($U(t) = \frac{1}{2}kx^{2} = \frac{1}{2}kA^{2}\sin^{2}(\omega t+\phi)$;  $K(t) = \frac{1}{2}mv^{2} = \frac{1}{2}mA^{2}\omega^{2}\cos^{2}(\omega t+\phi) = \frac{1}{2}kA^{2}\cos^{2}(\omega t+\phi)$; $E = U(t) + K(t) = \frac{1}{2}kA^{2}$)
-- Oscillatore armonico forzato
 - Risonanza
 ## Proprietà meccaniche dei fluidi
 - Generalità sui fluidi
