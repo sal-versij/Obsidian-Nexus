@@ -406,7 +406,7 @@ $x\left(t + \frac{2\pi}{\omega}\right) = x(t)$
 Periodo: $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{m}{k}}$
 Frequenza: $\nu = \frac{1}{T} = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$
 #### Determinare $A$ e $\phi$
-$$
+$$$
 \displaylines{
 \begin{cases}
 x_{0} &= A\sin\phi\\
@@ -425,11 +425,25 @@ A        &= \sqrt{x_{0}^{2} + \left(\frac{v_{0}}{\omega}\right)^{2}}\\
 \tan\phi &= \frac{x_{0}\omega}{v_{0}} \\
 \end{cases} \\
 }$$
+### Pendolo semplice
+![[Pendolo semplice.jpg]]
+$\vec{F}_{tot} = \vec{P}+\vec{T} = m\vec{a}$
+Introducendo i versori $\hat{u}_{R}$ e $\hat{u}_{T}$
+Forza centripeta: $T-P_{R} = ma_{R}$
+Forza di richiamo: $-P_{T} = ma_{T}$
+Posizione di equilibrio stabile: $\theta = 0$
+$a_{T} = L\alpha = L \frac{d^{2}\theta}{dt^{2}}$
+$P_{T} = mg\sin\theta$
+Piccole oscillazioni: $\theta<<1rad\implies\sin\theta\cong\theta$
+$-mg\theta = mL\frac{d^{2}\theta}{dt^{2}} \implies \frac{d^{2}\theta}{dt^{2}} + \frac{g}{L}\theta = 0$
+$\theta(t) = \theta_{A}\sin(\omega_{0}t+\phi)$
+$\omega_{0}^{2} = \frac{g}{L}$; $T = 2\pi\sqrt{\frac{L}{g}}$
+### Oscillatore armonico smorzato
+
 ### Altro
 - Oscillatore armonico semplice
-- Energia cinetica e potenziale nei moti armonici semplici
-- Pendolo semplice
-- Oscillatore armonico smorzato
+- Energia cinetica e potenziale nei moti armonici semplici ($U(t) = \frac{1}{2}kx^{2} = \frac{1}{2}kA^{2}\sin^{2}(\omega t+\phi)$;  $K(t) = \frac{1}{2}mv^{2} = \frac{1}{2}mA^{2}\omega^{2}\cos^{2}(\omega t+\phi) = \frac{1}{2}kA^{2}\cos^{2}(\omega t+\phi)$; $E = U(t) + K(t) = \frac{1}{2}kA^{2}$)
+
 - Oscillatore armonico smorzato
   - smorzamento forte
   - critico
@@ -456,3 +470,4 @@ A        &= \sqrt{x_{0}^{2} + \left(\frac{v_{0}}{\omega}\right)^{2}}\\
 - Paradosso idrodinamico
 - Effetti dinamici: moto in un condotto orizzontale curvo
 - Attrito interno: Moto laminare (cenni)
+$$$
