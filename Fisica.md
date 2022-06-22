@@ -256,10 +256,22 @@ $$
 >
 > con $\vec{v}$ e $\vec{\omega}$ variabili nel tempo e indipendenti tra di loro
 
+$K = \frac{1}{2}Mv_{CM}^{2} + \frac{1}{2}I_{CM}\omega^{2}$
+
 ```ad-note
 La descrizione del moto di rotazione di un corpo rigido non è univoca.
 $\vec{\omega}$ è unica, $\vec{v}$ dipende dall'asse di rotazione scelto.
 ```
+##### Moto di rotolamento puro
+> Si ha un ***MOTO DI ROTOLAMENTO PURO***, ovvero di **non scivolamento**, quando il punto di contatto è fermo:
+> $v_{Q} = 0$ dato da $v_{CM} = \omega R$
+> In questo caso
+> $K = \frac{1}{2}Mv_{CM}^{2} + \frac{1}{2}I_{CM}\omega^{2} = \frac{1}{2}M(\omega R)^{2} + \frac{1}{2}I_{CM}\omega^{2} = \frac{1}{2}(I_{CM}+MR^{2})\omega^{2} = \frac{1}{2}I_{Q}\omega^{2}$
+
+> Il moto è equivalente ad un *moto di pura rotazione*, con velocità angolare $\omega$, attorno ad un asse di istantanea rotazione passante per il punto di contatto $Q$.
+
+e.g. applicazione di una forza costante
+
 ### Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
 #### Momento Angolare
 - asse di rotazione: asse $\hat{z}$
@@ -291,13 +303,26 @@ $P = \frac{dW}{dt} = \tau_{z} \frac{d\theta}{dt}= \tau_{z}\omega$
 Momento di inerzia
 $I = \int dm\,R^2$
 ### Teorema di Huygens-Steiner
- > Si dimostra che il momento di inerzia $I$ di un corpo di massa $M$ rispetto ad un asse che dista $a$ dal $CM$ è dato da
- > $I = I_{CM} + M\;a^2$
- > ove $I_{CM}$ è il momento di inerzia rispetto ad un asse parallelo al precedente e passante per $CM$ (Teorema degli assi paralleli)
+> Si dimostra che il momento di inerzia $I$ di un corpo di massa $M$ rispetto ad un asse che dista $a$ dal $CM$ è dato da
+> $I = I_{CM} + M\;a^2$
+> ove $I_{CM}$ è il momento di inerzia rispetto ad un asse parallelo al precedente e passante per $CM$ (Teorema degli assi paralleli)
 ### Leggi di conservazione nel moto di un corpo rigido
 #### Conservazione del momento angolare
-$$\frac{d\vec{L}_{tot}}{dt} \equiv \vec{v}_{0} \wedge M \vec{v}_{CM} = 0$$
+$\vec{\tau}^{(E)}_{tot} = \frac{d\vec{L}_{tot}}{dt} + \vec{v}_{0} \wedge M \vec{v}_{CM}$
+Se il polo $O$ è:
 
+- fisso in un sistema di riferimento inerziale
+- $O\equiv CM$ (potendo in questo caso essere anche mobile)
+
+possiamo scrivere:
+$\vec{\tau}^{(E)}_{tot} = \frac{d\vec{L}_{tot}}{dt}$
+Quindi
+$\vec{\tau}^{(E)}_{tot} = 0 \implies \vec{L}_{tot} = \text{const}$
+Se l'asse di rotazione è un'asse di simmetria, potremo scrivere:
+$\vec{L}_{tot} = I\vec{\omega} = \text{const}$
+In ogni caso potremo scrivere in forma scalare per la componente $L_{z}$
+$I_{z}\omega = \text{const}$
+$\omega$ variabile se varia $I_{z}$ che piò essere fatta variare cambiando la posizione relativa delle singole parti del corpo
 ## Oscillazioni
 - Oscillatore armonico semplice
 - Sistema massa-molla: equazione del moto e soluzione
