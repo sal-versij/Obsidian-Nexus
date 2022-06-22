@@ -464,12 +464,55 @@ Ci sono 3 casi
 #### Smorzamento Forte ($\lambda^{2}>\omega_{0}^{2}$)
 $\lambda^{2}>\omega_{0}^{2} \implies$ $\alpha_{1}$ e $\alpha_{2}$ reali distinte
 Soluzioni reali dell'equazione caratteristica:
-$\alpha_{1} = -\lambda+\$
-$\alpha_{2} = $
+$\alpha_{1} = -\lambda +\sqrt{\lambda^{2}-\omega_{0}^{2}} = -\lambda +\beta$
+$\alpha_{2} =  -\lambda -\sqrt{\lambda^{2}-\omega_{0}^{2}} = -\lambda -\beta$
+ove $\beta=\sqrt{\lambda^{2}-\omega_{0}^{2}}<\lambda \implies \alpha_{1},\alpha_{2}<0$ 
+
+Soluzione generale
+$x(t) = Ae^{\alpha_{1} t} + Be^{\alpha_{2} t} = e^{-\lambda t}(Ae^{\beta t} + Be^{-\beta t})$
+
+```ad-note
+$A$ e $B$ dipendono dalle condizioni iniziali ($x(0)$ e $v(0)$)
+```
+
+$x(t)$ decrescente esponanzialmente $\implies$ non ci sono oscillazioni
 #### Smorzamento Critico ($\lambda^{2}=\omega_{0}^{2}$)
 $\lambda^{2}=\omega_{0}^{2} \implies$ $\alpha_{1} = \alpha_{2}$ reali e coincidenti
+
+Soluzioni reali dell'equazione caratteristica:
+$\alpha_{1} = \alpha_{2} =  -\lambda$ 
+
+Soluzione generale
+$x(t) = e^{-\lambda t}(At+B)$
+
+```ad-note
+$A$ e $B$ dipendono dalle condizioni iniziali ($x(0)$ e $v(0)$)
+```
+
+$x(t)$ decrescente esponanzialmente $\implies$ non ci sono oscillazioni
 #### Smorzamento Debole ($\lambda^{2}<\omega_{0}^{2}$)
 $\lambda^{2}<\omega_{0}^{2} \implies$ $\alpha_{1}$ e $\alpha_{2}$ immaginarie coniugate
+
+Soluzioni reali dell'equazione caratteristica:
+$\alpha_{1} = -\lambda +i\sqrt{\omega_{0}^{2}-\lambda^{2}} = -\lambda +i\omega$
+$\alpha_{2} =  -\lambda -i\sqrt{\omega_{0}^{2}-\lambda^{2}} = -\lambda -i\omega$
+ove $\omega^{2} = \omega_{0}^{2}-\lambda^{2}$
+
+Soluzione generale
+$x(t) = a_{1}e^{\alpha_{1} t} + a_{2}e^{\alpha_{2} t} = e^{-\lambda t}(a_{1}e^{i\omega t} + a_{2}e^{-i\omega t})$
+
+utilizzando la *Formula di Eulero*:
+$e^{\pm i\omega t} = \cos\omega t \pm i\sin\omega t$
+la soluzione può essere riscritta come:
+$x(t) = Ae^{-\lambda t}\sin(\omega t+\phi)$
+
+```ad-note
+$A$ e $\phi$ dipendono dalle condizioni iniziali ($x(0)$ e $v(0)$)
+```
+
+$\omega = \sqrt{\omega_{0}^{2}-\lambda^{2}}<\omega_{0}$
+Pseudo periodo: $T = \frac{2\pi}{\omega}$
+##### Determinare
 ### Altro
 - Oscillatore armonico semplice
 - Energia cinetica e potenziale nei moti armonici semplici ($U(t) = \frac{1}{2}kx^{2} = \frac{1}{2}kA^{2}\sin^{2}(\omega t+\phi)$;  $K(t) = \frac{1}{2}mv^{2} = \frac{1}{2}mA^{2}\omega^{2}\cos^{2}(\omega t+\phi) = \frac{1}{2}kA^{2}\cos^{2}(\omega t+\phi)$; $E = U(t) + K(t) = \frac{1}{2}kA^{2}$)

@@ -6,7 +6,7 @@
   "template": "{{commandId}} - {{commandName}} - {{hotkey}}",
   "descriptionOfActions": false,
   "mouseStatistics": {
-    "vantage-obsidian:build-search": 2,
+    "vantage-obsidian:build-search": 3,
     "workspaces:open-modal": 1,
     "obsidian-admonition:collapse-admonitions": 6,
     "obsidian-plotly:add-plotly-dataviewjs-example": 1,
