@@ -303,6 +303,7 @@ $$
 Condizione di non scivolamento
 $f\leq\mu_{s}N = \mu_{s}Mg \implies F\leq\mu_sMg\left(1+\frac{MR^{2}}{I_{CM}}\right)$
 ```
+
 ```ad-eg
 title: Applicazione di un momento costante
 ![[Moto di puro rotolamento - example (2).jpg]]
@@ -385,8 +386,35 @@ In ogni caso potremo scrivere in forma scalare per la componente $L_{z}$
 $I_{z}\omega = \text{const}$
 $\omega$ variabile se varia $I_{z}$ che piò essere fatta variare cambiando la posizione relativa delle singole parti del corpo
 ## Oscillazioni
+### Equazione differenziale dello oscillatore armonico semplice
+$\frac{d^{2}x}{dt^{2}} + \omega^{2}x = 0$
+la soluzione più generale è:
+$x(t) = a\sin\omega t+b\cos\omega t$
+ovvero
+$x(t) = A\sin(\omega t+\phi)$ $[a=A\cos\phi;b=A\sin\phi]$
+$x(t) = B\cos(\omega t+\psi)$ $[a=-B\sin\psi;b=B\cos\psi]$
+ove
+$A=B=\sqrt{a^{2}+b^{2}}$; $\tan\phi = \frac{b}{a}$ ; $\tan\psi = -\frac{a}{b}$; $(\psi = \phi - \frac{\pi}{2})$
+### Sistema massa-molla
+$\frac{d^{2}x}{dt^{2}} + \frac{k}{m}x = 0$
+$x(t) = A\sin(\omega t + \phi)$
+$\frac{dx}{dt} = A\omega\cos(\omega t + \phi)$
+$\frac{d^{2}x}{dt^{2}} = -A\omega^{2}\sin(\omega t + \phi)$
+$\omega^{2} = \frac{k}{m}\implies\omega = \sqrt{\frac{k}{m}}$
+
+$x\left(t + \frac{2\pi}{\omega}\right) = x(t)$
+Periodo: $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{m}{k}}$
+Frequenza: $\nu = \frac{1}{T} = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$
+#### Determinare $A$ e $\phi$
+$$
+\displaylines{
+\begin{cases}
+x_0 = A\sin\phi\\
+v_0 = A\omega\cos\phi\\
+\end{cases}
+}$$
+### Altro
 - Oscillatore armonico semplice
-- Sistema massa-molla: equazione del moto e soluzione ($\frac{d^{2}x}{dt^{2}} + \frac{k}{M}x = 0$)
 - Energia cinetica e potenziale nei moti armonici semplici
 - Pendolo semplice
 - Oscillatore armonico smorzato
