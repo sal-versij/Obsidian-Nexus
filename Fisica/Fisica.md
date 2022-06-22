@@ -599,14 +599,14 @@ $A(\omega) = \frac{\frac{F_{0}}{m}}{\sqrt{(\omega_{0}^{2}-\omega^{2})^{2}+(2\gam
 	- Portata
 		- Massa ($\frac{dm_{1}}{dt} = \frac{dm_{2}}{dt}$)
 		- Volume ($v_{1}dS_{1} = v_{2}dS_{2}$)
-	- Legge di Leonardo ($Q=\int_{S}vdS = \left(\frac{1}{S}\int_{S}vdS\right)S = v_{m}S$)
+			- Legge di Leonardo ($Q=\int_{S}vdS = \left(\frac{1}{S}\int_{S}vdS\right)S = v_{m}S$)
 	- Teorema di Bernoulli ($p+\zeta gz+ \frac{1}{2}\zeta v^{2} = \text{const}$)
 	  ![[Teorema di Bernoulli.jpg]]
 	- Teorema di Torricelli ($v_{2} = \sqrt{2gh}$)
 	  ![[Teorema di Torricelli.jpg]]
-- Tubo di Venturi ()
+- Tubo di Venturi ($Q=\sqrt{\frac{2gh}{\frac{1}{S_{2}^{2}}- \frac{1}{S_{1}^{2}}}}$)
   ![[Tubo di Venturi.jpg]]
-- Tubo di Pitot
+- Tubo di Pitot ($v=\sqrt{\frac{2\zeta'gh}{\zeta}}$)
   ![[Tubo di Pitot.jpg]]
 - Paradosso idrodinamico
 - Effetti dinamici: moto in un condotto orizzontale curvo
