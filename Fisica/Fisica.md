@@ -406,7 +406,7 @@ $x\left(t + \frac{2\pi}{\omega}\right) = x(t)$
 Periodo: $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{m}{k}}$
 Frequenza: $\nu = \frac{1}{T} = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$
 #### Determinare $A$ e $\phi$
-$$$
+$$
 \displaylines{
 \begin{cases}
 x_{0} &= A\sin\phi\\
@@ -424,7 +424,8 @@ A^{2}(\sin^{2}\phi+\cos^{2}\phi) &= x_{0}^{2} + \left(\frac{v_{0}}{\omega}\right
 A        &= \sqrt{x_{0}^{2} + \left(\frac{v_{0}}{\omega}\right)^{2}}\\
 \tan\phi &= \frac{x_{0}\omega}{v_{0}} \\
 \end{cases} \\
-}$$
+}
+$$
 ### Pendolo semplice
 ![[Pendolo semplice.jpg]]
 $\vec{F}_{tot} = \vec{P}+\vec{T} = m\vec{a}$
@@ -466,7 +467,7 @@ $\gamma^{2}>\omega_{0}^{2} \implies$ $\alpha_{1}$ e $\alpha_{2}$ reali distinte
 Soluzioni reali dell'equazione caratteristica:
 $\alpha_{1} = -\gamma +\sqrt{\gamma^{2}-\omega_{0}^{2}} = -\gamma +\beta$
 $\alpha_{2} =  -\gamma -\sqrt{\gamma^{2}-\omega_{0}^{2}} = -\gamma -\beta$
-ove $\beta=\sqrt{\gamma^{2}-\omega_{0}^{2}}<\gamma \implies \alpha_{1},\alpha_{2}<0$ 
+ove $\beta=\sqrt{\gamma^{2}-\omega_{0}^{2}}<\gamma \implies \alpha_{1},\alpha_{2}<0$
 
 Soluzione generale
 $x(t) = Ae^{\alpha_{1} t} + Be^{\alpha_{2} t} = e^{-\gamma t}(Ae^{\beta t} + Be^{-\beta t})$
@@ -480,7 +481,7 @@ $x(t)$ decrescente esponanzialmente $\implies$ non ci sono oscillazioni
 $\gamma^{2}=\omega_{0}^{2} \implies$ $\alpha_{1} = \alpha_{2}$ reali e coincidenti
 
 Soluzioni reali dell'equazione caratteristica:
-$\alpha_{1} = \alpha_{2} =  -\gamma$ 
+$\alpha_{1} = \alpha_{2} =  -\gamma$
 
 Soluzione generale
 $x(t) = e^{-\gamma t}(At+B)$
@@ -514,6 +515,7 @@ $\omega = \sqrt{\omega_{0}^{2}-\gamma^{2}}<\omega_{0}$
 Pseudo periodo: $T = \frac{2\pi}{\omega}$
 ##### Determinare $A$ e $\phi$
 $A$ e $\phi$ reali tali che:
+
 $$
 \displaylines{
 \begin{cases}
@@ -539,6 +541,7 @@ $\frac{d^{2}x}{dt^{2}} + 2\gamma \frac{dx}{dt}+ \omega_{0}^{2}x = \frac{F_{0}}{m
 Soluzione generale
 $x(t) = A\sin(\omega t +\phi) +a_{1}e^{\alpha_{1}t} +a_{2}e^{\alpha_{2}t}$
 con:
+
 - $\alpha_{1}$ e $\alpha_{2}$ soluzioni dell'equazione caratteristica $\alpha^{2}+ 2\gamma\alpha + \omega_{0}^{2} = 0$
 - $\alpha_{1}$ e $\alpha_{2}$ dipendenti dalle condizioni iniziali
 
@@ -547,6 +550,7 @@ Soluzione **persistente**: $x(t) = A\sin(\omega t +\phi)$
 $\omega =$ pulsazione della forza esterna
 $A$ e $\phi =$  funzioni di $\omega$ (N.B.; non più dipendenti dalle condizioni iniziali)
 $A$ e $\phi$ tali che:
+
 $$
 \displaylines{
 \begin{cases}
@@ -564,10 +568,12 @@ A(\omega)  = \frac{\left(\frac{F_{0}}{m}\right)}{\sqrt{(\omega_{0}^{2}-\omega^{2
 \end{matrix}
 }
 $$
+
+$A(\omega) = \frac{\frac{F_{0}}{m}}{\sqrt{(\omega_{0}^{2}-\omega^{2})^{2}+(2\gamma\omega)^{2}}}$
 ### Altro
 - Oscillatore armonico semplice
 - Energia cinetica e potenziale nei moti armonici semplici ($U(t) = \frac{1}{2}kx^{2} = \frac{1}{2}kA^{2}\sin^{2}(\omega t+\phi)$;  $K(t) = \frac{1}{2}mv^{2} = \frac{1}{2}mA^{2}\omega^{2}\cos^{2}(\omega t+\phi) = \frac{1}{2}kA^{2}\cos^{2}(\omega t+\phi)$; $E = U(t) + K(t) = \frac{1}{2}kA^{2}$)
-- Risonanza
+- Risonanza ($\omega=\omega_{0},\gamma\to0 \implies A_{max} = A(\omega_{M}) = A(\omega_{0})\to\infty$) (Massimo trasferimento di potenza)
 ## Proprietà meccaniche dei fluidi
 - Generalità sui fluidi
 - Pressione
@@ -588,4 +594,3 @@ $$
 - Paradosso idrodinamico
 - Effetti dinamici: moto in un condotto orizzontale curvo
 - Attrito interno: Moto laminare (cenni)
-$$$
