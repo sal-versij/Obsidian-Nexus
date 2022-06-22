@@ -27,5 +27,6 @@
   "find-unlinked-files",
   "obsidian-icons-plugin",
   "key-promoter",
-  "obsius-publish"
+  "obsius-publish",
+  "obsidian-pandoc"
 ]

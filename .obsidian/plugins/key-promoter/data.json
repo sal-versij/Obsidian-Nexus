@@ -13,13 +13,14 @@
     "daily-notes": 15,
     "open-with-default-app:open": 1,
     "open-with-default-app:show": 5,
-    "workspace:undo-close-pane": 17,
-    "workspace:close": 17,
-    "workspace:close-others": 17,
+    "workspace:undo-close-pane": 18,
+    "workspace:close": 18,
+    "workspace:close-others": 18,
     "file-explorer:new-file": 1,
-    "find-unlinked-files:delete-unlinked-files": 2,
-    "app:delete-file": 2,
-    "editor:delete-paragraph": 2
+    "find-unlinked-files:delete-unlinked-files": 4,
+    "app:delete-file": 4,
+    "editor:delete-paragraph": 4,
+    "slides:start": 1
   },
   "keyboardStatistics": {
     "markdown:toggle-preview": 44,

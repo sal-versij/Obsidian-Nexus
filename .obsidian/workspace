@@ -14,18 +14,6 @@
             "source": false
           }
         }
-      },
-      {
-        "id": "1706414bb89b0086",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Cinematica.md",
-            "mode": "source",
-            "source": false
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -121,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cinematica.md",
+                "file": "Fisica/Fisica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cinematica.md",
+                "file": "Fisica/Fisica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cinematica.md"
+                "file": "Fisica/Fisica.md"
               }
             }
           }
@@ -172,10 +160,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1706414bb89b0086",
+  "active": "4252dac70d7e037e",
   "lastOpenFiles": [
-    "Cinematica.md",
     "Fisica/Fisica.md",
+    "Cinematica.md",
     "Introduzione.md",
     "Fisica.md",
     "2022-03-07.md",
