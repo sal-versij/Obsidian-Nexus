@@ -438,16 +438,41 @@ Piccole oscillazioni: $\theta<<1rad\implies\sin\theta\cong\theta$
 $-mg\theta = mL\frac{d^{2}\theta}{dt^{2}} \implies \frac{d^{2}\theta}{dt^{2}} + \frac{g}{L}\theta = 0$
 $\theta(t) = \theta_{A}\sin(\omega_{0}t+\phi)$
 $\omega_{0}^{2} = \frac{g}{L}$; $T = 2\pi\sqrt{\frac{L}{g}}$
-### Oscillatore armonico smorzato
+### Oscillatore armonico smorzato da una forza viscosa
+![[Oscillatore armonico smorzato da una forza viscosa.jpg]]
+Posizione a riposo della molla: $x=0$
+$m\vec{a} = \vec{F}_{molla}+\vec{R}_{mezzo}$
+$\vec{R}_{mezzo} = -b\vec{v}$
+$m \frac{d^{2}x}{dt^{2}} = -kx-bv$
+$\frac{d^{2}x}{dt^{2}} + \frac{b}{m} \frac{dx}{dt} + \frac{k}{m}x=0$
+Coeficiente di smorzamento: $\lambda\equiv \frac{b}{2m}$
+Pulsazione propria: $\omega_{0}^{2}\equiv \frac{k}{m}$
 
+Eq. differenziale dell'**Oscillatore armonico smorzato**
+$\frac{d^{2}x}{dt^{2}} + 2\lambda\frac{dx}{dt} + \omega_{0}^{2}x=0$
+Soluzione di prova
+$x(t) = e^{\alpha t}$
+$\frac{dx}{dt} = \alpha e^{\alpha t}$
+$\frac{d^{2}x}{dt^{2}} = \alpha^{2} e^{\alpha t}$
+Sostituendo:
+$\alpha^{2} e^{\alpha t} + 2\lambda\alpha e^{\alpha t} + 1\omega_{0}^{2}e^{\alpha t} = 0$
+$e^{\alpha t}\left(\alpha^{2} + 2\lambda\alpha + 1\omega_{0}^{2}\right) = 0$
+Quindi $x(t) = e^{\alpha t}$ è soluzione solo se $\alpha$ è tale che:
+$\alpha^{2} + 2\lambda\alpha+\omega_{0}^{2} = 0$ (Equazione caratteristica)
+$\alpha = -\lambda\pm\sqrt{\lambda^{2}-\omega_{0}^{2}}$
+Ci sono 3 casi
+#### Smorzamento Forte ($\lambda^{2}>\omega_{0}^{2}$)
+$\lambda^{2}>\omega_{0}^{2} \implies$ $\alpha_{1}$ e $\alpha_{2}$ reali distinte
+Soluzioni reali dell'equazione caratteristica:
+$\alpha_{1} = -\lambda+\$
+$\alpha_{2} = $
+#### Smorzamento Critico ($\lambda^{2}=\omega_{0}^{2}$)
+$\lambda^{2}=\omega_{0}^{2} \implies$ $\alpha_{1} = \alpha_{2}$ reali e coincidenti
+#### Smorzamento Debole ($\lambda^{2}<\omega_{0}^{2}$)
+$\lambda^{2}<\omega_{0}^{2} \implies$ $\alpha_{1}$ e $\alpha_{2}$ immaginarie coniugate
 ### Altro
 - Oscillatore armonico semplice
 - Energia cinetica e potenziale nei moti armonici semplici ($U(t) = \frac{1}{2}kx^{2} = \frac{1}{2}kA^{2}\sin^{2}(\omega t+\phi)$;  $K(t) = \frac{1}{2}mv^{2} = \frac{1}{2}mA^{2}\omega^{2}\cos^{2}(\omega t+\phi) = \frac{1}{2}kA^{2}\cos^{2}(\omega t+\phi)$; $E = U(t) + K(t) = \frac{1}{2}kA^{2}$)
-
-- Oscillatore armonico smorzato
-  - smorzamento forte
-  - critico
-  - smorzamento debole
 - Oscillatore armonico forzato
 - Risonanza
 ## Proprietà meccaniche dei fluidi
