@@ -579,31 +579,31 @@ $A(\omega) = \frac{\frac{F_{0}}{m}}{\sqrt{(\omega_{0}^{2}-\omega^{2})^{2}+(2\gam
   - Densità ($\zeta [\frac{kg}{m^{3}}]$)
 - Pressione ($p = \frac{F}{S}$, $[P_{a}] = [\frac{N}{m^{2}}]$, $[bar] = 10^{5}[P_{a}]$, $[atm] = 1.01325[bar]$)
 - Equilibrio statico di un fluido ($\frac{dp}{dz} = -\zeta g$)
-	- Legge di Stevino ($P_{B}-P_{A} = \zeta gh$)
-	- Principio di Pascal
-	  - in un fluido in qiuete, la pressione è costante su tutti i punti di una superficie orizzontale
-	  - Una pressione esercitata su una superficie qualsiasi di un fluido in quiete si trasmette inalterata su ogni superficie in contatto con il fluido e comunque orientata
-	- Vasi comunicanti
-	- Paradosso idrostatico
-	- Principio di Archimede ($\vec{F}_{a} = -\zeta_{L}V_{0}\vec{g}$)
-	- Galleggianti ($\zeta_{c}<\zeta_{L}$)
+  - Legge di Stevino ($P_{B}-P_{A} = \zeta gh$)
+  - Principio di Pascal
+    - in un fluido in qiuete, la pressione è costante su tutti i punti di una superficie orizzontale
+    - Una pressione esercitata su una superficie qualsiasi di un fluido in quiete si trasmette inalterata su ogni superficie in contatto con il fluido e comunque orientata
+  - Vasi comunicanti
+  - Paradosso idrostatico
+  - Principio di Archimede ($\vec{F}_{a} = -\zeta_{L}V_{0}\vec{g}$)
+  - Galleggianti ($\zeta_{c}<\zeta_{L}$)
 - Moto di un fluido
-	- Metodi differenti
-		- Lagrangiano (Seguire il moto di ogni particella del fluido)
-		- Euleriano (Conoscere $\zeta$ e $\vec{v}$ di ogni punto del fluido)
-	- **ir**/**rotazionale**
-	- *regime* **stazionario**/**variabile**
-	- **in**/**comprimibile**
-	- **non viscoso**/**viscoso**
-	- Fluido ideale: **Incomprimibile** e **non viscoso**
-	- Portata
-		- Massa ($\frac{dm_{1}}{dt} = \frac{dm_{2}}{dt}$)
-		- Volume ($v_{1}dS_{1} = v_{2}dS_{2}$)
-			- Legge di Leonardo ($Q=\int_{S}vdS = \left(\frac{1}{S}\int_{S}vdS\right)S = v_{m}S$)
-	- Teorema di Bernoulli ($p+\zeta gz+ \frac{1}{2}\zeta v^{2} = \text{const}$)
-	  ![[Teorema di Bernoulli.jpg]]
-	- Teorema di Torricelli ($v_{2} = \sqrt{2gh}$)
-	  ![[Teorema di Torricelli.jpg]]
+  - Metodi differenti
+    - Lagrangiano (Seguire il moto di ogni particella del fluido)
+    - Euleriano (Conoscere $\zeta$ e $\vec{v}$ di ogni punto del fluido)
+  - **ir**/**rotazionale**
+  - *regime* **stazionario**/**variabile**
+  - **in**/**comprimibile**
+  - **non viscoso**/**viscoso**
+  - Fluido ideale: **Incomprimibile** e **non viscoso**
+  - Portata
+    - Massa ($\frac{dm_{1}}{dt} = \frac{dm_{2}}{dt}$)
+    - Volume ($v_{1}dS_{1} = v_{2}dS_{2}$)
+      - Legge di Leonardo ($Q=\int_{S}vdS = \left(\frac{1}{S}\int_{S}vdS\right)S = v_{m}S$)
+  - Teorema di Bernoulli ($p+\zeta gz+ \frac{1}{2}\zeta v^{2} = \text{const}$)
+    ![[Teorema di Bernoulli.jpg]]
+  - Teorema di Torricelli ($v_{2} = \sqrt{2gh}$)
+    ![[Teorema di Torricelli.jpg]]
 - Tubo di Venturi ($Q=\sqrt{\frac{2gh}{\frac{1}{S_{2}^{2}}- \frac{1}{S_{1}^{2}}}}$)
   ![[Tubo di Venturi.jpg]]
 - Tubo di Pitot ($v=\sqrt{\frac{2\zeta'gh}{\zeta}}$)
