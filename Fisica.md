@@ -409,9 +409,21 @@ Frequenza: $\nu = \frac{1}{T} = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$
 $$
 \displaylines{
 \begin{cases}
-x_0 = A\sin\phi\\
-v_0 = A\omega\cos\phi\\
-\end{cases}
+x_{0} &= A\sin\phi\\
+v_{0} &= A\omega\cos\phi\\
+\end{cases}; 
+\begin{cases}
+A\sin\phi &= x_{0}               \\
+A\cos\phi &= \frac{v_{0}}{\omega} \\
+\end{cases} \\
+\begin{cases}
+A^{2}(\sin^{2}\phi+\cos^{2}\phi) &= x_{0}^{2} + \left(\frac{v_{0}}{\omega}\right)^{2}\\
+\frac{\sin\phi}{\cos\phi} &= \frac{x_{0}}{\left(\frac{v_{0}}{\omega}\right)} \\
+\end{cases} \\
+\begin{cases}
+A        &= \sqrt{x_{0}^{2} + \left(\frac{v_{0}}{\omega}\right)^{2}}\\
+\tan\phi &= \frac{x_{0}\omega}{v_{0}} \\
+\end{cases} \\
 }$$
 ### Altro
 - Oscillatore armonico semplice
