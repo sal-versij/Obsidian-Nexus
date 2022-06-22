@@ -280,6 +280,10 @@ $\vec{\omega}$ è unica, $\vec{v}$ dipende dall'asse di rotazione scelto.
   $L_{bot} = 0 \iff \hat{z}$ è un'asse di simmetria e $\vec{L}\parallel\vec{\omega}$; $\vec{\tau}\parallel\vec{\alpha}$
 ### Lavoro ed energia cinetica nel moto rotatorio
 $K_{tot} = \int \frac{1}{2}dm\,v^{2}= \int \frac{1}{2}dm (\omega R)^{2}= \frac{1}{2}\omega^{2}\int R^{2}dm = \frac{1}{2}I_{z}\omega^{2}$
+$W= \Delta K = \frac{1}{2}I_{z}\omega_{f}^{2} - \frac{1}{2}I_{z}\omega_{i}^{2}$
+$dW = dL = d\left(\frac{1}{2}I_{z}\omega^{2}\right) = \frac{1}{2}I_{z}d\left(\omega^{2}\right) = \frac{1}{2}I_{z}\left(2\omega d\omega\right) = I_{z}\omega d\omega$
+$dW = I_{z}\omega d\omega = I_{z} \frac{d\theta}{dt} (\alpha dt) = I_{z}\alpha\,d\theta = I_{z}\alpha\,d\theta$
+
 ### Altro
 - Teorema di Huygens-Steiner
 - Leggi di conservazione nel moto di un corpo rigido
