@@ -270,8 +270,68 @@ $\vec{\omega}$ è unica, $\vec{v}$ dipende dall'asse di rotazione scelto.
 
 > Il moto è equivalente ad un *moto di pura rotazione*, con velocità angolare $\omega$, attorno ad un asse di istantanea rotazione passante per il punto di contatto $Q$.
 
-e.g. applicazione di una forza costante
+```ad-eg
+title: Applicazione di una forza costante
+![[Moto di puro rotolamento - example.jpg]]
+Eq. del moto
 
+$$
+\displaylines{
+\begin{cases}
+\vec{F}_{c,\;tot} &= M\vec{a}_{CM}\\
+\vec{\tau}    &= I_{c}\vec{\alpha}
+\end{cases} \\
+
+\vec{F}_{tot} = M\vec{g} + \vec{F} + \vec{N} + \vec{f} \\
+\vec{\tau}    = \vec{R}\wedge\vec{f} \\
+
+\begin{cases}
+F-f    &= M\vec{a}_{CM}\\
+N - Mg &= 0 \\
+Rf     &= I_{CM}\alpha
+\end{cases};
+\begin{cases}
+f &= I_{CM} \frac{a_{CM}}{R^{2}}\\
+N &= Mg \\
+F &= Ma_{CM}+f
+\end{cases} \\
+
+a_{CM} = \frac{F}{M} \frac{1}{1+\frac{I_{CM}}{MR^{2}}} \\
+f = \frac{F}{1+\frac{MR^{2}}{I_{CM}}}
+}
+$$
+Condizione di non scivolamento
+$f\leq\mu_{s}N = \mu_{s}Mg \implies F\leq\mu_sMg\left(1+\frac{MR^{2}}{I_{CM}}\right)$
+```
+
+```ad-eg
+title: Applicazione di un momento costante
+```
+
+![[Moto di puro rotolamento - example (2).jpg]]
+Eq. del moto
+
+$$
+\displaylines{
+\begin{cases}
+\vec{F}_{c,\;tot} &= M\vec{a}_{CM}\\
+\vec{\tau}    &= I_{c}\vec{\alpha}
+\end{cases} \\
+
+\vec{F}_{tot}    = M\vec{g} + \vec{N} + \vec{f} \\
+\vec{\tau}_{tot} = \vec{\tau} + \vec{R}\wedge\vec{f} \\
+
+\begin{cases}
+f    &= M\vec{a}_{CM}\\
+N - Mg &= 0           \\
+Rf     &= I_{CM}\alpha          \\
+f &= I_{CM} \frac{a_{CM}}{R^{2}} \\
+\end{cases} \\
+
+a_{CM} = \frac{F}{M} \frac{1}{1+\frac{I_{CM}}{MR^{2}}} \\
+f = \frac{F}{1+\frac{MR^{2}}{I_{CM}}}
+}
+$$
 ### Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
 #### Momento Angolare
 - asse di rotazione: asse $\hat{z}$
