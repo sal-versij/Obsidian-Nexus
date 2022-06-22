@@ -1,15 +1,15 @@
 {
   "showCLICommands": false,
   "addExtensionsToInternalLinks": "html",
-  "injectAppCSS": "current",
+  "injectAppCSS": "light",
   "injectThemeCSS": false,
   "customCSSFile": null,
   "displayYAMLFrontmatter": false,
-  "linkStrippingBehaviour": "link",
+  "linkStrippingBehaviour": "text",
   "highDPIDiagrams": true,
   "pandoc": null,
   "pdflatex": null,
   "outputFolder": null,
-  "extraArguments": "",
+  "extraArguments": "-s --toc",
   "exportFrom": "html"
 }
