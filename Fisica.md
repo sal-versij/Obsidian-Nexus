@@ -303,11 +303,8 @@ $$
 Condizione di non scivolamento
 $f\leq\mu_{s}N = \mu_{s}Mg \implies F\leq\mu_sMg\left(1+\frac{MR^{2}}{I_{CM}}\right)$
 ```
-
 ```ad-eg
 title: Applicazione di un momento costante
-```
-
 ![[Moto di puro rotolamento - example (2).jpg]]
 Eq. del moto
 
@@ -322,16 +319,20 @@ $$
 \vec{\tau}_{tot} = \vec{\tau} + \vec{R}\wedge\vec{f} \\
 
 \begin{cases}
-f    &= M\vec{a}_{CM}\\
-N - Mg &= 0           \\
-Rf     &= I_{CM}\alpha          \\
-f &= I_{CM} \frac{a_{CM}}{R^{2}} \\
+f          &= M\vec{a}_{CM} \\
+N - Mg     &= 0              \\
+-\tau + Rf &= -I\alpha        \\
+\alpha     &= \frac{a_{CM}}{R} \\
 \end{cases} \\
 
-a_{CM} = \frac{F}{M} \frac{1}{1+\frac{I_{CM}}{MR^{2}}} \\
-f = \frac{F}{1+\frac{MR^{2}}{I_{CM}}}
+a_{CM} = \frac{\tau}{MR(1+\frac{I}{MR^{2}})} \\
+f = \frac{\tau}{R(1+\frac{I}{MR^{2}})}
 }
 $$
+
+Condizione di non scivolamento
+$f\leq\mu_{s}N = \mu_{s}Mg \implies \tau\leq\mu_sMgR\left(1+\frac{I}{MR^{2}}\right)$
+```
 ### Rotazioni rigide attorno ad un asse fisso in un sistema di riferimento inerziale
 #### Momento Angolare
 - asse di rotazione: asse $\hat{z}$
@@ -385,7 +386,7 @@ $I_{z}\omega = \text{const}$
 $\omega$ variabile se varia $I_{z}$ che piò essere fatta variare cambiando la posizione relativa delle singole parti del corpo
 ## Oscillazioni
 - Oscillatore armonico semplice
-- Sistema massa-molla: equazione del moto e soluzione
+- Sistema massa-molla: equazione del moto e soluzione ($\frac{d^{2}x}{dt^{2}} + \frac{k}{M}x = 0$)
 - Energia cinetica e potenziale nei moti armonici semplici
 - Pendolo semplice
 - Oscillatore armonico smorzato
