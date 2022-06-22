@@ -542,6 +542,28 @@ con:
 - $\alpha_{1}$ e $\alpha_{2}$ soluzioni dell'equazione caratteristica $\alpha^{2}+ 2\gamma\alpha + \omega_{0}^{2} = 0$
 - $\alpha_{1}$ e $\alpha_{2}$ dipendenti dalle condizioni iniziali
 
+Fenomeno **transitorio**: $a_{1}e^{\alpha_{1}t} +a_{2}e^{\alpha_{2}t}$
+Soluzione **persistente**: $x(t) = A\sin(\omega t +\phi)$
+$\omega =$ pulsazione della forza esterna
+$A$ e $\phi =$  funzioni di $\omega$ (N.B.; non più dipendenti dalle condizioni iniziali)
+$A$ e $\phi$ tali che:
+$$
+\displaylines{
+\begin{cases}
+(\omega_{0}^{2}-\omega^{2})A\cos\phi -2\gamma\omega A\sin\phi &= \frac{F_{0}}{m} \\
+(\omega_{0}^{2}-\omega^{2})A\sin\phi +2\gamma\omega A\cos\phi &= 0                \\
+\end{cases} \\ 
+\\
+A(\omega)  = \frac{\left(\frac{F_{0}}{m}\right)}{\sqrt{(\omega_{0}^{2}-\omega^{2})^{2}+(2\gamma\omega)^{2}}} \\
+\tan\phi(\omega) = - \frac{2\gamma\omega}{\omega_{0}^{2}-\omega^{2}} \\
+\\
+\begin{matrix}
+\omega<<\omega_{0} & A\approx \frac{F_{0}}{k}                    & \phi\approx0      \\
+\omega=\omega_{0}  & A=       \frac{F_{0}}{(2m\gamma\omega_{0})} & \phi=\frac{\pi}{2} \\
+\omega>>\omega_{0} & A\approx \frac{F_{0}}{m\omega^{2}}          & \phi\approx\pi      \\
+\end{matrix}
+}
+$$
 ### Altro
 - Oscillatore armonico semplice
 - Energia cinetica e potenziale nei moti armonici semplici ($U(t) = \frac{1}{2}kx^{2} = \frac{1}{2}kA^{2}\sin^{2}(\omega t+\phi)$;  $K(t) = \frac{1}{2}mv^{2} = \frac{1}{2}mA^{2}\omega^{2}\cos^{2}(\omega t+\phi) = \frac{1}{2}kA^{2}\cos^{2}(\omega t+\phi)$; $E = U(t) + K(t) = \frac{1}{2}kA^{2}$)
