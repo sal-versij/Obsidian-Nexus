@@ -279,16 +279,25 @@ $\vec{\omega}$ è unica, $\vec{v}$ dipende dall'asse di rotazione scelto.
   $L_{\bot} = \int dL_{bot} = \int dL\,cos\theta = r\,dm\,\omega\,R\,cos\theta$
   $L_{bot} = 0 \iff \hat{z}$ è un'asse di simmetria e $\vec{L}\parallel\vec{\omega}$; $\vec{\tau}\parallel\vec{\alpha}$
 ### Lavoro ed energia cinetica nel moto rotatorio
+Energia cinetica
 $K_{tot} = \int \frac{1}{2}dm\,v^{2}= \int \frac{1}{2}dm (\omega R)^{2}= \frac{1}{2}\omega^{2}\int R^{2}dm = \frac{1}{2}I_{z}\omega^{2}$
+Lavoro
 $W= \Delta K = \frac{1}{2}I_{z}\omega_{f}^{2} - \frac{1}{2}I_{z}\omega_{i}^{2}$
 $dW = dL = d\left(\frac{1}{2}I_{z}\omega^{2}\right) = \frac{1}{2}I_{z}d\left(\omega^{2}\right) = \frac{1}{2}I_{z}\left(2\omega d\omega\right) = I_{z}\omega d\omega$
-$dW = I_{z}\omega d\omega = I_{z} \frac{d\theta}{dt} (\alpha dt) = I_{z}\alpha\,d\theta = I_{z}\alpha\,d\theta$
+$dW = I_{z}\omega d\omega = I_{z} \frac{d\theta}{dt} (\alpha dt) = I_{z}\alpha\,d\theta = \tau_{z}\,d\theta$
+$W = \int\limits_{\theta_{0}}^{\theta}\tau_{z}d\theta$
+Potenza meccanica
+$P = \frac{dW}{dt} = \tau_{z} \frac{d\theta}{dt}= \tau_{z}\omega$
+Momento di inerzia
+$I = \int dm\,R^2$
+### Teorema di Huygens-Steiner
+ > Si dimostra che il momento di inerzia $I$ di un corpo di massa $M$ rispetto ad un asse che dista $a$ dal $CM$ è dato da
+ > $I = I_{CM} + M\;a^2$
+ > ove $I_{CM}$ è il momento di inerzia rispetto ad un asse parallelo al precedente e passante per $CM$ (Teorema degli assi paralleli)
+### Leggi di conservazione nel moto di un corpo rigido
+#### Conservazione del momento angolare
+$$\frac{d\vec{L}_{tot}}{dt} \equiv \vec{v}_{0} \wedge M \vec{v}_{CM} = 0$$
 
-### Altro
-- Teorema di Huygens-Steiner
-- Leggi di conservazione nel moto di un corpo rigido
-- Moto rototraslatorio
-- Moto di puro rotolamento
 ## Oscillazioni
 - Oscillatore armonico semplice
 - Sistema massa-molla: equazione del moto e soluzione
