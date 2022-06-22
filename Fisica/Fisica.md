@@ -576,10 +576,13 @@ $A(\omega) = \frac{\frac{F_{0}}{m}}{\sqrt{(\omega_{0}^{2}-\omega^{2})^{2}+(2\gam
 - Risonanza ($\omega=\omega_{0},\gamma\to0 \implies A_{max} = A(\omega_{M}) = A(\omega_{0})\to\infty$) (Massimo trasferimento di potenza)
 ## Proprietà meccaniche dei fluidi
 - Generalità sui fluidi
-- Pressione
-- Equilibrio statico di un fluido
-- Legge di Stevino
+  - Densità ($\zeta [\frac{kg}{m^{3}}]$)
+- Pressione ($p = \frac{F}{S}$, $[P_{a}] = [\frac{N}{m^{2}}]$, $[bar] = 10^{5}[P_{a}]$, $[atm] = 1.01325[bar]$)
+- Equilibrio statico di un fluido ($\frac{dp}{dz} = -\zeta g$)
+- Legge di Stevino ($P_{B}-P_{A} = \zeta gh$)
 - Principio di Pascal
+  - in un fluido in qiuete, la pressione è costante su tutti i punti di una superficie orizzontale
+  - Una pressione esercitata su una superficie qualsiasi di un fluido in quiete si trasmette inalterata su ogni superficie in contatto con il fluido e comunque orientata
 - Vasi comunicanti
 - Paradosso idrostatico
 - Principio di Archimede
