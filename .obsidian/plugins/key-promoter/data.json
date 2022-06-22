@@ -17,9 +17,9 @@
     "workspace:close": 19,
     "workspace:close-others": 19,
     "file-explorer:new-file": 1,
-    "find-unlinked-files:delete-unlinked-files": 6,
-    "app:delete-file": 6,
-    "editor:delete-paragraph": 6,
+    "find-unlinked-files:delete-unlinked-files": 9,
+    "app:delete-file": 9,
+    "editor:delete-paragraph": 9,
     "slides:start": 1
   },
   "keyboardStatistics": {
