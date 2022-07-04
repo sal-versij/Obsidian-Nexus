@@ -582,7 +582,7 @@ $X\sim\Gamma(n,\lambda)$
 #### Densità
 $f_{X}(x) = \begin{cases} 0 & x<0 \\ \frac{1}{(n-1)!}\lambda^{n}x^{n-1}e^{-\lambda x} & x>0 \end{cases}$
 ### Distribuzione di Weibul
-Sia $Y\sim Esp(\lambda)$ e sia $\lambda>0$, è detta ***variabile di Weibul*** la variabile aleatoria 
+Sia $Y\sim Esp(\lambda)$ e sia $\lambda>0$, è detta ***variabile di Weibul*** la variabile aleatoria
 $X=Y^{\frac{1}{\alpha}}$;
 $X\sim Wei(\alpha,\lambda)$
 #### Densità
@@ -596,5 +596,33 @@ $F_{X}(x) = P[X\leq x]=P\left[Y^{\frac{1}{\alpha}}\leq x\right]= P[Y\leq x^{\alp
 $f_{X}(x) = F'_X(x)$
 ```
 ##### Osservazione
-$E[X] = \alpha^{\frac{-1}{\lambda}}\Gamma(1+\frac{1}{\lambda})$
-$Var[X] = \alpha^{\frac{-1}{\lambda}}[\Gamma(1+\frac{1}{\lambda})-\Gamma(1+\frac{1}{\lambda})]$
+$E[X] = \alpha^{\frac{-1}{\lambda}} [\Gamma(1+\frac{1}{\lambda})$
+$Var[X] = \alpha^{\frac{-1}{\lambda}}\left[\Gamma\left(1+\frac{1}{\lambda}\right)-\Gamma\left(1+\frac{1}{\lambda}\right)\right]$
+
+#### Funzione di rischio
+Variabile aleatoria $T$ = "tempo di funzionamento"
+Probabilità che, condizionatamente al fatto che fino all'istante $\bar{t}$  l'apparecchio fosse in funzione esso si guasti immediatamente dopo ossia all'istante $\bar{t}+\Delta t$ è
+$P[T\leq \bar{t}+\Delta t|T>\bar{t}]$
+
+### Distribuzione di Gauss o Normale
+Una variabile aleatoria $X$ è detta distribuita secondo una normale (o gaussiana) di parametri $\mu\in\mathbb{R}$ .
+$\sigma\in\mathbb{R}^{+}$ se ha densità di probabilità
+$f_{X}(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^{2}}{2\sigma^{2}}}$
+#### Proprietà
+1. $F_{X}(x)$ è simmetrica rispetto alla retta $x=\mu$
+2. ha un massimo assoluto in $(\mu, \frac{1}{\sigma\sqrt{2\pi}})$
+3. ha asintoto orizzontale $y=0$
+4. ha due flessi in $(\mu-\sigma, \frac{1}{\sigma\sqrt{2\pi e}})$, $(\mu+\sigma, \frac{1}{\sigma\sqrt{2\pi e}})$
+5. $\int\limits_{-\infty}^{+\infty}f_{X}(x)dx = 1$
+6. all'aumentare di $\sigma$ il $max$ diminuisce
+7. se $\mu=0$ è simmetrica rispetto all'asse $\vec{y}$
+8. $E[X] = \mu$, $Var[X] = \sigma^{2}$
+
+#### Funzione di ripartizione
+$F_{X}(t) = P[X\leq t] = \int\limits_{-\infty}^{+\infty} \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\frac{(x-\mu)^{2}}{\sigma^{2}}}dx$
+### Distribuzione normale standardizzata
+$f(x) = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^{2}}$
+```ad-dem
+$f_{X}(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}z^{2}}$
+$z = \frac{x-\mu}{\sigma}$; $x = \sigma z+\mu$
+```
