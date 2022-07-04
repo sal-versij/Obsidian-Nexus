@@ -495,8 +495,9 @@ $P[X=k] = \underbrace{P[\text{insuccesso}]\cdot\ldots\cdot P[\text{insuccesso}]}
 $m_{X}(t) = \frac{pe^{t}}{1-qe^{t}}$; $E[X] = \frac{1}{p}$; $Var[X] = \frac{q}{p^{2}}$
 
 ```ad-dem
-$m_{X(t)}= \sum\limits_{k=0}{n}e^{tk}q^{k-1}p = \sum\limits_{k=0}{n}e^{tk}q^{k-1}p$
-$E[X] = \frac{d}{dt}m_X(t)|_{t=0} = n(pe^{t}+q)^{n-1}pe^{t}|_{t=0} = np$
-$E[X^{2}] = \frac{d^{2}}{dt^{2}}m_{X}(t)|_{t=0} = np[(n-1)(pe^{t}+q)^{n-2}pe^{2t}+(pe^{t}+q)^{n-1}e^{t}]|_{t=0} = np[(n-1)p+1] = np[np-p+1] = n^{2}p^{2}-np^{2}+np$
-$Var[X] = E[X^{2}] - E^{2}[X] = n^{2}p^{2}-np^{2}+np-n^{2}p^{2} = np(1-p) = npq$
+$m_{X(t)}= \sum\limits_{k=1}{\infty}e^{tk}q^{k-1}p = p\sum\limits_{k=1}{\infty}e^{tk}q^{k-1} = pe^{t}\sum\limits_{k=1}{\infty}e^{t(k-1)}q^{k-1} = pe^{t}\sum\limits_{k=1}{\infty}(qe^{t})^{k-1} = pe^{t}\sum\limits_{k=0}{\infty}(qe^{t})^{k} = \frac{pe^{t}}{1-qe^{t}}$
+$E[X] = \frac{d}{dt}m_X(t)|_{t=0} = \frac{pe^{t}(1-qe^{t})-pe^{t}(-qe^{t})}{(1-qe^{t})^{2}}|_{t=0} = \frac{p-pq+pq}{p^{2}} = \frac{1}{p}$
+$E[X^{2}] = \frac{d^{2}}{dt^{2}}m_{X}(t)|_{t=0} = -\frac{1}{p^{2}}$
+$Var[X] = E[X^{2}] - E^{2}[X] = \frac{pe^{t}(1-qe^{t})-pe^{t}(-qe^{t})}{(1-qe^{t})^{2}}|_{t=0}$
 ```
+
