@@ -509,7 +509,21 @@ $P[X=k] = \binom{n}{k}p^{k}q^{n-k}$; $E[X] = np$
 
 ***Distribuzio di Poisson*** come caso limite della **distribuzione binomiale** con $n\to\infty$; $p\to0$; $np\to\mu\neq0$
 
-$P[X=k] = \binom{n}{k}p^{k}q^{n-k} = \frac{n!}{k!(n-k)!}p^{k} \frac{q^{n}}{q^{n}}$
+$$
+\displaylines{
+P[X=k] = \binom{n}{k}p^{k}q^{n-k} = \\
+= \frac{n!}{k!(n-k)!}p^{k}\frac{q^{n}}{q^{k}} = 
+\frac{1}{k!} \frac{n!}{(n-k)!} p^{k} \frac{(1-p)^{n}}{(1-p)^{k}} = \\
+= \frac{1}{k!} \underbrace{\frac{n!}{(n-k)!} \frac{1}{n^{k}} (np)^{k}} (1-p)^{n} \frac{1}{(1-p)^{k}} \\
+\\
+\frac{n!}{(n-k)!}\frac{1}{n^{k}}\sim1 \\
+\frac{n!}{(n-k)!}\frac{1}{n^{k}}(np)^{k}\sim\mu^{k} \\
+(1-p)^{n} \to \left(1- \frac{np}{n}\right)^{n} \sim
+\left(1-\frac{\mu}{n}\right)^{n} \to e^{-\mu} \\
+\frac{1}{(1-p)^{k}} \overline{\to}
+}
+$$
+
 
 
 $E[X] = np$
