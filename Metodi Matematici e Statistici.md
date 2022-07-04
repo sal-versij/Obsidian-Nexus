@@ -16,7 +16,7 @@ Risultati dell'esperimento: insieme
 Esiti dell'esperimento: elementi dell'insieme
 ```
 
-```
+```ad-def
 title: Eventi
 Sottoinsiemi di $\Omega$
 
@@ -24,7 +24,7 @@ $\Omega$: Evento certo
 $\emptyset$: Evento impossibile
 ```
 
-```
+```ad-def
 Due eventi si dicono mutuamente esclusivi se
 $E\cap F=\emptyset$ dove $E\subseteq\Omega, F\subseteq\Omega$
 ```
@@ -35,12 +35,12 @@ Corrispondenze
 | ---------------------- | ---------------------------------------------------------------------------------------------- |
 | $\Omega$               | spazio campionario certo                                                                       |
 | $\omega$               | evento elementare, esito                                                                       |
-| $E$                    | si verifica uno degli esiti contenuti in E, si verifica l'evento E                             |
-| $\bar{E}$              | non si verifica uno degli esiti contenuti in E, non si verifica l'evento E                     |
-| $E \cap F$             | si verificano entrambi gli eventi E ed F                                                       |
-| $E \cup F$             | si verifica almeno uno degli eventi E ed F se F cup E neq emptyset                             |
-| $E / F$                | si verifica E e non F                                                                          |
-| $E \subseteq F$        | se si verifica E allora si verifica F                                                          |
+| $E$                    | si verifica uno degli esiti contenuti in $E$, si verifica l'evento $E$|
+| $\bar{E}$              | non si verifica uno degli esiti contenuti in $E$, non si verifica l'evento $E$                     |
+| $E \cap F$             | si verificano entrambi gli eventi $E$ ed $F$                                                       |
+| $E \cup F$             | si verifica almeno uno degli eventi $E$ ed $F$ se $F\cup E\neq\emptyset$                             |
+| $E / F$                | si verifica $E$ e non $F$                                                                          |
+| $E \subseteq F$        | se si verifica $E$ allora si verifica $F$                                                          |
 | $E \cap F = \emptyset$ | eventi mutuamente esclusivi, se si verifica uno dei due è impossibile che si verifichi l'altro |
 | $\emptyset$            | evento impossibile                                                                             |
 | $\Omega$               | insieme degli esiti                                                                            |
@@ -60,18 +60,19 @@ title:$E\cap F\in\mathscr{F}$
 $E,F\in\mathscr{F}\implies\bar{E},\bar{F}\in\mathscr{F}\implies\bar{F}\cup\bar{F}\in\mathscr{F}\implies\overline{\bar{E}\cup\bar{F}}\in\mathscr{F}\implies E\cap F\in\mathscr{F}$
 ```
 
-!def $T_n$
+```ad-def
+title:$T_n$
 all'$n$-esimo lancio è uscito testa
-def!
+```
 
-!def $C_n$
+```ad-def $C_n$
 all'$n$-esimo lancio è uscito croce
-def!
+```
 
-!def $E_n$
+```ad-def $E_n$
 È uscita testa per la prima volta all'$n$-esimo lancio
 $E_n = C_1\cap C_2\cap C_3\cap\ldots\cap T_n$
-def!
+```
 
 Requisiti per $\mathscr{F}$
 
@@ -87,19 +88,19 @@ $\mathscr{F}\subseteq\mathscr{P}(\Omega)$
 Dato $\Omega$ la più piccola $\sigma$-algebra è $\mathscr{F} = \{\emptyset,\Omega\}$, la più estesa è $\mathscr{P}(\Omega)$
 eg!
 
-!def
-Dato un insieme \Omega, e dati alcuni suoi sottoinsiemi: E_1,E_2,\ldots,E_n si dice $\sigma$-algebra degli E_i la più piccola $\sigma$-algebra di cui hanno parte tutti gli $E_i$
-def!
+```ad-def
+Dato un insieme $\Omega$, e dati alcuni suoi sottoinsiemi: E_1,E_2,\ldots,E_n si dice $\sigma$-algebra degli E_i la più piccola $\sigma$-algebra di cui hanno parte tutti gli $E_i$
+```
 
-!def Definizione classica di probabilità
+```ad-def Definizione classica di probabilità
 $P=\frac{\text{\# casi favorevoli}}{\text{\# casi possibili}}$
-def!
+```
 
-!def Definizione frequentista di probabilità
+```ad-def Definizione frequentista di probabilità
 $P=\frac{\text{\# di successi}}{\text{\# di prove}}$
-def!
+```
 
-!def Definizione di probabilità secondo Kolmogorov
+```ad-def Definizione di probabilità secondo Kolmogorov
 Sia $\Omega$ uno spazio campionario e $\mathscr{F}$ una $\sigma$-algebra
 
 Assiomi:
@@ -114,7 +115,7 @@ Assiomi:
 la propabilità è una corrispondenza é$P:\mathscr{F}\to[0,1]$ che soddisfa gli assiomi precedenti
 
 $(\Omega,\mathscr{F},P)$ è detto spazio delle probabilità
-def!
+```
 
 Preposizione 1
 
@@ -148,18 +149,18 @@ demonstration!
 Proposizione 4
 $P[\cup_{i=1}^{n}E_i] = \sum\limits_{i}{P[E_i]}-\sum\limits_{i<j}{P[E_i\cap E_j]}+\ldots+(-1)^{n+1}P[E_1\cap E_2\cap\ldots\cap E_n]$
 
-!def Probabilità condizionata
+```ad-def Probabilità condizionata
 Siano $E$ ed $F$ due eventi, si chiama probabilità di $E$ dato $F$, e scriveremo $P[E|F]$, la probabilità che si verifichi l'evento $E$ supponendo che si sia verificato l'evento $F$
 $P[E|F]=\frac{P[E\cap F]}{P[F]}\;\;P[F]>0$
 $\implies\begin{cases}P[E\cap F] = P[F]\cdot P[E|F]\\P[E\cap F] = P[E]\cdot P[F|E]\\\end{cases}$
-def!
+```
 
 !th Regole della catena
 Dati $n$ eventi $E_1,E_2,\ldots,E_n$ la cui intersezione ha probabilità positiva ($P[E_1\cap E_2\cap\ldots\cap E_n]>0$), si ha:
 $P[E_1\cap E_2\cap\ldots\cap E_n]=$
 $P[E_1]\cdot P[E_2|E_1]\cdot P[E_3|E_1\cap E_2]\cdot P[E_4|E_1\cap E_2\cap E_3]\cdot\ldots\cdot P[E_n|E_1\cap E_2\cap\ldots\cap E_{n-1}]$
 
-!def Partizione di $\Omega$
+```ad-def Partizione di $\Omega$
 Si dice partizione di $\Omega$ un insieme di eventi $E_i$ (*finito* o *numerabile*) con le seguenti caratteristiche:
 
 1. Ogni $E_i$ ha probabilità diversa da $0$
@@ -169,7 +170,7 @@ Si dice partizione di $\Omega$ un insieme di eventi $E_i$ (*finito* o *numerabil
 3. L'unione di tutti gli E_i copre \Omega
    $\bigcup_{i=1}^{n}{E_i}=\Omega$
 
-def!
+```
 th!
 
 !th Formula della probabilità totali
@@ -223,15 +224,15 @@ $E=(E\cap F)\cup(E\cap\bar{F})$
 $P[E]=P[E\cap F]+P[E\cap\bar{F}]=P[E]P[F]+P[E\cap\bar{F}]$
 $P[E\cap\bar{F}]=P[E]-P[E]P[F]=P[E](1-P[F])=P[E]P[\bar{F}]$
 dem!
-!def
+```ad-def
 Una famiglia di $n$ eventi $E_1,E_2,\ldots,E_n$ si dice famiglia di eventi indipendenti se gli eventi $\{E_i\}$ sono a due a due , a tre a tre,... e così via fino ad $n$ ad $n$ indipendenti
-def!
+```
 
-!def Disposti
+```ad-def Disposti
 Si dice che n oggetti sono ordinati (o disposti) in un allinemaneto quando sono collocati in n posti numerati da 1 ad n
-def!
+```
 
-!def Permutazione
+```ad-def Permutazione
 Si dice permutazione di n oggetti distinti ogni allineamento deli oggetti stessi, due permutazioni sono distinte quando differiscono per il posto occupato da almeno un oggetto.
 Indicheremo con P_n il numero di permutazioni
 !th
@@ -244,18 +245,18 @@ Osservazione:
 se gli oggetti sono solo di due tipo $(k,n-k)$
 $P^{*}_{k,n-k}=\frac{n!}{k!(n-k)!}=\binom{n}{k}$
 th!
-def!
+```
 
-!def Disposizioni
+```ad-def Disposizioni
 Si dice disposizione semplice di n oggetti di classe m ogni allineamento di m oggetti scelti fra gli n
 !th
 $D_{n,k}=\frac{n!}{(n-k)!}$
 th!
 Si dice disposizione con ripetizione di n oggetti di classe m ogni allineamento di m oggetti scelti fra gli n con la convenzione che ogni oggetto può essere ripetuto una o più volte
 $D^{*}_{n,k}=n^k$
-def!
+```
 
-!def Combinazioni
+```ad-def Combinazioni
 Si dice combinazione di n oggetti di classe k, ogni raggruppamento di k oggetti comunque scelti tra gli n
 !th
 $C_{n,k}=\binom{n}{k}$
@@ -264,23 +265,23 @@ Si dice combinazione con ripetizione di n oggetti di classe k, ogni raggruppamen
 !th
 $C^{*}_{n,k}=\binom{n+k-1}{k}$
 th!
-def!
+```
 
 Variabili aleatorie
 consideriamo lo spazio di probabilità $(\Omega,\mathscr{F},P)$
 $X:\Omega\to\mathbb{R}\;\;\;\;\;\;X(\omega)=x\;\;\;\;x\in\mathbb{R}$
 $\Omega=\{\omega_1,\omega_2,\ldots,\omega_n\}$
-!def
+```ad-def
 Dato uno spazio di probabilità $(\Omega,\mathscr{F},P)$ si dice variabile aleatoria una corrispondenza tra gli evlementi di \Omega e i numeri (reali), tale corrispondenza deve soddisfare la condizione
 $A_t=\{\omega|X(\omega)\leq t\}\in\mathscr{F}\;\;\;\;\forall t\in\mathbb{R}$
-def!
+```
 
 È detto supporto l'insieme dei valori che la variabile aleatoria può assumere
-!def Funzioni di ripartizione
+```ad-def Funzioni di ripartizione
 Data la variabile aleatoria $X$, è detta funzione di rpartizione di $X$ la funzione
 $F_x(t)=P[X\leq t]=P[A_t]$
 $F_x(t):\mathbb{R}\to[0,1]$
-def!
+```
 
 Proprietà
 
@@ -294,19 +295,19 @@ Proprietà
    per ogni valore $x_0\in\mathbb{R}$
    $F_x[x_0](=P[X\leq x_0])=\lim\limits_{t\to x_0^+}F_x(t)$
 
-!def
+```ad-def
 Se la variabile aleatoria X può assumere solo un numero finito( o al più numerabile) di valori, la relativa F_x sarà costante a tratti
 e la variabile viene detta descreta
 Se X può assumere i valori di un internvallo $I\subset\mathbb{R}$, allora F_x è generalmente continua e la variabile è detta continua
-def!
+```
 ### Densità di variabili aleatorie
 #### Caso discreto
 Una variabile aleatoria $X$ discreta può assumeresolo alcuni valori $x_i$ ($i=1,\ldots,n$ / $i=1,\ldots$)
 $P[X=x_i]\rightarrow\sum\limits_i{P[X=x_i]}=1$
-!def Densità di probabilità
+```ad-def Densità di probabilità
 La funzione $P_x:\mathbb{R}\to[0,1]$ definita dalla relazione
 $P_X(x)=P[X=x]=\begin{cases}P[X=x_i]&x=x_1 &\text{per un certo i}\\0 &x\neq x_i &\forall i\end{cases}$
-def!
+```
 
 $A=\{x_1|a<x_{i}\leq b\}$
 $P[a<X\leq b]=\sum\limits_{i\in A} P[X=x_i]=\sum\limits_{i\in A} P_X(x_i)$
@@ -330,11 +331,11 @@ $P[X\in I_b]=P[I_b]=P[I_{a}\cup I_{ab}]=P[I_{a}] + P[I_{ab}]$
 $P[I_{a}\cup I_{ab}]=P[I_{b}]-P[I_{a}]=P[X\leq b]-P[X\leq a]=F_{X}(b)-F_{X}(a)=\int\limits_{-\infty}^{b}f_X(x)dx-\int\limits_{-\infty}^{a}f_X(x)dx=\int\limits_{a}^{b}f_X(x)dx$
 dem!
 
-!def
+```ad-def
 Sia $X$ una variabile aleatoria continua, se esiste una funzione $f_X$ tale che $\forall a,b\in\mathbb{R}$
 $P[a<X\leq b]=\int\limits_{a}^{b}f_X(x)dx$
 allora $f_X$ è detta funzione densità di probabilità
-def!
+```
 
 osservazioni:
 
@@ -356,7 +357,7 @@ $\int\limits_{a}^{b}f_X(x)dx=\int\limits_{g(a)}^{g(b)}f_{X}(h(y))|\frac{dx}{dy}|
 dem!
 th!
 
-!def Valore Atteso
+```ad-def Valore Atteso
 Data una variabile aleatoria $X$, dotata di funzione di ripartizione, il suo valore atteso (valore medio o speranza matematica), se esiste, è data da
 $E[X]=\int\limits_{0}^{+\infty}[1-F_X(t)]dt-\int\limits_{-\infty}^{0}F_{X}(t)dt$
 si dimostra che
@@ -364,25 +365,25 @@ si dimostra che
 - caso discreto: $E[X]=\sum\limits_{i}x_{i}P[X=x_{i}]$
 - caso continuo: $E[X]=\int\limits_{-\infty}^{+\infty}xf_X(x)$
 
-def!
+```
 
-!def Moda
+```ad-def Moda
 Sia $X$ una variabile aleatoria, discreta o continua, si chiama moda di X il valore, se esiste, per cui è massima la densità
-def!
+```
 
-!def Quantile
+```ad-def Quantile
 Dato $\alpha\in(0,1)$, si dice quantile di ordine $\alpha$ della variabile aleatoria $X$ il più piccolo numero $x_\alpha$ tale che
 $P[X<x_{\alpha}]\leq \alpha \leq P[X\leq x_{\alpha}]$
-def!
+```
 
-!def Mediana
+```ad-def Mediana
 Si dice mediana della vbariabile aleatoria $X$ il quantile di ordine $0.5$($x_{0.5}$)
-def!
+```
 
-!def Varianza
+```ad-def Varianza
 Data una variabile aleatoria $X$, il cui valore atteso vale $E[X]=\mu$ si chiama varianza di $X$, e si indica con $Var[X]$, il seguente valore atteso
 $Var[X]=E[(X-\mu)^2]$
-def!
+```
 
 Proprietà:
 $Var[X]=E[X^2]-\mu^2$
@@ -410,19 +411,19 @@ th!
 
 !th Disuguaglianza di cebicev
 $P[|X-E[X]|\geq \epsilon]\leq \frac{Var[X]}{\epsilon^{2}}\quad\quad\forall\epsilon>0$
-!def Momenti di una variabile aleatoria
+```ad-def Momenti di una variabile aleatoria
 Si dice momento $k$-esimo di una variabile aleatoria $X$, e si indica con $\mu_k$, la seguente quantità
 $\mu_{k}=E[X^{k}]$
 
 - Caso discreto: $\mu_{k}=\sum\limits\limits_{i}x_{i}^{k}P_{X}(x_{i})$
 - Caso continuo: $\int\limits_{-\infty}^{+\infty}x^{k}f_{X}(x)dx$
 
-def!
+```
 
 Osservazione: $Var[X]=\mu_2-(\mu_1)^2$
-!def Funzione generatrive dei momenti
+```ad-def Funzione generatrive dei momenti
 $m_{x}(t)=E[e^{tx}]$
-def!
+```
 Proprietà:
 
 - $\mu_{1}=[\frac{d}{dt}m_{x}(t)]_{t=0}$
