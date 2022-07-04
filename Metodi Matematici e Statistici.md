@@ -426,10 +426,13 @@ $\mu_{X}(t)=E[e^{tx}]$
   allora $X$ e $Y$ hanno la medesima densità
 - Se $X$ possiede la funzione generatrice dei momenti e $Y=aX+b$, allora esiste anche $m_y(t)$ e
   $m_{y}(t)=e^{tb}m_x(at)$
-## Schema di Bernoulli
+## Schemi e distribuzioni
+### Schema di Bernoulli
 Consideriamo un esperimento che si può concludere solo in due modi chiamati convenzionalmente successo ed insuccesso; un esperimento di questo tipo è detto di ***Bernoulli***
 
 Sia $p$ la probabilità che si verifichi il successo e $q$ quella dell'insuccesso $q = 1-p$
+
+Una sequenza di **prove di Bernanilli**, tra di loro indipendenti, per le quali la probabilità del successo si mantiene invariata è detto ***schema di Bernoulli***
 ### Distribuzione di Bernoulli
 Una variabile aleatoria $X$ che vale $1$ se la **prova di Bernoulli** si è conclusa con il successo e $0$ altrimenti è detta **variabile aleatoria di Bernoulli** di parametro $p$ in simboli $X\sim Ber(p)$
 #### Densità
@@ -451,12 +454,10 @@ $[Var[X]=E[(X-E[X])^{2}]]=E[X^{2}]-E^{2}[X]$
 $E[X^{2}]= \frac{d^{2}}{dt^{2}}\mu_{X}(t)|_{t=0} = pe^{t}|_{t=0}=p$
 $Var[X] = p-p^{2} = p(1-p) = pq$
 ```
-### Schema di Bernoulli
-Una sequenza di **prove di Bernanilli**, tra di loro indipendenti, per le quali la probabilità del successo si mantiene invariata è detto ***schema di Bernoulli***
 ### Distribuzione Binomiale
 Le variabili aleatorie $X$ che conta il numero di successi in un prova di uno **schema di Bernoulli**, dove $p$ è la probabilita del singolo successo, è detta *Binomiale*.
- 
-In simboli 
+
+In simboli
 $X\sim Bin(p)$
 #### Densità
 $P[X=k] = \binom{n}{k}p^{k}q^{n-k}$
@@ -505,8 +506,6 @@ $P[X=k] = \binom{k-1}{n-1}p^{n}q^{k-n}$
 #### Momenti
 $\mu_{X}(t) = \left(\frac{pe^{t}}{1-qe^{t}}\right)^{n}\;\;\;t<ln\frac{1}{q}$; $E[X] = \frac{n}{p}$; $Var[X] = n\frac{q}{p^{2}}$
 ### Distribuzione di Poisson
-$P[X=k] = \binom{n}{k}p^{k}q^{n-k}$; $E[X] = np$
-
 ***Distribuzio di Poisson*** come caso limite della **distribuzione binomiale** con $n\to\infty$; $p\to0$; $np\to\mu\neq0$
 
 $$
@@ -520,13 +519,24 @@ P[X=k] = \binom{n}{k}p^{k}q^{n-k} = \\
 \frac{n!}{(n-k)!}\frac{1}{n^{k}}(np)^{k}\sim\mu^{k} \\
 (1-p)^{n} \to \left(1- \frac{np}{n}\right)^{n} \sim
 \left(1-\frac{\mu}{n}\right)^{n} \to e^{-\mu} \\
-\frac{1}{(1-p)^{k}} \overline{\to}
+\frac{1}{(1-p)^{k}} \overset{p\to0}{\to} 1 \\ 
+\\
+P[X=k] = \frac{1}{k!} \mu^{k} e^{-\mu} = \frac{\mu^{k}e^{-\mu}}{k!}
 }
 $$
 
+La variabile aleatoria avente densità $P[X=k] = \frac{\mu^{k}e^{-\mu}}{k!}$ è detta ***variabile di Poisson*** di parametro $\mu$
+$X\sim Poi(\mu)$
+#### Densità
+$P[X=k] = \frac{\mu^{k}e^{-\mu}}{k!}$
+#### Momenti
+$\mu_{X}(t) = e^{\mu(e^{t}-1)}$; $E[X] = Var[X] = \mu$
 
+```ad-dem
+$\mu_{X}(t) = \sum\limits_{k=0}^{\infty}e^{tk} \frac{e^{-\mu}\mu^{k}}{k!} = e^{-\mu}\sum\limits_{k=0}^{\infty}\frac{(e^{t}\mu)^{k}}{k!} = e^{-\mu}e^{\mu e^{t}} = e^{\mu(e^{t}-1)}$
+$E[X] = \frac{d}{dt}m_X(t)|_{t=0} = \mu e^{\mu(e^{t}-1)} e^{t}|_{t=0} = \mu$
+$E[X^{2}] = \frac{d^{2}}{dt^{2}}\mu_{X}(t)|_{t=0} = \mu [e^{\mu(e^{t}-1)}\mu e^{t}e^{t} + e^{\mu(e^{t}-1)}e^{t}] |_{t=0} = \mu [e^{\mu(e^{t}-1)}\mu e^{2t} + e^{t}e^{\mu(e^{t}-1)}]_{t=0} = \mu(\mu + 1)$
+$Var[X] = E[X^{2}] - E^{2}[X] = \mu(\mu + 1) - \mu^{2} = \mu$
 
-$E[X] = np$
-
-
-p o mp µ to PINK I p q po o up µ ritenta pu Far É Fuffa lupi n pt è m sops.in È In_ È In Inn µ n pt 1 Il 1 Il in è a L µ in Plan Definizione La variabile aleatoria avente densità PLX ht è detta variabile di Poisson di parametro µ X Poi µ Momenti della distribuzione di Poisson male e ELI µ me Ma E lett Dim ma_Eine 4 O inte imene ente al mittente EHI Famille Ehi mollemente e e µ TU EHfm.tl ufe nitriti µ ente nittitante µ un Va LA ELI LEGIT µ µ µ µ
+```
+### Schema di Poisson
