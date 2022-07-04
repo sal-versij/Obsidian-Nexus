@@ -4,16 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "c0f964a93bd7f3cd",
-        "type": "leaf",
-        "state": {
-          "type": "pdf",
-          "state": {
-            "file": "handouts/metodi/metodi statistici 2021-10-07.pdf"
-          }
-        }
-      },
-      {
         "id": "50ec362044e6fe93",
         "type": "leaf",
         "state": {
@@ -173,14 +163,14 @@
   "active": "50ec362044e6fe93",
   "lastOpenFiles": [
     "Metodi Matematici e Statistici.md",
+    "handouts/metodi/metodi statistici 2021-10-14.pdf",
+    "handouts/metodi/metodi statistici 2021-10-12.pdf",
     "handouts/metodi/metodi statistici 2021-10-07.pdf",
     "Fisica/Fisica.md",
     "Fisica/Fisica.pandoc.md",
     "Cinematica.md",
     "Introduzione.md",
     "Fisica.md",
-    "2022-03-07.md",
-    "handouts/Fisica/ESERCIZI IN AULA/Esercizio_30.pdf",
-    "handouts/Fisica/LEZIONI/4 - CONSERVAZIONE DELL_ENERGIA.pdf"
+    "2022-03-07.md"
   ]
 }
