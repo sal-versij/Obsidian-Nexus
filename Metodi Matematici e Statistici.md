@@ -543,4 +543,37 @@ $Var[X] = E[X^{2}] - E^{2}[X] = \mu(\mu + 1) - \mu^{2} = \mu$
 In un certo intervallo di tempo (o di spazio) si manifestano degli eventi, chiamati "arrivi", che soddisfano le seguenti condizioni:
 1. non vi sono più arrivi simultanei (non ci sono sovrapposizioni)
 2. il numero medio di arrivi nell'unità di tempo è costante (intensità è costante)
-3.  3 ciascun arrivo avviene in modo indipendente dagli altri
+3. ciascun arrivo avviene in modo indipendente dagli altri
+
+### Processo di Poisson
+```ad-def
+La variabile aleatoria $N_{t}$ che conta in un certo intervallo di tempo $t$ il numero di arrivi in uno *schema di Poisson* di intensità $1$ è detta ***Processo di Poisson***
+```
+#### Caratteristiche
+1. $N_{0} = 0$
+2. $N_{t+s}=N_{t}+N_{s}$
+3. se $\Delta t\to0$
+   $P[N_{t+\Delta t}-N_{t} = 1] = \lambda\Delta t +o(\Delta t)$
+   $P[N_{t+\Delta t}-N_{t} \geq 1] = o(\Delta t)$
+   $P[N_{t+\Delta t}-N_{t} = 0] = 1 - \lambda\Delta t +o(\Delta t)$
+#### Proprietà
+Sia $N_{t}$ un **processo di Poisson** di intensità $\lambda$, allora 
+$N_{t}\sim Poi(\mu=\lambda t)$
+### Distribuzione Esponenziale
+La variabile aleatoria "tempo di attesa del primo arrivo in un processo di Poisson di intensità $\lambda$" è detta ***Esponenziale di variabile $\lambda$***
+#### Funzione di densità
+$f_{X(x) =}\begin{cases} 0 & x<0 \\ \lambda e^{-\lambda x} &x>0 \end{cases}$
+```ad-dem
+$F_{X}(t) = P[X\leq t]$
+$P[X>t] = 1-P[X\leq t] = 1-F_{X}(t) \implies F_X(t) = 1-P[X>t] = 1-P[N_{t} = 0] = 1-i^{\lambda t} \implies f_{X(t)}= \frac{d}{dt}F_{X(t)}= \lambdae^{-\lambda t}$
+```
+#### Momenti
+$\mu_{X}(t) = \frac{\lambda}{\lambda-t}\;\;\;t<\lambda$; $E[X] = \frac{1}{\lambda}$; $Var[X] = \frac{1}{\lambda^{2}}$
+
+```ad-dem
+$\mu_{X}(t) = \int\limits_{-\infty}^{+\infty}d^{tx}f_{X}(x)dx = \int\limits_{0}^{+\infty}d^{tx}\lambdae^{-\lambda x}dx = \lambda\int\limits_{0}^{\infty}e^{(t-\lambda)x}dx$
+$E[X] = \frac{d}{dt}m_X(t)|_{t=0} = \mu e^{\mu(e^{t}-1)} e^{t}|_{t=0} = \mu$
+$E[X^{2}] = \frac{d^{2}}{dt^{2}}\mu_{X}(t)|_{t=0} = \mu [e^{\mu(e^{t}-1)}\mu e^{t}e^{t} + e^{\mu(e^{t}-1)}e^{t}] |_{t=0} = \mu [e^{\mu(e^{t}-1)}\mu e^{2t} + e^{t}e^{\mu(e^{t}-1)}]_{t=0} = \mu(\mu + 1)$
+$Var[X] = E[X^{2}] - E^{2}[X] = \mu(\mu + 1) - \mu^{2} = \mu$
+
+```
