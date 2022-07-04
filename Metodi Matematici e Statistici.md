@@ -624,5 +624,7 @@ $F_{X}(t) = P[X\leq t] = \int\limits_{-\infty}^{+\infty} \frac{1}{\sigma\sqrt{2\
 $f(x) = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^{2}}$
 ```ad-dem
 $f_{X}(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}z^{2}}$
-$z = \frac{x-\mu}{\sigma}$; $x = \sigma z+\mu$
+$z = \frac{x-\mu}{\sigma}$; $x = \sigma z+\mu$; $dx = \sigma dz$
+$\frac{1}{\sigma\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2} \left(\frac{x-\mu}{\sigma}\right)^{2}}dx \frac{1}{\sigma\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2}z^{2}} \sigma dz = \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2}z^{2}} dz$
+$f(z) = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}z^{2}}$
 ```
