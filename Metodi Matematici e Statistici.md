@@ -29,34 +29,35 @@ Due eventi si dicono mutuamente esclusivi se
 $E\cap F=\emptyset$ dove $E\subseteq\Omega, F\subseteq\Omega$
 ```
 ### Corrispondenze
-| Simbolo                         | definizione                                                                                    |
-| ------------------------------- | ---------------------------------------------------------------------------------------------- |
-| $\Omega$                        | spazio campionario certo                                                                       |
-| $\omega$                        | evento elementare, esito                                                                       |
-| $E$                             | si verifica uno degli esiti contenuti in $E$, si verifica l'evento $E$                         |
-| $\bar{E}$                       | non si verifica uno degli esiti contenuti in $E$, non si verifica l'evento $E$                 |
-| $E \cap F$                      | si verificano entrambi gli eventi $E$ ed $F$                                                   |
-| $E \cup F$                      | si verifica almeno uno degli eventi $E$ ed $F$ se $F\cup E\neq\emptyset$                       |
-| $E / F$                         | si verifica $E$ e non $F$                                                                      |
-| $E \subseteq F$                 | se si verifica $E$ allora si verifica $F$                                                      |
-| $E \cap F = \emptyset$          | eventi mutuamente esclusivi, se si verifica uno dei due è impossibile che si verifichi l'altro |
-| $\emptyset$                     | evento impossibile                                                                             |
-| $\Omega$                        | insieme degli esiti                                                                            |
-| $\mathscr{F}$                   | insieme degli eveti                                                                            |
-| ### Requisiti per $\mathscr{F}$ |                                                                                                |
-| ```ad-def                       |                                                                                                |
-| title:Algebra                   |                                                                                                |
+| Simbolo                | definizione                                                                                    |
+| ---------------------- | ---------------------------------------------------------------------------------------------- |
+| $\Omega$               | spazio campionario certo                                                                       |
+| $\omega$               | evento elementare, esito                                                                       |
+| $E$                    | si verifica uno degli esiti contenuti in $E$, si verifica l'evento $E$                         |
+| $\bar{E}$              | non si verifica uno degli esiti contenuti in $E$, non si verifica l'evento $E$                 |
+| $E \cap F$             | si verificano entrambi gli eventi $E$ ed $F$                                                   |
+| $E \cup F$             | si verifica almeno uno degli eventi $E$ ed $F$ se $F\cup E\neq\emptyset$                       |
+| $E / F$                | si verifica $E$ e non $F$                                                                      |
+| $E \subseteq F$        | se si verifica $E$ allora si verifica $F$                                                      |
+| $E \cap F = \emptyset$ | eventi mutuamente esclusivi, se si verifica uno dei due è impossibile che si verifichi l'altro |
+| $\emptyset$            | evento impossibile                                                                             |
+| $\Omega$               | insieme degli esiti                                                                            |
+| $\mathscr{F}$          | insieme degli eveti                                                                            |
 
+---
+### Requisiti per $\mathscr{F}$
+```ad-def
+title: Algebra
 1. $\Omega \in \mathscr{F}$
 2. $E \in \mathscr{F} \implies \bar{E} \in \mathscr{F}$
 3. $E,F\in\mathscr{F}\implies E\cup F\in\mathscr{F}$
 
-````
+```
 
 ```ad-dem
 title:$E\cap F\in\mathscr{F}$
 $E,F\in\mathscr{F}\implies\bar{E},\bar{F}\in\mathscr{F}\implies\bar{F}\cup\bar{F}\in\mathscr{F}\implies\overline{\bar{E}\cup\bar{F}}\in\mathscr{F}\implies E\cap F\in\mathscr{F}$
-````
+```
 
 ```ad-def
 title:$T_n$
@@ -225,7 +226,7 @@ $P[E\cap\bar{F}]=P[E]-P[E]P[F]=P[E](1-P[F])=P[E]P[\bar{F}]$
 ```ad-def
 Una famiglia di $n$ eventi $E_1,E_2,\ldots,E_n$ si dice famiglia di eventi indipendenti se gli eventi $\{E_i\}$ sono a due a due , a tre a tre,... e così via fino ad $n$ ad $n$ indipendenti
 ```
-## Combinatronics
+## Combinatoria
 ### Disposti
 Si dice che $n$ oggetti sono ordinati (o disposti) in un allinemaneto quando sono collocati in n posti numerati da 1 ad n
 ### Permutazione
@@ -626,3 +627,5 @@ $z = \frac{x-\mu}{\sigma}$; $x = \sigma z+\mu$; $dx = \sigma dz$
 $\frac{1}{\sigma\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2} \left(\frac{x-\mu}{\sigma}\right)^{2}}dx \frac{1}{\sigma\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2}z^{2}} \sigma dz = \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2}z^{2}} dz$
 $f(z) = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}z^{2}}$
 ```
+## Vettori Aleatori
+...
