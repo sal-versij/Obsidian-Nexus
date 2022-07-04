@@ -409,20 +409,20 @@ $\mu_{k}=E[X^{k}]$
 $Var[X]=\mu_2-(\mu_1)^2$
 
 ```ad-def Funzione generatrive dei momenti
-$m_{x}(t)=E[e^{tx}]$
+$\mu_{X}(t)=E[e^{tx}]$
 ```
 #### Proprietà
-- $\mu_{1}=[\frac{d}{dt}m_{x}(t)]_{t=0}$
+- $\mu_{1}=[\frac{d}{dt}\mu_{X}(t)]_{t=0}$
   ```ad-dem
   $\mu_1=\int\limits_{-\infty}^{+\infty}xf_X(x)dx$
-  $m_{x}(t)=\int\limits_{-\infty}^{+\infty}e^{tx}f_{X}(x)dx$
-  $\frac{d}{dt}m_{x}(t)=\int\limits_{-\infty}^{+\infty}xe^{tx}f_{X}(x)dx$
-  $[\frac{d}{dt}m_{x}(t)]_{t=0}=\int\limits_{-\infty}^{+\infty}xf_X(x)dx=\mu_1$
+  $\mu_{X}(t)=\int\limits_{-\infty}^{+\infty}e^{tx}f_{X}(x)dx$
+  $\frac{d}{dt}\mu_{X}(t)=\int\limits_{-\infty}^{+\infty}xe^{tx}f_{X}(x)dx$
+  $[\frac{d}{dt}\mu_{X}(t)]_{t=0}=\int\limits_{-\infty}^{+\infty}xf_X(x)dx=\mu_1$
   ```
 - $\frac{d^{k}}{dt^{k}}(e^{tx})=x^{k}e^{tx}$
 - $\mu_{k}=[\frac{d^{k}}{dt^{k}}m_x(t)]_{t=0}$
 - Siano $X$ e $Y$ due variabili aleatorie, se
-  $m_{x}(t)=m_{y}(t)\quad\forall t\in[-t_{0},t_{0}]$
+  $\mu_{X}(t)=m_{y}(t)\quad\forall t\in[-t_{0},t_{0}]$
   allora $X$ e $Y$ hanno la medesima densità
 - Se $X$ possiede la funzione generatrice dei momenti e $Y=aX+b$, allora esiste anche $m_y(t)$ e
   $m_{y}(t)=e^{tb}m_x(at)$
@@ -440,28 +440,24 @@ $P[X=n] = p^{n}q^{1-n}$
 ```
 #### Momenti
 ```ad-def
-$m_{X}(t) = E[e^{Xt}]$; $E[X] = \frac{d}{dt}m_X(t)|_{t=0}$
+$\mu_{X}(t) = E[e^{Xt}]$; $E[X] = \frac{d}{dt}m_X(t)|_{t=0}$
 ```
 
-$m_{X}(t) = pe^{t}+q$; $E[X] = 1$; $Var[X] = pq$
+$\mu_{X}(t) = pe^{t}+q$; $E[X] = 1$; $Var[X] = pq$
 
 ```ad-dem
 $E[X] = pe^{t}+q|_{t=0} = p+q = 1$
 $[Var[X]=E[(X-E[X])^{2}]]=E[X^{2}]-E^{2}[X]$
-$E[X^{2}]= \frac{d^{2}}{dt^{2}}m_{X}(t)|_{t=0} = pe^{t}|_{t=0}=p$
+$E[X^{2}]= \frac{d^{2}}{dt^{2}}\mu_{X}(t)|_{t=0} = pe^{t}|_{t=0}=p$
 $Var[X] = p-p^{2} = p(1-p) = pq$
 ```
 ### Schema di Bernoulli
 Una sequenza di **prove di Bernanilli**, tra di loro indipendenti, per le quali la probabilità del successo si mantiene invariata è detto ***schema di Bernoulli***
-
-```ad-def
-title: Distribuzione binomiale
-
- Le variabili aleatorie $X$ che conta il numero di successi in un prova di uno **schema di Bernoulli**, dove $p$ è la probabilita del singolo successo, è detta *Binomiale*.
+### Distribuzione Binomiale
+Le variabili aleatorie $X$ che conta il numero di successi in un prova di uno **schema di Bernoulli**, dove $p$ è la probabilita del singolo successo, è detta *Binomiale*.
  
 In simboli 
 $X\sim Bin(p)$
-```
 #### Densità
 $P[X=k] = \binom{n}{k}p^{k}q^{n-k}$
 
@@ -473,12 +469,12 @@ Probabilità di $k$ successi è $p^{k}$
 Probabilità di $n-k$ insuccessi è $q^{n-k}$
 ```
 #### Momenti
-$m_{X}(t) = (pe^{t}+q)^{n}$; $E[X] = np$; $Var[X] = npq$
+$\mu_{X}(t) = (pe^{t}+q)^{n}$; $E[X] = np$; $Var[X] = npq$
 
 ```ad-dem
 $m_{X(t)}= \sum\limits_{k=0}{n}e^{tk}\binom{n}{k}p^{k}q^{n-k} = \sum\limits_{k=0}{n}\binom{n}{k}(pe^{t})^{k}q^{n-k} = (pe^{t}+q)^{n}$
 $E[X] = \frac{d}{dt}m_X(t)|_{t=0} = n(pe^{t}+q)^{n-1}pe^{t}|_{t=0} = np$
-$E[X^{2}] = \frac{d^{2}}{dt^{2}}m_{X}(t)|_{t=0} = np[(n-1)(pe^{t}+q)^{n-2}pe^{2t}+(pe^{t}+q)^{n-1}e^{t}]|_{t=0} = np[(n-1)p+1] = np[np-p+1] = n^{2}p^{2}-np^{2}+np$
+$E[X^{2}] = \frac{d^{2}}{dt^{2}}\mu_{X}(t)|_{t=0} = np[(n-1)(pe^{t}+q)^{n-2}pe^{2t}+(pe^{t}+q)^{n-1}e^{t}]|_{t=0} = np[(n-1)p+1] = np[np-p+1] = n^{2}p^{2}-np^{2}+np$
 $Var[X] = E[X^{2}] - E^{2}[X] = n^{2}p^{2}-np^{2}+np-n^{2}p^{2} = np(1-p) = npq$
 ```
 ### Distribuzione geometrica
@@ -492,22 +488,31 @@ $\{X=k\}$ corrisponde alla situazione in cui si sono verificati $k-1$ successi e
 $P[X=k] = \underbrace{P[\text{insuccesso}]\cdot\ldots\cdot P[\text{insuccesso}]}_{k-1\text{ volte}}\cdot P[\text{successo}] = q^{k-1}p$
 ```
 #### Momenti
-$m_{X}(t) = \frac{pe^{t}}{1-qe^{t}}$; $E[X] = \frac{1}{p}$; $Var[X] = \frac{q}{p^{2}}$
+$\mu_{X}(t) = \frac{pe^{t}}{1-qe^{t}}\;\;\;t<ln\frac{1}{q}$; $E[X] = \frac{1}{p}$; $Var[X] = \frac{q}{p^{2}}$
 
 ```ad-dem
 $m_{X(t)}= \sum\limits_{k=1}{\infty}e^{tk}q^{k-1}p = p\sum\limits_{k=1}{\infty}e^{tk}q^{k-1} = pe^{t}\sum\limits_{k=1}{\infty}e^{t(k-1)}q^{k-1} = pe^{t}\sum\limits_{k=1}{\infty}(qe^{t})^{k-1} = pe^{t}\sum\limits_{k=0}{\infty}(qe^{t})^{k} = \frac{pe^{t}}{1-qe^{t}}$
-t< ln
+$t<ln\frac{1}{q}$
 $E[X] = \frac{d}{dt}m_X(t)|_{t=0} = \frac{pe^{t}(1-qe^{t})-pe^{t}(-qe^{t})}{(1-qe^{t})^{2}}|_{t=0} = \frac{pe^{t}}{(1-qe^{t})^{2}}|_{t=0} = \frac{p}{p^{2}} = \frac{1}{p}$
 $E[X^{2}] = = \frac{pe^{t}[(1-qe^{t})^{2} - 2(1-qe^{t})(-qe^{t})]}{(1-qe^{t})^{4}}|_{t=0} = \frac{p[(1-q)^{2} - 2(1-q)(-q)]}{(1-q)^{4}} = \frac{1+q}{p^{2}}$
 $Var[X] = E[X^{2}] - E^{2}[X] = \frac{(1+q)}{p^{2}} - \frac{1}{p^{2}} = \frac{q}{p^{2}}$
 ```
-
 ### Distribuzione binomiale negativa
 La variabile aleatoria che conta il numero di tentativi necessari al verificarsi dell'$n$-esimo successo di uno **schema di Bernoulli** è detta ***binomiale negativa*** di parametri $n$ e $p$
 $X\sim \overline{Bin}(n,p)$
-
 #### Densità
 $P[X=k] = \binom{k-1}{n-1}p^{n}q^{k-n}$
 #### Momenti
-$m_{X}(t) = \left(\frac{pe^{t}}{1-qe^{t}}\right)^{n}$; $E[X] = \frac{1}{p}$; $Var[X] = \frac{q}{p^{2}}$
+$\mu_{X}(t) = \left(\frac{pe^{t}}{1-qe^{t}}\right)^{n}\;\;\;t<ln\frac{1}{q}$; $E[X] = \frac{n}{p}$; $Var[X] = n\frac{q}{p^{2}}$
+### Distribuzione di Poisson
+$P[X=k] = \binom{n}{k}p^{k}q^{n-k}$; $E[X] = np$
 
+***Distribuzio di Poisson*** come caso limite della **distribuzione binomiale** con $n\to\infty$; $p\to0$; $np\to\mu\neq0$
+
+$P[X=k] = \binom{n}{k}p^{k}q^{n-k} = \frac{n!}{k!(n-k)!}p^{k} \frac{q^{n}}{q^{n}}$
+
+
+$E[X] = np$
+
+
+p o mp µ to PINK I p q po o up µ ritenta pu Far É Fuffa lupi n pt è m sops.in È In_ È In Inn µ n pt 1 Il 1 Il in è a L µ in Plan Definizione La variabile aleatoria avente densità PLX ht è detta variabile di Poisson di parametro µ X Poi µ Momenti della distribuzione di Poisson male e ELI µ me Ma E lett Dim ma_Eine 4 O inte imene ente al mittente EHI Famille Ehi mollemente e e µ TU EHfm.tl ufe nitriti µ ente nittitante µ un Va LA ELI LEGIT µ µ µ µ
