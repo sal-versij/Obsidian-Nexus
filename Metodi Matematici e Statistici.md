@@ -426,3 +426,24 @@ $m_{x}(t)=E[e^{tx}]$
   allora $X$ e $Y$ hanno la medesima densità
 - Se $X$ possiede la funzione generatrice dei momenti e $Y=aX+b$, allora esiste anche $m_y(t)$ e
   $m_{y}(t)=e^{tb}m_x(at)$
+
+## Schema di Bernoulli
+Consideriamo un esperimento che si può concludere solo in due modi chiamati convenzionalmente successo ed insuccesso; un esperimento di questo tipo è detto di ***Bernoulli*** 
+
+Sia $p$ la probabilità che si verifichi il successo e $q$ quella dell'insuccesso $q = 1-p$ 
+### Distribuzione di Bernoulli
+Una variabile aleatoria $X$ che vale $1$ se la **prova di Bernoulli** si è conclusa con il successo e $0$ altrimenti è detta **variabile aleatoria di Bernoulli** di parametro $p$ in simboli $X\sim Ber(p)$
+#### Densità
+$P[X=1] = p$
+$P[X=0] = q$
+$P[X=n] = p^{n}q^{1-n}$
+#### Momenti
+$m_{X}(t) = E[e^{Xt}]$
+$E[X] = \frac{d}{dt}m_X(t)|_{t=0}$
+$m_{X}(t) = pe^{t}+q$
+$E[X] = pe^{t}+q|_{t=0}$
+$Var[X] = pq$
+$[Var[X]=E[(X-E[X])^{2}]]=E[X^{2}]-E^{2}[X]$
+$E[X^{2}]= \frac{d^{2}}{dt^{2}}m_{X}(t)|__$
+### Schema di Bernoulli
+Una sequenza di prove di Bernanilli Una sequenza di prove di Bernoulli tra di loro indipendenti per le quali la probabilità del successo si mantiene invariata è dello schema di Bernoulli Distribuzione binomiale Definition Le variabili aleatorie X che conta il numero di successi in un prova di uno schema di Bernoulli dove p è la probabilita del singolo successo è detta Binomiale in simboli la Bin m P Proprietà densità della distribuzione binomiale PLX 4 1 p q Dim n tentativi 4 successi n h insuccessi Probabilità di 4 succhi è p l n 4 immensa q PLX eh p q Proprietà Momenti della di distribuzione Binomiale mettle g pet E LA Mp Ver X mpg male fi e 1 pugni È 1 per q petra ma f e petto EHI metti n petra pe m p proc m p Im tif up man retro per petra e E Mp n n p r 1 Mp Mp p 1 Walt ELI E'LA ftp.mptamp nfemp 1 p empq Definizione distribuzione geometrica La variabile aleatoria che conta il numero di prove di uno schema di Bernoulli fino alla comparsa del primo successo è detta geometrica di parametro P dove p rappresenta la probabilità del singolo successo X Geo r Densità della distribuzione geometrica è PLX 4 e poi 1 hei 2 1 4 corrisponde alla situazione in cui si sono vanificati 4 1 successi e un mean Plan.IE fij e.t rlmm7 q p Momenti della distribuzione geometrica ma 1 e FI per tali ELITE E Varie Dim metti E lett E et q p p Eee p È e ite qui p et fiet q e pere get e pe If get pe è get ci III teeny E CM Fr me l e ÈEY No iii EHI Proprietà Sia In Geom p allora P te in 1 i PLX j Din te io j t i triti s t il triti Petrini lxsit.LI YF.­PCANBJ PLAIBIPLB poi Pile
