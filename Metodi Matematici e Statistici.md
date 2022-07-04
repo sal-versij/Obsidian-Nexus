@@ -443,10 +443,10 @@ $P[X=n] = p^{n}q^{1-n}$
 $m_{X}(t) = E[e^{Xt}]$; $E[X] = \frac{d}{dt}m_X(t)|_{t=0}$
 ```
 
-$m_{X}(t) = pe^{t}+q$; $E[X] = p+q$; $Var[X] = pq$
+$m_{X}(t) = pe^{t}+q$; $E[X] = 1$; $Var[X] = pq$
 
 ```ad-dem
-$E[X] = pe^{t}+q|_{t=0} = p+q$
+$E[X] = pe^{t}+q|_{t=0} = p+q = 1$
 $[Var[X]=E[(X-E[X])^{2}]]=E[X^{2}]-E^{2}[X]$
 $E[X^{2}]= \frac{d^{2}}{dt^{2}}m_{X}(t)|_{t=0} = pe^{t}|_{t=0}=p$
 $Var[X] = p-p^{2} = p(1-p) = pq$
@@ -477,8 +477,26 @@ $m_{X}(t) = (pe^{t}+q)^{n}$; $E[X] = np$; $Var[X] = npq$
 
 ```ad-dem
 $m_{X(t)}= \sum\limits_{k=0}{n}e^{tk}\binom{n}{k}p^{k}q^{n-k} = \sum\limits_{k=0}{n}\binom{n}{k}(pe^{t})^{k}q^{n-k} = (pe^{t}+q)^{n}$
-$E[X] = \frac{d}{dt}m_X(t)|_{t=0} = n(pe^{t}+q)^{n-1}pe^{t}|_{t=0}$
+$E[X] = \frac{d}{dt}m_X(t)|_{t=0} = n(pe^{t}+q)^{n-1}pe^{t}|_{t=0} = np$
+$E[X^{2}] = \frac{d^{2}}{dt^{2}}m_{X}(t)|_{t=0} = np[(n-1)(pe^{t}+q)^{n-2}pe^{2t}+(pe^{t}+q)^{n-1}e^{t}]|_{t=0} = np[(n-1)p+1] = np[np-p+1] = n^{2}p^{2}-np^{2}+np$
+$Var[X] = E[X^{2}] - E^{2}[X] = n^{2}p^{2}-np^{2}+np-n^{2}p^{2} = np(1-p) = npq$
 ```
-
 ### Distribuzione geometrica
-La variabile aleatoria che conta il numero di prove di uno schema di Bernoulli fino alla comparsa del primo successo è detta geometrica di parametro P dove p rappresenta la probabilità del singolo successo X Geo r Densità della distribuzione geometrica è PLX 4 e poi 1 hei 2 1 4 corrisponde alla situazione in cui si sono vanificati 4 1 successi e un mean Plan.IE fij e.t rlmm7 q p Momenti della distribuzione geometrica ma 1 e FI per tali ELITE E Varie Dim metti E lett E et q p p Eee p È e ite qui p et fiet q e pere get e pe If get pe è get ci III teeny E CM Fr me l e ÈEY No iii EHI Proprietà Sia In Geom p allora P te in 1 i PLX j Din te io j t i triti s t il triti Petrini lxsit.LI YF.­PCANBJ PLAIBIPLB poi Pile
+La variabile aleatoria che conta il numero di prove di uno **schema di Bernoulli** fino alla comparsa del primo successo è detta ***geometrica*** di parametro $p$, dove $p$ rappresenta la probabilità del singolo successo;
+$X\sim Geo(p)$
+#### Densità
+$P[X=k] = pq^{k-1}$
+
+```ad-dem
+$\{X=k\}$ corrisponde alla situazione in cui si sono verificati $k-1$ successi ed un successo
+$P[X=k] = \underbrace{P[\text{insuccesso}]\cdot\ldots\cdot P[\text{insuccesso}]}_{k-1\text{ volte}}\cdot P[\text{successo}] = q^{k-1}p$
+```
+#### Momenti
+$m_{X}(t) = \frac{pe^{t}}{1-qe^{t}}$; $E[X] = \frac{1}{p}$; $Var[X] = \frac{q}{p^{2}}$
+
+```ad-dem
+$m_{X(t)}= \sum\limits_{k=0}{n}e^{tk}q^{k-1}p = \sum\limits_{k=0}{n}e^{tk}q^{k-1}p$
+$E[X] = \frac{d}{dt}m_X(t)|_{t=0} = n(pe^{t}+q)^{n-1}pe^{t}|_{t=0} = np$
+$E[X^{2}] = \frac{d^{2}}{dt^{2}}m_{X}(t)|_{t=0} = np[(n-1)(pe^{t}+q)^{n-2}pe^{2t}+(pe^{t}+q)^{n-1}e^{t}]|_{t=0} = np[(n-1)p+1] = np[np-p+1] = n^{2}p^{2}-np^{2}+np$
+$Var[X] = E[X^{2}] - E^{2}[X] = n^{2}p^{2}-np^{2}+np-n^{2}p^{2} = np(1-p) = npq$
+```
