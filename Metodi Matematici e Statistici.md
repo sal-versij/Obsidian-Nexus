@@ -541,10 +541,10 @@ $Var[X] = E[X^{2}] - E^{2}[X] = \mu(\mu + 1) - \mu^{2} = \mu$
 ```
 ### Schema di Poisson
 In un certo intervallo di tempo (o di spazio) si manifestano degli eventi, chiamati "arrivi", che soddisfano le seguenti condizioni:
+
 1. non vi sono più arrivi simultanei (non ci sono sovrapposizioni)
 2. il numero medio di arrivi nell'unità di tempo è costante (intensità è costante)
 3. ciascun arrivo avviene in modo indipendente dagli altri
-
 ### Processo di Poisson
 ```ad-def
 La variabile aleatoria $N_{t}$ che conta in un certo intervallo di tempo $t$ il numero di arrivi in uno *schema di Poisson* di intensità $1$ è detta ***Processo di Poisson***
@@ -557,12 +557,13 @@ La variabile aleatoria $N_{t}$ che conta in un certo intervallo di tempo $t$ il 
    $P[N_{t+\Delta t}-N_{t} \geq 1] = o(\Delta t)$
    $P[N_{t+\Delta t}-N_{t} = 0] = 1 - \lambda\Delta t +o(\Delta t)$
 #### Proprietà
-Sia $N_{t}$ un **processo di Poisson** di intensità $\lambda$, allora 
+Sia $N_{t}$ un **processo di Poisson** di intensità $\lambda$, allora
 $N_{t}\sim Poi(\mu=\lambda t)$
 ### Distribuzione Esponenziale
 La variabile aleatoria "tempo di attesa del primo arrivo in un processo di Poisson di intensità $\lambda$" è detta ***Esponenziale di variabile $\lambda$***
-#### Funzione di densità
+#### Densità
 $f_{X(x) =}\begin{cases} 0 & x<0 \\ \lambda e^{-\lambda x} &x>0 \end{cases}$
+
 ```ad-dem
 $F_{X}(t) = P[X\leq t]$
 $P[X>t] = 1-P[X\leq t] = 1-F_{X}(t) \implies F_X(t) = 1-P[X>t] = 1-P[N_{t} = 0] = 1-i^{\lambda t} \implies f_{X(t)}= \frac{d}{dt}F_{X(t)}= \lambdae^{-\lambda t}$
@@ -571,9 +572,29 @@ $P[X>t] = 1-P[X\leq t] = 1-F_{X}(t) \implies F_X(t) = 1-P[X>t] = 1-P[N_{t} = 0] 
 $\mu_{X}(t) = \frac{\lambda}{\lambda-t}\;\;\;t<\lambda$; $E[X] = \frac{1}{\lambda}$; $Var[X] = \frac{1}{\lambda^{2}}$
 
 ```ad-dem
-$\mu_{X}(t) = \int\limits_{-\infty}^{+\infty}d^{tx}f_{X}(x)dx = \int\limits_{0}^{+\infty}d^{tx}\lambdae^{-\lambda x}dx = \lambda\int\limits_{0}^{\infty}e^{(t-\lambda)x}dx$
-$E[X] = \frac{d}{dt}m_X(t)|_{t=0} = \mu e^{\mu(e^{t}-1)} e^{t}|_{t=0} = \mu$
-$E[X^{2}] = \frac{d^{2}}{dt^{2}}\mu_{X}(t)|_{t=0} = \mu [e^{\mu(e^{t}-1)}\mu e^{t}e^{t} + e^{\mu(e^{t}-1)}e^{t}] |_{t=0} = \mu [e^{\mu(e^{t}-1)}\mu e^{2t} + e^{t}e^{\mu(e^{t}-1)}]_{t=0} = \mu(\mu + 1)$
-$Var[X] = E[X^{2}] - E^{2}[X] = \mu(\mu + 1) - \mu^{2} = \mu$
-
+$\mu_{X}(t) = \int\limits_{-\infty}^{+\infty}d^{tx}f_{X}(x)dx = \int\limits_{0}^{+\infty}d^{tx}\lambda e^{-\lambda x}dx = \lambda\int\limits_{0}^{\infty}e^{(t-\lambda)x}dx = \lambda \left[\frac{e^{(t-\lambda)x}}{t-\lambda}\right]_{0}^{\infty} = \lambda \left[\frac{e^{(t-\lambda)\infty}}{t-\lambda} - \frac{1}{t-\lambda}\right] = \frac{\lambda}{\lambda-t}$
 ```
+#### Proprietà (Assenza di memoria)
+$P[X>t+s|X>t] = P[X>t+s]$
+### Distribuzione Gamma
+La variabile aleatoria "tempo di attesa dell'$n$-esimo arrivo di un **processo di Poisson**" è detta ***Gamma*** di parametri $n$ e $\lambda$
+$X\sim\Gamma(n,\lambda)$
+#### Densità
+$f_{X}(x) = \begin{cases} 0 & x<0 \\ \frac{1}{(n-1)!}\lambda^{n}x^{n-1}e^{-\lambda x} & x>0 \end{cases}$
+### Distribuzione di Weibul
+Sia $Y\sim Esp(\lambda)$ e sia $\lambda>0$, è detta ***variabile di Weibul*** la variabile aleatoria 
+$X=Y^{\frac{1}{\alpha}}$;
+$X\sim Wei(\alpha,\lambda)$
+#### Densità
+Densità di **Weibul**: Funzione rischio
+$f_{X}(x) = \begin{cases} 0 & x<0 \\ \lambda\alpha x^{\lambda-1}e^{-\lambda x^{\alpha}} & x>0 \end{cases}$
+$F_{X(x)}= \begin{cases} 0 & x<0 \\ 1-e^{-\lambda x\alpha} & x\geq0 \end{cases}$
+
+```ad-dem
+$Y\geq0,X=Y^{\frac{1}{\alpha}}$
+$F_{X}(x) = P[X\leq x]=P\left[Y^{\frac{1}{\alpha}}\leq x\right]= P[Y\leq x^{\alpha}] = F_{Y}(x^{\alpha}) = 1-e^{-\lambda x\alpha}$
+$f_{X}(x) = F'_X(x)$
+```
+##### Osservazione
+$E[X] = \alpha^{\frac{-1}{\lambda}}\Gamma(1+\frac{1}{\lambda})$
+$Var[X] = \alpha^{\frac{-1}{\lambda}}[\Gamma(1+\frac{1}{\lambda})-\Gamma(1+\frac{1}{\lambda})]$
