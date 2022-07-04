@@ -540,3 +540,7 @@ $Var[X] = E[X^{2}] - E^{2}[X] = \mu(\mu + 1) - \mu^{2} = \mu$
 
 ```
 ### Schema di Poisson
+In un certo intervallo di tempo (o di spazio) si manifestano degli eventi, chiamati "arrivi", che soddisfano le seguenti condizioni:
+1. non vi sono più arrivi simultanei (non ci sono sovrapposizioni)
+2. il numero medio di arrivi nell'unità di tempo è costante (intensità è costante)
+3.  3 ciascun arrivo avviene in modo indipendente dagli altri
