@@ -59,6 +59,18 @@
       },
       "command": true,
       "title": "Demonstration"
+    },
+    "th": {
+      "type": "th",
+      "color": "42, 144, 162",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": true,
+      "title": "Theorem",
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": true,
