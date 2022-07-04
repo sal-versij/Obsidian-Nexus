@@ -496,8 +496,18 @@ $m_{X}(t) = \frac{pe^{t}}{1-qe^{t}}$; $E[X] = \frac{1}{p}$; $Var[X] = \frac{q}{p
 
 ```ad-dem
 $m_{X(t)}= \sum\limits_{k=1}{\infty}e^{tk}q^{k-1}p = p\sum\limits_{k=1}{\infty}e^{tk}q^{k-1} = pe^{t}\sum\limits_{k=1}{\infty}e^{t(k-1)}q^{k-1} = pe^{t}\sum\limits_{k=1}{\infty}(qe^{t})^{k-1} = pe^{t}\sum\limits_{k=0}{\infty}(qe^{t})^{k} = \frac{pe^{t}}{1-qe^{t}}$
-$E[X] = \frac{d}{dt}m_X(t)|_{t=0} = \frac{pe^{t}(1-qe^{t})-pe^{t}(-qe^{t})}{(1-qe^{t})^{2}}|_{t=0} = \frac{p-pq+pq}{p^{2}} = \frac{1}{p}$
-$E[X^{2}] = \frac{d^{2}}{dt^{2}}m_{X}(t)|_{t=0} = -\frac{1}{p^{2}}$
-$Var[X] = E[X^{2}] - E^{2}[X] = \frac{pe^{t}(1-qe^{t})-pe^{t}(-qe^{t})}{(1-qe^{t})^{2}}|_{t=0}$
+t< ln
+$E[X] = \frac{d}{dt}m_X(t)|_{t=0} = \frac{pe^{t}(1-qe^{t})-pe^{t}(-qe^{t})}{(1-qe^{t})^{2}}|_{t=0} = \frac{pe^{t}}{(1-qe^{t})^{2}}|_{t=0} = \frac{p}{p^{2}} = \frac{1}{p}$
+$E[X^{2}] = = \frac{pe^{t}[(1-qe^{t})^{2} - 2(1-qe^{t})(-qe^{t})]}{(1-qe^{t})^{4}}|_{t=0} = \frac{p[(1-q)^{2} - 2(1-q)(-q)]}{(1-q)^{4}} = \frac{1+q}{p^{2}}$
+$Var[X] = E[X^{2}] - E^{2}[X] = \frac{(1+q)}{p^{2}} - \frac{1}{p^{2}} = \frac{q}{p^{2}}$
 ```
+
+### Distribuzione binomiale negativa
+La variabile aleatoria che conta il numero di tentativi necessari al verificarsi dell'$n$-esimo successo di uno **schema di Bernoulli** è detta ***binomiale negativa*** di parametri $n$ e $p$
+$X\sim \overline{Bin}(n,p)$
+
+#### Densità
+$P[X=k] = \binom{k-1}{n-1}p^{n}q^{k-n}$
+#### Momenti
+$m_{X}(t) = \left(\frac{pe^{t}}{1-qe^{t}}\right)^{n}$; $E[X] = \frac{1}{p}$; $Var[X] = \frac{q}{p^{2}}$
 
