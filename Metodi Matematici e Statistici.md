@@ -845,14 +845,15 @@ Var[\bar{X_{n}}] = Var\left[\frac{X_{1}+X_{2}+\ldots+X_{n}}{n}\right] = \\
 $$
 ```
 #### Distribuzione della media campionaria
-Sia $X_{1},X_{2},\ldots,X_{n}$ un campione estratto da una popolazione $X\sim Norm(\mu=m,\sigma^{2}=\nu)$ allora, detta $\bar{X_{n}}$ la media campionaria, si ha
-$\bar{X_{n}}\sim Norm(\mu=m,\sigma^{2}=\frac{\nu}{n})$
+Sia $X_{1},X_{2},\ldots,X_{n}$ un campione estratto da una popolazione $X\sim Norm(\mu=m,\sigma^{2}=\nu)$ allora
 
-Sia $X_{1},X_{2},\ldots,X_{n}$ un campione estratto da una popolazione $X\sim Norm(\mu=m,\sigma^{2}=\nu)$ allora, detta $S_{0}^{2}$ la varianza campionaria(a media nota), si ha
-$S_{0}^{2}\sim \frac{\nu}{n}X^{2}(\nu=m)$
-
-
-
+- detta $\bar{X_{n}}$ la media campionaria, si ha
+  $\bar{X_{n}}\sim Norm(\mu=m,\sigma^{2}=\frac{\nu}{n})$
+- detta $S_{0}^{2}$ la varianza campionaria(a media nota), si ha
+  $S_{0}^{2}\sim \frac{\nu}{n}X^{2}(\nu=n)$
+  Invece, a media incognita
+  $S_{n}^{2}\sim \frac{\nu}{n-1}X^{2}(\nu=n-1)$
+- $\frac{\bar{X_{n}}-m}{\sqrt{\frac{S_{n}^{2}}{n}}}\sim T(\nu=n-1)$
 ### Momento campionario di ordine $k$
 $M_{n}^{(k)}= \frac{X_{1}^{k}+X_{2}^{k}+\ldots+X_{n}^{k}}{n} = \frac{1}{n}\sum\limits_{i=1}^{n}X_{i}^{k}$
 ### Variazione campionaria
@@ -868,4 +869,27 @@ $S_{n}^{2} = \frac{1}{n-1}(nM_{n}^{(2)}-n\bar{X_{n}^{2}})$
 #### Valore atteso
 Se la popolazione $X$ è dotata di media e varianza ($E[X]=m,Var[X]=\nu$), allora, dato un campione  $X_{1},X_{2},\ldots,X_{n}$, si ha
 $E[S_{0}^{2}]=\nu$; $E[S_{n}^{2}]=\nu$
+## Convergenze
+### Convergenza di una distribuzione
+Si dice che la *successione* di **variabili aleatorie** $\{X_{n}\}$ converge in distribuzione alla **variabile aleatoria** $X$, se
+$\lim\limits_{n\to\infty}F_{X_{n}}(x) = F_X(x)$
+$X_n\overset{d}\to X$ in simboli
+per tutti i valori di $x$ ove $F_{X}(x)$ è continua
+### Convergenza in probabilità
+Si dice che la successione di **variabili aleatorie** $\{X_{n}\}$ converge in probabilità alla **variabvile aleatoria** $X$ se
+$\forall\epsilon>0\;\;\;\;\lim\limits_{n\to\infty}P[|X_{n}-X|<\epsilon] = 1$
+$X_{n}\overset{P}\to X$ in simboli
+### Convergenza quasi certa
+Si dice che la *successione* di **variabili aleatorie** $\{X_{n}\}$ converga quasi certamente alla **variabile aleatoria** $X$, se
+$\forall\epsilon>0\;\;\;\;P[\lim\limits_{n\to\infty}|X_{n}-X|<\epsilon] = 1$
+$X_{n}\overset{q.c.}\to X$ in simboli
 
+### Convergenza in media quadratica
+Si dice che la *successione* di **variabili aleatorie** $\{X_{n}\}$ converga quasi certamente alla **variabile aleatoria** $X$, se
+$\lim\limits_{n\to\infty}E[(X_{n}-X)^2] = 0$
+$X_{n}\overset{m.q.}\to X$ in simboli
+
+### Proprietà
+$(X_{n}\overset{m.q.}\to X \land X_{n}\overset{q.c.}\to X) \implies X_{n}\overset{P}\to X \implies X_n\overset{d}\to X$ 
+### Teorema (Legge debole dei grandi numeri)
+Sia $X_{n}$ una *successione* di **variabili aleatorie** **i.i.d.** proveniente da una popolazione $X$ dotata di v
