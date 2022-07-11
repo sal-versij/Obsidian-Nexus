@@ -883,13 +883,30 @@ $X_{n}\overset{P}\to X$ in simboli
 Si dice che la *successione* di **variabili aleatorie** $\{X_{n}\}$ converga quasi certamente alla **variabile aleatoria** $X$, se
 $\forall\epsilon>0\;\;\;\;P[\lim\limits_{n\to\infty}|X_{n}-X|<\epsilon] = 1$
 $X_{n}\overset{q.c.}\to X$ in simboli
-
 ### Convergenza in media quadratica
 Si dice che la *successione* di **variabili aleatorie** $\{X_{n}\}$ converga quasi certamente alla **variabile aleatoria** $X$, se
 $\lim\limits_{n\to\infty}E[(X_{n}-X)^2] = 0$
 $X_{n}\overset{m.q.}\to X$ in simboli
-
 ### Proprietà
-$(X_{n}\overset{m.q.}\to X \land X_{n}\overset{q.c.}\to X) \implies X_{n}\overset{P}\to X \implies X_n\overset{d}\to X$ 
+$(X_{n}\overset{m.q.}\to X \land X_{n}\overset{q.c.}\to X) \implies X_{n}\overset{P}\to X \implies X_n\overset{d}\to X$
 ### Teorema (Legge debole dei grandi numeri)
-Sia $X_{n}$ una *successione* di **variabili aleatorie** **i.i.d.** proveniente da una popolazione $X$ dotata di v
+Sia $X_{n}$ una *successione* di **variabili aleatorie** **i.i.d.** proveniente da una popolazione $X$ dotata di media($E[X] = m$), allora
+$\forall\epsilon>0\;\;\;\;\lim\limits_{n\to\infty}P[|\bar{X_{n}}-m|<\epsilon] = 1$
+cioè, la *successione* della **media campionaria** ***converge in probabilità*** ad $m$, il **valore atteso** di tutte le $X_{n}$
+### Teorema (Legge forte dei grandi numeri)
+Sia $X_{n}$ una *successione* di **variabili aleatorie** **i.i.d.** proveniente da una popolazione $X$ dotata di media($E[X] = m$), allora
+$\forall\epsilon>0\;\;\;\;P[\lim\limits_{n\to\infty}|\bar{X_{n}}-m|<\epsilon] = 1$
+cioè, la *successione* della **media campionaria** ***converge quasi certamente*** ad $m$, il **valore atteso** di tutte le $X_{n}$
+### Teorema centrale del limite
+Sia $X_{n}$ una *successione* di **variabili aleatorie** **i.i.d.** proveniente da una popolazione $X$ dotata di media e varianza ($E[X] = m$, $Var[X]=\nu$), allora per ogni $x\in\mathbb{R}$
+$\lim\limits_{n\to\infty}P\left[\frac{\bar{X_{n}}-m}{\sqrt{\frac{S_{n}^{2}}{n}}}\leq x\right] = \phi(x)$ (distribuzione normale)
+cioè, la *successione* della **media campionaria** ***converge in legge*** ad una $Norm(\mu=0,\sigma^{2}=1)$
+$\bar{X_{n}}\sim Norm\left(\mu=m,\sigma^{2}=\frac{\nu}{n}\right)$
+### Osservazioni
+1. $Bin(n,p)\approx Norm(\mu=np,\sigma^{2}=np)$
+   se $n\geq30$, $np\geq5$,$nq\geq5$
+2. $\overline{Bin}(n,p)\approx Norm\left(\mu=\frac{n}{p},\sigma^{2}=\frac{n(1-p)}{p^{2}}\right)$
+   se $n\geq30$
+3. $Poi(\lambda)\approx Norm(\mu=\lambda,\sigma^{2}=\lambda)$
+   se $\lambda\geq30$
+   
