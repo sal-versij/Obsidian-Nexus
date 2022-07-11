@@ -814,4 +814,32 @@ Si prova che $E[X] = n$, $Var[X]=2n$
 Siano $Z\simeq N(0,1)$ e $Y=X^{2}(n)$ due **variabili aleatorie** indipendenti.
 Definiamo $X= \frac{Z}{sqrt{\frac{Y}{n}}}$ e si prova che $X$ è una **variabile aleatoria** distribuita secondo una ***t di Student*** con $n$ gradi di liberta.
 
-Diremo che la **variabile aleatoria** $X$ è distribuita secondo una t di Student con $n$ gradi di libertà se è assolutamente continua con densità di probabilità
+Diremo che la **variabile aleatoria** $X$ è distribuita secondo una t di Student con $n$ gradi di libertà, se è assolutamente continua con densità di probabilità
+$f_{X}(t)= \frac{\Gamma\left(\frac{n+1}{2}\right)}{\Gamma\left(\frac{n}{2}\right)} \frac{1}{\sqrt{n\pi}} \left(1+ \frac{t^{2}}{n}\right)^{-\frac{1}{2}(n+1)}$
+
+Si prova che
+
+- $E[X] = 0$ se $n=1$, $Var[X] = \frac{n}{n+1}$ se $n>1$
+- Per $n\geq30$ la **t di Student** approssima $N(0,1)$
+## Campione casuale
+Consideriamo $X_{1},X_{2},\ldots,X_{n}$ una $n$-upla di variabili *indipendenti* ed *indipendentemente distribuite* (**iid**)
+
+Data una **variabile aleatoria** $X$, chiameremo ***campione casuale*** (o più brevemente *campione*) di ampiezza $n$ una $n$-upla di **variabili aleatorie** tra di loro *indipendenti*, ciascuna delle quali *distribuita come la popolazione* $X$.
+
+### Media campionaria
+La ***media campionaria*** di un campione casuale di ampiezza $n$  $X_{1},X_{2},\ldots,X_{n}$ è data da
+$\bar{X_{n}} = \frac{X_{1}+X_{2}+\ldots+X_{n}}{n} = \frac{1}{n}\sum\limits_{i=1}^{n}X_{i}$
+#### Valore atteso e varianza
+Se la popolazione è dotata di media di marianza ($E[X]=m$ e $Var[X]=\nu$), al
+### Momento campionario di ordine $k$
+$M_{n}^{(k)}= \frac{X_{1}^{k}+X_{2}^{k}+\ldots+X_{n}^{k}}{n} = \frac{1}{n}\sum\limits_{i=1}^{n}X_{i}^{k}$
+### Variazione campionaria
+1. Valore atteso noto ($E[X]=m$)
+   $S_{0}^{2} = \frac{1}{n}\sum\limits_{i=1}^{n}(x_{i}-m)^{2}$
+2. Valore atteso incognito
+   $S_{n}^{2} = \frac{1}{n-1}\sum\limits_{i=1}^{n}(x_{i}-\bar X_{n})^{2}$
+#### Proposizione
+Se è nota la media della popolazione $X$, allora
+$S_{0}^{2} = M_{n}^{(2)}-2m\bar{X_{n}}+m^{2}$
+Se la media della popolazione è incognita, allora
+$S_{n}^{2} = \frac{1}{n-1}(nM_{n}^{(2)}-n\bar{X_{n}^{2}})$
