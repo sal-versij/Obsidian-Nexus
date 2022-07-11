@@ -689,7 +689,6 @@ $f_{Y}(y) = \int\limits_{-\infty}^{+\infty}f_{XY}(x,y)dx$
 Osservazione:
 $\int\limits_{-\infty}^{+\infty}f_{X}(x)dx = 1$
 $\int\limits_{-\infty}^{+\infty}f_{Y}(y)dy = 1$
-
 ## Variabili aleatorie indipendenti
 Date $n$ variabili aleatorie $X_{i}$, con $i=1,\ldots,n$, esse si dicono indipendenti se, per ogni scelta degli intervalli $A_{i}$, si ha che
 $P[X_{1}\in A_{1},X_{2}\in A_{2},\ldots,X_{n}\in A_{n}] = P[X_{1}\in A_{1}]\cdot P[X_{2}\in A_{2}]\cdot\ldots\cdot P[X_{n}\in A_{n}]$
@@ -698,7 +697,7 @@ Si dimostra che (nel caso di variabili indipendenti)
 $P_{XY}(x_{i},y_{i}) = P_{X}(x_{i})P_{Y}(y_{i})$
 $f_{XY}(x_{i},y_{i}) = f_{X}(x_{i})f_{Y}(y_{i})$
 $F_{XY}(x,y) = F_{X}(x)F_{Y}(y)$
-## Somma
+## Combinazioni di variabili aleatorie
 ```ad-th
 Dato un vettore aleatorio $(X,Y)$ (discreto o continuo) la somma $U=X+Y$ delle sue componenti ha densità
 $P_{U}(u) = \sum\limits_{k}P_{XY}(k,u-k)$ caso discreto
@@ -714,5 +713,12 @@ E[g(X,Y)] = \int\limits^{+\infty}dx\int\limits^{+\infty}dy\;g(x,y)f_{XY}(x,y)\;\
 }
 $$
 ```
-
 ### Proprietà
+Per ogni copia di variabili aleatorie $(X,Y)$, il valore atteso della somma è uguale alla somma dei valori attesi
+$E[X+Y]=E[X]+E[Y]$
+### Covarianza
+$Cov[X,Y] = E[(X-E[X])(Y-E[Y])]$
+#### Proprietà
+- $Cov[X,Y] = E[XY]-E[X]E[Y]$
+- $Cov[X,\alpha] = 0$
+- $Cov[X,\alpha] = 0$
