@@ -825,12 +825,34 @@ Si prova che
 Consideriamo $X_{1},X_{2},\ldots,X_{n}$ una $n$-upla di variabili *indipendenti* ed *indipendentemente distribuite* (**iid**)
 
 Data una **variabile aleatoria** $X$, chiameremo ***campione casuale*** (o più brevemente *campione*) di ampiezza $n$ una $n$-upla di **variabili aleatorie** tra di loro *indipendenti*, ciascuna delle quali *distribuita come la popolazione* $X$.
-
 ### Media campionaria
 La ***media campionaria*** di un campione casuale di ampiezza $n$  $X_{1},X_{2},\ldots,X_{n}$ è data da
 $\bar{X_{n}} = \frac{X_{1}+X_{2}+\ldots+X_{n}}{n} = \frac{1}{n}\sum\limits_{i=1}^{n}X_{i}$
 #### Valore atteso e varianza
-Se la popolazione è dotata di media di marianza ($E[X]=m$ e $Var[X]=\nu$), al
+Se la *popolazione* è dotata di **media di varianza** ($E[X]=m$ e $Var[X]=\nu$), allora, dato un campione **iid** $X_{1},X_{2},\ldots,X_{n}$, si ha
+$E[\bar{X_{n}}]=m$,$Var[\bar{X_{n}}] = \frac{1}{n}\nu$
+
+```ad-dem
+$$
+\displaylines{
+E[\bar{X_{n}}] = E\left[\frac{X_{1}+X_{2}+\ldots+X_{n}}{n}\right] = \\
+= \frac{1}{n} E[X_{1}+X_{2}+\ldots+X_{n}] \equiv \frac{1}{n}nE[X]=m \\
+\\
+Var[\bar{X_{n}}] = Var\left[\frac{X_{1}+X_{2}+\ldots+X_{n}}{n}\right] = \\
+= \frac{1}{n^{2}} (Var[X_{1}]+Var[X_{2}]+\ldots+Var[X_{n}]) = \\
+= \frac{1}{n^{2}} n Var[X] = \frac{\nu}{n}
+}
+$$
+```
+#### Distribuzione della media campionaria
+Sia $X_{1},X_{2},\ldots,X_{n}$ un campione estratto da una popolazione $X\sim Norm(\mu=m,\sigma^{2}=\nu)$ allora, detta $\bar{X_{n}}$ la media campionaria, si ha
+$\bar{X_{n}}\sim Norm(\mu=m,\sigma^{2}=\frac{\nu}{n})$
+
+Sia $X_{1},X_{2},\ldots,X_{n}$ un campione estratto da una popolazione $X\sim Norm(\mu=m,\sigma^{2}=\nu)$ allora, detta $S_{0}^{2}$ la varianza campionaria(a media nota), si ha
+$S_{0}^{2}\sim \frac{\nu}{n}X^{2}(\nu=m)$
+
+
+
 ### Momento campionario di ordine $k$
 $M_{n}^{(k)}= \frac{X_{1}^{k}+X_{2}^{k}+\ldots+X_{n}^{k}}{n} = \frac{1}{n}\sum\limits_{i=1}^{n}X_{i}^{k}$
 ### Variazione campionaria
@@ -843,3 +865,7 @@ Se è nota la media della popolazione $X$, allora
 $S_{0}^{2} = M_{n}^{(2)}-2m\bar{X_{n}}+m^{2}$
 Se la media della popolazione è incognita, allora
 $S_{n}^{2} = \frac{1}{n-1}(nM_{n}^{(2)}-n\bar{X_{n}^{2}})$
+#### Valore atteso
+Se la popolazione $X$ è dotata di media e varianza ($E[X]=m,Var[X]=\nu$), allora, dato un campione  $X_{1},X_{2},\ldots,X_{n}$, si ha
+$E[S_{0}^{2}]=\nu$; $E[S_{n}^{2}]=\nu$
+
