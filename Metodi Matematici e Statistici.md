@@ -784,15 +784,34 @@ $f_{X}(t)=\begin{cases} \frac{1}{b-a} &\text{se }t\in[a,b] \\ 0 &\text{altriment
 $F_{X}(t)=\begin{cases} 0 &\text{se }t<a \\ \frac{t-a}{b-a} &\text{se }t\in[a,b] \\ 1 &\text{se }t>b \end{cases}$
 $E[X] = \frac{a+b}{2}$
 $Var[X] = \frac{(b-a)^{2}}{12}$
-
 ### Distribuzione esponenziale
 Una **variabile aleatoria** $X$ è detta distribuita secondo un'**esponenziale** di parametro $\lambda\in\mathbb{R}^{+}$ se è assolutamente continua con densità di probabilità
 $f_{X}(t)=\begin{cases} 0 &\text{se }t\leq0 \\ \lambda-e^{-\lambda t} &\text{se }t>0 \end{cases}$
 $F_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ 1-e^{-\lambda t} &\text{se }t\geq0 \end{cases}$
 #### Proprietà
 $P[X>s+t|X>s] = P[X>t] \forall t,s\in\mathbb{R}^{+}$
-
 ### Distribuzione di Weibull
-una variabile aleatoria $Y$ è detta distribuita secondo una **Weibull** di parametri $\alpha,\beta\in\mathbb{R}^{+}$ se è assolutamente continua con densità di probabilità
-$f_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ \alpha\beta t^{\beta-1} &\text{se }t\geq0 \end{cases}$
-$F_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ 1-e^{-\lambda t} &\text{se }t\geq0 \end{cases}$
+Uuna variabile aleatoria $X$ è detta distribuita secondo una **Weibull** di parametri $\alpha,\beta\in\mathbb{R}^{+}$ se è assolutamente continua con densità di probabilità
+$f_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ \alpha\beta t^{\beta-1}e^{-\alpha t^{\beta}} &\text{se }t\geq0 \end{cases}$
+$F_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ 1-e^{-\alpha t^{\beta}} &\text{se }t\geq0 \end{cases}$
+### Distribuzione Normale (di Gauss)
+Una variabile aleatoria $X$ è detta distribuita secondo una **normale** di parametri $\mu\in\mathbb{R},\sigma\in\mathbb{R}^{+}$ se ha densità di probabilità
+$f_{X}(x)= \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$
+
+$B(n,p)\overset{n\to\infty}\to N(\mu,\sigma)\overset{\lambda\to\infty}\leftarrow Pois(\lambda)$
+### Distribuzione $X^{2}$ (chi-quadra)
+Siano $X_{1},X_{2},\ldots,X_{n}$ $n$ **variabili aleatorie** con **distribuzione normale** $N(0,1)$ indipendenti tra loro.
+Sia $X$ la variabile aleatoria
+$X=X_{1}^{2}+X_{2}^{2}+\ldots+X_{n}^{2}$
+allora si prova che questa **variabile aleatoria** è distribuita secondo una distribuzione ***chi-quadra***
+
+Diremo che la **variabile aleatoria** $X$ è distribuita secondo una $X^{2}(n)$ con $n$ gradi di libertà se è assolutamente continua con densità di probabilità
+$f_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ \frac{1}{\Gamma\left(\frac{n}{2}\right)} \left(\frac{1}{2}\right)^{\frac{n}{2}}t^{\frac{n}{2}-1}e^{-\frac{1}{2}t} &\text{se }t\geq0 \end{cases}$
+con $\Gamma(\alpha) = \int\limits_{0}^{+\infty}e^{-x}x^{\alpha-1}dx$ (***Gamma di Eulero***)
+
+Si prova che $E[X] = n$, $Var[X]=2n$
+### Distribuzione t di Student
+Siano $Z\simeq N(0,1)$ e $Y=X^{2}(n)$ due **variabili aleatorie** indipendenti.
+Definiamo $X= \frac{Z}{sqrt{\frac{Y}{n}}}$ e si prova che $X$ è una **variabile aleatoria** distribuita secondo una ***t di Student*** con $n$ gradi di liberta.
+
+Diremo che la **variabile aleatoria** $X$ è distribuita secondo una t di Student con $n$ gradi di libertà se è assolutamente continua con densità di probabilità
