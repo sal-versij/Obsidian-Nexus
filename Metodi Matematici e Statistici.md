@@ -690,3 +690,8 @@ $f_{Y}(y) = \int\limits_{-\infty}^{+\infty}f_{XY}(x,y)dx$
 Osservazione:
 $\int\limits_{-\infty}^{+\infty}f_{X}(x)dx = 1$
 $\int\limits_{-\infty}^{+\infty}f_{Y}(y)dy = 1$
+
+```ad-def
+Date $n$ variabili aleatorie $X_{i}$, con $i=1,\ldots,n$, esse si dicono indipendenti se, per ogni scelta degli intervalli $A_{i}$, si ha che
+$P[X_{1}\in A_{1},X_{2}\in A_{2},\ldots,X_{n}\in A_{n}] = P[X_{1}\in A_{1}]\cdot P[X_{2}\in A_{2}]\cdot\ldots\cdot P[X_{n}\in A_{n}]$
+```
