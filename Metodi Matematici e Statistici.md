@@ -909,4 +909,12 @@ $\bar{X_{n}}\sim Norm\left(\mu=m,\sigma^{2}=\frac{\nu}{n}\right)$
    se $n\geq30$
 3. $Poi(\lambda)\approx Norm(\mu=\lambda,\sigma^{2}=\lambda)$
    se $\lambda\geq30$
-   
+## ~~To define~~
+### Statistica
+Si dice ***statistica*** di una **variabile aleatoria** $t$, funzione nota delle **variabili aleatorie** $X_{1},X_{2},\ldots,X_{n}$
+$t(X_{1},X_{2},\ldots,X_{n}) = T(X)$
+### Stimatore
+Data una popolazione dipendente da un parametro $\theta$, e un campèione casuale $X_{1},X_{2},\ldots,X_{n}$, si dice ***stimatore*** una **statistica** $t$ che non dipende da $\theta$ e che seve per *stimare* $\theta$
+### Correttezza
+Uno **stimatore** si dice ***corretto***( o non distorto)
+#### Correttezza asintotica
