@@ -915,6 +915,13 @@ Si dice ***statistica*** di una **variabile aleatoria** $t$, funzione nota delle
 $t(X_{1},X_{2},\ldots,X_{n}) = T(X)$
 ### Stimatore
 Data una popolazione dipendente da un parametro $\theta$, e un campèione casuale $X_{1},X_{2},\ldots,X_{n}$, si dice ***stimatore*** una **statistica** $t$ che non dipende da $\theta$ e che seve per *stimare* $\theta$
-### Correttezza
-Uno **stimatore** si dice ***corretto***( o non distorto)
-#### Correttezza asintotica
+### Correttezza, Correttezza asintotica
+Uno **stimatore** si dice ***corretto***( o non distorto) se il suo valore atteso coincide con la quantità da stimare
+$E[t_{n}] = \theta$
+Si dirà asintoticamente corretto se
+$E[t_{n}]\overset{n\to\infty}\to\theta$
+### Consistenza
+Uno stimatore si dice consistente in **media quadratica** se 
+$E[(t_{n}-\theta)^{2}]\overset{n\to\infty}\to0$
+Si dirà consistente in **probabilità** se
+$P[|T_{n}-\theta|<\epsilon]\overset{n\to\infty}\to0\;\;\;\;\forall\epsilon>0$
