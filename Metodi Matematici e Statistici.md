@@ -731,7 +731,30 @@ $(C_{X})_{ij} = Cov[X_{i},X_{j}]$
 ### Coeficiente di correlazione
 Date due variabili aleatorie $X$, $Y$, è detto ***coeficiente di correlazione*** ($\rho_{XY}$)
 $\rho_{XY}= \frac{Cov[X,Y]}{\sqrt{Var[X]Var[Y]}}$
+
+```ad-def
+Si dicono incorrelate due variabili aleatorie $X$, $Y$ per cui $Cov[X,Y] = 0$
+```
 #### Proprietà
 - $-1<\rho_{XY}<1$
 - $|\rho_{XY}| = 1$ se unicamente tra $X$ e $Y$ esiste un valore deterministico lineare $Y=aX+b$ con $a,b\in\mathbb{R}$ che hanno lo stesso segno
-○6``
+- Se $X$ e $Y$ sono indipendenti, allora sono incorrelate
+  ```ad-dem
+  $Cov[X,Y] = E[XY]-E[X]E[Y]$
+  $E[XY] = \sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i},y_{j}] = \sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i}]P[y_{j}] = \left(\sum\limits_{i}x_{i}P[x_{i}]\right)\left(\sum\limits_{j}y_{j}P[y_{j}]\right) = E[X]E[Y]$
+  ```
+- $Var[X+Y] = Var[X]+Var[Y]+2Cov[X,Y]$
+- $Var[X-Y] = Var[X]+Var[Y]-2Cov[X,Y]$
+- Se $X_{i}$ sono indipendenti $\implies Var\left[\sum\limits_{i}X_{i}\right] = \sum\limits_{i}Var[X_{i}]$
+## Trasformazioni di vettori aleatori
+$(X,Y)\to(U,V)$
+$\begin{cases} u &= g_{1}(x,y) \\ v &= g_{2}(x,y) \end{cases}\iff\begin{cases} x &= h_{1}(u,v) \\ y &= h_{2}(u,v) \end{cases}$
+
+```ad-th
+Sia $(X,Y)$ un **vettore aleatorio**, continuo e sia $(U,V)=g(X,Y)$ una trasformazione invertibile con trasformazione inversa $h(U,V)$ allora
+$f_{UV}(u,v) = f_{XY}(h_{1}(u,v),h_{2}(u,v))\cdot|det J|$
+$J=\begin{bmatrix} \frac{\delta h_{1}}{\delta u} & \frac{\delta h_{1}}{\delta v} \\ \frac{\delta h_{2}}{\delta u} & \frac{\delta h_{2}}{\delta v} \end{bmatrix} \left(\equiv \frac{\delta(h_{1},h_{2})}{\delta(u,v)}\right)$
+```
+
+## Distribuzione di Bernoulli
+Une variabile aleatoria $X$ è distribuita secondo una bernanllieme di parametro pe 0,1 se ne può assumere valori 1 e 0 rispettivamente con probabilità per p p p se sto punti L.
