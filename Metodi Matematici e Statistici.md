@@ -921,7 +921,11 @@ $E[t_{n}] = \theta$
 Si dirà asintoticamente corretto se
 $E[t_{n}]\overset{n\to\infty}\to\theta$
 ### Consistenza
-Uno stimatore si dice consistente in **media quadratica** se 
+Uno stimatore si dice consistente in **media quadratica** se
 $E[(t_{n}-\theta)^{2}]\overset{n\to\infty}\to0$
 Si dirà consistente in **probabilità** se
 $P[|T_{n}-\theta|<\epsilon]\overset{n\to\infty}\to0\;\;\;\;\forall\epsilon>0$
+### Asintotica normalità
+$\frac{t_{n}-E[t_{n}]}{\sqrt{Var[t_{n}]}}\overset{n\to\infty}\sim Norm(0,1)$
+### Metodo della massima verosomiglianza
+$\mathscr{L}(x_{1},x_{2},\ldots,x_{n},\theta) = \rho_X(x_{1},\theta)\cdot\rho_X(x_{2},\theta)\cdot\ldots\cdot\rho_X(x_{n},\theta)=\prod\limits_{i=1}^{n}\rho_{X}(x_{i},\theta)$
