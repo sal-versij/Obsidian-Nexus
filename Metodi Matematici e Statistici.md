@@ -628,4 +628,34 @@ $\frac{1}{\sigma\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2} \left
 $f(z) = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}z^{2}}$
 ```
 ## Vettori Aleatori
-...
+```ad-def
+È detto ***vettore aleatorio***, o ***variabile aleatoria*** multidimensionale, un vettore le cui componenti sono variabili aleatorie
+$X\equiv(X_{1},X_{2},\ldots,X_{n})$
+```
+
+$P[(X_{1}\cap X_{2}\cap\ldots\cap X_{n})]\equiv P[X_{1},X_{2},\ldots,X_{n}]$
+Se abbiamo le variavili aleatorie $X$, $Y$ discrete
+
+- $\sum\limits_{i}\sum\limits_{j}P[X=i,Y=j] = 1$, $\sum\limits_{i}P[X=i] = 1$, $\sum\limits_{j}P[Y=j = 1$
+- I valori $P[X=i,Y=j]$ formano la densità discreta congiungta del vettore $(X,Y)$
+- Le densità $P[X=i]$, $P[Y=j]$ sono dette densità marginali
+
+Osservazione:
+è sempre possibile ricreare le prob. marginali dalle prob. congiunte, ma non è vero il viceversa
+
+```ad-def
+title: Funzione di ripartizione congiunta
+Dato un vettore aleatorio $(X,Y)$, è detta funzione di ripartizione congiunta la funzione
+$F_{XY}(x,y) = P[X\leq x,Y\leq y]$
+```
+```ad-def
+title: Funzione di ripartizione marginale
+Dato una funzione di ripartizione congiunta $F_{XY}$, è definita la funzione di ripartizione marginale come
+$F_{X}(x) = P[X\leq x] = P[X\leq x,Y<+\infty] = \lim\limits_{y\to+\infty}F_{XY}(x,y)$
+```
+
+### Proprietà
+$\forall x\in\mathbb{R} \lim\limits_{y\to-\infty}F_{XY}(x,y)=0, \lim\limits_{y\to+\infty}F_{XY}(x,y)=F_{X}(x)$
+$\forall y\in\mathbb{R} \lim\limits_{x\to-\infty}F_{XY}(x,y)=0, \lim\limits_{x\to+\infty}F_{XY}(x,y)=F_{Y}(y)$
+
+- Densità congiunta (caso discre)
