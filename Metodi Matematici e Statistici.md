@@ -648,16 +648,15 @@ title: Funzione di ripartizione congiunta
 Dato un vettore aleatorio $(X,Y)$, è detta funzione di ripartizione congiunta la funzione
 $F_{XY}(x,y) = P[X\leq x,Y\leq y]$
 ```
+
 ```ad-def
 title: Funzione di ripartizione marginale
 Dato una funzione di ripartizione congiunta $F_{XY}$, è definita la funzione di ripartizione marginale come
 $F_{X}(x) = P[X\leq x] = P[X\leq x,Y<+\infty] = \lim\limits_{y\to+\infty}F_{XY}(x,y)$
 ```
-
 ### Proprietà
 $\forall x\in\mathbb{R} \lim\limits_{y\to-\infty}F_{XY}(x,y)=0, \lim\limits_{y\to+\infty}F_{XY}(x,y)=F_{X}(x)$
 $\forall y\in\mathbb{R} \lim\limits_{x\to-\infty}F_{XY}(x,y)=0, \lim\limits_{x\to+\infty}F_{XY}(x,y)=F_{Y}(y)$
-
 ### Densità congiunta (caso discreto)
 Si dice densita congiunta del vettore aleatorio discreto $(X,Y)$, e si indica con $P_{XY}$, l'insieme dei valori
 $P_{XY}(x_{i},y_{j}) = P[X=x_{i},Y=y_{j}]$
@@ -666,6 +665,7 @@ $P_{X}(x_{i}) = \sum\limits_{j(y_{j})}P_{XY}(x_{i},y_{j})$
 $P_{Y}(y_{j}) = \sum\limits_{i(x_{i})}P_{XY}(x_{i},y_{j})$
 ### Densità congiunta (caso continuo)
 Dato un vettore aleatorio continuo $(X,Y)$, è detta funzione di densità di probabilità la funzione $f_{XY}(x,y)$ per la quale, per ogni scelta di $a,b,c,d\in\mathbb{R}$
+
 $$
 \displaylines{
 P[a<X<b,c<Y<d] = \\
@@ -681,7 +681,6 @@ $F_{XY}(s,t) = P[X<s,Y<t] = \int\limits_{-\infty}^{s}dx\int\limits_{-\infty}^{t}
 $f_{X}(x) = \frac{dF_{X}(x)}{dx}$
 $f_{Y}(y) = \frac{dF_{Y}(y)}{dy}$
 $f_{XY}(x,y) = \frac{\delta^{2}}{\delta x\delta y} F_{XY}(x,y)$
-
 #### Funzione densità marginale
 Sono dette funzioni densità marginale
 $f_{X}(x) = \int\limits_{-\infty}^{+\infty}f_{XY}(x,y)dy$
@@ -691,7 +690,29 @@ Osservazione:
 $\int\limits_{-\infty}^{+\infty}f_{X}(x)dx = 1$
 $\int\limits_{-\infty}^{+\infty}f_{Y}(y)dy = 1$
 
-```ad-def
+## Variabili aleatorie indipendenti
 Date $n$ variabili aleatorie $X_{i}$, con $i=1,\ldots,n$, esse si dicono indipendenti se, per ogni scelta degli intervalli $A_{i}$, si ha che
 $P[X_{1}\in A_{1},X_{2}\in A_{2},\ldots,X_{n}\in A_{n}] = P[X_{1}\in A_{1}]\cdot P[X_{2}\in A_{2}]\cdot\ldots\cdot P[X_{n}\in A_{n}]$
+
+Si dimostra che (nel caso di variabili indipendenti)
+$P_{XY}(x_{i},y_{i}) = P_{X}(x_{i})P_{Y}(y_{i})$
+$f_{XY}(x_{i},y_{i}) = f_{X}(x_{i})f_{Y}(y_{i})$
+$F_{XY}(x,y) = F_{X}(x)F_{Y}(y)$
+## Somma
+```ad-th
+Dato un vettore aleatorio $(X,Y)$ (discreto o continuo) la somma $U=X+Y$ delle sue componenti ha densità
+$P_{U}(u) = \sum\limits_{k}P_{XY}(k,u-k)$ caso discreto
+$f_{U}(u) = \int\limits_{-\infty}^{+\infty}f_{XY}(t,u-t)dt$ caso continuo
 ```
+
+```ad-def
+Sia $(X,Y)$ un vettore aleatorio e $g(X,Y)$ una funzione, $E[g(X,Y)]$, se esiste, è dato da
+$$
+\displaylines{
+E[g(X,Y)] = \sum\limits_{i}\sum\limits_{j}g(x_{i},y_{j})P_{XY}(x_{i},y_{j})\;\;\;\text{c.d.} \\
+E[g(X,Y)] = \int\limits^{+\infty}dx\int\limits^{+\infty}dy\;g(x,y)f_{XY}(x,y)\;\;\;\text{c.c.}
+}
+$$
+```
+
+### Proprietà
