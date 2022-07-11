@@ -658,4 +658,30 @@ $F_{X}(x) = P[X\leq x] = P[X\leq x,Y<+\infty] = \lim\limits_{y\to+\infty}F_{XY}(
 $\forall x\in\mathbb{R} \lim\limits_{y\to-\infty}F_{XY}(x,y)=0, \lim\limits_{y\to+\infty}F_{XY}(x,y)=F_{X}(x)$
 $\forall y\in\mathbb{R} \lim\limits_{x\to-\infty}F_{XY}(x,y)=0, \lim\limits_{x\to+\infty}F_{XY}(x,y)=F_{Y}(y)$
 
-- Densità congiunta (caso discre)
+### Densità congiunta (caso discreto)
+Si dice densita congiunta del vettore aleatorio discreto $(X,Y)$, e si indica con $P_{XY}$, l'insieme dei valori
+$P_{XY}(x_{i},y_{j}) = P[X=x_{i},Y=y_{j}]$
+#### Densità marginale
+$P_{X}(x_{i}) = \sum\limits_{j(y_{j})}P_{XY}(x_{i},y_{j})$
+$P_{Y}(y_{j}) = \sum\limits_{i(x_{i})}P_{XY}(x_{i},y_{j})$
+### Densità congiunta (caso continuo)
+Dato un vettore aleatorio continuo $(X,Y)$, è detta funzione di densità di probabilità la funzione $f_{XY}(x,y)$ per la quale, per ogni scelta di $a,b,c,d\in\mathbb{R}$
+$$
+\displaylines{
+P[a<X<b,c<Y<d] = \\
+= \int\limits_{a}^{b}\left(\int\limits_{c}^{d}f_{XY}(x,y)dy\right)dx = \\
+= \int\limits_{c}^{d}\left(\int\limits_{a}^{b}f_{XY}(x,y)dx\right)dy\\
+\int\limits_{a}^{b}dx\int\limits_{c}^{d}dy\;f_{XY}(x,y) \\
+}
+$$
+
+Si dimostra che
+$F_{XY}(s,t) = P[X<s,Y<t] = \int\limits_{-\infty}^{s}dx\int\limits_{-\infty}^{t}dy\;f_{XY}(x,y)$
+
+$f_{X}(x) = \frac{dF_{X}(x)}{dx}$
+$f_{Y}(y) = \frac{dF_{Y}(y)}{dy}$
+$f_{XY}(x,y) = \frac{\delta^{2}}{\delta x\delta y} F_{XY}(x,y)$
+
+#### Funzione densità marginale
+Sono dette funzioni densità marginale
+$f_{X}(x) = \int\limits_{-\infty}^{+\infty}$
