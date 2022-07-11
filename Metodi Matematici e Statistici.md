@@ -778,3 +778,21 @@ Si può considerare come caso particolare della **distribuzione Binomiale** che 
    - $k$ p il numero delle occorrenza (successi) per cui si vuole prevedere la probabilità
 ### Distribuzione uniforme
 È la distribuzione che assume un valore contenuto in un intervallo $[a,b]$
+
+Una **variabile aleatoria** $X$ ha distribuzione uniforme in $[a,b]\subset\mathbb{R}$, se è assolutamente continua con densità di probabilità
+$f_{X}(t)=\begin{cases} \frac{1}{b-a} &\text{se }t\in[a,b] \\ 0 &\text{altrimenti} \end{cases}$
+$F_{X}(t)=\begin{cases} 0 &\text{se }t<a \\ \frac{t-a}{b-a} &\text{se }t\in[a,b] \\ 1 &\text{se }t>b \end{cases}$
+$E[X] = \frac{a+b}{2}$
+$Var[X] = \frac{(b-a)^{2}}{12}$
+
+### Distribuzione esponenziale
+Una **variabile aleatoria** $X$ è detta distribuita secondo un'**esponenziale** di parametro $\lambda\in\mathbb{R}^{+}$ se è assolutamente continua con densità di probabilità
+$f_{X}(t)=\begin{cases} 0 &\text{se }t\leq0 \\ \lambda-e^{-\lambda t} &\text{se }t>0 \end{cases}$
+$F_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ 1-e^{-\lambda t} &\text{se }t\geq0 \end{cases}$
+#### Proprietà
+$P[X>s+t|X>s] = P[X>t] \forall t,s\in\mathbb{R}^{+}$
+
+### Distribuzione di Weibull
+una variabile aleatoria $Y$ è detta distribuita secondo una **Weibull** di parametri $\alpha,\beta\in\mathbb{R}^{+}$ se è assolutamente continua con densità di probabilità
+$f_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ \alpha\beta t^{\beta-1} &\text{se }t\geq0 \end{cases}$
+$F_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ 1-e^{-\lambda t} &\text{se }t\geq0 \end{cases}$
