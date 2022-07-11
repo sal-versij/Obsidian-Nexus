@@ -755,6 +755,26 @@ Sia $(X,Y)$ un **vettore aleatorio**, continuo e sia $(U,V)=g(X,Y)$ una trasform
 $f_{UV}(u,v) = f_{XY}(h_{1}(u,v),h_{2}(u,v))\cdot|det J|$
 $J=\begin{bmatrix} \frac{\delta h_{1}}{\delta u} & \frac{\delta h_{1}}{\delta v} \\ \frac{\delta h_{2}}{\delta u} & \frac{\delta h_{2}}{\delta v} \end{bmatrix} \left(\equiv \frac{\delta(h_{1},h_{2})}{\delta(u,v)}\right)$
 ```
+## Distribuzioni
+### Distribuzione di Bernoulli
+Une **variabile aleatoria** $X$ è distribuita secondo una **bernanlliana** di parametro $p\in[0,1]$, se essa può assumere valori $1$ e $0$ rispettivamente con probabilità $p$ e $1-p$
+$p(s) = \begin{cases} p &\text{se }s=1 \\ 1-p &\text{se }s=0 \\ 0 &\text{altrimenti}\end{cases}$
+$F_X(t) = \begin{cases} 0 &\text{se }t<0 \\ 1-p &\text{se }0\leq t<1 \\ 1 &\text{se }t\geq1\end{cases}$
+### Distribuzione Binomiale
+Siano $X_{1},X_{2},\ldots,X_{n}$ $n$ variabili **bernoulliane** diuguale parametro $p$ e indipendenti fra di loro
+Sia $X=X_{1}+X_{2}+\ldots+X_{n}$. Questa **variabile aleatoria** è detta distribuita secondo una **binomiale** di parametro $n$ e $p$
 
-## Distribuzione di Bernoulli
-Une variabile aleatoria $X$ è distribuita secondo una bernanllieme di parametro pe 0,1 se ne può assumere valori 1 e 0 rispettivamente con probabilità per p p p se sto punti L.
+```ad-th
+$X$ può assumere $\forall k\in \mathbb{N}$ con $0\leq k\leq n$ con probailità
+$P(X=k) = \binom{n}{k}p^{k}(1-p)^{n-k}$
+```
+### Distribuzione di Poisson
+Si può considerare come caso particolare della **distribuzione Binomiale** che si otiene quando
+
+1. il numero di variabili $X_{i}$ è $n\to\infty$
+2. il parametro $p\to0$, ma $np=\lambda\in\mathbb{R}^{+}$
+   $P(k) = \frac{\lambda^{k}}{k!}e^{-\lambda}\;\;\;k=0,1,2,\ldots$
+   - $\lambda$ è un qualsiasi valore positivo equivalente al numero di successi che ci si aspetta che si verifichino in un dato intervallo di tempo (la frequenza media di accadimento edll'evento osservato)
+   - $k$ p il numero delle occorrenza (successi) per cui si vuole prevedere la probabilità
+### Distribuzione uniforme
+È la distribuzione che assume un valore contenuto in un intervallo $[a,b]$
