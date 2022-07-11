@@ -684,4 +684,9 @@ $f_{XY}(x,y) = \frac{\delta^{2}}{\delta x\delta y} F_{XY}(x,y)$
 
 #### Funzione densità marginale
 Sono dette funzioni densità marginale
-$f_{X}(x) = \int\limits_{-\infty}^{+\infty}$
+$f_{X}(x) = \int\limits_{-\infty}^{+\infty}f_{XY}(x,y)dy$
+$f_{Y}(y) = \int\limits_{-\infty}^{+\infty}f_{XY}(x,y)dx$
+
+Osservazione:
+$\int\limits_{-\infty}^{+\infty}f_{X}(x)dx = 1$
+$\int\limits_{-\infty}^{+\infty}f_{Y}(y)dy = 1$
