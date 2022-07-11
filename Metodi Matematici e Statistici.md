@@ -721,4 +721,17 @@ $Cov[X,Y] = E[(X-E[X])(Y-E[Y])]$
 #### Proprietà
 - $Cov[X,Y] = E[XY]-E[X]E[Y]$
 - $Cov[X,\alpha] = 0$
-- $Cov[X,\alpha] = 0$
+- $Cov[X,Y] = Cov[Y,X]$
+- $Cov[X,X] = Var[X]$
+- $Cov[\alpha X,\beta Y] = \alpha\beta Cov[X,Y]$
+- $Cov[X+Y,U+W] = Cov[X,V] +Cov[X,W] +Cov[Y,U] +Cov[Y,W]$
+### Matrice di convarianza
+Dato $X=(X_{1},X_{2},\ldots,X_{n})$, la matrice di convarianza($C_{X}$) è la matrice di elementi
+$(C_{X})_{ij} = Cov[X_{i},X_{j}]$
+### Coeficiente di correlazione
+Date due variabili aleatorie $X$, $Y$, è detto ***coeficiente di correlazione*** ($\rho_{XY}$)
+$\rho_{XY}= \frac{Cov[X,Y]}{\sqrt{Var[X]Var[Y]}}$
+#### Proprietà
+- $-1<\rho_{XY}<1$
+- $|\rho_{XY}| = 1$ se unicamente tra $X$ e $Y$ esiste un valore deterministico lineare $Y=aX+b$ con $a,b\in\mathbb{R}$ che hanno lo stesso segno
+○6``
