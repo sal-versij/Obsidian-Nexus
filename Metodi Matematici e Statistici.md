@@ -933,11 +933,31 @@ $\mathscr{L}(x_{1},x_{2},\ldots,x_{n},\theta) = \rho_X(x_{1},\theta)\cdot\rho_X(
 Struttura di un test d'ipotesi
 ### Ipotesi
 L'ipotesi di partenza è detta **ipotesi nulla** ed è indicata con $H_{0}$
-Esempio
+
+ad-eg
 $H_{0}: \mu=S$ **ipotesi semplice**
 $H_{0}: \mu\leq \text{ opp.} H_{0}: \mu\geq S$ **ipotesi composta**
-il contrario dell'ipotesi nulla è l'**ipotesi alternativa** e verrà indicata con $H_{1}$ o $H_{a}$
+
+il contrario dell'ipotesi nulla è l'**ipotesi alternativa** e verrà indicata con $H_{1}$ o $H_{a}$.
 
 Si tratta di ciò che dovremmo accettare per vero nel caso in cui rigettassimo l'**ipotesi nulla**
 ### Statistica test ($U$)
- si tratta di una variabile aleatoria della quale alm
+Si tratta di una variabile aleatoria della quale almeno approssimativamente possiamo specificare la distribuzione Indicheremo con $u$ il valore di $U$
+### Regione critica
+Si rifiuta $H_{0}$ se $u\in C$
+Non si rifiuta $H_{0}$ se $u\not\in C$
+### Errori possibili
+Gli errori che si possono commettere sono i seguenti:
+- non si sbaglia
+  $H_{0}$ è vero se non si rifiuta
+  $H_{0}$ è falso se si rifiuta
+- Errore del I tipo
+  $H_{0}$ è vero se si rifiuta
+- Errore del II tipo
+  $H_{0}$ è falso se non si rifiuta
+
+### Livello di significatività ($\alpha$)
+Livello di soglia $\alpha$ tale che la probabilità di commettere l'errore del I tipo sia non superiore ad $\alpha$.
+Solitamente $\alpha$ = 10%, 5%, 1%
+### Funzione potenza
+Se il test è un test parametrico, cioè riguarda un parametro, la probabilità di rifiutare l'ipotes
