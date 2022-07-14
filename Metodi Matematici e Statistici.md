@@ -929,3 +929,15 @@ $P[|T_{n}-\theta|<\epsilon]\overset{n\to\infty}\to0\;\;\;\;\forall\epsilon>0$
 $\frac{t_{n}-E[t_{n}]}{\sqrt{Var[t_{n}]}}\overset{n\to\infty}\sim Norm(0,1)$
 ### Metodo della massima verosomiglianza
 $\mathscr{L}(x_{1},x_{2},\ldots,x_{n},\theta) = \rho_X(x_{1},\theta)\cdot\rho_X(x_{2},\theta)\cdot\ldots\cdot\rho_X(x_{n},\theta)=\prod\limits_{i=1}^{n}\rho_{X}(x_{i},\theta)$
+## Verifica di ipotesi
+Struttura di un test d'ipotesi
+### Ipotesi
+L'ipotesi di partenza è detta **ipotesi nulla** ed è indicata con $H_{0}$
+Esempio
+$H_{0}: \mu=S$ **ipotesi semplice**
+$H_{0}: \mu\leq \text{ opp.} H_{0}: \mu\geq S$ **ipotesi composta**
+il contrario dell'ipotesi nulla è l'**ipotesi alternativa** e verrà indicata con $H_{1}$ o $H_{a}$
+
+Si tratta di ciò che dovremmo accettare per vero nel caso in cui rigettassimo l'**ipotesi nulla**
+### Statistica test ($U$)
+ si tratta di una variabile aleatoria della quale alm
