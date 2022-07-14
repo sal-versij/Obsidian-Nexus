@@ -1111,7 +1111,7 @@ $U=\frac{(\bar{X_{n}}-\bar{Y_{m}})-(\mu_{X}-\mu_{Y})}{\sqrt{\frac{\sigma_{X}^{2}
 
 ---
 
-Caso 2: Varianza incognita, ufuali 
+Caso 2: Varianza incognita, ufuali
 $\sigma_{X}^{2} = \sigma_{Y}^{2} = \nu$
 $S_{X}^{2}=\frac{1}{n-1} \sum\limits_{i=1}^{n}(X_{i}-\bar{X_{n}})^{2}$
 $S_{Y}^{2}=\frac{1}{m-1} \sum\limits_{i=1}^{m}(Y_{i}-\bar{Y_{m}})^{2}$
@@ -1121,14 +1121,36 @@ $\hat\nu$ prende il nome di **varianza combinata**
 
 La **statistica test** è data da
 $U=\frac{\bar{X_{n}}-\bar{Y_{m}}}{\sqrt{S_{p}^{2}(\frac{1}{n}+\frac{1}{m})}}\overset{H_{0}}\sim T(\nu=n+m-2)$
-Tipo|Rifiuto se
--|-
-I|$abs(u)>t_{1-\alpha;n+m-2}$
-II|$u>t_{1-\alpha;n+m-2}$
-III|$u<-t_{1-\alpha;n+m-2}$
+
+| Tipo | Rifiuto se                  |
+| ---- | --------------------------- |
+| I    | $abs(u)>t_{1-\alpha;n+m-2}$ |
+| II   | $u>t_{1-\alpha;n+m-2}$      |
+| III  | $u<-t_{1-\alpha;n+m-2}$     |
 
 ---
 
 Caso 3: Varianza incognita, non uguali
 $U=\frac{\bar{X_{n}}-\bar{Y_{m}}}{\sqrt{\frac{S_{X}^{2}}{n}+\frac{S_{Y}^{2}}{m}}}\overset{H_{0}}\sim T(\nu=\nu^{*})$
+$\nu^{*}=\left\lfloor\left(\frac{\left(\frac{S_{X}}{n} + \frac{S_{Y}}{m}\right)^{2}}{\frac{1}{n-1} \left(\frac{S_{X}^{2}}{n}\right)^{2}+ \frac{1}{m-1} \left(\frac{S_{Y}^{2}}{m}\right)^{2}}\right)\right\rfloor$
+$*$ Confronto di due Normali, a campioni accoppiati
+Abbiamo un campione di ampezza $n$, cioè formati da $n$ coppie di osservazioni
+$(X_{1},Y_{1}),(X_{2},Y_{2}),\ldots,(X_{n},Y_{n})$
+$X$ e $Y$ sono normali e la loro differenza ($W=X-Y$) sarà anch'essa normalmente distribuita
+$W\sim Norm(\mu_{W},\sigma_{W}^{2})$
+con $\mu_{W} = \mu_{X}-\mu_{Y}$ e $\sigma_{W}^{2}$ incognita
 
+Tipo I $\begin{cases} H_{0}: \mu_{W}=0 \\ H_{1}: \mu_{W}\neq0 \end{cases}$
+Tipo II $\begin{cases} H_{0}: \mu_{W}=0 &\text{ o }\mu_{W}\leq0 \\ H_{1}: \mu_{W}>0 \end{cases}$
+Tipo III $\begin{cases} H_{0}: \mu_{W}=0 &\text{ o }\mu_{W}\geq0 \\ H_{1}: \mu_{W}<0 \end{cases}$
+
+$S_{W}^{2}=\frac{1}{n-1}\sum\limits_{i=1}^{n}(W_{i}-\bar{W_{n}})$
+$U=\frac{\bar{W_{n}}}{\sqrt{\frac{S_{W}^{2}}{n}}}\overset{H_{0}}\sim T(\nu=n-1)$
+
+| Tipo | Rifiuto se                          |
+| ---- | ----------------------------------- |
+| I    | $abs(u)>z_{1-\frac{\alpha}{2};n-1}$ |
+| II   | $u>z_{1-\alpha;n-1}$                |
+| III  | $u<-z_{1-\alpha;n-1}$               |
+
+## Regressione lineare
