@@ -948,6 +948,7 @@ Si rifiuta $H_{0}$ se $u\in C$
 Non si rifiuta $H_{0}$ se $u\not\in C$
 ### Errori possibili
 Gli errori che si possono commettere sono i seguenti:
+
 - non si sbaglia
   $H_{0}$ è vero se non si rifiuta
   $H_{0}$ è falso se si rifiuta
@@ -955,9 +956,38 @@ Gli errori che si possono commettere sono i seguenti:
   $H_{0}$ è vero se si rifiuta
 - Errore del II tipo
   $H_{0}$ è falso se non si rifiuta
-
 ### Livello di significatività ($\alpha$)
 Livello di soglia $\alpha$ tale che la probabilità di commettere l'errore del I tipo sia non superiore ad $\alpha$.
 Solitamente $\alpha$ = 10%, 5%, 1%
 ### Funzione potenza
-Se il test è un test parametrico, cioè riguarda un parametro, la probabilità di rifiutare l'ipotes
+Se il test è un test *parametrico*, cioè riguarda un parametro, la probabilità di rifiutare l'*ipotesi* dipende dal valore incognito del parametro ($\theta$)
+
+Questa probabilità è detta **funzione potenza** del test
+$\pi(\theta) = P_{\theta}[\text{rifiutare }H_{0}]$ opp.
+$\pi(\theta) = P_{\theta}[u\in C]$
+### $p$-value
+Ci si può chiedere a quale livello di **signifivatività** corrisponderebbe una *regione critica* la cui frontiera fosse costituita proprio da $u$, cioè per quale livello il valore osservato di $u$ valica la frontiera di $C$. Questo valore prende il nome di **$p$-value**
+$p\text{-value} = \sup{\{\alpha:u\not\in C\}} = \inf{\{\alpha:u\in C\}}$
+
+Dato un certo test, rifiuteremo $H_{0}$ per tutti i livelli maggiori del **$p$-value** e non lo rifiuteremo per tutti i livelli inferiori
+### Test riguardanti una sola popolazione
+#### Test riguardanti la media di una Normale
+Supponiamo $X\sim Norm(\mu,\sigma^{2})$ e sia $n$ il numero di osservazioni di tale variabile aleatoria
+
+Tipologia di ipotesi che si possono dare su $\mu$:
+Tipo I $\begin{cases} H_{0}: \mu=\mu_{0} \\ H_{1}: \mu\neq\mu_{0} \end{cases}$
+Tipo II $\begin{cases} H_{0}: \mu=\mu_{0} &\text{ o }\mu\leq\mu_{0} \\ H_{1}: \mu>\mu_{0} \end{cases}$
+Tipo III $\begin{cases} H_{0}: \mu=\mu_{0} &\text{ o }\mu\geq\mu_{0} \\ H_{1}: \mu<\mu_{0} \end{cases}$
+
+La **statistica test** $U$ utilizzata è diversa se $\sigma^{2}$ è noto o incognito. Nei due casi variano anche la regione critica ed il **$p$-value**
+
+Caso 1: $\sigma^{2}$ noto, $z$-test
+$\bar{X_{n}}\sim Norm(\mu,\sigma^{2}=\nu)$
+$\frac{\bar{X_{n}}-\mu}{\sqrt{\frac{\nu}{n}}}\sim Norm(0,1)$
+
+Scegliamo come statistica la standardizzazione che sarebbe corretta eseguire, se fosse vera $H_{0}$, ossia scegliamo per $\mu$ il valore $\mu_{0}$
+$U=\frac{\bar{X_{n}}-\mu_{0}}{\sqrt{\frac{\nu}{n}}}$
+Scriveremo
+$U=\frac{\bar{X_{n}}-\mu_{0}}{\sqrt{\frac{\nu}{n}}} \overset{H_{0}}\sim Norm(0,1)$
+
+1. 
