@@ -990,4 +990,18 @@ $U=\frac{\bar{X_{n}}-\mu_{0}}{\sqrt{\frac{\nu}{n}}}$
 Scriveremo
 $U=\frac{\bar{X_{n}}-\mu_{0}}{\sqrt{\frac{\nu}{n}}} \overset{H_{0}}\sim Norm(0,1)$
 
-1. 
+1. Tipo I, dobbiamo decidere tra
+   $H_{0}:\mu=\mu_{0}$ e $H_{1}:\mu\neq\mu_{0}$
+   prependeremo per $H_{0}$ se il valore osservato $u$ di $U$ sarà "vicino a 0", mentre prependeremo per $H_{1}$ se $u$ si trova in una delle due code della distribuzione
+   ![[Test media normale - Tipo I.jpg]]
+   Si deve stabilire il valore di $\bar{z}$ in corrispondenza del quale si inizia a rifiutare $H_{0}$; poichè il nostro test ha livello di significatività $\alpha$, vogliamo che 
+   $\alpha = \max P[\text{Errore del I Tipo}] = \max P[|u|>\bar{z}|H_{0}\text{ vero}]$
+   cioè $\alpha$ deve essere il valore massimo per cui $u$, che nell'ipotesi è una normale standard, finisce in una delle due code.
+   $\begin{cases} U\sim Norm(0,1) \\ P[|u|>\bar{z}>\alpha] \end{cases}\implies\bar{z}=z_{1-\frac{\alpha}{2}}$
+   quindi rifiuteremo $H_{0}$ se $|u|>z_{1-\frac{\alpha}{2}}$
+2. Tipo II, dobbiamo decidere tra
+   $H_{0}:\mu=\mu_{0}$ e $H_{1}:\mu>\mu_{0}$
+   prependeremo per $H_{0}$ se il valore osservato $u$ di $U$ sarà "vicino a 0", mentre il fatto di aver utilizzato nella creazione della statistica test un valore "troppo piccolo" per la media ci farà prependere per $H_{1}$, se $u$ si trova nella coda a destra
+   ![[Test media normale - Tipo II.jpg]]
+   con conti simili ai precedenti, si trova $\bar{z}=_{1-\alpha}$ e per tanto ri
+   
