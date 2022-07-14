@@ -1020,6 +1020,7 @@ Ricapitolando
 
 Caso 2: $\sigma^{2}$ incognito, il $t$-test
 $U=\frac{\bar{X_{n}}-\mu_{0}}{\sqrt{\frac{S_{n}^{2}}{n}}} \overset{H_{0}}\sim T(\nu=n-1)$
+
 | Tipo | Rifiuto di $H_{0}$ se           |
 | ---- | ------------------------------- |
 | I    | $abs(u)>t_{1-\frac{\alpha}{2}}$ |
@@ -1027,7 +1028,6 @@ $U=\frac{\bar{X_{n}}-\mu_{0}}{\sqrt{\frac{S_{n}^{2}}{n}}} \overset{H_{0}}\sim T(
 | III  | $u<-t_{1-\alpha}$               |
 
 ---
-
 #### Test riguardanti la varianza di una Normale
 Supponiamo $X\sim Norm(\mu,\sigma^{2})$ e sia $n$ il numero di osservazioni di tale variabile aleatoria
 
@@ -1036,19 +1036,58 @@ Tipo I $\begin{cases} H_{0}: \sigma^{2}=\sigma^{2}_{0} \\ H_{1}: \sigma^{2}\neq\
 Tipo II $\begin{cases} H_{0}: \sigma^{2}=\sigma^{2}_{0} &\text{ o }\sigma^{2}\leq\sigma^{2}_{0} \\ H_{1}: \sigma^{2}>\sigma^{2}_{0} \end{cases}$
 Tipo III $\begin{cases} H_{0}: \sigma^{2}=\sigma^{2}_{0} &\text{ o }\sigma^{2}\geq\sigma^{2}_{0} \\ H_{1}: \sigma^{2}<\sigma^{2}_{0} \end{cases}$
 
-
 Caso 1: $\mu$ noto
 $S_{0}^{2} = \frac{1}{n}\sum\limits_{i=1}^{n}(x_{i}-m)^{2}$
 Sappiamo che
 $S_{0}^{2}\sim \frac{\sigma^{2}}{n}X^{2}(\nu=n) \iff \frac{n}{\sigma^{2}}S_{0}^{2}\sim X^{2}(\nu=n)$
 $U= \frac{n}{\sigma^{2}}S_{0}^{2}\overset{H_{0}}\sim X^{2}(\nu=n)$
+
 1. Tipo I, dobbiamo decidere tra
    $H_{0}:\sigma^{2}=\sigma^{2}_{0}$ e $H_{1}:\sigma^{2}\neq\sigma^{2}_{0}$
    prependeremo per $H_{0}$ se il valore osservato $u$ di $U$ si trova in corrispondenza della regione dove la densità della $X^{2}$ è maggiore, mentre prependeremo per $H_{1}$ se $u$ si troverà in una delle due code
    ![[Test varianza normale - Tipo I.jpg]]
    $\bar{c_{1}}=X^{2}_{\frac{\sigma}{2};n}$
-   $\bar{c_{1}}=X^{2}_{\frac{\sigma}{2};n}$
-   $\alpha = \max P[\text{Errore del I Tipo}] = \max P[|u|>\bar{z}|H_{0}\text{ vero}]$
-   cioè $\alpha$ deve essere il valore massimo per cui $u$, che nell'ipotesi è una normale standard, finisce in una delle due code.
-   $\begin{cases} U\sim Norm(0,1) \\ P[|u|>\bar{z}>\alpha] \end{cases}\implies\bar{z}=z_{1-\frac{\alpha}{2}}$
-   quindi rifiuteremo $H_{0}$ se $|u|>z_{1-\frac{\alpha}{2}}$
+   $\bar{c_{2}}=X^{2}_{1-\frac{\sigma}{2};n}$
+   rifiuteremo quindi $H_{0}$ in uno dei due casi
+   $u<X^{2}_{\frac{\sigma}{2}}$ oppure $u>X^{2}_{1-\frac{\sigma}{2}}$
+2. Tipo II, dobbiamo decidere tra
+   $H_{0}:\sigma^{2}=\sigma^{2}_{0}$ e $H_{1}:\sigma^{2}>\sigma^{2}_{0}$
+   rifiuteremo $H_{0}$ se $u>X^{2}_{1-\alpha}$
+3. Tipo III, dobbiamo decidere tra
+   $H_{0}:\sigma^{2}=\sigma^{2}_{0}$ e $H_{1}:\sigma^{2}<\sigma^{2}_{0}$
+   rifiuteremo $H_{0}$ se $u<X^{2}_{\alpha}$
+
+Ricapitolando
+
+| Tipo | Rifiuto se                                                         |
+| ---- | ------------------------------------------------------------------ |
+| I    | $u<X^{2}_{\frac{\alpha}{2}}$ oppure $u>X^{2}_{1-\frac{\alpha}{2}}$ |
+| II   | $u>X^{2}_{1-\alpha}$                                               |
+| III  | $u<X^{2}_{\alpha}$                                                 |
+
+---
+
+Caso 2: $\mu$ incognito
+Sappiamo che
+$U= \frac{(n-1)}{\sigma^{2}}S_{n}^{2}\overset{H_{0}}\sim X^{2}(\nu=n-1)$
+
+| Tipo | Rifiuto se                                                         |
+| ---- | ------------------------------------------------------------------ |
+| I    | $u<X^{2}_{\frac{\alpha}{2}}$ oppure $u>X^{2}_{1-\frac{\alpha}{2}}$ |
+| II   | $u>X^{2}_{1-\alpha}$                                               |
+| III  | $u<X^{2}_{\alpha}$                                                 |
+
+---
+
+### Test parametrici di confronto fra due popolazioni 
+Supponiamo di avere due popolazioni
+$X_{1},X_{2},\ldots,X_{n}$
+$Y_{1},Y_{2},\ldots,Y_{m}$
+con $n,m\in\mathbb{N}$
+$X\sim Norm(\mu=\mu_{X},\sigma^{2}=\sigma_{X}^{2})$
+$Y\sim Norm(\mu=\mu_{Y},\sigma^{2}=\sigma_{Y}^{2})$
+
+Test
+1. Tipo I: $\begin{cases} H_{0}: \mu_{X} = \mu_{Y} \\ \end{cases}$
+2. Tipo II: 
+3. Tipo III: 
