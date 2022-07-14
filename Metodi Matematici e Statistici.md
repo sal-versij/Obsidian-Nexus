@@ -1018,3 +1018,21 @@ Ricapitolando
 
 ---
 
+Caso 2: $\sigma^{2}$ incognito, il $t$-test
+$U=\frac{\bar{X_{n}}-\mu_{0}}{\sqrt{\frac{S_{n}^{2}}{n}}} \overset{H_{0}}\sim T(\nu=n-1)$
+| Tipo | Rifiuto di $H_{0}$ se           |
+| ---- | ------------------------------- |
+| I    | $abs(u)>t_{1-\frac{\alpha}{2}}$ |
+| II   | $u>t_{1-\alpha}$                |
+| III  | $u<-t_{1-\alpha}$               |
+
+---
+
+#### Test riguardanti la varianza di una Normale
+Supponiamo $X\sim Norm(\mu,\sigma^{2})$ e sia $n$ il numero di osservazioni di tale variabile aleatoria
+
+Tipologia di ipotesi che si possono dare su $\sigma^{2}$:
+Tipo I $\begin{cases} H_{0}: \sigma^{2}=\sigma^{2}_{0} \\ H_{1}: \sigma^{2}\neq\sigma^{2}_{0} \end{cases}$
+Tipo II $\begin{cases} H_{0}: \sigma^{2}=\sigma^{2}_{0} &\text{ o }\sigma^{2}\leq\sigma^{2}_{0} \\ H_{1}: \sigma^{2}>\sigma^{2}_{0} \end{cases}$
+Tipo III $\begin{cases} H_{0}: \sigma^{2}=\sigma^{2}_{0} &\text{ o }\sigma^{2}\geq\sigma^{2}_{0} \\ H_{1}: \sigma^{2}<\sigma^{2}_{0} \end{cases}$
+
