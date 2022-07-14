@@ -1036,3 +1036,19 @@ Tipo I $\begin{cases} H_{0}: \sigma^{2}=\sigma^{2}_{0} \\ H_{1}: \sigma^{2}\neq\
 Tipo II $\begin{cases} H_{0}: \sigma^{2}=\sigma^{2}_{0} &\text{ o }\sigma^{2}\leq\sigma^{2}_{0} \\ H_{1}: \sigma^{2}>\sigma^{2}_{0} \end{cases}$
 Tipo III $\begin{cases} H_{0}: \sigma^{2}=\sigma^{2}_{0} &\text{ o }\sigma^{2}\geq\sigma^{2}_{0} \\ H_{1}: \sigma^{2}<\sigma^{2}_{0} \end{cases}$
 
+
+Caso 1: $\mu$ noto
+$S_{0}^{2} = \frac{1}{n}\sum\limits_{i=1}^{n}(x_{i}-m)^{2}$
+Sappiamo che
+$S_{0}^{2}\sim \frac{\sigma^{2}}{n}X^{2}(\nu=n) \iff \frac{n}{\sigma^{2}}S_{0}^{2}\sim X^{2}(\nu=n)$
+$U= \frac{n}{\sigma^{2}}S_{0}^{2}\overset{H_{0}}\sim X^{2}(\nu=n)$
+1. Tipo I, dobbiamo decidere tra
+   $H_{0}:\sigma^{2}=\sigma^{2}_{0}$ e $H_{1}:\sigma^{2}\neq\sigma^{2}_{0}$
+   prependeremo per $H_{0}$ se il valore osservato $u$ di $U$ si trova in corrispondenza della regione dove la densità della $X^{2}$ è maggiore, mentre prependeremo per $H_{1}$ se $u$ si troverà in una delle due code
+   ![[Test varianza normale - Tipo I.jpg]]
+   $\bar{c_{1}}=X^{2}_{\frac{\sigma}{2};n}$
+   $\bar{c_{1}}=X^{2}_{\frac{\sigma}{2};n}$
+   $\alpha = \max P[\text{Errore del I Tipo}] = \max P[|u|>\bar{z}|H_{0}\text{ vero}]$
+   cioè $\alpha$ deve essere il valore massimo per cui $u$, che nell'ipotesi è una normale standard, finisce in una delle due code.
+   $\begin{cases} U\sim Norm(0,1) \\ P[|u|>\bar{z}>\alpha] \end{cases}\implies\bar{z}=z_{1-\frac{\alpha}{2}}$
+   quindi rifiuteremo $H_{0}$ se $|u|>z_{1-\frac{\alpha}{2}}$
