@@ -1078,8 +1078,7 @@ $U= \frac{(n-1)}{\sigma^{2}}S_{n}^{2}\overset{H_{0}}\sim X^{2}(\nu=n-1)$
 | III  | $u<X^{2}_{\alpha}$                                                 |
 
 ---
-
-### Test parametrici di confronto fra due popolazioni 
+### Test parametrici di confronto fra due popolazioni
 Supponiamo di avere due popolazioni
 $X_{1},X_{2},\ldots,X_{n}$
 $Y_{1},Y_{2},\ldots,Y_{m}$
@@ -1088,6 +1087,48 @@ $X\sim Norm(\mu=\mu_{X},\sigma^{2}=\sigma_{X}^{2})$
 $Y\sim Norm(\mu=\mu_{Y},\sigma^{2}=\sigma_{Y}^{2})$
 
 Test
-1. Tipo I: $\begin{cases} H_{0}: \mu_{X} = \mu_{Y} \\ \end{cases}$
-2. Tipo II: 
-3. Tipo III: 
+
+1. Tipo I: $\begin{cases} H_{0}: \mu_{X} = \mu_{Y} \\ H_{1}: \mu_{X}\neq\mu_{Y} \end{cases}$
+2. Tipo II: $\begin{cases} H_{0}: \mu_{X} = \mu_{Y}  &\text{ opp. }\mu_{X}\leq \mu_{Y}\\ H_{1}: \mu_{X}>\mu_{Y} \end{cases}$
+3. Tipo III: $\begin{cases} H_{0}: \mu_{X} = \mu_{Y}  &\text{ opp. }\mu_{X}\geq \mu_{Y}\\ H_{1}: \mu_{X}<\mu_{Y} \end{cases}$
+
+Si osserva che
+$\bar{X_{n}}\sim Norm\left(\mu=\mu_{X},\sigma^{2}=\frac{\sigma_{X}^{2}}{n}\right)$
+$\bar{Y_{m}}\sim Norm\left(\mu=\mu_{Y},\sigma^{2}=\frac{\sigma_{Y}^{2}}{m}\right)$
+quindi
+$\bar{X_{n}}-\bar{Y_{m}}\sim Norm\left(\mu=\mu_{X}-\mu_{Y}, \sigma^{2}= \frac{\sigma_{X}^{2}}{n}+\frac{\sigma_{Y}^{2}}{m}\right)$
+
+Caso 1: Varianza nota
+$\frac{(\bar{X_{n}}-\bar{Y_{m}})-(\mu_{X}-\mu_{Y})}{\sqrt{\frac{\sigma_{X}^{2}}{n}+\frac{\sigma_{Y}^{2}}{m}}}\sim Norm(0,1)$
+Allora
+$U=\frac{(\bar{X_{n}}-\bar{Y_{m}})-(\mu_{X}-\mu_{Y})}{\sqrt{\frac{\sigma_{X}^{2}}{n}+\frac{\sigma_{Y}^{2}}{m}}}\overset{H_{0}}\sim Norm(0,1)$
+
+| Tipo | Rifiuto se                      |
+| ---- | ------------------------------- |
+| I    | $abs(u)>z_{1-\frac{\alpha}{2}}$ |
+| II   | $u>z_{1-\alpha}$                |
+| III  | $u<-z_{1-\alpha}$               |
+
+---
+
+Caso 2: Varianza incognita, ufuali 
+$\sigma_{X}^{2} = \sigma_{Y}^{2} = \nu$
+$S_{X}^{2}=\frac{1}{n-1} \sum\limits_{i=1}^{n}(X_{i}-\bar{X_{n}})^{2}$
+$S_{Y}^{2}=\frac{1}{m-1} \sum\limits_{i=1}^{m}(Y_{i}-\bar{Y_{m}})^{2}$
+$\hat\nu=S_{p}^{2}=\frac{(n-1)S_{X}^{2}+(m-1)S_{Y}^{2}}{n+m-2}$
+
+$\hat\nu$ prende il nome di **varianza combinata**
+
+La **statistica test** è data da
+$U=\frac{\bar{X_{n}}-\bar{Y_{m}}}{\sqrt{S_{p}^{2}(\frac{1}{n}+\frac{1}{m})}}\overset{H_{0}}\sim T(\nu=n+m-2)$
+Tipo|Rifiuto se
+-|-
+I|$abs(u)>t_{1-\alpha;n+m-2}$
+II|$u>t_{1-\alpha;n+m-2}$
+III|$u<-t_{1-\alpha;n+m-2}$
+
+---
+
+Caso 3: Varianza incognita, non uguali
+$U=\frac{\bar{X_{n}}-\bar{Y_{m}}}{\sqrt{\frac{S_{X}^{2}}{n}+\frac{S_{Y}^{2}}{m}}}\overset{H_{0}}\sim T(\nu=\nu^{*})$
+
