@@ -745,7 +745,7 @@ $Cov[X,Y] = E[(X-E[X])(Y-E[Y])]$
 - $Cov[X,Y] = Cov[Y,X]$
 - $Cov[X,X] = Var[X]$
 - $Cov[\alpha X,\beta Y] = \alpha\beta Cov[X,Y]$
-- $Cov[X+Y,U+W] = Cov[X,V] +Cov[X,W] +Cov[Y,U] +Cov[Y,W]$
+- $Cov[X+Y,U+W] = Cov[X,U] +Cov[X,W] +Cov[Y,U] +Cov[Y,W]$
 ### Matrice di convarianza
 Dato $X=(X_{1},X_{2},\ldots,X_{n})$, la matrice di convarianza($C_{X}$) è la matrice di elementi
 $(C_{X})_{ij} = Cov[X_{i},X_{j}]$
@@ -761,8 +761,15 @@ Si dicono incorrelate due variabili aleatorie $X$, $Y$ per cui $Cov[X,Y] = 0$
 - $|\rho_{XY}| = 1$ se unicamente tra $X$ e $Y$ esiste un valore deterministico lineare $Y=aX+b$ con $a,b\in\mathbb{R}$ che hanno lo stesso segno
 - Se $X$ e $Y$ sono indipendenti, allora sono incorrelate
   ```ad-dem
-  $Cov[X,Y] = E[XY]-E[X]E[Y]$
-  $E[XY] = \sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i},y_{j}] = \sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i}]P[y_{j}] = \left(\sum\limits_{i}x_{i}P[x_{i}]\right)\left(\sum\limits_{j}y_{j}P[y_{j}]\right) = E[X]E[Y]$
+title: $Cov[X,Y] = E[XY]-E[X]E[Y]$
+$$
+\displaylines{
+E[XY] = \sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i},y_{j}] = \\ 
+\sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i}]P[y_{j}] = \\
+\left(\sum\limits_{i}x_{i}P[x_{i}]\right)\left(\sum\limits_{j}y_{j}P[y_{j}]\right) = \\
+E[X]E[Y]
+}
+$$
   ```
 - $Var[X+Y] = Var[X]+Var[Y]+2Cov[X,Y]$
 - $Var[X-Y] = Var[X]+Var[Y]-2Cov[X,Y]$
@@ -778,11 +785,11 @@ $J=\begin{bmatrix} \frac{\delta h_{1}}{\delta u} & \frac{\delta h_{1}}{\delta v}
 ```
 ## Distribuzioni
 ### Distribuzione di Bernoulli
-Une **variabile aleatoria** $X$ è distribuita secondo una **bernanlliana** di parametro $p\in[0,1]$, se essa può assumere valori $1$ e $0$ rispettivamente con probabilità $p$ e $1-p$
+Une **variabile aleatoria** $X$ è distribuita secondo una **bernoulliana** di parametro $p\in[0,1]$, se essa può assumere valori $1$ e $0$ rispettivamente con probabilità $p$ e $1-p$
 $p(s) = \begin{cases} p &\text{se }s=1 \\ 1-p &\text{se }s=0 \\ 0 &\text{altrimenti}\end{cases}$
 $F_X(t) = \begin{cases} 0 &\text{se }t<0 \\ 1-p &\text{se }0\leq t<1 \\ 1 &\text{se }t\geq1\end{cases}$
 ### Distribuzione Binomiale
-Siano $X_{1},X_{2},\ldots,X_{n}$ $n$ variabili **bernoulliane** diuguale parametro $p$ e indipendenti fra di loro
+Siano $X_{1},X_{2},\ldots,X_{n}$ $n$ variabili **bernoulliane** di uguale parametro $p$ e indipendenti fra di loro
 Sia $X=X_{1}+X_{2}+\ldots+X_{n}$. Questa **variabile aleatoria** è detta distribuita secondo una **binomiale** di parametro $n$ e $p$
 
 ```ad-th
