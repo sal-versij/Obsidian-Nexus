@@ -602,15 +602,15 @@ $P[X>t+s|X>t] = P[X>t+s]$
 La variabile aleatoria "tempo di attesa dell'$n$-esimo arrivo di un **processo di Poisson**" è detta ***Gamma*** di parametri $n$ e $\lambda$
 $X\sim\Gamma(n,\lambda)$
 #### Densità
-$f_{X}(x) = \begin{cases} 0 & x<0 \\ \frac{1}{(n-1)!}\lambda^{n}x^{n-1}e^{-\lambda x} & x>0 \end{cases}$
+$f_{X}(x) = \begin{cases} 0 & x\leq0 \\ \frac{1}{(n-1)!}\lambda^{n}x^{n-1}e^{-\lambda x} & x>0 \end{cases}$
 ### Distribuzione di Weibul
 Sia $Y\sim Esp(\lambda)$ e sia $\lambda>0$, è detta ***variabile di Weibul*** la variabile aleatoria
 $X=Y^{\frac{1}{\alpha}}$;
 $X\sim Wei(\alpha,\lambda)$
 #### Densità
 Densità di **Weibul**: Funzione rischio
-$f_{X}(x) = \begin{cases} 0 & x<0 \\ \lambda\alpha x^{\lambda-1}e^{-\lambda x^{\alpha}} & x>0 \end{cases}$
-$F_{X(x)}= \begin{cases} 0 & x<0 \\ 1-e^{-\lambda x\alpha} & x\geq0 \end{cases}$
+$f_{X}(x) = \begin{cases} 0 & x<0 \\ \lambda\alpha x^{\lambda-1}e^{-\lambda x^{\alpha}} & x>0 \end{cases}$ (???? dovrebbe essere $\lambda x^{\alpha}e^{-\lambda x^{\alpha}}$)
+$F_{X(x)}= \begin{cases} 0 & x<0 \\ 1-e^{-\lambda x^{\alpha}} & x\geq0 \end{cases}$
 
 ```ad-dem
 $Y\geq0,X=Y^{\frac{1}{\alpha}}$
@@ -618,7 +618,7 @@ $F_{X}(x) = P[X\leq x]=P\left[Y^{\frac{1}{\alpha}}\leq x\right]= P[Y\leq x^{\alp
 $f_{X}(x) = F'_X(x)$
 ```
 ##### Osservazione
-$E[X] = \alpha^{\frac{-1}{\lambda}} [\Gamma(1+\frac{1}{\lambda})$
+$E[X] = \alpha^{\frac{-1}{\lambda}} \left[\Gamma\left(1+\frac{1}{\lambda}\right)\right]$
 $Var[X] = \alpha^{\frac{-1}{\lambda}}\left[\Gamma\left(1+\frac{1}{\lambda}\right)-\Gamma\left(1+\frac{1}{\lambda}\right)\right]$
 #### Funzione di rischio
 Variabile aleatoria $T$ = "tempo di funzionamento"
