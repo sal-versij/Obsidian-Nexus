@@ -111,7 +111,7 @@ Sia $\Omega$ uno spazio campionario e $\mathscr{F}$ una $\sigma$-algebra
 Assiomi:
 
 1. Per ogni evento $E\in\mathscr{F}$
-   $P[E]\in\mathscr{R}$; $0\leq P[E]\leq1$
+   $P[E]\in\mathbb{R}$; $0\leq P[E]\leq1$
 2. Per l'intero spazio campionario
    $P[\Omega]=1$
 3. Presa una qualsiasi successione di eventi tali che $E_i\cap E_j=\emptyset$ se $i\neq j$
@@ -190,12 +190,12 @@ $P[F|G] = \sum\limits_{i}{P[F|E_i\cap G]\cdot P[E_i|G]}$
 dove la sommatoria è estesa unicamente ai casi $P[E_i\cap G]\neq\emptyset$
 ### Formula di Bayes
 Dato un evento $F$ e data una partizione $\{E_{h}\}$ di $\Omega$, si ha
-$P[E_h|F]=\frac{P[E|E_h]\cdot P[E_h]}{\sum\limits_{i}{P[F|E-i]\cdot P[E_i]}}$
+$P[E_{h}|F]=\frac{P[F|E_{h}]\cdot P[E_{h}]}{\sum\limits_{i}{P[F|E_{i}]\cdot P[E_{i}]}}$
 
 ```ad-dem
 $P[E_h\cap F]=P[F|E_h]P[E_h]=P[E_h|F]P[F]$
 $P[E_h|F]=\frac{P[F|E_h]\cdot P[E_h]}{P[F]}=$
-$=\frac{P[E|E_h]\cdot P[E_h]}{\sum\limits_{i}{P[F|E-i]\cdot P[E_i]}}$
+$=\frac{P[F|E_h]\cdot P[E_h]}{\sum\limits_{i}{P[F|E_i]\cdot P[E_i]}}$
 ```
 ### Eventi indipendenti
 #### Osservazioni
@@ -230,8 +230,8 @@ Una famiglia di $n$ eventi $E_1,E_2,\ldots,E_n$ si dice famiglia di eventi indip
 ### Disposti
 Si dice che $n$ oggetti sono ordinati (o disposti) in un allinemaneto quando sono collocati in n posti numerati da 1 ad n
 ### Permutazione
-Si dice permutazione di n oggetti distinti ogni allineamento deli oggetti stessi, due permutazioni sono distinte quando differiscono per il posto occupato da almeno un oggetto.
-Indicheremo con P_n il numero di permutazioni
+Si dice permutazione di $n$ oggetti distinti ogni allineamento deli oggetti stessi, due permutazioni sono distinte quando differiscono per il posto occupato da almeno un oggetto.
+Indicheremo con $P_{n}$ il numero di permutazioni
 
 $P_n=n!$
 
@@ -268,25 +268,25 @@ $A_t=\{\omega|X(\omega)\leq t\}\in\mathscr{F}\;\;\;\;\forall t\in\mathbb{R}$
 ```ad-def
 title: Funzione di ripartizione
 Data la variabile aleatoria $X$, è detta funzione di ripartizione di $X$ la funzione
-$F_x(t)=P[X\leq t]=P[A_t]$
-$F_x(t):\mathbb{R}\to[0,1]$
+$F_{X}(t)=P[X\leq t]=P[A_{t}]$
+$F_{X}(t):\mathbb{R}\to[0,1]$
 ```
 ### Proprietà
-1. $F_x$ è monotona non decrescente, cioè
+1. $F_{X}$ è monotona non decrescente, cioè
    $F_x(t_1)\leq F_x(t_2)\impliedby t_1\leq t_2$
    $A_{t_1}\subseteq A_{t_2}\implies P[A_{t_1}]\leq P[A_{t_2}]$
-2. $\lim\limits_{t\to-\infty}F_x(t)=0$ $\lim\limits_{t\to+\infty}F_x(t)=1$
-3. Per ogni valore $x_0\in\mathbb{R}$
-   $P[X=x_0]=\lim\limits_{t\to x_0^+}F_x(t)-\lim\limits_{t\to x_0^-}F_x(t)$
-4. La funzione di ripartizione $F_x$ è continua e destra, ossia:
-   per ogni valore $x_0\in\mathbb{R}$
-   $F_x[x_0](=P[X\leq x_0])=\lim\limits_{t\to x_0^+}F_x(t)$
+2. $\lim\limits_{t\to-\infty}F_{X}(t)=0$ $\lim\limits_{t\to+\infty}F_{X}(t)=1$
+3. Per ogni valore $x_{0}\in\mathbb{R}$
+   $P[X=x_{0}]=\lim\limits_{t\to x_{0}^{+}}F_{X}(t)-\lim\limits_{t\to x_{0}^{-}}F_{X}(t)$
+4. La funzione di ripartizione $F_{X}$ è continua a destra, ossia:
+   per ogni valore $x_{0}\in\mathbb{R}$
+   $F_{X}(x_{0}) = P[X\leq x_{0}] = \lim\limits_{t\to x_{0}^{+}}F_{X}(t)$
 
 ```ad-def
 title: Variabile aleatoria discreta
-Se la variabile aleatoria X può assumere solo un numero finito (o al più numerabile) di valori, la relativa $F_{x}$ sarà costante a tratti
+Se la variabile aleatoria $X$ può assumere solo un numero finito (o al più numerabile) di valori, la relativa $F_{X}$ sarà costante a tratti
 e la variabile viene detta discreta
-Se X può assumere i valori di un internvallo $I\subset\mathbb{R}$, allora F_x è generalmente continua e la variabile è detta continua
+Se $X$ può assumere i valori di un internvallo $I\subset\mathbb{R}$, allora $F_{X}$ è generalmente continua e la variabile è detta continua
 ```
 ### Densità di variabili aleatorie
 #### Caso discreto
@@ -296,11 +296,11 @@ $P[X=x_i]\rightarrow\sum\limits_i{P[X=x_i]}=1$
 ```ad-def
 title: Densità di probabilità
 La funzione $P_x:\mathbb{R}\to[0,1]$ definita dalla relazione
-$P_X(x)=P[X=x]=\begin{cases}P[X=x_i]&x=x_1 &\text{per un certo i}\\0 &x\neq x_i &\forall i\end{cases}$
+$P_{X}(x)=P[X=x]=\begin{cases}P[X=x_{i}]&x=x_{i} &\text{per un certo i}\\0 &x\neq x_{i} &\forall i\end{cases}$
 ```
 
-$A=\{x_1|a<x_{i}\leq b\}$
-$P[a<X\leq b]=\sum\limits_{i\in A} P[X=x_i]=\sum\limits_{i\in A} P_X(x_i)$
+$A=\{x_{i}|a<x_{i}\leq b\}$
+$P[a<X\leq b]=\sum\limits_{i\in A} P[X=x_{i}]=\sum\limits_{i\in A} P_{X}(x_{i})$
 assioma:
 $P[a<X\leq b]=P[a<X<b]+P[X=b]$
 $P[a<X\leq b]\neq P[a<X<b]$
