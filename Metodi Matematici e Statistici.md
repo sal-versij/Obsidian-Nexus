@@ -645,7 +645,7 @@ $f(x) = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^{2}}$
 ```ad-dem
 $f_{X}(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}z^{2}}$
 $z = \frac{x-\mu}{\sigma}$; $x = \sigma z+\mu$; $dx = \sigma dz$
-$\frac{1}{\sigma\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2} \left(\frac{x-\mu}{\sigma}\right)^{2}}dx \frac{1}{\sigma\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2}z^{2}} \sigma dz = \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2}z^{2}} dz$
+$\frac{1}{\sigma\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2} \left(\frac{x-\mu}{\sigma}\right)^{2}}dx = \frac{1}{\sigma\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2}z^{2}} \sigma dz = \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{1}{2}z^{2}} dz$
 $f(z) = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}z^{2}}$
 ```
 ## Vettori Aleatori
@@ -657,12 +657,12 @@ $X\equiv(X_{1},X_{2},\ldots,X_{n})$
 $P[(X_{1}\cap X_{2}\cap\ldots\cap X_{n})]\equiv P[X_{1},X_{2},\ldots,X_{n}]$
 Se abbiamo le variavili aleatorie $X$, $Y$ discrete
 
-- $\sum\limits_{i}\sum\limits_{j}P[X=i,Y=j] = 1$, $\sum\limits_{i}P[X=i] = 1$, $\sum\limits_{j}P[Y=j = 1$
-- I valori $P[X=i,Y=j]$ formano la densità discreta congiungta del vettore $(X,Y)$
+- $\sum\limits_{i}\sum\limits_{j}P[X=i,Y=j] = 1$, $\sum\limits_{i}P[X=i] = 1$, $\sum\limits_{j}P[Y=j] = 1$
+- I valori $P[X=i,Y=j]$ formano la densità discreta congiunta del vettore $(X,Y)$
 - Le densità $P[X=i]$, $P[Y=j]$ sono dette densità marginali
 
 Osservazione:
-è sempre possibile ricreare le prob. marginali dalle prob. congiunte, ma non è vero il viceversa
+	è sempre possibile ricreare le prob. marginali dalle prob. congiunte, ma non è vero il viceversa
 
 ```ad-def
 title: Funzione di ripartizione congiunta
