@@ -384,14 +384,14 @@ $=E[X^{2}]+\mu^{2}-2\mu E[X]=$
 $=E[X^{2}]+\mu^{2}-2\mu^{2}=E[X^{2}]-\mu^{2}$
 ```
 ### Disuguaglianza di Markov
-Sia $X$ una variabile aleatoria e $g:\mathbb{R}\to\mathbb{R}$ tale che $g(X)\geq0\quad\forall x\in\mathbb{R}$
-Allora, se esiste $E[g(X)]$, si ha:
-$P[g(X)\geq N]\leq \frac{E[g(X)]}{N}\quad\forall N>0$
+Sia $X$ una variabile aleatoria e $g:\mathbb{R}\to\mathbb{R}$ tale che $g(x)\geq0\quad\forall x\in\mathbb{R}$
+Allora, se esiste $E[g(x)]$, si ha:
+$P[g(x)\geq N]\leq \frac{E[g(x)]}{N}\quad\forall N>0$
 
 ```ad-dem
-$E[X]=\int\limits_{-\infty}^{+\infty}xf_{X}(x)dx$
-$E[g(x)]\int\limits_{-\infty}^{+\infty}g(x)f_X(x)dx$
-$E[g(x)]\int\limits_{-\infty}^{+\infty}g(x)f_X(x)dx\geq$
+$E[x]=\int\limits_{-\infty}^{+\infty}xf_{X}(x)dx$
+$E[g(x)]\int\limits_{-\infty}^{+\infty}g(x)f_{X}(x)dx$
+$E[g(x)]\int\limits_{-\infty}^{+\infty}g(x)f_{X}(x)dx\geq$
 $\geq\int\limits_{\{x|g(x)\leq N\}}g(x)f_X(x)dx\geq\int\limits_{\{x|g(x)\leq N\}}Nf_X(x)dx=$
 $=N\int\limits_{\{x|g(x)\leq N\}}f_X(x)dx=NP[g(x)\geq N]$
 $E[g(x)]\geq N\cdot P[g(x)\geq N]$
@@ -409,11 +409,12 @@ $\mu_{k}=E[X^{k}]$
 #### Osservazione
 $Var[X]=\mu_2-(\mu_1)^2$
 
-```ad-def Funzione generatrive dei momenti
+```ad-def
+title: Funzione generativa dei momenti
 $\mu_{X}(t)=E[e^{tx}]$
 ```
 #### Proprietà
-- $\mu_{1}=[\frac{d}{dt}\mu_{X}(t)]_{t=0}$
+- $\mu_{1}=\left[\frac{d}{dt}\mu_{X}(t)\right]_{t=0}$
   ```ad-dem
   $\mu_1=\int\limits_{-\infty}^{+\infty}xf_X(x)dx$
   $\mu_{X}(t)=\int\limits_{-\infty}^{+\infty}e^{tx}f_{X}(x)dx$
@@ -421,12 +422,12 @@ $\mu_{X}(t)=E[e^{tx}]$
   $[\frac{d}{dt}\mu_{X}(t)]_{t=0}=\int\limits_{-\infty}^{+\infty}xf_X(x)dx=\mu_1$
   ```
 - $\frac{d^{k}}{dt^{k}}(e^{tx})=x^{k}e^{tx}$
-- $\mu_{k}=[\frac{d^{k}}{dt^{k}}m_x(t)]_{t=0}$
+- $\mu_{k}=\left[\frac{d^{k}}{dt^{k}}\mu_{X}(t)\right]_{t=0}$
 - Siano $X$ e $Y$ due variabili aleatorie, se
-  $\mu_{X}(t)=m_{y}(t)\quad\forall t\in[-t_{0},t_{0}]$
+  $\mu_{X}(t)=\mu_{Y}(t)\quad\forall t\in[-t_{0},t_{0}]$
   allora $X$ e $Y$ hanno la medesima densità
-- Se $X$ possiede la funzione generatrice dei momenti e $Y=aX+b$, allora esiste anche $m_y(t)$ e
-  $m_{y}(t)=e^{tb}m_x(at)$
+- Se $X$ possiede la funzione generatrice dei momenti e $Y=aX+b$, allora esiste anche $\mu_{Y}(t)$ e
+  $\mu_{Y}(t)=e^{tb}\mu_{X}(at)$
 ## Schemi e distribuzioni
 ### Schema di Bernoulli
 Consideriamo un esperimento che si può concludere solo in due modi chiamati convenzionalmente successo ed insuccesso; un esperimento di questo tipo è detto di ***Bernoulli***
