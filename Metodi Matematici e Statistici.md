@@ -786,7 +786,7 @@ $J=\begin{bmatrix} \frac{\delta h_{1}}{\delta u} & \frac{\delta h_{1}}{\delta v}
 ## Distribuzioni
 ### Distribuzione di Bernoulli
 Une **variabile aleatoria** $X$ è distribuita secondo una **bernoulliana** di parametro $p\in[0,1]$, se essa può assumere valori $1$ e $0$ rispettivamente con probabilità $p$ e $1-p$
-$p(s) = \begin{cases} p &\text{se }s=1 \\ 1-p &\text{se }s=0 \\ 0 &\text{altrimenti}\end{cases}$
+$P(s) = \begin{cases} p &\text{se }s=1 \\ 1-p &\text{se }s=0 \\ 0 &\text{altrimenti}\end{cases}$
 $F_X(t) = \begin{cases} 0 &\text{se }t<0 \\ 1-p &\text{se }0\leq t<1 \\ 1 &\text{se }t\geq1\end{cases}$
 ### Distribuzione Binomiale
 Siano $X_{1},X_{2},\ldots,X_{n}$ $n$ variabili **bernoulliane** di uguale parametro $p$ e indipendenti fra di loro
@@ -803,7 +803,7 @@ Si può considerare come caso particolare della **distribuzione Binomiale** che 
 2. il parametro $p\to0$, ma $np=\lambda\in\mathbb{R}^{+}$
    $P(k) = \frac{\lambda^{k}}{k!}e^{-\lambda}\;\;\;k=0,1,2,\ldots$
    - $\lambda$ è un qualsiasi valore positivo equivalente al numero di successi che ci si aspetta che si verifichino in un dato intervallo di tempo (la frequenza media di accadimento edll'evento osservato)
-   - $k$ p il numero delle occorrenza (successi) per cui si vuole prevedere la probabilità
+   - $k$ è il numero delle occorrenza (successi) per cui si vuole prevedere la probabilità
 ### Distribuzione uniforme
 È la distribuzione che assume un valore contenuto in un intervallo $[a,b]$
 
@@ -819,7 +819,7 @@ $F_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ 1-e^{-\lambda t} &\text{se }t\geq0 \
 #### Proprietà
 $P[X>s+t|X>s] = P[X>t] \forall t,s\in\mathbb{R}^{+}$
 ### Distribuzione di Weibull
-Uuna variabile aleatoria $X$ è detta distribuita secondo una **Weibull** di parametri $\alpha,\beta\in\mathbb{R}^{+}$ se è assolutamente continua con densità di probabilità
+Una variabile aleatoria $X$ è detta distribuita secondo una **Weibull** di parametri $\alpha,\beta\in\mathbb{R}^{+}$ se è assolutamente continua con densità di probabilità
 $f_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ \alpha\beta t^{\beta-1}e^{-\alpha t^{\beta}} &\text{se }t\geq0 \end{cases}$
 $F_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ 1-e^{-\alpha t^{\beta}} &\text{se }t\geq0 \end{cases}$
 ### Distribuzione Normale (di Gauss)
