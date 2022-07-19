@@ -578,11 +578,17 @@ $N_{t}\sim Poi(\mu=\lambda t)$
 ### Distribuzione Esponenziale
 La variabile aleatoria "tempo di attesa del primo arrivo in un processo di Poisson di intensità $\lambda$" è detta ***Esponenziale di variabile $\lambda$***
 #### Densità
-$f_{X(x) =}\begin{cases} 0 & x<0 \\ \lambda e^{-\lambda x} &x>0 \end{cases}$
+$f_{X(x) =}\begin{cases} 0 & x\leq0 \\ \lambda e^{-\lambda x} &x>0 \end{cases}$
 
 ```ad-dem
 $F_{X}(t) = P[X\leq t]$
-$P[X>t] = 1-P[X\leq t] = 1-F_{X}(t) \implies F_X(t) = 1-P[X>t] = 1-P[N_{t} = 0] = 1-i^{\lambda t} \implies f_{X(t)}= \frac{d}{dt}F_{X(t)}= \lambdae^{-\lambda t}$
+$$
+\displaylines{
+P[X>t] = 1-P[X\leq t] = 1-F_{X}(t) \implies \\
+F_{X}(t) = 1-P[X>t] = 1-P[N_{t} = 0] = 1-e^{-\lambda t} \implies \\
+f_{X(t)} = \frac{d}{dt}F_{X(t)}= \lambda e^{-\lambda t}
+}
+$$
 ```
 #### Momenti
 $\mu_{X}(t) = \frac{\lambda}{\lambda-t}\;\;\;t<\lambda$; $E[X] = \frac{1}{\lambda}$; $Var[X] = \frac{1}{\lambda^{2}}$
