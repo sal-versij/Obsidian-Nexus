@@ -295,7 +295,7 @@ $P[X=x_i]\rightarrow\sum\limits_i{P[X=x_i]}=1$
 
 ```ad-def
 title: Densità di probabilità
-La funzione $P_x:\mathbb{R}\to[0,1]$ definita dalla relazione
+La funzione $P_{X}:\mathbb{R}\to[0,1]$ definita dalla relazione
 $P_{X}(x)=P[X=x]=\begin{cases}P[X=x_{i}]&x=x_{i} &\text{per un certo i}\\0 &x\neq x_{i} &\forall i\end{cases}$
 ```
 
@@ -305,7 +305,7 @@ assioma:
 $P[a<X\leq b]=P[a<X<b]+P[X=b]$
 $P[a<X\leq b]\neq P[a<X<b]$
 
-$F_x(t)OP[X\leq t]=\sum\limits_{x_{i}<t}P_{X}(x_{i})$
+$F_{X}(t)=P[X\leq t]=\sum\limits_{x_{i}<t}P_{X}(x_{i})$
 #### Caso Continuo
 Per definire la probabilità consideriamo la funzione di ripartizione
 $F_x(a)=P[X\leq a]$
@@ -354,7 +354,7 @@ si dimostra che:
 
 ```ad-def
 title: Moda
-Sia $X$ una variabile aleatoria, discreta o continua, si chiama moda di X il valore, se esiste, per cui è massima la densità
+Sia $X$ una variabile aleatoria, discreta o continua, si chiama moda di $X$ il valore, se esiste, per cui è massima la densità
 ```
 
 ```ad-def
@@ -365,7 +365,7 @@ $P[X<x_{\alpha}]\leq \alpha \leq P[X\leq x_{\alpha}]$
 
 ```ad-def
 title: Mediana
-Si dice mediana della vbariabile aleatoria $X$ il quantile di ordine $0.5$($x_{0.5}$)
+Si dice mediana della variabile aleatoria $X$ il quantile di ordine $0.5$($x_{0.5}$)
 ```
 
 ```ad-def
@@ -377,19 +377,19 @@ $Var[X]=E[(X-\mu)^2]$
 $Var[X]=E[X^2]-\mu^2$
 
 ```ad-dem
-$Var[X]=E[(x-\mu)^2]=$
-$=E[(x^2+\mu^2-2X\mu)]=$
-$=E[x^2]+E[\mu^2]-E[2X\mu]=$
-$=E[x^2]+\mu^{2-2\mu}E[X]=$
-$=E[x^2]+\mu^2-2\mu^2=E[X^2]-\mu^2$
+$Var[X]=E[(X-\mu)^{2}]=$
+$=E[(X^{2}+\mu^{2}-2X\mu)]=$
+$=E[X^{2}]+E[\mu^{2}]-E[2X\mu]=$
+$=E[X^{2}]+\mu^{2}-2\mu E[X]=$
+$=E[X^{2}]+\mu^{2}-2\mu^{2}=E[X^{2}]-\mu^{2}$
 ```
 ### Disuguaglianza di Markov
-Sia $X$ una variabile aleatoria e $g:\mathbb{R}\to\mathbb{R}$ tale che $g(x)\geq0\quad\forall x\in\mathbb{R}$
+Sia $X$ una variabile aleatoria e $g:\mathbb{R}\to\mathbb{R}$ tale che $g(X)\geq0\quad\forall x\in\mathbb{R}$
 Allora, se esiste $E[g(X)]$, si ha:
-$P[g(X)\geq N]\leq \frac{E[g(x)]}{N}\quad\forall N>0$
+$P[g(X)\geq N]\leq \frac{E[g(X)]}{N}\quad\forall N>0$
 
 ```ad-dem
-$E[x]=\int\limits_{-\infty}^{+\infty}xf_X(x)dx$
+$E[X]=\int\limits_{-\infty}^{+\infty}xf_{X}(x)dx$
 $E[g(x)]\int\limits_{-\infty}^{+\infty}g(x)f_X(x)dx$
 $E[g(x)]\int\limits_{-\infty}^{+\infty}g(x)f_X(x)dx\geq$
 $\geq\int\limits_{\{x|g(x)\leq N\}}g(x)f_X(x)dx\geq\int\limits_{\{x|g(x)\leq N\}}Nf_X(x)dx=$
