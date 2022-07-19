@@ -594,7 +594,7 @@ $$
 $\mu_{X}(t) = \frac{\lambda}{\lambda-t}\;\;\;t<\lambda$; $E[X] = \frac{1}{\lambda}$; $Var[X] = \frac{1}{\lambda^{2}}$
 
 ```ad-dem
-$\mu_{X}(t) = \int\limits_{-\infty}^{+\infty}d^{tx}f_{X}(x)dx = \int\limits_{0}^{+\infty}d^{tx}\lambda e^{-\lambda x}dx = \lambda\int\limits_{0}^{\infty}e^{(t-\lambda)x}dx = \lambda \left[\frac{e^{(t-\lambda)x}}{t-\lambda}\right]_{0}^{\infty} = \lambda \left[\frac{e^{(t-\lambda)\infty}}{t-\lambda} - \frac{1}{t-\lambda}\right] = \frac{\lambda}{\lambda-t}$
+$\mu_{X}(t) = \int\limits_{-\infty}^{+\infty}e^{tx}f_{X}(x)dx = \int\limits_{0}^{+\infty}e^{tx}\lambda e^{-\lambda x}dx = \lambda\int\limits_{0}^{\infty}e^{(t-\lambda)x}dx = \lambda \left[\frac{e^{(t-\lambda)x}}{t-\lambda}\right]_{0}^{\infty} = \lambda \left[\frac{e^{(t-\lambda)\infty}}{t-\lambda} - \frac{1}{t-\lambda}\right] = \frac{\lambda}{\lambda-t}$
 ```
 #### Proprietà (Assenza di memoria)
 $P[X>t+s|X>t] = P[X>t+s]$
@@ -614,7 +614,7 @@ $F_{X(x)}= \begin{cases} 0 & x<0 \\ 1-e^{-\lambda x\alpha} & x\geq0 \end{cases}$
 
 ```ad-dem
 $Y\geq0,X=Y^{\frac{1}{\alpha}}$
-$F_{X}(x) = P[X\leq x]=P\left[Y^{\frac{1}{\alpha}}\leq x\right]= P[Y\leq x^{\alpha}] = F_{Y}(x^{\alpha}) = 1-e^{-\lambda x\alpha}$
+$F_{X}(x) = P[X\leq x]=P\left[Y^{\frac{1}{\alpha}}\leq x\right]= P[Y\leq x^{\alpha}] = F_{Y}(x^{\alpha}) = 1-e^{-\lambda x^{\alpha}}$
 $f_{X}(x) = F'_X(x)$
 ```
 ##### Osservazione
