@@ -438,20 +438,18 @@ Una sequenza di **prove di Bernanilli**, tra di loro indipendenti, per le quali 
 ### Distribuzione di Bernoulli
 Una variabile aleatoria $X$ che vale $1$ se la **prova di Bernoulli** si è conclusa con il successo e $0$ altrimenti è detta **variabile aleatoria di Bernoulli** di parametro $p$ in simboli $X\sim Ber(p)$
 #### Densità
-$P[X=1] = p$; $P[X=0] = q$
-
-```ad-dem
 $P[X=n] = p^{n}q^{1-n}$
-```
+
+$P[X=1] = p$; $P[X=0] = q$
 #### Momenti
 ```ad-def
-$\mu_{X}(t) = E[e^{Xt}]$; $E[X] = \frac{d}{dt}m_X(t)|_{t=0}$
+$\mu_{X}(t) = E[e^{Xt}]$; $E[X] = \frac{d}{dt}\mu_{X}(t)|_{t=0}$
 ```
 
-$\mu_{X}(t) = pe^{t}+q$; $E[X] = 1$; $Var[X] = pq$
+$\mu_{X}(t) = pe^{t}+q$; $E[X] = p$; $Var[X] = pq$
 
 ```ad-dem
-$E[X] = pe^{t}+q|_{t=0} = p+q = 1$
+$E[X] = pe^{t}|_{t=0} = p$
 $[Var[X]=E[(X-E[X])^{2}]]=E[X^{2}]-E^{2}[X]$
 $E[X^{2}]= \frac{d^{2}}{dt^{2}}\mu_{X}(t)|_{t=0} = pe^{t}|_{t=0}=p$
 $Var[X] = p-p^{2} = p(1-p) = pq$
@@ -475,9 +473,11 @@ Probabilità di $n-k$ insuccessi è $q^{n-k}$
 $\mu_{X}(t) = (pe^{t}+q)^{n}$; $E[X] = np$; $Var[X] = npq$
 
 ```ad-dem
-$m_{X(t)}= \sum\limits_{k=0}{n}e^{tk}\binom{n}{k}p^{k}q^{n-k} = \sum\limits_{k=0}{n}\binom{n}{k}(pe^{t})^{k}q^{n-k} = (pe^{t}+q)^{n}$
+$\mu_{X(t)}= \sum\limits_{k=0}{n}e^{tk}\binom{n}{k}p^{k}q^{n-k} = \sum\limits_{k=0}{n}\binom{n}{k}(pe^{t})^{k}q^{n-k} = (pe^{t}+q)^{n}$
 $E[X] = \frac{d}{dt}m_X(t)|_{t=0} = n(pe^{t}+q)^{n-1}pe^{t}|_{t=0} = np$
-$E[X^{2}] = \frac{d^{2}}{dt^{2}}\mu_{X}(t)|_{t=0} = np[(n-1)(pe^{t}+q)^{n-2}pe^{2t}+(pe^{t}+q)^{n-1}e^{t}]|_{t=0} = np[(n-1)p+1] = np[np-p+1] = n^{2}p^{2}-np^{2}+np$
+$E[X^{2}] = \frac{d^{2}}{dt^{2}}\mu_{X}(t)|_{t=0} =$
+$= np[(n-1)(pe^{t}+q)^{n-2}pe^{2t}+(pe^{t}+q)^{n-1}e^{t}]|_{t=0} =$
+$= np[(n-1)p+1] = np[np-p+1] = n^{2}p^{2}-np^{2}+np$
 $Var[X] = E[X^{2}] - E^{2}[X] = n^{2}p^{2}-np^{2}+np-n^{2}p^{2} = np(1-p) = npq$
 ```
 ### Distribuzione geometrica
@@ -1148,10 +1148,9 @@ Tipo III $\begin{cases} H_{0}: \mu_{W}=0 &\text{ o }\mu_{W}\geq0 \\ H_{1}: \mu_{
 $S_{W}^{2}=\frac{1}{n-1}\sum\limits_{i=1}^{n}(W_{i}-\bar{W_{n}})$
 $U=\frac{\bar{W_{n}}}{\sqrt{\frac{S_{W}^{2}}{n}}}\overset{H_{0}}\sim T(\nu=n-1)$
 
-| Tipo | Rifiuto se                          |
-| ---- | ----------------------------------- |
-| I    | $abs(u)>z_{1-\frac{\alpha}{2};n-1}$ |
-| II   | $u>z_{1-\alpha;n-1}$                |
-| III  | $u<-z_{1-\alpha;n-1}$               |
-
-## Regressione lineare
+| Tipo                   | Rifiuto se                          |
+| ---------------------- | ----------------------------------- |
+| I                      | $abs(u)>z_{1-\frac{\alpha}{2};n-1}$ |
+| II                     | $u>z_{1-\alpha;n-1}$                |
+| III                    | $u<-z_{1-\alpha;n-1}$               |
+| ## Regressione lineare |                                     |
