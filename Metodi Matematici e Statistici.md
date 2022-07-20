@@ -814,7 +814,7 @@ $E[X] = \frac{a+b}{2}$
 $Var[X] = \frac{(b-a)^{2}}{12}$
 ### Distribuzione esponenziale
 Una **variabile aleatoria** $X$ è detta distribuita secondo un'**esponenziale** di parametro $\lambda\in\mathbb{R}^{+}$ se è assolutamente continua con densità di probabilità
-$f_{X}(t)=\begin{cases} 0 &\text{se }t\leq0 \\ \lambda-e^{-\lambda t} &\text{se }t>0 \end{cases}$
+$f_{X}(t)=\begin{cases} 0 &\text{se }t\leq0 \\ \lambda e^{-\lambda t} &\text{se }t>0 \end{cases}$
 $F_{X}(t)=\begin{cases} 0 &\text{se }t<0 \\ 1-e^{-\lambda t} &\text{se }t\geq0 \end{cases}$
 #### Proprietà
 $P[X>s+t|X>s] = P[X>t] \forall t,s\in\mathbb{R}^{+}$
@@ -840,7 +840,7 @@ con $\Gamma(\alpha) = \int\limits_{0}^{+\infty}e^{-x}x^{\alpha-1}dx$ (***Gamma d
 Si prova che $E[X] = n$, $Var[X]=2n$
 ### Distribuzione t di Student
 Siano $Z\simeq N(0,1)$ e $Y=X^{2}(n)$ due **variabili aleatorie** indipendenti.
-Definiamo $X= \frac{Z}{sqrt{\frac{Y}{n}}}$ e si prova che $X$ è una **variabile aleatoria** distribuita secondo una ***t di Student*** con $n$ gradi di liberta.
+Definiamo $X= \frac{Z}{\sqrt{\frac{Y}{n}}}$ e si prova che $X$ è una **variabile aleatoria** distribuita secondo una ***t di Student*** con $n$ gradi di liberta.
 
 Diremo che la **variabile aleatoria** $X$ è distribuita secondo una t di Student con $n$ gradi di libertà, se è assolutamente continua con densità di probabilità
 $f_{X}(t)= \frac{\Gamma\left(\frac{n+1}{2}\right)}{\Gamma\left(\frac{n}{2}\right)} \frac{1}{\sqrt{n\pi}} \left(1+ \frac{t^{2}}{n}\right)^{-\frac{1}{2}(n+1)}$
