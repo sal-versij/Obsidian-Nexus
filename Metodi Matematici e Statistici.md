@@ -513,7 +513,6 @@ Var[X] = E[X^{2}] - E^{2}[X] = \frac{(1+q)}{p^{2}} - \frac{1}{p^{2}} = \frac{q}{
 }
 $$
 ```
-
 ### Distribuzione binomiale negativa
 La variabile aleatoria che conta il numero di tentativi necessari al verificarsi dell'$n$-esimo successo di uno **schema di Bernoulli** è detta ***binomiale negativa*** di parametri $n$ e $p$
 $X\sim \overline{Bin}(n,p)$
@@ -662,7 +661,7 @@ Se abbiamo le variavili aleatorie $X$, $Y$ discrete
 - Le densità $P[X=i]$, $P[Y=j]$ sono dette densità marginali
 
 Osservazione:
-	è sempre possibile ricreare le prob. marginali dalle prob. congiunte, ma non è vero il viceversa
+è sempre possibile ricreare le prob. marginali dalle prob. congiunte, ma non è vero il viceversa
 
 ```ad-def
 title: Funzione di ripartizione congiunta
@@ -761,7 +760,10 @@ Si dicono incorrelate due variabili aleatorie $X$, $Y$ per cui $Cov[X,Y] = 0$
 - $|\rho_{XY}| = 1$ se unicamente tra $X$ e $Y$ esiste un valore deterministico lineare $Y=aX+b$ con $a,b\in\mathbb{R}$ che hanno lo stesso segno
 - Se $X$ e $Y$ sono indipendenti, allora sono incorrelate
   ```ad-dem
+  ```
+
 title: $Cov[X,Y] = E[XY]-E[X]E[Y]$
+
 $$
 \displaylines{
 E[XY] = \sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i},y_{j}] = \\ 
@@ -770,7 +772,8 @@ E[XY] = \sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i},y_{j}] = \\
 E[X]E[Y]
 }
 $$
-  ```
+
+````
 - $Var[X+Y] = Var[X]+Var[Y]+2Cov[X,Y]$
 - $Var[X-Y] = Var[X]+Var[Y]-2Cov[X,Y]$
 - Se $X_{i}$ sono indipendenti $\implies Var\left[\sum\limits_{i}X_{i}\right] = \sum\limits_{i}Var[X_{i}]$
@@ -782,7 +785,7 @@ $\begin{cases} u &= g_{1}(x,y) \\ v &= g_{2}(x,y) \end{cases}\iff\begin{cases} x
 Sia $(X,Y)$ un **vettore aleatorio**, continuo e sia $(U,V)=g(X,Y)$ una trasformazione invertibile con trasformazione inversa $h(U,V)$ allora
 $f_{UV}(u,v) = f_{XY}(h_{1}(u,v),h_{2}(u,v))\cdot|det J|$
 $J=\begin{bmatrix} \frac{\delta h_{1}}{\delta u} & \frac{\delta h_{1}}{\delta v} \\ \frac{\delta h_{2}}{\delta u} & \frac{\delta h_{2}}{\delta v} \end{bmatrix} \left(\equiv \frac{\delta(h_{1},h_{2})}{\delta(u,v)}\right)$
-```
+````
 ## Distribuzioni
 ### Distribuzione di Bernoulli
 Une **variabile aleatoria** $X$ è distribuita secondo una **bernoulliana** di parametro $p\in[0,1]$, se essa può assumere valori $1$ e $0$ rispettivamente con probabilità $p$ e $1-p$
@@ -1176,9 +1179,10 @@ Tipo III $\begin{cases} H_{0}: \mu_{W}=0 &\text{ o }\mu_{W}\geq0 \\ H_{1}: \mu_{
 $S_{W}^{2}=\frac{1}{n-1}\sum\limits_{i=1}^{n}(W_{i}-\bar{W_{n}})$
 $U=\frac{\bar{W_{n}}}{\sqrt{\frac{S_{W}^{2}}{n}}}\overset{H_{0}}\sim T(\nu=n-1)$
 
-| Tipo                   | Rifiuto se                          |
-| ---------------------- | ----------------------------------- |
-| I                      | $abs(u)>z_{1-\frac{\alpha}{2};n-1}$ |
-| II                     | $u>z_{1-\alpha;n-1}$                |
-| III                    | $u<-z_{1-\alpha;n-1}$               |
-| ## Regressione lineare |                                     |
+| Tipo | Rifiuto se                          |
+| ---- | ----------------------------------- |
+| I    | $abs(u)>z_{1-\frac{\alpha}{2};n-1}$ |
+| II   | $u>z_{1-\alpha;n-1}$                |
+| III  | $u<-z_{1-\alpha;n-1}$               |
+
+---
