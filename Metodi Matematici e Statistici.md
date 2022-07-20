@@ -562,7 +562,7 @@ In un certo intervallo di tempo (o di spazio) si manifestano degli eventi, chiam
 3. ciascun arrivo avviene in modo indipendente dagli altri
 ### Processo di Poisson
 ```ad-def
-La variabile aleatoria $N_{t}$ che conta in un certo intervallo di tempo $t$ il numero di arrivi in uno *schema di Poisson* di intensità $1$ è detta ***Processo di Poisson***
+La variabile aleatoria $N_{t}$ che conta in un certo intervallo di tempo $t$ il numero di arrivi in uno *schema di Poisson* di intensità $\lambda$ è detta ***Processo di Poisson***
 ```
 #### Caratteristiche
 1. $N_{0} = 0$
@@ -618,7 +618,7 @@ $f_{X}(x) = F'_X(x)$
 ```
 ##### Osservazione
 $E[X] = \alpha^{\frac{-1}{\lambda}} \left[\Gamma\left(1+\frac{1}{\lambda}\right)\right]$
-$Var[X] = \alpha^{\frac{-1}{\lambda}}\left[\Gamma\left(1+\frac{1}{\lambda}\right)-\Gamma\left(1+\frac{1}{\lambda}\right)\right]$
+$Var[X] = \alpha^{\frac{-2}{\lambda}}\left[\Gamma\left(1+\frac{2}{\lambda}\right)-\Gamma\left(1+\frac{1}{\lambda}\right)\right]$
 #### Funzione di rischio
 Variabile aleatoria $T$ = "tempo di funzionamento"
 Probabilità che, condizionatamente al fatto che fino all'istante $\bar{t}$  l'apparecchio fosse in funzione esso si guasti immediatamente dopo ossia all'istante $\bar{t}+\Delta t$ è
@@ -759,21 +759,15 @@ Si dicono incorrelate due variabili aleatorie $X$, $Y$ per cui $Cov[X,Y] = 0$
 - $-1<\rho_{XY}<1$
 - $|\rho_{XY}| = 1$ se unicamente tra $X$ e $Y$ esiste un valore deterministico lineare $Y=aX+b$ con $a,b\in\mathbb{R}$ che hanno lo stesso segno
 - Se $X$ e $Y$ sono indipendenti, allora sono incorrelate
-  ```ad-dem
-  ```
-
-title: $Cov[X,Y] = E[XY]-E[X]E[Y]$
-
-$$
-\displaylines{
-E[XY] = \sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i},y_{j}] = \\ 
-\sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i}]P[y_{j}] = \\
-\left(\sum\limits_{i}x_{i}P[x_{i}]\right)\left(\sum\limits_{j}y_{j}P[y_{j}]\right) = \\
-E[X]E[Y]
-}
-$$
-
-````
+  $Cov[X,Y] = E[XY]-E[X]E[Y]$
+  $$
+  \displaylines{
+  E[XY] = \sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i},y_{j}] = \\ 
+  \sum\limits_{i}\sum\limits_{j}x_{i}y_{j}P[x_{i}]P[y_{j}] = \\
+  \left(\sum\limits_{i}x_{i}P[x_{i}]\right)\left(\sum\limits_{j}y_{j}P[y_{j}]\right) = \\
+  E[X]E[Y]
+  }
+  $$
 - $Var[X+Y] = Var[X]+Var[Y]+2Cov[X,Y]$
 - $Var[X-Y] = Var[X]+Var[Y]-2Cov[X,Y]$
 - Se $X_{i}$ sono indipendenti $\implies Var\left[\sum\limits_{i}X_{i}\right] = \sum\limits_{i}Var[X_{i}]$
@@ -785,7 +779,7 @@ $\begin{cases} u &= g_{1}(x,y) \\ v &= g_{2}(x,y) \end{cases}\iff\begin{cases} x
 Sia $(X,Y)$ un **vettore aleatorio**, continuo e sia $(U,V)=g(X,Y)$ una trasformazione invertibile con trasformazione inversa $h(U,V)$ allora
 $f_{UV}(u,v) = f_{XY}(h_{1}(u,v),h_{2}(u,v))\cdot|det J|$
 $J=\begin{bmatrix} \frac{\delta h_{1}}{\delta u} & \frac{\delta h_{1}}{\delta v} \\ \frac{\delta h_{2}}{\delta u} & \frac{\delta h_{2}}{\delta v} \end{bmatrix} \left(\equiv \frac{\delta(h_{1},h_{2})}{\delta(u,v)}\right)$
-````
+```
 ## Distribuzioni
 ### Distribuzione di Bernoulli
 Une **variabile aleatoria** $X$ è distribuita secondo una **bernoulliana** di parametro $p\in[0,1]$, se essa può assumere valori $1$ e $0$ rispettivamente con probabilità $p$ e $1-p$
