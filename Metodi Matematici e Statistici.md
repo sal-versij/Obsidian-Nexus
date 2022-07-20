@@ -962,9 +962,10 @@ Struttura di un test d'ipotesi
 ### Ipotesi
 L'ipotesi di partenza è detta **ipotesi nulla** ed è indicata con $H_{0}$
 
-ad-eg
+```ad-eg
 $H_{0}: \mu=S$ **ipotesi semplice**
 $H_{0}: \mu\leq \text{ opp.} H_{0}: \mu\geq S$ **ipotesi composta**
+```
 
 il contrario dell'ipotesi nulla è l'**ipotesi alternativa** e verrà indicata con $H_{1}$ o $H_{a}$.
 
