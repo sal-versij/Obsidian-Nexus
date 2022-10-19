@@ -12,8 +12,11 @@
 1. Statistiche di una distribuzione
 	- Media ($\mathbb{E}[X]=\mu_{X}=\sum\limits_{x\in R(X)}xP(X=x)$)
 	- Varianza ($\mathbb{E}[(X-\mu_{X})^{2}]=\sigma_{X}^{2}=\sum\limits_{x\in R(X)}(x-\mu_{X})^{2}P(X=x)$)
-	- Entropia
-	- Covarianza e correlazione
+	- Entropia ($H(P(X))=-\sum\limits_{x\in R(X)}P(X=x)\log P(X=x)$)
+		- Entropia relativa ($H(P||Q)=\sum\limits_{x\in R(X)}P(X=x)\log\frac{P(X=x)}{Q(X=x)}$)
+		- Divergenza ($J(P||Q) = H(P||Q) + H(Q||P)$)
+	- Covarianza ($\sigma_{X,Y}=\mathbb{E}[(X-\mu_{X})(Y-\mu_{Y})]$)
+	- Correlazione
 2. Distribuzioni discrete notevoli
 	- Distribuzione di Bernoulli
 	- Distribuzione binomiale
