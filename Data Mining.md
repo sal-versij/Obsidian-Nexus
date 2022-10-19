@@ -104,3 +104,11 @@
 1. Clustering partizionale: algoritmo K-means
 	- su big data (**BFR**, **CURE**)
 2. Clustering basato su densità: algoritmo DBSCAN
+	- Definizioni
+		- **$\epsilon$-intorno di un punto $Q$** ($N_{\epsilon}(Q) = \{\forall P|D(Q,P)\leq\epsilon\}$)
+		- $P$ **Punto direttamente raggiungibile per densità** ($P\in N_{\epsilon}(Q) \land |N_{\epsilon}(Q)|\geq MinPts$)
+		- $P$ **Punto raggiungibile per densità** ($A_{1}=Q, \ldots, A_{n}=P | A_{i+1}\in N_{\epsilon}(A_{i})$)
+		- $P$ **Punto connesso per densità** ad un punto $Q$ (esiste un punto $O$ raggiungibile per densità sia da $P$ che da $Q$)
+		- Cluster
+			- $\forall P, Q\in D$, se $P\in C$ e $Q$ è raggiungibile per densità da $P$ allora $Q\in C$ (Massimilità)
+			- $\forall P, Q\in C$, $P$ è connesso per densità a $Q$ (Connettività)
