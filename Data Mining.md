@@ -16,7 +16,8 @@
 		- Entropia relativa ($H(P||Q)=\sum\limits_{x\in R(X)}P(X=x)\log\frac{P(X=x)}{Q(X=x)}$)
 		- Divergenza ($J(P||Q) = H(P||Q) + H(Q||P)$)
 	- Covarianza ($\sigma_{X,Y}=\mathbb{E}[(X-\mu_{X})(Y-\mu_{Y})]$)
-	- Correlazione
+		- Matrice di covarianza ($\Sigma$)
+	- Correlazione (di Pearson) ($\rho_{X,Y}=\frac{\sigma_{X,Y}}{\sigma_{X}\sigma_{Y}}$)
 2. Distribuzioni discrete notevoli
 	- Distribuzione di Bernoulli
 	- Distribuzione binomiale
