@@ -58,5 +58,30 @@
    - Descrizione dell’algoritmo
    - Strategie per il calcolo del supporto degli itemset.
 3. Ottimizzazioni dell’Apriori
-   - Algoritmi basati su funzioni hash (PCY, Multistage, Multihash);
-   - Algoritmi randomizzati (SON, Toivonen)
+   - Algoritmi basati su funzioni hash (PCY, Multistage, Multihash) {Da rivedere}
+   - Algoritmi randomizzati (SON, Toivonen) {Da rivedere}
+## Clustering
+> Il clustering è un processo che consiste nel raggruppare un insieme di oggetti in gruppi detti cluster, sulla base di una nozione di «distanza» tra gli oggetti.
+> L’obbiettivo del clustering è quello di raggruppare nello stesso cluster oggetti «simili» tra loro (o con bassa distanza reciproca) e in cluster diversi oggetti «dissimili» tra loro (o ad elevata distanza).
+
+1. Concetti generali
+   - Spazi metrici
+	   - Euclideo
+		   - Distanza Euclidea ($D(x,y)=\sqrt{\sum\limits_{i=1}^{n}(x_{i}-y_{i})^{2}}$)
+		   - Distanza di Manhattan ($D(x,y)=\sum\limits_{i=1}^{n}|x_{i}-y_{i}|$)
+		   - Norma $L_{r}$ ($D(x,y)=\sqrt+r{\left(\sum\limits_{i=1}^{n}|x_{i}-y_{i}|^{r}\right)}$)
+		   - Norma $L_{\infty}$
+   - Misure di distanza
+     - Proprietà
+       1. $D(X,Y)\geq0\forall X,Y\in S$ e $D(X,Y)=0$ se e solo se $X=Y$
+       2. $D(X,Y)=D(Y,X)\forall X,Y\in S$ (Proprietà Simmetrica)
+       3. $D(X,Y)+D(Y,Z)\geq D(X,Z)\forall X,Y,Z\in S$ (Proprietà triangolare)
+     
+     - Distanza di Jaccard ($D(X,Y)=$)
+     - Distanza di edit
+     - Distanza di Hamming
+   - Tassonomia degli algoritmi di clustering
+   - Problema della dimensionalità
+2. Clustering gerarchico
+3. Clustering partizionale: algoritmo K-means
+4. Clustering basato su densità: algoritmo DBSCAN
