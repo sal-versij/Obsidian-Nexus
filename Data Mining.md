@@ -89,6 +89,18 @@
 	   - Metodi bassati sulla griglia (**STING**)
 	   - Metodi basati sul moedllo (**EM**, **COBWEB**, **SOM**)
    - Problema della dimensionalità {da rivedere}
-2. Clustering gerarchico
-3. Clustering partizionale: algoritmo K-means
-4. Clustering basato su densità: algoritmo DBSCAN
+2. Clustering gerarchico ($O(n^{3})$ ottimizzabile fino a $O(n^{2}\log n)$)
+	- Dendogramma
+	- Criteri di combinazione
+		- Distanza tra cluster
+			- Centroidi
+			- Medoidi
+			- Single link (min)
+			- Complete link (max)
+			- Average link (avg)
+		- Raggio del cluster
+		- Diametro del cluster
+		- Cluster aglomerativo vs divisivo
+1. Clustering partizionale: algoritmo K-means
+	- su big data (**BFR**, **CURE**)
+2. Clustering basato su densità: algoritmo DBSCAN
