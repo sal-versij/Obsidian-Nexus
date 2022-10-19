@@ -1,4 +1,5 @@
 # Data Mining
+## Calcolo Probabilità
 1. Concetti di base
    - Eventi
    - Variabili aleatorie 
@@ -19,7 +20,7 @@
      - Matrice di covarianza ($\Sigma$)
    - Correlazione
      - di Pearson ($[-1,1]\ni\rho_{X,Y}=\frac{\sigma_{X,Y}}{\sigma_{X}\sigma_{Y}}$)
-	     - Matrice di correlazione ($P$)
+       - Matrice di correlazione ($P$)
      - di Spearman ($\rho_{X,Y}=\frac{\sigma_{R_{X},R_{Y}}}{\sigma_{R_{X}}\sigma_{R_{Y}}}$)
        > Il rank di un valore è la sua posizione nell’insieme dei valori ordinato dal valore più piccolo a quello più grande.
 3. Distribuzioni discrete notevoli
@@ -35,6 +36,20 @@
    - Distribuzione normale ($f(x)=\frac{1}{\sqrt{2\pi}\beta}e^{-\frac{(x-\alpha)^{2}}{2\beta^{2}}}$, $\mu_{X}=\alpha$,$\sigma_{X}^{2}=\beta^{2}$)
    - Distribuzione normale standard ($f(z)=\frac{1}{\sqrt{2\pi}}e^{- \frac{z^{2}}{2}}$, $\mu_{X}=0$,$\sigma_{X}^{2}=1$) ($X=N(\mu,\sigma^{2}) \implies Z=\frac{X-\mu}{\sigma}$ chiamato **z-score**)
    - Distribuzione esponenziale ($f(x)=\lambda e^{-\lambda x}$, $\mu_{X}=\frac{1}{\lambda}$,$\sigma_{X}^{2}=\frac{1}{\lambda^{2}}$)
-   - Distribuzione Chi-quadro ($f(x)=\begin{cases} 0 &\text{se} x<0\\  \end{cases}$, $\mu_{X}=$,$\sigma_{X}^{2}=$)
-   - Distribuzione T-student ($f(x)=$, $\mu_{X}=$,$\sigma_{X}^{2}=$)
-   - Distribuzione normale multivariata ($f(x)=$, $\mu_{X}=$,$\sigma_{X}^{2}=$)
+   - Distribuzione Chi-quadro \left($f(x)=\begin{cases} 0 &\text{ se } x<0\\ \frac{1}{\Gamma\left(\frac{n}{2}\right)}\left(\frac{1}{2}\right)^{\frac{n}{2}}X^{\frac{n}{2}-1}e^{\frac-{1}{2}x} &\text{ se } x\geq0 \end{cases}$, $\mu_{X}=n$,$\sigma_{X}^{2}=2n$)
+   - Distribuzione T-student ($f(x)=\frac{\Gamma\left(\frac{n+1}{2}\right)}{\Gamma\left(\frac{n}{2}\right)} \frac{1}{\sqrt{n\pi}} \left(1+ \frac{x^{2}}{n}\right)^{-\frac{1}{2}(n+1)}$, $\mu_{X}=0$ se $n>1$,$\sigma_{X}^{2}=\frac{n}{n-1}$ se $n>2$)
+   - Distribuzione normale multivariata ($f(x)=\frac{1}{(2\pi)^{\frac{n}{2}}\left|\Sigma\right|^{\frac{1}{2}}}e^{-\frac{1}{2}(\vec{x}-\vec{\mu})'\Sigma^{-1}(\vec{x}-\vec{\mu})}$)
+## Insiemi Frequenti
+1. Definizione del problema
+   - Market-basket model
+   - Insiemi frequenti
+   - Regole di associazione
+   - Insiemi frequenti massimali e chiusi
+2. Algoritmo Apriori
+   - Principio Apriori
+   - Descrizione dell’algoritmo
+   - Strategie per il calcolo del supporto degli itemset.
+3. Ottimizzazioni dell’Apriori
+   - Algoritmi basati su funzioni hash (PCY, Multistage, Multihash);
+
+   - Algoritmi randomizzati (SON, Toivonen)
