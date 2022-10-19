@@ -16,7 +16,7 @@
     "workspace:undo-close-pane": 20,
     "workspace:close": 20,
     "workspace:close-others": 20,
-    "file-explorer:new-file": 1,
+    "file-explorer:new-file": 2,
     "find-unlinked-files:delete-unlinked-files": 9,
     "app:delete-file": 9,
     "editor:delete-paragraph": 9,
