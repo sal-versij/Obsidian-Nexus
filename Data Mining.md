@@ -27,15 +27,14 @@
    - Distribuzione binomiale ($P(X=k)=\binom{n}{k}p^{k}q^{n-k}$, $\mu_{X}=np$, $\sigma_{X}^{2}=npq$)
    - Distribuzione ipergeometrica ($P(X=k)=\frac{\binom{n}{k}\binom{N-n}{m-k}}{\binom{N}{m}}$ con $k\in[\max(0,n+m-N),\min(n,m)]$)
    - Distribuzione uniforme ($P(X=k)=\frac{1}{b}$ con $k\in[a,a+b-1]$, $\mu_{X}=a+\frac{b-1}{2}$, $\sigma_{X}^{2}=\frac{b^{2}-1}{12}$)
-   - Distribuzione geometrica ($P(X=k)=qp^{k}$, $\mu_{X}=$, $\sigma_{X}^{2}=$)
-   - Distribuzione binomiale negativa ($P(X=k)=$, $\mu_{X}=$, $\sigma_{X}^{2}=$)
-   - Distribuzione di Poisson ($P(X=k)=$, $\mu_{X}=$, $\sigma_{X}^{2}=$)
-   - Distribuzione multinomiale ($P(X=k)=$, $\mu_{X}=$, $\sigma_{X}^{2}=$)
+   - Distribuzione geometrica ($P(X=k)=qp^{k}$)
+   - Distribuzione di Poisson ($P(X=k)=\frac{e^{-\lambda}\lambda^{k}}{k!}$, $\mu_{X}=\sigma_{X}^{2}=\lambda$)
+   - Distribuzione multinomiale ($P(X_{1}=k_{1},\ldots,X_{n}=k_{n})=\frac{m!}{\prod\limits_{i=1}^{n}k_{i}!}\prod\limits_{i=1}^{n}p_{i}^{k_{i}}$)
 4. Distribuzioni continue
-   - Variabili aleatorie continue
-   - Distribuzione uniforme
-   - Distribuzione normale
-   - Distribuzione esponenziale
-   - Distribuzione Chi-quadro
-   - Distribuzione T-student
-   - Distribuzione normale multivariata
+   - Distribuzione uniforme ($f(x)=\frac{1}{b-a}$ con $x\in[a,b]$, $\mu_{X}=\frac{a+b}{2}$,$\sigma_{X}^{2}=\frac{(b-a)^{2}}{12}$)
+   - Distribuzione normale ($f(x)=\frac{1}{\sqrt{2\pi}\beta}e^{-\frac{(x-\alpha)^{2}}{2\beta^{2}}}$, $\mu_{X}=\alpha$,$\sigma_{X}^{2}=\beta^{2}$)
+   - Distribuzione normale standard ($f(z)=\frac{1}{\sqrt{2\pi}}e^{- \frac{z^{2}}{2}}$, $\mu_{X}=0$,$\sigma_{X}^{2}=1$) ($X=N(\mu,\sigma^{2}) \implies Z=\frac{X-\mu}{\sigma}$ chiamato **z-score**)
+   - Distribuzione esponenziale ($f(x)=\lambda e^{-\lambda x}$, $\mu_{X}=\frac{1}{\lambda}$,$\sigma_{X}^{2}=\frac{1}{\lambda^{2}}$)
+   - Distribuzione Chi-quadro ($f(x)=\begin{cases} 0 &\text{se} x<0\\  \end{cases}$, $\mu_{X}=$,$\sigma_{X}^{2}=$)
+   - Distribuzione T-student ($f(x)=$, $\mu_{X}=$,$\sigma_{X}^{2}=$)
+   - Distribuzione normale multivariata ($f(x)=$, $\mu_{X}=$,$\sigma_{X}^{2}=$)
