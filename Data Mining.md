@@ -66,22 +66,29 @@
 
 1. Concetti generali
    - Spazi metrici
-	   - Euclideo
-		   - Distanza Euclidea ($D(x,y)=\sqrt{\sum\limits_{i=1}^{n}(x_{i}-y_{i})^{2}}$)
-		   - Distanza di Manhattan ($D(x,y)=\sum\limits_{i=1}^{n}|x_{i}-y_{i}|$)
-		   - Norma $L_{r}$ ($D(x,y)=\sqrt+r{\left(\sum\limits_{i=1}^{n}|x_{i}-y_{i}|^{r}\right)}$)
-		   - Norma $L_{\infty}$
+     - Euclideo
+		- Distanza Euclidea ($D(x,y)=\sqrt{\sum\limits_{i=1}^{n}(x_{i}-y_{i})^{2}}$)
+		- Distanza di Manhattan ($D(x,y)=\sum\limits_{i=1}^{n}|x_{i}-y_{i}|$)
+		- Norma $L_{r}$ ($D(x,y)=\sqrt[r]{\sum\limits_{i=1}^{n}|x_{i}-y_{i}|^{r}}$)
+		- Norma $L_{\infty}$ ($D(x,y)=\max\limits_{1\leq i\leq n}|x_{i}-y_{i}|$)
+		- Distanza del coseno ($D(x,y)=\arccos\frac{\sum\limits_{i=1}^{n}x_{i}y_{i}}{\sqrt{\sum\limits_{i=1}^{n}x_{i}^{2}}\sqrt{\sum\limits_{i=1}^{n}y_{i}^{2}}}$)
+     - Insiemi
+		- Distanza di Jaccard ($D(S,T)=1-\frac{|S\cap T|}{|S\cup T|}$)
+     - Stringhe
+		- Distanza di edit (**il minimo numero di operazioni di cancellazione o inserzione di caratteri da effettuare partendo da x per ottenere y.**)
+		- Distanza di Hamming (**il numero di componenti in corrispondenza delle quali x e y differiscono**)
    - Misure di distanza
      - Proprietà
-       1. $D(X,Y)\geq0\forall X,Y\in S$ e $D(X,Y)=0$ se e solo se $X=Y$
-       2. $D(X,Y)=D(Y,X)\forall X,Y\in S$ (Proprietà Simmetrica)
-       3. $D(X,Y)+D(Y,Z)\geq D(X,Z)\forall X,Y,Z\in S$ (Proprietà triangolare)
-     
-     - Distanza di Jaccard ($D(X,Y)=$)
-     - Distanza di edit
-     - Distanza di Hamming
+		- $D(X,Y)\geq0\forall X,Y\in S$ e $D(X,Y)=0$ se e solo se $X=Y$
+		- $D(X,Y)=D(Y,X)\forall X,Y\in S$ (Proprietà Simmetrica)
+		- $D(X,Y)+D(Y,Z)\geq D(X,Z)\forall X,Y,Z\in S$ (Proprietà triangolare)
    - Tassonomia degli algoritmi di clustering
-   - Problema della dimensionalità
+	   - Metodi gerarchici o agglomerativi
+	   - Metodi di partizionamento (**K-means**)
+	   - Metodi basati sulla densità (**DBSCAN**, **OPTICS**)
+	   - Metodi bassati sulla griglia (**STING**)
+	   - Metodi basati sul moedllo (**EM**, **COBWEB**, **SOM**)
+   - Problema della dimensionalità {da rivedere}
 2. Clustering gerarchico
 3. Clustering partizionale: algoritmo K-means
 4. Clustering basato su densità: algoritmo DBSCAN
