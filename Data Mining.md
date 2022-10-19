@@ -43,13 +43,18 @@
 1. Definizione del problema
    - Market-basket model
    - Insiemi frequenti
-   - Regole di associazione
-   - Insiemi frequenti massimali e chiusi
+   - Regole di associazione ($I\to j$)
+	   - Supporto regola ($Supp(I\cup\{j\})$)
+	   - Coverage ($Supp(I)$)
+	   - Confidenza ($Conf(I\to j) = \frac{Supp(I\cup\{j\})}{Supp(I)}$)
+	   - Interesse ($Int(I\to j)=Conf(I\to j)-\frac{Supp(j)}{N}$)
+	   - Lift ($Lift(I\to j) = N\times \frac{Supp(I\cup\{j\})}{Supp(I)\times Supp(j)}$)
+   - Insiemi frequenti massimali  (non esiste un suo super-insieme frequente)
+   - Insiemi frequenti chiusi (non esiste un suo super-insieme che ha lo stesso supporto)
 2. Algoritmo Apriori
    - Principio Apriori
    - Descrizione dell’algoritmo
    - Strategie per il calcolo del supporto degli itemset.
 3. Ottimizzazioni dell’Apriori
    - Algoritmi basati su funzioni hash (PCY, Multistage, Multihash);
-
    - Algoritmi randomizzati (SON, Toivonen)
