@@ -67,54 +67,93 @@
 1. Concetti generali
    - Spazi metrici
      - Euclideo
-		- Distanza Euclidea ($D(x,y)=\sqrt{\sum\limits_{i=1}^{n}(x_{i}-y_{i})^{2}}$)
-		- Distanza di Manhattan ($D(x,y)=\sum\limits_{i=1}^{n}|x_{i}-y_{i}|$)
-		- Norma $L_{r}$ ($D(x,y)=\sqrt[r]{\sum\limits_{i=1}^{n}|x_{i}-y_{i}|^{r}}$)
-		- Norma $L_{\infty}$ ($D(x,y)=\max\limits_{1\leq i\leq n}|x_{i}-y_{i}|$)
-		- Distanza del coseno ($D(x,y)=\arccos\frac{\sum\limits_{i=1}^{n}x_{i}y_{i}}{\sqrt{\sum\limits_{i=1}^{n}x_{i}^{2}}\sqrt{\sum\limits_{i=1}^{n}y_{i}^{2}}}$)
+       - Distanza Euclidea ($D(x,y)=\sqrt{\sum\limits_{i=1}^{n}(x_{i}-y_{i})^{2}}$)
+       - Distanza di Manhattan ($D(x,y)=\sum\limits_{i=1}^{n}|x_{i}-y_{i}|$)
+       - Norma $L_{r}$ ($D(x,y)=\sqrt[r]{\sum\limits_{i=1}^{n}|x_{i}-y_{i}|^{r}}$)
+       - Norma $L_{\infty}$ ($D(x,y)=\max\limits_{1\leq i\leq n}|x_{i}-y_{i}|$)
+       - Distanza del coseno ($D(x,y)=\arccos\frac{\sum\limits_{i=1}^{n}x_{i}y_{i}}{\sqrt{\sum\limits_{i=1}^{n}x_{i}^{2}}\sqrt{\sum\limits_{i=1}^{n}y_{i}^{2}}}$)
      - Insiemi
-		- Distanza di Jaccard ($D(S,T)=1-\frac{|S\cap T|}{|S\cup T|}$)
+       - Distanza di Jaccard ($D(S,T)=1-\frac{|S\cap T|}{|S\cup T|}$)
      - Stringhe
-		- Distanza di edit (**il minimo numero di operazioni di cancellazione o inserzione di caratteri da effettuare partendo da x per ottenere y.**)
-		- Distanza di Hamming (**il numero di componenti in corrispondenza delle quali x e y differiscono**)
+       - Distanza di edit (**il minimo numero di operazioni di cancellazione o inserzione di caratteri da effettuare partendo da x per ottenere y.**)
+       - Distanza di Hamming (**il numero di componenti in corrispondenza delle quali x e y differiscono**)
    - Misure di distanza
      - Proprietà
-		- $D(X,Y)\geq0\forall X,Y\in S$ e $D(X,Y)=0$ se e solo se $X=Y$
-		- $D(X,Y)=D(Y,X)\forall X,Y\in S$ (Proprietà Simmetrica)
-		- $D(X,Y)+D(Y,Z)\geq D(X,Z)\forall X,Y,Z\in S$ (Proprietà triangolare)
+       - $D(X,Y)\geq0\forall X,Y\in S$ e $D(X,Y)=0$ se e solo se $X=Y$
+       - $D(X,Y)=D(Y,X)\forall X,Y\in S$ (Proprietà Simmetrica)
+       - $D(X,Y)+D(Y,Z)\geq D(X,Z)\forall X,Y,Z\in S$ (Proprietà triangolare)
    - Tassonomia degli algoritmi di clustering
-	   - Metodi gerarchici o agglomerativi
-	   - Metodi di partizionamento (**K-means**)
-	   - Metodi basati sulla densità (**DBSCAN**, **OPTICS**)
-	   - Metodi bassati sulla griglia (**STING**)
-	   - Metodi basati sul moedllo (**EM**, **COBWEB**, **SOM**)
+     - Metodi gerarchici o agglomerativi
+     - Metodi di partizionamento (**K-means**)
+     - Metodi basati sulla densità (**DBSCAN**, **OPTICS**)
+     - Metodi bassati sulla griglia (**STING**)
+     - Metodi basati sul moedllo (**EM**, **COBWEB**, **SOM**)
    - Problema della dimensionalità {da rivedere}
 2. Clustering gerarchico ($O(n^{3})$ ottimizzabile fino a $O(n^{2}\log n)$)
-	- Dendogramma
-	- Criteri di combinazione
-		- Distanza tra cluster
-			- Centroidi
-			- Medoidi
-			- Single link (min)
-			- Complete link (max)
-			- Average link (avg)
-		- Raggio del cluster
-		- Diametro del cluster
-		- Cluster aglomerativo vs divisivo
+   - Dendogramma
+   - Criteri di combinazione
+     - Distanza tra cluster
+       - Centroidi
+       - Medoidi
+       - Single link (min)
+       - Complete link (max)
+       - Average link (avg)
+     - Raggio del cluster
+     - Diametro del cluster
+     - Cluster aglomerativo vs divisivo
 3. Clustering partizionale: algoritmo K-means
-	- su big data (**BFR**, **CURE**)
+   - su big data (**BFR**, **CURE**)
 4. Clustering basato su densità: algoritmo DBSCAN ($O(n\log n)$)
-	- Definizioni
-		- **$\epsilon$-intorno di un punto $Q$** ($N_{\epsilon}(Q) = \{\forall P|D(Q,P)\leq\epsilon\}$)
-		- $P$ **Punto direttamente raggiungibile per densità** ($P\in N_{\epsilon}(Q) \land |N_{\epsilon}(Q)|\geq MinPts$)
-		- $P$ **Punto raggiungibile per densità** ($A_{1}=Q, \ldots, A_{n}=P | A_{i+1}\in N_{\epsilon}(A_{i})$)
-		- $P$ **Punto connesso per densità** ad un punto $Q$ (esiste un punto $O$ raggiungibile per densità sia da $P$ che da $Q$)
-		- Cluster
-			- $\forall P, Q\in D$, se $P\in C$ e $Q$ è raggiungibile per densità da $P$ allora $Q\in C$ (Massimilità)
-			- $\forall P, Q\in C$, $P$ è connesso per densità a $Q$ (Connettività)
-		- Stima di MinPts ($\geq D+1$) più alto quanto:
-			- Più ampio è il dataset di punti
-			- Maggiore è il rumore presente
-		- Stima di $\epsilon$, si possono ordinare(Decrescente) i punti deldataset sulla base della distanza dal k-esimo punto più vicino, e plottarli, si otterrà una curva simile a quella per il clustering gerarchico, si seleziona la ordinata del punto del grafico in cui la curva piega maggiormente
-	- 
-5. 
+   - Definizioni
+     - **$\epsilon$-intorno di un punto $Q$** ($N_{\epsilon}(Q) = \{\forall P|D(Q,P)\leq\epsilon\}$)
+     - $P$ **Punto direttamente raggiungibile per densità** ($P\in N_{\epsilon}(Q) \land |N_{\epsilon}(Q)|\geq MinPts$)
+     - $P$ **Punto raggiungibile per densità** ($A_{1}=Q, \ldots, A_{n}=P | A_{i+1}\in N_{\epsilon}(A_{i})$)
+     - $P$ **Punto connesso per densità** ad un punto $Q$ (esiste un punto $O$ raggiungibile per densità sia da $P$ che da $Q$)
+     - Cluster
+       - $\forall P, Q\in D$, se $P\in C$ e $Q$ è raggiungibile per densità da $P$ allora $Q\in C$ (Massimilità)
+       - $\forall P, Q\in C$, $P$ è connesso per densità a $Q$ (Connettività)
+     - Stima di MinPts ($\geq D+1$) più alto quanto:
+       - Più ampio è il dataset di punti
+       - Maggiore è il rumore presente
+     - Stima di $\epsilon$, si possono ordinare(Decrescente) i punti deldataset sulla base della distanza dal k-esimo punto più vicino, e plottarli, si otterrà una curva simile a quella per il clustering gerarchico, si seleziona la ordinata del punto del grafico in cui la curva piega maggiormente
+5. Conclusioni
+   - Scalabilità
+   - Capacità di trappare tipi diiversi di attributi
+   - Capacità di ricercare cluster di forma diversa
+   - Facilità nell'uso e nella comprensione dei parametri di input
+   - Capacità di gestire dati con outlier e rumore
+   - Insensibilità all'ordine dei record in input e all'aggiunta di nuovi dati
+   - Capacità di gestire dati ad elevata dimensionalità
+   - Interpretabilità e usabilità dei risultati ottenuti
+## Classificazione e predizione
+> ***Classificazione***
+> Predice l’etichetta della classe categoriale di appartenenza (discreta o nominale)
+> 
+> Classifica i dati (attraverso un modello) basandosi sul training set ed i valori (etichette di classe) dell’attributo classificatore sono usati per classificare nuovi dati
+
+> ***Predizione***
+> modella funzioni continue e consente la predizione di dati sconosciuti o mancanti
+
+1. Alberi decisionali:
+   - Costruzione dell’albero;
+   - Algoritmo ID3;
+   - Algoritmo C4.5;
+   - Algoritmo CART;
+   - Pruning;
+   - Estrazione di regole.
+3. Classificatori bayesiani:
+   - Naive Bayes.
+4. Classificatori discriminativi:
+   - Perceptron;
+   - Support Vector Machines (SVM).
+5. Apprendimento lazy:
+   - Algoritmo K-nearest neighbor.
+6. Predizione:
+   - Regressione
+7. Apprendimento ensemble:
+   - Bootstrap;
+   - Algoritmo Random Forest.
+8. Validazione di un classificatore:
+   - Misure di accuratezza;
+   - Holdout;
+   - K-fold cross-validation.
