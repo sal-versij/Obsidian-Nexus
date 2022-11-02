@@ -135,6 +135,12 @@
 > modella funzioni continue e consente la predizione di dati sconosciuti o mancanti
 
 1. Alberi decisionali
+	- Pruning
+		- pre-pruning
+		- post-pruning
+			- C4.3: ***pessimistic pruning*** (**reduced error pruning**)
+			- CART: ***cost-complexity pruning***
+	- Estrazione di regole
 2. Classificatori bayesiani:
    - Naive Bayes.
 3. Classificatori discriminativi:
@@ -182,5 +188,6 @@ Per ricavare la formula del ***Gini Index*** occore considerare:
 a. $p_{i}$: La probabilità di scegliere un'osservazione di $S_{X}$ con classe $i$
 b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere una class $j$ diversa da $i$ a partire dalla distribuzione delle frequenze delle classi
 
-### Pruning
-### Estrazione di regole
+- $gini(S_{X}) = 1-\sum\limits_{i=1}^{n}p_{i}^{2}$
+- $gini_{split}(S_{X})=\sum\limits_{i=1}^{k}\frac{|S_{i}|}{|S_{X}|}gini(S_{i})$
+
