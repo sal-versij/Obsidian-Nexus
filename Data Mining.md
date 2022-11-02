@@ -134,13 +134,13 @@
 > ***Predizione***
 > modella funzioni continue e consente la predizione di dati sconosciuti o mancanti
 
-1. Alberi decisionali:
-   - Costruzione dell’albero;
-   - Algoritmo ID3;
-   - Algoritmo C4.5;
-   - Algoritmo CART;
-   - Pruning;
-   - Estrazione di regole.
+1. Alberi decisionali
+   - Costruzione dell’albero
+   - Algoritmo ID3 (***Entropia distribuzione etichette***) ($H(S_{i}) = -\frac{p_{i}}{p_{i}+n_{i}}\log\frac{p_{i}}{p_{i}+n_{i}}-\frac{n_{i}}{p_{i}+n_{i}}\log\frac{n_{i}}{p_{i}+n_{i}}$; $\bar{H_{A}(S_{x})}=\sum\limits_{i=1}^{k}\frac{p_{i}+n_{i}}{p+n}H(S_{i})$)
+   - Algoritmo C4.5
+   - Algoritmo CART
+   - Pruning
+   - Estrazione di regole
 3. Classificatori bayesiani:
    - Naive Bayes.
 4. Classificatori discriminativi:
