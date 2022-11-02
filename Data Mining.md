@@ -101,9 +101,9 @@
 		- Raggio del cluster
 		- Diametro del cluster
 		- Cluster aglomerativo vs divisivo
-1. Clustering partizionale: algoritmo K-means
+3. Clustering partizionale: algoritmo K-means
 	- su big data (**BFR**, **CURE**)
-2. Clustering basato su densità: algoritmo DBSCAN
+4. Clustering basato su densità: algoritmo DBSCAN ($O(n\log n)$)
 	- Definizioni
 		- **$\epsilon$-intorno di un punto $Q$** ($N_{\epsilon}(Q) = \{\forall P|D(Q,P)\leq\epsilon\}$)
 		- $P$ **Punto direttamente raggiungibile per densità** ($P\in N_{\epsilon}(Q) \land |N_{\epsilon}(Q)|\geq MinPts$)
@@ -112,3 +112,9 @@
 		- Cluster
 			- $\forall P, Q\in D$, se $P\in C$ e $Q$ è raggiungibile per densità da $P$ allora $Q\in C$ (Massimilità)
 			- $\forall P, Q\in C$, $P$ è connesso per densità a $Q$ (Connettività)
+		- Stima di MinPts ($\geq D+1$) più alto quanto:
+			- Più ampio è il dataset di punti
+			- Maggiore è il rumore presente
+		- Stima di $\epsilon$, si possono ordinare(Decrescente) i punti deldataset sulla base della distanza dal k-esimo punto più vicino, e plottarli, si otterrà una curva simile a quella per il clustering gerarchico, si seleziona la ordinata del punto del grafico in cui la curva piega maggiormente
+	- 
+5. 
