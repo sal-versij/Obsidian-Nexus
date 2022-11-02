@@ -128,7 +128,7 @@
 ## Classificazione e predizione
 > ***Classificazione***
 > Predice l’etichetta della classe categoriale di appartenenza (discreta o nominale)
-> 
+>
 > Classifica i dati (attraverso un modello) basandosi sul training set ed i valori (etichette di classe) dell’attributo classificatore sono usati per classificare nuovi dati
 
 > ***Predizione***
@@ -136,24 +136,29 @@
 
 1. Alberi decisionali
    - Costruzione dell’albero
-   - Algoritmo ID3 (***Entropia distribuzione etichette***) ($H(S_{i}) = -\frac{p_{i}}{p_{i}+n_{i}}\log\frac{p_{i}}{p_{i}+n_{i}}-\frac{n_{i}}{p_{i}+n_{i}}\log\frac{n_{i}}{p_{i}+n_{i}}$; $\bar{H_{A}(S_{x})}=\sum\limits_{i=1}^{k}\frac{p_{i}+n_{i}}{p+n}H(S_{i})$)
-   - Algoritmo C4.5
+   - Algoritmo ID3 (***Entropia distribuzione etichette***) ($A:\max gain(A)$)
+     - Sia $S_{x}$ avente n classi differenti $C_{1},\ldots,C_{n}$
+     - $H(S_{X}) = -\sum\limits_{i=1}^{n}\frac{freq(C_{i},S_{X})}{|S_{X}|}\log_{2}\frac{freq(C_{i},S_{X})}{|S_{X}|}$
+     - $\bar{H}_{A}(S_{x})=\sum\limits_{j=1}^{k}\frac{|S_{j}|}{|S_{k}|}\times H(S_{j})$
+     - $gain(A)=H(S_{X})-\bar{H}_{A}(S_{X})$
+   - Algoritmo C4.5 (***Migliora ID3 togliendo bias dovuto alla dimensionsione delle partizioni ottenute***)
+     - $splitinfo$
    - Algoritmo CART
    - Pruning
    - Estrazione di regole
-3. Classificatori bayesiani:
+2. Classificatori bayesiani:
    - Naive Bayes.
-4. Classificatori discriminativi:
+3. Classificatori discriminativi:
    - Perceptron;
    - Support Vector Machines (SVM).
-5. Apprendimento lazy:
+4. Apprendimento lazy:
    - Algoritmo K-nearest neighbor.
-6. Predizione:
+5. Predizione:
    - Regressione
-7. Apprendimento ensemble:
+6. Apprendimento ensemble:
    - Bootstrap;
    - Algoritmo Random Forest.
-8. Validazione di un classificatore:
+7. Validazione di un classificatore:
    - Misure di accuratezza;
    - Holdout;
    - K-fold cross-validation.
