@@ -179,6 +179,9 @@
 	   - Precisione: $Prec(M)= \frac{T_{Pos}}{T_{Pos}+F_{Pos}}$
 	   - Accuratezza: $Acc(m)= \frac{T_{Pos}+T_{Neg}}{Pos+Neg}$
 	   - F1 Score: $F1(M)= 2\times\frac{Prec(M)\times Rec(M)}{Prec(M)+Rec(M)}$
+	   - AUC
+		   - Curva ROC ($TPR$~$FPR$)
+		   - Curva PR ($Prec$~$Rec$)
    - Holdout
    - K-fold cross-validation
 ### Alberi decisionali
@@ -213,3 +216,13 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
 
 - $gini(S_{X}) = 1-\sum\limits_{i=1}^{n}p_{i}^{2}$
 - $gini_{split}(S_{X})=\sum\limits_{i=1}^{k}\frac{|S_{i}|}{|S_{X}|}gini(S_{i})$
+
+## Sistemi di raccomandazione
+1. Sistemi di raccomandazione content-based
+2. Sistemi di raccomandazione collaborative filtering
+3. Singular Value Decomposition (SVD)
+4. Valutazione di qualità di un sistema di raccomandazione
+
+### Tassonomia
+1. Content-based
+2. Collaborative filtering
