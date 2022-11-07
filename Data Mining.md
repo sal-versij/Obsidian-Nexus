@@ -135,12 +135,22 @@
 > modella funzioni continue e consente la predizione di dati sconosciuti o mancanti
 
 1. Alberi decisionali
-	- Pruning
-		- pre-pruning
-		- post-pruning
-			- C4.3: ***pessimistic pruning*** (**reduced error pruning**)
-			- CART: ***cost-complexity pruning***
-	- Estrazione di regole
+   - Pruning
+     - pre-pruning
+     - post-pruning
+       - C4.3: ***pessimistic pruning*** (**reduced error pruning**)
+       - CART: ***cost-complexity pruning***
+   - Estrazione di regole
+     - Qualità di una regola
+       - Coverage
+       - Accuratezza
+       - Esempi Positivi/Negativi
+     - Risoluzione di conflitti
+     - Algoritmi di covering
+       - FOIL ($foilGain(R)=pos'\times \left(\log_{2}\frac{pos'}{pos'+neg'}-\log_{2}\frac{pos}{pos+neg}\right)$)
+       - AQ
+       - CN2
+       - RIPPER
 2. Classificatori bayesiani:
    - Naive Bayes.
 3. Classificatori discriminativi:
@@ -157,31 +167,30 @@
    - Misure di accuratezza;
    - Holdout;
    - K-fold cross-validation.
-
-
 ### Alberi decisionali
-#### Algoritmo ID3 
+#### Algoritmo ID3
 > Entropia distribuzione etichette
-> 
+>
 > $A:\max gain(A)$
 
- - Sia $S_{x}$ avente n classi differenti $C_{1},\ldots,C_{n}$
- - $H(S_{X}) = -\sum\limits_{i=1}^{n}\frac{freq(C_{i},S_{X})}{|S_{X}|}\log_{2}\frac{freq(C_{i},S_{X})}{|S_{X}|}$
- - $\bar{H}_{A}(S_{x})=\sum\limits_{j=1}^{k}\frac{|S_{j}|}{|S_{k}|}\times H(S_{j})$
- - $gain(A)=H(S_{X})-\bar{H}_{A}(S_{X})$
+- Sia $S_{x}$ avente n classi differenti $C_{1},\ldots,C_{n}$
+- $H(S_{X}) = -\sum\limits_{i=1}^{n}\frac{freq(C_{i},S_{X})}{|S_{X}|}\log_{2}\frac{freq(C_{i},S_{X})}{|S_{X}|}$
+- $\bar{H}_{A}(S_{x})=\sum\limits_{j=1}^{k}\frac{|S_{j}|}{|S_{k}|}\times H(S_{j})$
+- $gain(A)=H(S_{X})-\bar{H}_{A}(S_{X})$
 #### Algoritmo C4.5
 > Migliora ID3 togliendo bias dovuto alla dimensionsione delle partizioni ottenute
-> 
+>
 > $A: \max(gainRatio(A))$
+
 - $splitInfo(A)=-\sum\limits_{i=1}^{k}\frac{|S_{i}|}{|S_{X}|}\log_{2}\frac{|S_{i}|}{|S_{X}|}$
 - $gainRatio(A)= \frac{gain(A)}{splitInfo(A)}$
 #### Algoritmo CART (***Gini Index***)
 > Chiamato anche ***Gini impurity***, misura l'impurità di un insieme di tuple $S_{X}$ associato ad un nodo dell'albero decisionale;
-> 
+>
 > Sia $i$ una classe e $T$ una tupla di classe $i$ scelta a caso da $S_{X}$;
-> 
+>
 > Supponiamo di assegnare a $T$ una classe $j$ random sulla base della distribuzione delle frequenze delle classi in $S_{X}$;
-> 
+>
 > Il Gini index misura la probabilità che $i\neq j$
 
 Per ricavare la formula del ***Gini Index*** occore considerare:
@@ -190,4 +199,3 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
 
 - $gini(S_{X}) = 1-\sum\limits_{i=1}^{n}p_{i}^{2}$
 - $gini_{split}(S_{X})=\sum\limits_{i=1}^{k}\frac{|S_{i}|}{|S_{X}|}gini(S_{i})$
-
