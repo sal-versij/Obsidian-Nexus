@@ -171,9 +171,16 @@
    - Bootstrap;
    - Algoritmo Random Forest.
 7. Validazione di un classificatore:
-   - Misure di accuratezza;
-   - Holdout;
-   - K-fold cross-validation.
+   - Misure di accuratezza
+	   - Recall / Sensitività / True Positive Rate: $Rec(M)= TPR(M)= \frac{T_{Pos}}{Pos}$
+	   - Specificità / True Negative Rate: $Spec(M)= \frac{T_{Neg}}{Neg}$
+	   - False Positive Rate: $FPR(M)= \frac{F_{Pos}}{Neg}$
+	   - False Discovery Rate: $FDR(M)= \frac{F_{Pos}}{T_{Pos}+F_{Pos}}$
+	   - Precisione: $Prec(M)= \frac{T_{Pos}}{T_{Pos}+F_{Pos}}$
+	   - Accuratezza: $Acc(m)= \frac{T_{Pos}+T_{Neg}}{Pos+Neg}$
+	   - F1 Score: $F1(M)= 2\times\frac{Prec(M)\times Rec(M)}{Prec(M)+Rec(M)}$
+   - Holdout
+   - K-fold cross-validation
 ### Alberi decisionali
 #### Algoritmo ID3
 > Entropia distribuzione etichette
