@@ -157,31 +157,31 @@
 3. Classificatori discriminativi:
    - Perceptron ($wX+b$)
    - Support Vector Machines (SVM)
-	   - Hard margin ($\begin{cases} \min{||\vec{w}||} \\ y_{i}(\vec{w}\cdot\vec{x}_{i}-b)\geq1\;\forall 1\leq i\leq n \end{cases}$)
-	   - Soft margin ($\begin{cases} \min\left(\frac{1}{n}\sum\limits_{i=1}^{n}\epsilon_{i} +\lambda||\vec{w}||^{2}\right) \\ y_{i}(\vec{w}\cdot\vec{x}_{i}-b)\leq1-\epsilon_{i}\;\forall 1\leq i\leq n \\ \epsilon_{i}\geq0\;\forall1\leq i\leq n\end{cases}$) (duale lagringiano)
-	   - Mapping con kernel
+     - Hard margin ($\begin{cases} \min{||\vec{w}||} \\ y_{i}(\vec{w}\cdot\vec{x}_{i}-b)\geq1\;\forall 1\leq i\leq n \end{cases}$)
+     - Soft margin ($\begin{cases} \min\left(\frac{1}{n}\sum\limits_{i=1}^{n}\epsilon_{i} +\lambda||\vec{w}||^{2}\right) \\ y_{i}(\vec{w}\cdot\vec{x}_{i}-b)\leq1-\epsilon_{i}\;\forall 1\leq i\leq n \\ \epsilon_{i}\geq0\;\forall1\leq i\leq n\end{cases}$) (duale lagringiano)
+     - Mapping con kernel
 4. Apprendimento lazy:
    - Algoritmo K-nearest neighbor.
 5. Predizione:
    - Regressione
-	   - Lineare Semplice ($y=w_{0}+w_{1}x$ ove $w_{1}=\frac{\sum\limits_{i=1}^{n}(x_{i}-\bar{x})(y_{i}-\bar{y})}{\sum\limits_{i=1}^{n}(x_{i}-\bar{x})^{2}}\;\;w_{0}=\bar{y}-w_{1}\bar{x}$)
-	   - Lineare Multipla (Caso $n$-dimensionale:  $y=w_{0} +w_{1}x_{1} +\ldots +w_{n}x_{n}$)
-	   - 
+     - Lineare Semplice ($y=w_{0}+w_{1}x$ ove $w_{1}=\frac{\sum\limits_{i=1}^{n}(x_{i}-\bar{x})(y_{i}-\bar{y})}{\sum\limits_{i=1}^{n}(x_{i}-\bar{x})^{2}}\;\;w_{0}=\bar{y}-w_{1}\bar{x}$)
+     - Lineare Multipla (Caso $n$-dimensionale:  $y=w_{0} +w_{1}x_{1} +\ldots +w_{n}x_{n}$)
+     -
 6. Apprendimento ensemble:
    - Bootstrap;
    - Algoritmo Random Forest.
 7. Validazione di un classificatore:
    - Misure di accuratezza
-	   - Recall / Sensitività / True Positive Rate: $Rec(M)= TPR(M)= \frac{T_{Pos}}{Pos}$
-	   - Specificità / True Negative Rate: $Spec(M)= \frac{T_{Neg}}{Neg}$
-	   - False Positive Rate: $FPR(M)= \frac{F_{Pos}}{Neg}$
-	   - False Discovery Rate: $FDR(M)= \frac{F_{Pos}}{T_{Pos}+F_{Pos}}$
-	   - Precisione: $Prec(M)= \frac{T_{Pos}}{T_{Pos}+F_{Pos}}$
-	   - Accuratezza: $Acc(m)= \frac{T_{Pos}+T_{Neg}}{Pos+Neg}$
-	   - F1 Score: $F1(M)= 2\times\frac{Prec(M)\times Rec(M)}{Prec(M)+Rec(M)}$
-	   - AUC
-		   - Curva ROC ($TPR$~$FPR$)
-		   - Curva PR ($Prec$~$Rec$)
+     - Recall / Sensitività / True Positive Rate: $Rec(M)= TPR(M)= \frac{T_{Pos}}{Pos}$
+     - Specificità / True Negative Rate: $Spec(M)= \frac{T_{Neg}}{Neg}$
+     - False Positive Rate: $FPR(M)= \frac{F_{Pos}}{Neg}$
+     - False Discovery Rate: $FDR(M)= \frac{F_{Pos}}{T_{Pos}+F_{Pos}}$
+     - Precisione: $Prec(M)= \frac{T_{Pos}}{T_{Pos}+F_{Pos}}$
+     - Accuratezza: $Acc(m)= \frac{T_{Pos}+T_{Neg}}{Pos+Neg}$
+     - F1 Score: $F1(M)= 2\times\frac{Prec(M)\times Rec(M)}{Prec(M)+Rec(M)}$
+     - AUC
+       - Curva ROC ($TPR$~$FPR$)
+       - Curva PR ($Prec$~$Rec$)
    - Holdout
    - K-fold cross-validation
 ### Alberi decisionali
@@ -216,9 +216,19 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
 
 - $gini(S_{X}) = 1-\sum\limits_{i=1}^{n}p_{i}^{2}$
 - $gini_{split}(S_{X})=\sum\limits_{i=1}^{k}\frac{|S_{i}|}{|S_{X}|}gini(S_{i})$
-
 ## Sistemi di raccomandazione
 1. Sistemi di raccomandazione content-based
 2. Sistemi di raccomandazione collaborative filtering
 3. Singular Value Decomposition (SVD)
 4. Valutazione di qualità di un sistema di raccomandazione
+## Reti e modelli random
+1. Concetti fondamentali sulle reti
+   - Grafo e tipi di grafi;
+   - Grado di un nodo;
+   - Connettività del grafo: cammini, cicli e diametro del grafo;
+   - Coefficiente di clustering;
+   - Betweenness.
+2. Modelli random
+   - Modello di Erdos-Renyi;
+   - Reti small-world e modello di Watts-Strogatz;
+   - Reti scale-free e modello di Albert-Barabasi.
