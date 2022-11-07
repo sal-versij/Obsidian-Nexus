@@ -153,18 +153,20 @@
        - CN2
        - RIPPER
 2. Classificatori bayesiani:
-   - Naive Bayes.
+   - Naive Bayes
 3. Classificatori discriminativi:
-   - Perceptron;
-   - Support Vector Machines (SVM).
-4. Apprendimento lazy:
+   - Perceptron ($wX+b$)
+   - Support Vector Machines (SVM)
+	   - hard margin ($\begin{cases} \min{||\vec{w}||} \\ y_{i}(\vec{w}\cdot\vec{x}_{i}-b)\geq1\;\forall 1\leq i\leq n \end{cases}$)
+	   - soft margin ($\begin{cases} \min\left(\frac{1}{n}\sum\limits_{i=1}^{n}\epsilon_{i} +\lambda||\vec{w}||^{2}\right) \\ y_{i}(\vec{w}\cdot\vec{x}_{i}-b)\leq1-\epsilon_{i}\;\forall 1\leq i\leq n \\ \epsilon_{i}\geq0\;\forall1\leq i\leq n\end{cases}$)
+1. Apprendimento lazy:
    - Algoritmo K-nearest neighbor.
-5. Predizione:
+2. Predizione:
    - Regressione
-6. Apprendimento ensemble:
+3. Apprendimento ensemble:
    - Bootstrap;
    - Algoritmo Random Forest.
-7. Validazione di un classificatore:
+4. Validazione di un classificatore:
    - Misure di accuratezza;
    - Holdout;
    - K-fold cross-validation.
