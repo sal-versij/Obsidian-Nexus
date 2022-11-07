@@ -222,7 +222,3 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
 2. Sistemi di raccomandazione collaborative filtering
 3. Singular Value Decomposition (SVD)
 4. Valutazione di qualità di un sistema di raccomandazione
-
-### Tassonomia
-1. Content-based
-2. Collaborative filtering
