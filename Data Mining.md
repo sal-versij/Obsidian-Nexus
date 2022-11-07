@@ -233,6 +233,16 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
 	   - Closeness
 	   - PageRank ($PR(u)=\sum\limits_{v\in B_{u}}\frac{PR(v)}{k_{v}}$)
 2. Modelli random
-   - Modello di Erdos-Renyi ($G(N,L)$) (metodo probabilitstico)
-   - Reti small-world e modello di Watts-Strogatz ()
-   - Reti scale-free e modello di Albert-Barabasi
+   - Modello di Erdos-Renyi (**metodo probabilitstico**)
+	   - $G(N,p)$
+	   - $G(N,L)$
+	   - Proprietà
+		   - $p_{k}=\binom{N-1}{k}p^{k}(1-p)^{N-1-k}$
+		   - $\braket{k}=p(N-1)$
+		   - $N>>\braket{k} \implies p_{k}=e^{-\braket{k}\frac{\braket{k}^{k}}{k!}}$
+		   - $\braket{d}\approx\frac{\ln N}{\ln \braket{k}}$ (small world)
+		   - $\braket{L_{n}}=p\frac{k_{n}(k_{n}-1)}{2}$
+		   - $C_{n}=\frac{\braket{L_{n}}}{\left(\frac{k_{n}(k_{n}-1)}{2}\right)}=p=\frac{\braket{k}}{N-1}$
+	   - Non Approssima bene le reti reali (ha solo la proprietà di distanza di un caso small world)
+   - Reti small-world e modello di Watts-Strogatz (**random**+**regolare**)
+   - Reti scale-free e modello di Albert-Barabasi ()
