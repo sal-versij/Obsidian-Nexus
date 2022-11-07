@@ -157,16 +157,20 @@
 3. Classificatori discriminativi:
    - Perceptron ($wX+b$)
    - Support Vector Machines (SVM)
-	   - hard margin ($\begin{cases} \min{||\vec{w}||} \\ y_{i}(\vec{w}\cdot\vec{x}_{i}-b)\geq1\;\forall 1\leq i\leq n \end{cases}$)
-	   - soft margin ($\begin{cases} \min\left(\frac{1}{n}\sum\limits_{i=1}^{n}\epsilon_{i} +\lambda||\vec{w}||^{2}\right) \\ y_{i}(\vec{w}\cdot\vec{x}_{i}-b)\leq1-\epsilon_{i}\;\forall 1\leq i\leq n \\ \epsilon_{i}\geq0\;\forall1\leq i\leq n\end{cases}$)
-1. Apprendimento lazy:
+	   - Hard margin ($\begin{cases} \min{||\vec{w}||} \\ y_{i}(\vec{w}\cdot\vec{x}_{i}-b)\geq1\;\forall 1\leq i\leq n \end{cases}$)
+	   - Soft margin ($\begin{cases} \min\left(\frac{1}{n}\sum\limits_{i=1}^{n}\epsilon_{i} +\lambda||\vec{w}||^{2}\right) \\ y_{i}(\vec{w}\cdot\vec{x}_{i}-b)\leq1-\epsilon_{i}\;\forall 1\leq i\leq n \\ \epsilon_{i}\geq0\;\forall1\leq i\leq n\end{cases}$) (duale lagringiano)
+	   - Mapping con kernel
+4. Apprendimento lazy:
    - Algoritmo K-nearest neighbor.
-2. Predizione:
+5. Predizione:
    - Regressione
-3. Apprendimento ensemble:
+	   - Lineare Semplice ($y=w_{0}+w_{1}x$ ove $w_{1}=\frac{\sum\limits_{i=1}^{n}(x_{i}-\bar{x})(y_{i}-\bar{y})}{\sum\limits_{i=1}^{n}(x_{i}-\bar{x})^{2}}\;\;w_{0}=\bar{y}-w_{1}\bar{x}$)
+	   - Lineare Multipla (Caso $n$-dimensionale:  $y=w_{0} +w_{1}x_{1} +\ldots +w_{n}x_{n}$)
+	   - 
+6. Apprendimento ensemble:
    - Bootstrap;
    - Algoritmo Random Forest.
-4. Validazione di un classificatore:
+7. Validazione di un classificatore:
    - Misure di accuratezza;
    - Holdout;
    - K-fold cross-validation.
