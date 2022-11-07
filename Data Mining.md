@@ -244,5 +244,12 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
 		   - $\braket{L_{n}}=p\frac{k_{n}(k_{n}-1)}{2}$
 		   - $C_{n}=\frac{\braket{L_{n}}}{\left(\frac{k_{n}(k_{n}-1)}{2}\right)}=p=\frac{\braket{k}}{N-1}$
 	   - Non Approssima bene le reti reali (ha solo la proprietà di distanza di un caso small world)
-   - Reti small-world e modello di Watts-Strogatz (**random**+**regolare**)
-   - Reti scale-free e modello di Albert-Barabasi ()
+   - Reti small-world e modello di Watts-Strogatz (interpolazione tra **regolare** e **random** al variare di $p\in[0,1]$)
+	   - Input: $N$, $p$, $d$
+	   - Proprietà
+		   - $p_{k}=e^{-\braket{k}\frac{\braket{k}^{k}}{k!}}$
+	   - reti small world ed il giusto clustering, ma non ha la giusta distribuzione di gradi: Power-Law
+   - Reti scale-free e modello di Albert-Barabasi (Partendo da **random** cre)
+	   - Proprietà
+		   - $p_{k}\sim k^{-\gamma}\;\;2<\gamma<3$ (Power-Law)
+	   - Robustezza data dalla presenza di hub dovuto alla distribuzione Power-Law
