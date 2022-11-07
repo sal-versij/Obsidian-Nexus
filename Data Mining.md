@@ -135,6 +135,7 @@
 > modella funzioni continue e consente la predizione di dati sconosciuti o mancanti
 
 1. Alberi decisionali
+   - Algoritmi ***ID3, C4.5, CART***
    - Pruning
      - pre-pruning
      - post-pruning
