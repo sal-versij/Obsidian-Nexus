@@ -223,12 +223,16 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
 4. Valutazione di qualità di un sistema di raccomandazione
 ## Reti e modelli random
 1. Concetti fondamentali sulle reti
-   - Grafo e tipi di grafi;
-   - Grado di un nodo;
-   - Connettività del grafo: cammini, cicli e diametro del grafo;
-   - Coefficiente di clustering;
-   - Betweenness.
+   - Grafo e tipi di grafi
+   - Grado di un nodo
+   - Connettività del grafo: cammini, cicli e diametro del grafo
+   - Coefficiente di clustering ($C_{n}=\frac{2L_{n}}{k_{n}\times(k_{n}-1)}$; $\braket{C}=\frac{1}{N}\sum\limits_{i=1}^{N}C_{i}$; $C_{\Delta}$)
+   - Centrality
+	   - Degree
+	   - Betweenness
+	   - Closeness
+	   - PageRank ($PR(u)=\sum\limits_{v\in B_{u}}\frac{PR(v)}{k_{v}}$)
 2. Modelli random
-   - Modello di Erdos-Renyi;
-   - Reti small-world e modello di Watts-Strogatz;
-   - Reti scale-free e modello di Albert-Barabasi.
+   - Modello di Erdos-Renyi ($G(N,L)$) (metodo probabilitstico)
+   - Reti small-world e modello di Watts-Strogatz ()
+   - Reti scale-free e modello di Albert-Barabasi
