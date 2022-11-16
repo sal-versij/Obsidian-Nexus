@@ -228,28 +228,35 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
    - Connettività del grafo: cammini, cicli e diametro del grafo
    - Coefficiente di clustering ($C_{n}=\frac{2L_{n}}{k_{n}\times(k_{n}-1)}$; $\braket{C}=\frac{1}{N}\sum\limits_{i=1}^{N}C_{i}$; $C_{\Delta}$)
    - Centrality
-	   - Degree
-	   - Betweenness
-	   - Closeness
-	   - PageRank ($PR(u)=\sum\limits_{v\in B_{u}}\frac{PR(v)}{k_{v}}$)
+     - Degree
+     - Betweenness
+     - Closeness
+     - PageRank ($PR(u)=\sum\limits_{v\in B_{u}}\frac{PR(v)}{k_{v}}$)
 2. Modelli random
    - Modello di Erdos-Renyi (**metodo probabilitstico**)
-	   - $G(N,p)$
-	   - $G(N,L)$
-	   - Proprietà
-		   - $p_{k}=\binom{N-1}{k}p^{k}(1-p)^{N-1-k}$
-		   - $\braket{k}=p(N-1)$
-		   - $N>>\braket{k} \implies p_{k}=e^{-\braket{k}\frac{\braket{k}^{k}}{k!}}$
-		   - $\braket{d}\approx\frac{\ln N}{\ln \braket{k}}$ (small world)
-		   - $\braket{L_{n}}=p\frac{k_{n}(k_{n}-1)}{2}$
-		   - $C_{n}=\frac{\braket{L_{n}}}{\left(\frac{k_{n}(k_{n}-1)}{2}\right)}=p=\frac{\braket{k}}{N-1}$
-	   - Non Approssima bene le reti reali (ha solo la proprietà di distanza di un caso small world)
+     - $G(N,p)$
+     - $G(N,L)$
+     - Proprietà
+       - $p_{k}=\binom{N-1}{k}p^{k}(1-p)^{N-1-k}$
+       - $\braket{k}=p(N-1)$
+       - $N>>\braket{k} \implies p_{k}=e^{-\braket{k}\frac{\braket{k}^{k}}{k!}}$
+       - $\braket{d}\approx\frac{\ln N}{\ln \braket{k}}$ (small world)
+       - $\braket{L_{n}}=p\frac{k_{n}(k_{n}-1)}{2}$
+       - $C_{n}=\frac{\braket{L_{n}}}{\left(\frac{k_{n}(k_{n}-1)}{2}\right)}=p=\frac{\braket{k}}{N-1}$
+     - Non Approssima bene le reti reali (ha solo la proprietà di distanza di un caso small world)
    - Reti small-world e modello di Watts-Strogatz (interpolazione tra **regolare** e **random** al variare di $p\in[0,1]$)
-	   - Input: $N$, $p$, $d$
-	   - Proprietà
-		   - $p_{k}=e^{-\braket{k}\frac{\braket{k}^{k}}{k!}}$
-	   - reti small world ed il giusto clustering, ma non ha la giusta distribuzione di gradi: Power-Law
-   - Reti scale-free e modello di Albert-Barabasi (Partendo da **random** cre)
-	   - Proprietà
-		   - $p_{k}\sim k^{-\gamma}\;\;2<\gamma<3$ (Power-Law)
-	   - Robustezza data dalla presenza di hub dovuto alla distribuzione Power-Law
+     - Input: $N$, $p$, $d$
+     - Proprietà
+       - $p_{k}=e^{-\braket{k}\frac{\braket{k}^{k}}{k!}}$
+     - reti small world ed il giusto clustering, ma non ha la giusta distribuzione di gradi: Power-Law
+   - Reti scale-free e modello di Albert-Barabasi (**random** + **growth** with **preferential attachment**)
+     - Proprietà
+       - $p_{k}\sim k^{-\gamma}\;\;2<\gamma<3$ (Power-Law)
+     - Robustezza data dalla presenza di hub dovuto alla distribuzione Power-Law
+## Graph Matching
+1.  Algoritmi di graph matching
+	-   Algoritmo di Ullman
+	-   Algoritmo VF
+	-   Algoritmo RI
+2.  Graph matching in un database di grafi
+	-   Algoritmo SING
