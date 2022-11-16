@@ -262,8 +262,13 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
 3. Graph matching in un database di grafi
    - Algoritmo SING
 ## Graph Mining
-1. Mining in un database di grafi:
-	- Algoritmo 
-   - Algoritmo FSG;
-   - Algoritmo GSPAN.
-3. Mining in un singolo grafo.
+1. Mining in un database di grafi
+   - Algoritmo FSM
+     - BFS / DFS
+     - Join-based / Extend-based
+   - Algoritmo FSG
+     - BFS
+     - single nodes join-based
+     - forma canonica
+   - Algoritmo GSPAN
+2. Mining in un singolo grafo
