@@ -272,3 +272,9 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
      - forma canonica
    - Algoritmo GSPAN
 2. Mining in un singolo grafo
+   - Strategie di ricerca
+     - network-centric
+     - motif-centric
+     - set-centric
+   - Ricerca esatta vs sampling
+## Reti Neurali
