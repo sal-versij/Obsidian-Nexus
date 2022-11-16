@@ -261,3 +261,9 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
    - Algoritmo RI (Ordinamento + grade pruning)
 3. Graph matching in un database di grafi
    - Algoritmo SING
+## Graph Mining
+1. Mining in un database di grafi:
+	- Algoritmo 
+   - Algoritmo FSG;
+   - Algoritmo GSPAN.
+3. Mining in un singolo grafo.
