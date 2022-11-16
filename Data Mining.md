@@ -256,8 +256,8 @@ b. $\sum\limits_{j=1,j\neq i}^{n}p_{j} = 1-p_{i}$: La probabilità di scegliere 
 ## Graph Matching
 1. Isomorfismo
 2. Algoritmi di subgraph matching
-   - Algoritmo di Ullman
-   - Algoritmo VF
+   - Algoritmo di Ullman (grado)
+   - Algoritmo VF (State Space Represemtatopm)
    - Algoritmo RI
 3. Graph matching in un database di grafi
    - Algoritmo SING
