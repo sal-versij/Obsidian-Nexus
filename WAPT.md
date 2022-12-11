@@ -7,4 +7,4 @@ Tre varianti:
 ## Tools
 `fping <ip>\<mask>`: ping all devices in a network
 `nmap`: Port scanning
-: `nmap -v -sV <ip>`
+`sqlmap`: Sql Injection Penetration Testing
