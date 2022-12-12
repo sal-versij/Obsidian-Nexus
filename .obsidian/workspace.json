@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "77b138cf2f5572a5",
+        "id": "a1816d76d19808e9",
         "type": "tabs",
         "children": [
           {
-            "id": "0186c9b2112a5369",
+            "id": "aabac5d69260edc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2022-12-12.md",
+                "file": "WAPT.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252,
-    "collapsed": true
+    "width": 252
   },
   "right": {
     "id": "b54842645fdd79af",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-12-12.md",
+                "file": "WAPT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-12-12.md",
+                "file": "WAPT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-12-12.md"
+                "file": "WAPT.md"
               }
             }
           },
@@ -163,6 +162,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0186c9b2112a5369",
-  "lastOpenFiles": []
+  "active": "aabac5d69260edc1",
+  "lastOpenFiles": [
+    "Amsterdam/Amsterdam.md",
+    "2022-04-06.md",
+    "WAPT.md",
+    "2022-04-20.md",
+    "2022-04-27.md",
+    "2022-05-30.md",
+    "2022-05-02.md",
+    "2022-03-08.md",
+    "2022-03-07.md",
+    "recordings/Recording 20220314131117.webm"
+  ]
 }

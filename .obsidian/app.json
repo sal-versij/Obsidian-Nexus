@@ -1,19 +1,9 @@
 {
-  "readableLineLength": false,
-  "strictLineBreaks": false,
-  "foldHeading": true,
-  "foldIndent": true,
-  "alwaysUpdateLinks": true,
+  "strictLineBreaks": true,
   "showFrontmatter": true,
-  "promptDelete": false,
-  "legacyEditor": false,
-  "livePreview": true,
+  "showLineNumber": true,
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
-  "defaultViewMode": "preview",
-  "pdfExportSettings": {
-    "pageSize": "A4",
-    "landscape": false,
-    "margin": "2",
-    "downscalePercent": 100
-  }
+  "promptDelete": false
 }
