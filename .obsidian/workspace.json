@@ -1,50 +1,40 @@
 {
   "main": {
-    "id": "38b5980509e19ee6",
+    "id": "6d47dd1bbe143f94",
     "type": "split",
     "children": [
       {
-        "id": "cb4f6df6d4c125d6",
+        "id": "77b138cf2f5572a5",
         "type": "tabs",
         "children": [
           {
-            "id": "3d93a11bc9777b37",
+            "id": "0186c9b2112a5369",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Mining.md",
+                "file": "2022-12-12.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
-          },
-          {
-            "id": "fbec50bf7daa441b",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.0.0"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "c635f3ee91e7a78e",
+    "id": "1176ae800d94e936",
     "type": "split",
     "children": [
       {
-        "id": "84199faa875733b6",
+        "id": "815007c34df9adac",
         "type": "tabs",
         "children": [
           {
-            "id": "3e82d4dfef9b5271",
+            "id": "1ed483680db08900",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -54,12 +44,12 @@
             }
           },
           {
-            "id": "6d6237530b22ab63",
+            "id": "464f224d49e517de",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "metodi",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +59,7 @@
             }
           },
           {
-            "id": "1a05b23e9f1e8ac8",
+            "id": "9ee6f79848c3f750",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -80,80 +70,48 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 252,
     "collapsed": true
   },
   "right": {
-    "id": "6037de26520a8a96",
+    "id": "b54842645fdd79af",
     "type": "split",
     "children": [
       {
-        "id": "332aa71a1fdc2a3e",
+        "id": "88ac5aa36a238e46",
         "type": "tabs",
-        "dimension": 39.31357254290172,
         "children": [
           {
-            "id": "8d69655837dfa353",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "7e1f377a12330c8b",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "5bfbbd0802ff2720",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
-        "id": "731c00c69f250ca4",
-        "type": "tabs",
-        "dimension": 60.68642745709829,
-        "children": [
-          {
-            "id": "702d074c5e5549f3",
+            "id": "cb84eee473672688",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data Mining.md",
+                "file": "2022-12-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "91f6a616c2f59c54",
+            "id": "55c24394aa32ba0f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data Mining.md",
+                "file": "2022-12-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "02b5ec3ab0a7ead9",
+            "id": "93609aade7036b1a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -164,33 +122,47 @@
             }
           },
           {
-            "id": "b879eb21fba675cf",
+            "id": "15ca6c4c873f90db",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Mining.md"
+                "file": "2022-12-12.md"
               }
             }
+          },
+          {
+            "id": "addc823ae43912b0",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {}
+            }
+          },
+          {
+            "id": "561a4088f080884a",
+            "type": "leaf",
+            "state": {
+              "type": "BC-tree",
+              "state": {}
+            }
+          },
+          {
+            "id": "60b60ab8ca26b102",
+            "type": "leaf",
+            "state": {
+              "type": "RSS_FEED",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "fbec50bf7daa441b",
-  "lastOpenFiles": [
-    "Metodi Matematici e Statistici.md",
-    "Data Mining.md",
-    "handouts/metodi/metodi statistici 2021-10-14.pdf",
-    "handouts/metodi/metodi statistici 2021-10-12.pdf",
-    "handouts/metodi/metodi statistici 2021-10-07.pdf",
-    "Fisica/Fisica.md",
-    "Fisica/Fisica.pandoc.md",
-    "Cinematica.md",
-    "Introduzione.md",
-    "Fisica.md"
-  ]
+  "active": "0186c9b2112a5369",
+  "lastOpenFiles": []
 }
