@@ -1,6 +1,4 @@
 {
-  "baseFontSize": 13,
-  "translucency": false,
-  "cssTheme": "ITS Theme",
-  "accentColor": ""
+  "accentColor": "#ff5900",
+  "translucency": false
 }

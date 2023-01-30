@@ -2,13 +2,16 @@
   "userAdmonitions": {
     "def": {
       "type": "def",
-      "color": "167, 51, 1",
+      "color": "167, 48, 1",
       "icon": {
-        "name": "quill-ink",
-        "type": "rpg"
+        "type": "rpg",
+        "name": "quill-ink"
       },
       "command": true,
-      "title": "Definition"
+      "title": "Definition",
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
     },
     "solution": {
       "type": "solution",
@@ -18,7 +21,10 @@
         "type": "font-awesome"
       },
       "command": true,
-      "title": "Solution"
+      "title": "Solution",
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
     },
     "attention": {
       "type": "attention",
@@ -28,7 +34,10 @@
         "type": "font-awesome"
       },
       "command": true,
-      "title": "Attention"
+      "title": "Attention",
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
     },
     "code": {
       "type": "code",
@@ -38,7 +47,10 @@
         "type": "font-awesome"
       },
       "command": true,
-      "title": "Code"
+      "title": "Code",
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
     },
     "eg": {
       "type": "eg",
@@ -48,7 +60,9 @@
         "type": "font-awesome"
       },
       "command": true,
-      "title": "Example"
+      "title": "Example",
+      "injectColor": true,
+      "noTitle": false
     },
     "dem": {
       "type": "dem",
@@ -58,7 +72,10 @@
         "type": "font-awesome"
       },
       "command": true,
-      "title": "Demonstration"
+      "title": "Demonstration",
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
     },
     "th": {
       "type": "th",
@@ -70,12 +87,13 @@
       "command": true,
       "title": "Theorem",
       "injectColor": true,
-      "noTitle": false
+      "noTitle": true,
+      "copy": true
     }
   },
-  "syntaxHighlight": true,
+  "syntaxHighlight": false,
   "copyButton": true,
-  "version": "9.0.3",
+  "version": "9.0.5",
   "autoCollapse": true,
   "defaultCollapseType": "open",
   "injectColor": true,
@@ -86,19 +104,15 @@
     "admonitions": true,
     "icons": true,
     "other": true,
-    "advanced": false
+    "advanced": true
   },
   "icons": [
+    "octicons",
     "rpg"
   ],
   "useFontAwesome": true,
-  "rpgDownloadedOnce": true,
+  "rpgDownloadedOnce": false,
   "msDocConverted": false,
   "useSnippet": false,
-  "snippetPath": "custom-admonitions.949ffa",
-  "syncLinks": true,
-  "allowMSSyntax": true,
-  "msSyntaxIndented": true,
-  "livePreviewMS": true,
-  "enableMarkdownProcessor": true
+  "snippetPath": "custom-admonitions.ab5511"
 }
